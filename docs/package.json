@@ -1,0 +1,8 @@
+{
+  "name": "@internal/docs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Docs dev server is not configured yet\""
+  }
+}

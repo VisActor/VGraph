@@ -1,0 +1,14 @@
+{
+  "extends": "@internal/ts-config/tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": "./",
+    "rootDir": "./examples",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "noEmit": true
+  },
+  "include": ["examples/**/*", "examples/static/**/*.json"]
+}
