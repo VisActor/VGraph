@@ -1,0 +1,1446 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "贾雨村",
+      "category": 5
+    },
+    {
+      "id": 2,
+      "name": "贾琏",
+      "category": 0
+    },
+    {
+      "id": 3,
+      "name": "王夫人",
+      "category": 2
+    },
+    {
+      "id": 4,
+      "name": "林之孝家的",
+      "category": 5
+    },
+    {
+      "id": 5,
+      "name": "甄应嘉",
+      "category": 5
+    },
+    {
+      "id": 6,
+      "name": "秦可卿",
+      "category": 1
+    },
+    {
+      "id": 7,
+      "name": "芳官",
+      "category": 0
+    },
+    {
+      "id": 8,
+      "name": "李纨",
+      "category": 0
+    },
+    {
+      "id": 9,
+      "name": "夏金桂",
+      "category": 4
+    },
+    {
+      "id": 10,
+      "name": "柳五儿",
+      "category": 0
+    },
+    {
+      "id": 11,
+      "name": "贾珠",
+      "category": 0
+    },
+    {
+      "id": 12,
+      "name": "四儿",
+      "category": 0
+    },
+    {
+      "id": 13,
+      "name": "贾珍",
+      "category": 1
+    },
+    {
+      "id": 14,
+      "name": "茗烟",
+      "category": 0
+    },
+    {
+      "id": 15,
+      "name": "贾蓉",
+      "category": 1
+    },
+    {
+      "id": 16,
+      "name": "薛蝌",
+      "category": 4
+    },
+    {
+      "id": 17,
+      "name": "坠儿",
+      "category": 0
+    },
+    {
+      "id": 18,
+      "name": "贾环",
+      "category": 0
+    },
+    {
+      "id": 19,
+      "name": "赖尚荣",
+      "category": 5
+    },
+    {
+      "id": 20,
+      "name": "贾宝玉",
+      "category": 0
+    },
+    {
+      "id": 21,
+      "name": "甄士隐",
+      "category": 5
+    },
+    {
+      "id": 22,
+      "name": "马道婆",
+      "category": 5
+    },
+    {
+      "id": 23,
+      "name": "贾政",
+      "category": 0
+    },
+    {
+      "id": 24,
+      "name": "尤三姐",
+      "category": 1
+    },
+    {
+      "id": 25,
+      "name": "秦钟",
+      "category": 5
+    },
+    {
+      "id": 26,
+      "name": "王熙凤",
+      "category": 2
+    },
+    {
+      "id": 27,
+      "name": "袭人",
+      "category": 0
+    },
+    {
+      "id": 28,
+      "name": "刘姥姥",
+      "category": 5
+    },
+    {
+      "id": 29,
+      "name": "王狗儿",
+      "category": 5
+    },
+    {
+      "id": 30,
+      "name": "入画",
+      "category": 1
+    },
+    {
+      "id": 31,
+      "name": "林红玉",
+      "category": 5
+    },
+    {
+      "id": 32,
+      "name": "周瑞家的",
+      "category": 5
+    },
+    {
+      "id": 33,
+      "name": "贾敬",
+      "category": 1
+    },
+    {
+      "id": 34,
+      "name": "孙绍祖",
+      "category": 5
+    },
+    {
+      "id": 35,
+      "name": "贾惜春",
+      "category": 1
+    },
+    {
+      "id": 36,
+      "name": "傻大姐",
+      "category": 5
+    },
+    {
+      "id": 37,
+      "name": "晴雯",
+      "category": 0
+    },
+    {
+      "id": 38,
+      "name": "李嬷嬷",
+      "category": 5
+    },
+    {
+      "id": 39,
+      "name": "贾代化",
+      "category": 1
+    },
+    {
+      "id": 40,
+      "name": "林如海",
+      "category": 6
+    },
+    {
+      "id": 41,
+      "name": "甄宝玉",
+      "category": 5
+    },
+    {
+      "id": 42,
+      "name": "秋桐",
+      "category": 0
+    },
+    {
+      "id": 43,
+      "name": "金文翔家的",
+      "category": 5
+    },
+    {
+      "id": 44,
+      "name": "鸳鸯",
+      "category": 0
+    },
+    {
+      "id": 45,
+      "name": "冷子兴",
+      "category": 5
+    },
+    {
+      "id": 46,
+      "name": "薛蟠",
+      "category": 4
+    },
+    {
+      "id": 47,
+      "name": "焦大",
+      "category": 1
+    },
+    {
+      "id": 48,
+      "name": "宝珠",
+      "category": 1
+    },
+    {
+      "id": 49,
+      "name": "吴贵",
+      "category": 5
+    },
+    {
+      "id": 50,
+      "name": "佩凤",
+      "category": 1
+    },
+    {
+      "id": 51,
+      "name": "龄官",
+      "category": 5
+    },
+    {
+      "id": 52,
+      "name": "莺儿 黄金莺",
+      "category": 5
+    },
+    {
+      "id": 53,
+      "name": "贾敏",
+      "category": 0
+    },
+    {
+      "id": 54,
+      "name": "瑞珠",
+      "category": 1
+    },
+    {
+      "id": 55,
+      "name": "尤氏继母",
+      "category": 1
+    },
+    {
+      "id": 56,
+      "name": "娇杏",
+      "category": 5
+    },
+    {
+      "id": 57,
+      "name": "薛宝钗",
+      "category": 4
+    },
+    {
+      "id": 58,
+      "name": "邢夫人",
+      "category": 0
+    },
+    {
+      "id": 59,
+      "name": "薛姨妈",
+      "category": 2
+    },
+    {
+      "id": 60,
+      "name": "林黛玉",
+      "category": 6
+    },
+    {
+      "id": 61,
+      "name": "秦邦业",
+      "category": 5
+    },
+    {
+      "id": 62,
+      "name": "藕官",
+      "category": 5
+    },
+    {
+      "id": 63,
+      "name": "王善保家的",
+      "category": 5
+    },
+    {
+      "id": 64,
+      "name": "贾探春",
+      "category": 0
+    },
+    {
+      "id": 65,
+      "name": "薛宝琴",
+      "category": 4
+    },
+    {
+      "id": 66,
+      "name": "麝月",
+      "category": 0
+    },
+    {
+      "id": 67,
+      "name": "贾演",
+      "category": 1
+    },
+    {
+      "id": 68,
+      "name": "贾迎春",
+      "category": 0
+    },
+    {
+      "id": 69,
+      "name": "妙玉",
+      "category": 5
+    },
+    {
+      "id": 70,
+      "name": "玉钏儿",
+      "category": 0
+    },
+    {
+      "id": 71,
+      "name": "秋纹",
+      "category": 0
+    },
+    {
+      "id": 72,
+      "name": "智能儿",
+      "category": 5
+    },
+    {
+      "id": 73,
+      "name": "王子腾",
+      "category": 2
+    },
+    {
+      "id": 74,
+      "name": "柳湘莲",
+      "category": 5
+    },
+    {
+      "id": 75,
+      "name": "金钏儿",
+      "category": 0
+    },
+    {
+      "id": 76,
+      "name": "尤氏",
+      "category": 1
+    },
+    {
+      "id": 77,
+      "name": "邢岫烟",
+      "category": 5
+    },
+    {
+      "id": 78,
+      "name": "香菱",
+      "category": 5
+    },
+    {
+      "id": 79,
+      "name": "贾源",
+      "category": 0
+    },
+    {
+      "id": 80,
+      "name": "贾元春",
+      "category": 0
+    },
+    {
+      "id": 81,
+      "name": "赵姨娘",
+      "category": 0
+    },
+    {
+      "id": 82,
+      "name": "邢忠",
+      "category": 5
+    },
+    {
+      "id": 83,
+      "name": "史湘云",
+      "category": 3
+    },
+    {
+      "id": 84,
+      "name": "雪雁",
+      "category": 0
+    },
+    {
+      "id": 85,
+      "name": "紫鹃 鹦哥",
+      "category": 0
+    },
+    {
+      "id": 86,
+      "name": "金文翔",
+      "category": 5
+    },
+    {
+      "id": 87,
+      "name": "彩云",
+      "category": 0
+    },
+    {
+      "id": 88,
+      "name": "贾母",
+      "category": 3
+    },
+    {
+      "id": 89,
+      "name": "贾代善",
+      "category": 0
+    },
+    {
+      "id": 90,
+      "name": "巧姐",
+      "category": 0
+    },
+    {
+      "id": 91,
+      "name": "赖大",
+      "category": 1
+    },
+    {
+      "id": 92,
+      "name": "尤二姐",
+      "category": 1
+    },
+    {
+      "id": 93,
+      "name": "林之孝",
+      "category": 5
+    },
+    {
+      "id": 94,
+      "name": "封肃",
+      "category": 5
+    },
+    {
+      "id": 95,
+      "name": "香菱 甄英莲",
+      "category": 5
+    },
+    {
+      "id": 96,
+      "name": "宝蟾",
+      "category": 5
+    },
+    {
+      "id": 97,
+      "name": "彩霞",
+      "category": 0
+    },
+    {
+      "id": 98,
+      "name": "李贵",
+      "category": 5
+    },
+    {
+      "id": 99,
+      "name": "药官",
+      "category": 5
+    },
+    {
+      "id": 100,
+      "name": "赖嬷嬷",
+      "category": 5
+    },
+    {
+      "id": 101,
+      "name": "蒋玉菡",
+      "category": 5
+    },
+    {
+      "id": 102,
+      "name": "金钏",
+      "category": 0
+    },
+    {
+      "id": 103,
+      "name": "贾兰",
+      "category": 0
+    },
+    {
+      "id": 104,
+      "name": "贾蔷",
+      "category": 1
+    },
+    {
+      "id": 105,
+      "name": "偕鸾",
+      "category": 1
+    },
+    {
+      "id": 106,
+      "name": "贾赦",
+      "category": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": 73,
+      "target": 26,
+      "relation": "伯父"
+    },
+    {
+      "source": 52,
+      "target": 57,
+      "relation": "丫头"
+    },
+    {
+      "source": 1,
+      "target": 60,
+      "relation": "老师"
+    },
+    {
+      "source": 36,
+      "target": 88,
+      "relation": "丫头"
+    },
+    {
+      "source": 51,
+      "target": 104,
+      "relation": "相好"
+    },
+    {
+      "source": 62,
+      "target": 60,
+      "relation": "丫环"
+    },
+    {
+      "source": 62,
+      "target": 99,
+      "relation": "相好"
+    },
+    {
+      "source": 100,
+      "target": 91,
+      "relation": "母亲"
+    },
+    {
+      "source": 19,
+      "target": 100,
+      "relation": "孙子"
+    },
+    {
+      "source": 49,
+      "target": 37,
+      "relation": "姑舅哥哥"
+    },
+    {
+      "source": 46,
+      "target": 59,
+      "relation": "儿子"
+    },
+    {
+      "source": 16,
+      "target": 59,
+      "relation": "侄儿"
+    },
+    {
+      "source": 77,
+      "target": 58,
+      "relation": "侄女"
+    },
+    {
+      "source": 77,
+      "target": 82,
+      "relation": "女儿"
+    },
+    {
+      "source": 77,
+      "target": 16,
+      "relation": "妻"
+    },
+    {
+      "source": 65,
+      "target": 16,
+      "relation": "胞妹"
+    },
+    {
+      "source": 65,
+      "target": 59,
+      "relation": "侄女"
+    },
+    {
+      "source": 9,
+      "target": 46,
+      "relation": "妻"
+    },
+    {
+      "source": 95,
+      "target": 46,
+      "relation": "妾"
+    },
+    {
+      "source": 78,
+      "target": 21,
+      "relation": "女儿"
+    },
+    {
+      "source": 21,
+      "target": 78,
+      "relation": "父亲"
+    },
+    {
+      "source": 96,
+      "target": 9,
+      "relation": "陪房丫头"
+    },
+    {
+      "source": 81,
+      "target": 64,
+      "relation": "母亲"
+    },
+    {
+      "source": 81,
+      "target": 18,
+      "relation": "母亲"
+    },
+    {
+      "source": 81,
+      "target": 23,
+      "relation": "妾"
+    },
+    {
+      "source": 59,
+      "target": 65,
+      "relation": "姑母"
+    },
+    {
+      "source": 59,
+      "target": 46,
+      "relation": "母亲"
+    },
+    {
+      "source": 59,
+      "target": 3,
+      "relation": "姐妹"
+    },
+    {
+      "source": 102,
+      "target": 3,
+      "relation": "大丫环"
+    },
+    {
+      "source": 87,
+      "target": 3,
+      "relation": "大丫头"
+    },
+    {
+      "source": 97,
+      "target": 3,
+      "relation": "大丫头"
+    },
+    {
+      "source": 70,
+      "target": 3,
+      "relation": "丫头"
+    },
+    {
+      "source": 70,
+      "target": 75,
+      "relation": "妹妹"
+    },
+    {
+      "source": 75,
+      "target": 70,
+      "relation": "姐姐"
+    },
+    {
+      "source": 11,
+      "target": 20,
+      "relation": "哥哥"
+    },
+    {
+      "source": 11,
+      "target": 8,
+      "relation": "丈夫"
+    },
+    {
+      "source": 11,
+      "target": 23,
+      "relation": "长子"
+    },
+    {
+      "source": 11,
+      "target": 3,
+      "relation": "长子"
+    },
+    {
+      "source": 8,
+      "target": 20,
+      "relation": "嫂子"
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "relation": "妻"
+    },
+    {
+      "source": 103,
+      "target": 8,
+      "relation": "儿子"
+    },
+    {
+      "source": 103,
+      "target": 11,
+      "relation": "儿子"
+    },
+    {
+      "source": 80,
+      "target": 3,
+      "relation": "长女"
+    },
+    {
+      "source": 80,
+      "target": 23,
+      "relation": "长女"
+    },
+    {
+      "source": 20,
+      "target": 60,
+      "relation": "表兄妹"
+    },
+    {
+      "source": 20,
+      "target": 57,
+      "relation": "丈夫"
+    },
+    {
+      "source": 20,
+      "target": 3,
+      "relation": "次子"
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "relation": "次子"
+    },
+    {
+      "source": 57,
+      "target": 59,
+      "relation": "女儿"
+    },
+    {
+      "source": 57,
+      "target": 20,
+      "relation": "妻"
+    },
+    {
+      "source": 27,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 66,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 71,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 37,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 12,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 10,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 10,
+      "target": 7,
+      "relation": "好朋友"
+    },
+    {
+      "source": 7,
+      "target": 20,
+      "relation": "丫环"
+    },
+    {
+      "source": 14,
+      "target": 20,
+      "relation": "小厮"
+    },
+    {
+      "source": 18,
+      "target": 81,
+      "relation": "儿子"
+    },
+    {
+      "source": 18,
+      "target": 23,
+      "relation": "儿子"
+    },
+    {
+      "source": 64,
+      "target": 81,
+      "relation": "女儿"
+    },
+    {
+      "source": 64,
+      "target": 23,
+      "relation": "女儿"
+    },
+    {
+      "source": 104,
+      "target": 13,
+      "relation": "养子"
+    },
+    {
+      "source": 86,
+      "target": 88,
+      "relation": "买办"
+    },
+    {
+      "source": 86,
+      "target": 44,
+      "relation": "哥哥"
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "relation": "嫂子"
+    },
+    {
+      "source": 32,
+      "target": 3,
+      "relation": "陪房"
+    },
+    {
+      "source": 63,
+      "target": 58,
+      "relation": "陪房"
+    },
+    {
+      "source": 56,
+      "target": 1,
+      "relation": "二夫人"
+    },
+    {
+      "source": 94,
+      "target": 21,
+      "relation": "岳父"
+    },
+    {
+      "source": 41,
+      "target": 5,
+      "relation": "儿子"
+    },
+    {
+      "source": 69,
+      "target": 20,
+      "relation": "朋友"
+    },
+    {
+      "source": 69,
+      "target": 60,
+      "relation": "朋友"
+    },
+    {
+      "source": 74,
+      "target": 46,
+      "relation": "好兄弟"
+    },
+    {
+      "source": 101,
+      "target": 27,
+      "relation": "夫妻"
+    },
+    {
+      "source": 101,
+      "target": 20,
+      "relation": "好友"
+    },
+    {
+      "source": 45,
+      "target": 1,
+      "relation": "好友"
+    },
+    {
+      "source": 45,
+      "target": 32,
+      "relation": "女婿"
+    },
+    {
+      "source": 22,
+      "target": 20,
+      "relation": "乾娘"
+    },
+    {
+      "source": 72,
+      "target": 25,
+      "relation": "暧昧"
+    },
+    {
+      "source": 25,
+      "target": 61,
+      "relation": "儿子"
+    },
+    {
+      "source": 24,
+      "target": 92,
+      "relation": "妹妹"
+    },
+    {
+      "source": 24,
+      "target": 92,
+      "relation": "妹妹"
+    },
+    {
+      "source": 24,
+      "target": 55,
+      "relation": "女儿"
+    },
+    {
+      "source": 61,
+      "target": 6,
+      "relation": "养父"
+    },
+    {
+      "source": 61,
+      "target": 25,
+      "relation": "父亲"
+    },
+    {
+      "source": 83,
+      "target": 88,
+      "relation": "孙女"
+    },
+    {
+      "source": 83,
+      "target": 57,
+      "relation": "朋友"
+    },
+    {
+      "source": 83,
+      "target": 60,
+      "relation": "朋友"
+    },
+    {
+      "source": 83,
+      "target": 20,
+      "relation": "朋友"
+    },
+    {
+      "source": 67,
+      "target": 79,
+      "relation": "兄弟"
+    },
+    {
+      "source": 67,
+      "target": 47,
+      "relation": "主人"
+    },
+    {
+      "source": 67,
+      "target": 39,
+      "relation": "父亲"
+    },
+    {
+      "source": 39,
+      "target": 33,
+      "relation": "父亲"
+    },
+    {
+      "source": 39,
+      "target": 67,
+      "relation": "儿子"
+    },
+    {
+      "source": 33,
+      "target": 13,
+      "relation": "父亲"
+    },
+    {
+      "source": 33,
+      "target": 39,
+      "relation": "儿子"
+    },
+    {
+      "source": 47,
+      "target": 67,
+      "relation": "老奴"
+    },
+    {
+      "source": 13,
+      "target": 35,
+      "relation": "父亲"
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "relation": "父亲"
+    },
+    {
+      "source": 13,
+      "target": 76,
+      "relation": "丈夫"
+    },
+    {
+      "source": 13,
+      "target": 33,
+      "relation": "儿子"
+    },
+    {
+      "source": 76,
+      "target": 35,
+      "relation": "母亲"
+    },
+    {
+      "source": 76,
+      "target": 13,
+      "relation": "妻"
+    },
+    {
+      "source": 50,
+      "target": 13,
+      "relation": "妾"
+    },
+    {
+      "source": 105,
+      "target": 13,
+      "relation": "妾"
+    },
+    {
+      "source": 15,
+      "target": 6,
+      "relation": "丈夫"
+    },
+    {
+      "source": 15,
+      "target": 13,
+      "relation": "儿子"
+    },
+    {
+      "source": 6,
+      "target": 15,
+      "relation": "妻"
+    },
+    {
+      "source": 54,
+      "target": 6,
+      "relation": "丫环"
+    },
+    {
+      "source": 48,
+      "target": 6,
+      "relation": "丫环"
+    },
+    {
+      "source": 30,
+      "target": 35,
+      "relation": "丫环"
+    },
+    {
+      "source": 35,
+      "target": 76,
+      "relation": "女儿"
+    },
+    {
+      "source": 35,
+      "target": 13,
+      "relation": "女儿"
+    },
+    {
+      "source": 79,
+      "target": 89,
+      "relation": "父亲"
+    },
+    {
+      "source": 89,
+      "target": 106,
+      "relation": "父亲"
+    },
+    {
+      "source": 89,
+      "target": 23,
+      "relation": "父亲"
+    },
+    {
+      "source": 89,
+      "target": 88,
+      "relation": "丈夫"
+    },
+    {
+      "source": 89,
+      "target": 79,
+      "relation": "儿子"
+    },
+    {
+      "source": 88,
+      "target": 60,
+      "relation": "外祖母"
+    },
+    {
+      "source": 88,
+      "target": 58,
+      "relation": "婆婆"
+    },
+    {
+      "source": 88,
+      "target": 106,
+      "relation": "母亲"
+    },
+    {
+      "source": 88,
+      "target": 89,
+      "relation": "妻"
+    },
+    {
+      "source": 23,
+      "target": 106,
+      "relation": "兄弟"
+    },
+    {
+      "source": 23,
+      "target": 64,
+      "relation": "父亲"
+    },
+    {
+      "source": 23,
+      "target": 18,
+      "relation": "父亲"
+    },
+    {
+      "source": 23,
+      "target": 20,
+      "relation": "父亲"
+    },
+    {
+      "source": 23,
+      "target": 80,
+      "relation": "父亲"
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "relation": "父亲"
+    },
+    {
+      "source": 23,
+      "target": 3,
+      "relation": "丈夫"
+    },
+    {
+      "source": 23,
+      "target": 88,
+      "relation": "次子"
+    },
+    {
+      "source": 23,
+      "target": 89,
+      "relation": "儿子"
+    },
+    {
+      "source": 106,
+      "target": 68,
+      "relation": "父亲"
+    },
+    {
+      "source": 106,
+      "target": 2,
+      "relation": "父亲"
+    },
+    {
+      "source": 106,
+      "target": 58,
+      "relation": "丈夫"
+    },
+    {
+      "source": 106,
+      "target": 88,
+      "relation": "大儿子"
+    },
+    {
+      "source": 106,
+      "target": 89,
+      "relation": "儿子"
+    },
+    {
+      "source": 58,
+      "target": 26,
+      "relation": "婆婆"
+    },
+    {
+      "source": 58,
+      "target": 88,
+      "relation": "大儿媳"
+    },
+    {
+      "source": 58,
+      "target": 106,
+      "relation": "妻"
+    },
+    {
+      "source": 3,
+      "target": 20,
+      "relation": "母亲"
+    },
+    {
+      "source": 3,
+      "target": 80,
+      "relation": "母亲"
+    },
+    {
+      "source": 3,
+      "target": 11,
+      "relation": "母亲"
+    },
+    {
+      "source": 3,
+      "target": 59,
+      "relation": "姐妹"
+    },
+    {
+      "source": 3,
+      "target": 23,
+      "relation": "妻"
+    },
+    {
+      "source": 3,
+      "target": 88,
+      "relation": "小儿媳"
+    },
+    {
+      "source": 44,
+      "target": 88,
+      "relation": "丫头"
+    },
+    {
+      "source": 40,
+      "target": 60,
+      "relation": "父亲"
+    },
+    {
+      "source": 40,
+      "target": 53,
+      "relation": "丈夫"
+    },
+    {
+      "source": 53,
+      "target": 106,
+      "relation": "兄妹"
+    },
+    {
+      "source": 53,
+      "target": 23,
+      "relation": "兄妹"
+    },
+    {
+      "source": 53,
+      "target": 88,
+      "relation": "女儿"
+    },
+    {
+      "source": 53,
+      "target": 60,
+      "relation": "母亲"
+    },
+    {
+      "source": 53,
+      "target": 40,
+      "relation": "妻"
+    },
+    {
+      "source": 60,
+      "target": 20,
+      "relation": "表兄妹"
+    },
+    {
+      "source": 60,
+      "target": 88,
+      "relation": "外孙女"
+    },
+    {
+      "source": 60,
+      "target": 40,
+      "relation": "女儿"
+    },
+    {
+      "source": 85,
+      "target": 88,
+      "relation": "丫头"
+    },
+    {
+      "source": 84,
+      "target": 60,
+      "relation": "丫头"
+    },
+    {
+      "source": 26,
+      "target": 3,
+      "relation": "内侄女"
+    },
+    {
+      "source": 26,
+      "target": 90,
+      "relation": "母亲"
+    },
+    {
+      "source": 26,
+      "target": 2,
+      "relation": "妻"
+    },
+    {
+      "source": 26,
+      "target": 58,
+      "relation": "儿媳"
+    },
+    {
+      "source": 42,
+      "target": 106,
+      "relation": "妾"
+    },
+    {
+      "source": 42,
+      "target": 106,
+      "relation": "丫环"
+    },
+    {
+      "source": 2,
+      "target": 90,
+      "relation": "父亲"
+    },
+    {
+      "source": 2,
+      "target": 26,
+      "relation": "丈夫"
+    },
+    {
+      "source": 2,
+      "target": 106,
+      "relation": "儿子"
+    },
+    {
+      "source": 68,
+      "target": 34,
+      "relation": "妻"
+    },
+    {
+      "source": 68,
+      "target": 106,
+      "relation": "女儿"
+    },
+    {
+      "source": 90,
+      "target": 28,
+      "relation": "被抚养"
+    },
+    {
+      "source": 90,
+      "target": 2,
+      "relation": "女儿"
+    },
+    {
+      "source": 90,
+      "target": 26,
+      "relation": "女儿"
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "relation": "岳母"
+    },
+    {
+      "source": 92,
+      "target": 2,
+      "relation": "二房"
+    },
+    {
+      "source": 92,
+      "target": 55,
+      "relation": "女儿"
+    },
+    {
+      "source": 93,
+      "target": 31,
+      "relation": "父"
+    },
+    {
+      "source": 4,
+      "target": 31,
+      "relation": "母"
+    },
+    {
+      "source": 38,
+      "target": 98,
+      "relation": "母"
+    },
+    {
+      "source": 38,
+      "target": 20,
+      "relation": "乳母"
+    }
+  ]
+}

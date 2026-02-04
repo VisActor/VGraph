@@ -1,0 +1,982 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "lon": -96.77041974,
+            "lat": 43.61282792,
+            "posX": 5,
+            "posY": 51,
+            "x": 100,
+            "y": 90
+        },
+        {
+            "id": "2",
+            "lon": -96.71125063,
+            "lat": 43.60581298,
+            "posX": 32,
+            "posY": 51,
+            "x": 370,
+            "y": 90
+        },
+        {
+            "id": "3",
+            "lon": -96.77430341,
+            "lat": 43.5729616,
+            "posX": 5,
+            "posY": 44,
+            "x": 100,
+            "y": 160
+        },
+        {
+            "id": "4",
+            "lon": -96.74716843,
+            "lat": 43.56365362,
+            "posX": 13,
+            "posY": 44,
+            "x": 180,
+            "y": 160
+        },
+        {
+            "id": "5",
+            "lon": -96.73156909,
+            "lat": 43.56403357,
+            "posX": 22,
+            "posY": 44,
+            "x": 270,
+            "y": 160
+        },
+        {
+            "id": "6",
+            "lon": -96.71164389,
+            "lat": 43.58758553,
+            "posX": 32,
+            "posY": 44,
+            "x": 370,
+            "y": 160
+        },
+        {
+            "id": "7",
+            "lon": -96.69342281,
+            "lat": 43.5638436,
+            "posX": 42,
+            "posY": 38,
+            "x": 470,
+            "y": 220
+        },
+        {
+            "id": "8",
+            "lon": -96.71138171,
+            "lat": 43.56232379,
+            "posX": 32,
+            "posY": 38,
+            "x": 370,
+            "y": 220
+        },
+        {
+            "id": "9",
+            "lon": -96.73124137,
+            "lat": 43.54859634,
+            "posX": 22,
+            "posY": 38,
+            "x": 270,
+            "y": 220
+        },
+        {
+            "id": "10",
+            "lon": -96.73143801,
+            "lat": 43.54527088,
+            "posX": 22,
+            "posY": 32,
+            "x": 270,
+            "y": 280
+        },
+        {
+            "id": "11",
+            "lon": -96.74684071,
+            "lat": 43.54413068,
+            "posX": 13,
+            "posY": 32,
+            "x": 180,
+            "y": 280
+        },
+        {
+            "id": "12",
+            "lon": -96.78013678,
+            "lat": 43.54394065,
+            "posX": 5,
+            "posY": 32,
+            "x": 100,
+            "y": 280
+        },
+        {
+            "id": "13",
+            "lon": -96.79337655,
+            "lat": 43.49070718,
+            "posX": 5,
+            "posY": 5,
+            "x": 100,
+            "y": 550
+        },
+        {
+            "id": "14",
+            "lon": -96.75103549,
+            "lat": 43.52930613,
+            "posX": 13,
+            "posY": 19,
+            "x": 180,
+            "y": 410
+        },
+        {
+            "id": "15",
+            "lon": -96.73150355,
+            "lat": 43.52940117,
+            "posX": 22,
+            "posY": 19,
+            "x": 270,
+            "y": 410
+        },
+        {
+            "id": "16",
+            "lon": -96.71138171,
+            "lat": 43.54674361,
+            "posX": 32,
+            "posY": 32,
+            "x": 370,
+            "y": 280
+        },
+        {
+            "id": "17",
+            "lon": -96.71138171,
+            "lat": 43.54128009,
+            "posX": 32,
+            "posY": 26,
+            "x": 370,
+            "y": 340
+        },
+        {
+            "id": "18",
+            "lon": -96.69407825,
+            "lat": 43.54674361,
+            "posX": 42,
+            "posY": 32,
+            "x": 470,
+            "y": 280
+        },
+        {
+            "id": "19",
+            "lon": -96.71131617,
+            "lat": 43.52959125,
+            "posX": 32,
+            "posY": 19,
+            "x": 370,
+            "y": 410
+        },
+        {
+            "id": "20",
+            "lon": -96.71118508,
+            "lat": 43.5153335,
+            "posX": 32,
+            "posY": 5,
+            "x": 370,
+            "y": 550
+        },
+        {
+            "id": "21",
+            "lon": -96.7309792,
+            "lat": 43.51048509,
+            "posX": 22,
+            "posY": 5,
+            "x": 270,
+            "y": 550
+        },
+        {
+            "id": "22",
+            "lon": -96.73124137,
+            "lat": 43.51485818,
+            "posX": 22,
+            "posY": 13,
+            "x": 270,
+            "y": 470
+        },
+        {
+            "id": "23",
+            "lon": -96.75090441,
+            "lat": 43.51485818,
+            "posX": 13,
+            "posY": 13,
+            "x": 180,
+            "y": 470
+        },
+        {
+            "id": "24",
+            "lon": -96.74920028,
+            "lat": 43.50316422,
+            "posX": 13,
+            "posY": 5,
+            "x": 180,
+            "y": 550
+        }
+    ],
+    "edges": [
+        {
+            "source": "1",
+            "target": "2",
+            "volume": 4495,
+            "cost": 6,
+            "capacity": 25900,
+            "roadlength": 27,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "1",
+            "target": "3",
+            "volume": 8119,
+            "cost": 4.01,
+            "capacity": 23403,
+            "roadlength": 7,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "2",
+            "target": "1",
+            "volume": 4519,
+            "cost": 6,
+            "capacity": 25900,
+            "roadlength": 27,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "2",
+            "target": "6",
+            "volume": 5967,
+            "cost": 6.57,
+            "capacity": 4958,
+            "roadlength": 7,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "3",
+            "target": "1",
+            "volume": 8095,
+            "cost": 4.01,
+            "capacity": 23403,
+            "roadlength": 7,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "3",
+            "target": "4",
+            "volume": 14006,
+            "cost": 4.27,
+            "capacity": 17111,
+            "roadlength": 8,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "3",
+            "target": "12",
+            "volume": 10022,
+            "cost": 4.02,
+            "capacity": 23403,
+            "roadlength": 12,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "4",
+            "target": "3",
+            "volume": 14031,
+            "cost": 4.27,
+            "capacity": 17111,
+            "roadlength": 8,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "4",
+            "target": "5",
+            "volume": 18006,
+            "cost": 2.32,
+            "capacity": 17783,
+            "roadlength": 9,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "4",
+            "target": "11",
+            "volume": 5200,
+            "cost": 7.13,
+            "capacity": 4909,
+            "roadlength": 12,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "5",
+            "target": "4",
+            "volume": 18031,
+            "cost": 2.32,
+            "capacity": 17783,
+            "roadlength": 9,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "5",
+            "target": "6",
+            "volume": 8798,
+            "cost": 10,
+            "capacity": 4948,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "5",
+            "target": "9",
+            "volume": 15781,
+            "cost": 9.65,
+            "capacity": 10000,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "6",
+            "target": "2",
+            "volume": 5992,
+            "cost": 6.6,
+            "capacity": 4958,
+            "roadlength": 7,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "6",
+            "target": "5",
+            "volume": 8806,
+            "cost": 10.02,
+            "capacity": 4948,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "6",
+            "target": "8",
+            "volume": 12493,
+            "cost": 14.69,
+            "capacity": 4899,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "7",
+            "target": "8",
+            "volume": 12102,
+            "cost": 5.55,
+            "capacity": 7842,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "7",
+            "target": "18",
+            "volume": 15794,
+            "cost": 2.06,
+            "capacity": 23403,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "8",
+            "target": "6",
+            "volume": 12526,
+            "cost": 14.82,
+            "capacity": 4899,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "8",
+            "target": "7",
+            "volume": 12041,
+            "cost": 5.5,
+            "capacity": 7842,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "8",
+            "target": "9",
+            "volume": 6883,
+            "cost": 15.17,
+            "capacity": 5050,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "8",
+            "target": "16",
+            "volume": 8389,
+            "cost": 10.73,
+            "capacity": 5046,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "9",
+            "target": "5",
+            "volume": 15797,
+            "cost": 9.67,
+            "capacity": 10000,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "9",
+            "target": "8",
+            "volume": 6837,
+            "cost": 15.04,
+            "capacity": 5050,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "9",
+            "target": "10",
+            "volume": 21744,
+            "cost": 5.68,
+            "capacity": 13916,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "10",
+            "target": "9",
+            "volume": 21814,
+            "cost": 5.72,
+            "capacity": 13916,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "10",
+            "target": "11",
+            "volume": 17727,
+            "cost": 12.41,
+            "capacity": 10000,
+            "roadlength": 9,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "10",
+            "target": "15",
+            "volume": 23126,
+            "cost": 13.72,
+            "capacity": 13512,
+            "roadlength": 13,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "10",
+            "target": "16",
+            "volume": 11047,
+            "cost": 20.08,
+            "capacity": 4855,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "10",
+            "target": "17",
+            "volume": 8100,
+            "cost": 16.31,
+            "capacity": 4994,
+            "roadlength": 11.66,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "11",
+            "target": "4",
+            "volume": 5300,
+            "cost": 7.22,
+            "capacity": 4909,
+            "roadlength": 12,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "11",
+            "target": "10",
+            "volume": 17604,
+            "cost": 12.2,
+            "capacity": 10000,
+            "roadlength": 9,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "11",
+            "target": "12",
+            "volume": 8365,
+            "cost": 13.59,
+            "capacity": 4909,
+            "roadlength": 8,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "11",
+            "target": "14",
+            "volume": 9776,
+            "cost": 13.69,
+            "capacity": 4877,
+            "roadlength": 13,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "12",
+            "target": "3",
+            "volume": 9974,
+            "cost": 4.02,
+            "capacity": 23403,
+            "roadlength": 12,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "12",
+            "target": "11",
+            "volume": 8405,
+            "cost": 13.74,
+            "capacity": 4909,
+            "roadlength": 8,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "12",
+            "target": "13",
+            "volume": 12288,
+            "cost": 3.02,
+            "capacity": 25900,
+            "roadlength": 27,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "13",
+            "target": "12",
+            "volume": 12379,
+            "cost": 3.02,
+            "capacity": 25900,
+            "roadlength": 27,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "13",
+            "target": "24",
+            "volume": 11121,
+            "cost": 17.66,
+            "capacity": 5091,
+            "roadlength": 8,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "14",
+            "target": "11",
+            "volume": 9814,
+            "cost": 13.84,
+            "capacity": 4877,
+            "roadlength": 13,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "14",
+            "target": "15",
+            "volume": 9036,
+            "cost": 12.23,
+            "capacity": 5128,
+            "roadlength": 9,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "14",
+            "target": "23",
+            "volume": 8400,
+            "cost": 9.08,
+            "capacity": 4925,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "15",
+            "target": "10",
+            "volume": 23192,
+            "cost": 13.81,
+            "capacity": 13512,
+            "roadlength": 13,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "15",
+            "target": "14",
+            "volume": 9080,
+            "cost": 12.37,
+            "capacity": 5128,
+            "roadlength": 9,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "15",
+            "target": "19",
+            "volume": 19083,
+            "cost": 4.33,
+            "capacity": 14565,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "15",
+            "target": "22",
+            "volume": 18410,
+            "cost": 9.09,
+            "capacity": 9599,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "16",
+            "target": "8",
+            "volume": 8407,
+            "cost": 10.78,
+            "capacity": 5046,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "16",
+            "target": "10",
+            "volume": 11073,
+            "cost": 20.24,
+            "capacity": 4855,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "16",
+            "target": "17",
+            "volume": 11695,
+            "cost": 9.5,
+            "capacity": 5230,
+            "roadlength": 6,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "16",
+            "target": "18",
+            "volume": 15278,
+            "cost": 3.16,
+            "capacity": 19680,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "17",
+            "target": "10",
+            "volume": 8100,
+            "cost": 16.31,
+            "capacity": 4994,
+            "roadlength": 11.66,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "17",
+            "target": "16",
+            "volume": 11684,
+            "cost": 9.47,
+            "capacity": 5230,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "17",
+            "target": "19",
+            "volume": 9953,
+            "cost": 7.44,
+            "capacity": 4824,
+            "roadlength": 7,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "18",
+            "target": "7",
+            "volume": 15855,
+            "cost": 2.06,
+            "capacity": 23403,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "18",
+            "target": "16",
+            "volume": 15333,
+            "cost": 3.17,
+            "capacity": 19680,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "18",
+            "target": "20",
+            "volume": 18977,
+            "cost": 4.26,
+            "capacity": 23403,
+            "roadlength": 28.79,
+            "sourceAnchor": 5,
+            "targetAnchor": 7
+        },
+        {
+            "source": "19",
+            "target": "15",
+            "volume": 19117,
+            "cost": 4.34,
+            "capacity": 14565,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "19",
+            "target": "17",
+            "volume": 9942,
+            "cost": 7.41,
+            "capacity": 4824,
+            "roadlength": 7,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "19",
+            "target": "20",
+            "volume": 8688,
+            "cost": 9.46,
+            "capacity": 5003,
+            "roadlength": 14,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "20",
+            "target": "18",
+            "volume": 18992,
+            "cost": 4.26,
+            "capacity": 23403,
+            "roadlength": 28.79,
+            "sourceAnchor": 4,
+            "targetAnchor": 3
+        },
+        {
+            "source": "20",
+            "target": "19",
+            "volume": 8711,
+            "cost": 9.52,
+            "capacity": 5003,
+            "roadlength": 14,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "20",
+            "target": "21",
+            "volume": 6302,
+            "cost": 8.17,
+            "capacity": 5060,
+            "roadlength": 10,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "20",
+            "target": "22",
+            "volume": 7000,
+            "cost": 7.71,
+            "capacity": 5076,
+            "roadlength": 12.81,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "21",
+            "target": "20",
+            "volume": 6240,
+            "cost": 8.08,
+            "capacity": 5060,
+            "roadlength": 10,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "21",
+            "target": "22",
+            "volume": 8620,
+            "cost": 4.21,
+            "capacity": 5230,
+            "roadlength": 8,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "21",
+            "target": "24",
+            "volume": 10309,
+            "cost": 11.92,
+            "capacity": 4885,
+            "roadlength": 9,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "22",
+            "target": "15",
+            "volume": 18386,
+            "cost": 9.06,
+            "capacity": 9599,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "22",
+            "target": "20",
+            "volume": 7000,
+            "cost": 7.71,
+            "capacity": 5076,
+            "roadlength": 12.81,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "22",
+            "target": "21",
+            "volume": 8607,
+            "cost": 4.2,
+            "capacity": 5230,
+            "roadlength": 8,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "22",
+            "target": "23",
+            "volume": 9662,
+            "cost": 12.37,
+            "capacity": 5000,
+            "roadlength": 9,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "23",
+            "target": "14",
+            "volume": 8395,
+            "cost": 9.07,
+            "capacity": 4925,
+            "roadlength": 6,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        },
+        {
+            "source": "23",
+            "target": "22",
+            "volume": 9626,
+            "cost": 12.24,
+            "capacity": 5000,
+            "roadlength": 9,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "23",
+            "target": "24",
+            "volume": 7903,
+            "cost": 3.76,
+            "capacity": 5079,
+            "roadlength": 8,
+            "sourceAnchor": 3,
+            "targetAnchor": 2
+        },
+        {
+            "source": "24",
+            "target": "13",
+            "volume": 11112,
+            "cost": 17.62,
+            "capacity": 5091,
+            "roadlength": 8,
+            "sourceAnchor": 0,
+            "targetAnchor": 6
+        },
+        {
+            "source": "24",
+            "target": "21",
+            "volume": 10260,
+            "cost": 11.75,
+            "capacity": 4885,
+            "roadlength": 9,
+            "sourceAnchor": 7,
+            "targetAnchor": 1
+        },
+        {
+            "source": "24",
+            "target": "23",
+            "volume": 7862,
+            "cost": 3.72,
+            "capacity": 5079,
+            "roadlength": 8,
+            "sourceAnchor": 4,
+            "targetAnchor": 5
+        }
+    ]
+}

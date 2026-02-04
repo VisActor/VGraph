@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    { "name": "原始资金", "id": "1" },
+    { "name": "股权债权", "id": "2" },
+    { "name": "产品开发", "id": "3" },
+    { "name": "固定资产", "id": "4" },
+    { "name": "工资费用", "id": "5" },
+    { "name": "产品宣传", "id": "6" },
+    { "name": "产品销售", "id": "7", "width": 200 },
+    { "name": "公司营收", "id": "8", "width": 200 },
+    { "name": "税务", "id": "9" },
+    { "name": "股利发放", "id": "10" },
+    { "name": "公司经营", "id": "11" }
+  ],
+  "edges": [
+    { "source": "1", "target": "2" },
+    { "source": "1", "target": "3" },
+    { "source": "1", "target": "4" },
+    { "source": "1", "target": "5" },
+    { "source": "2", "target": "8" },
+    { "source": "3", "target": "6" },
+    { "source": "6", "target": "7" },
+    { "source": "7", "target": "8" },
+    { "source": "7", "target": "8" },
+    { "source": "7", "target": "8" },
+    { "source": "8", "target": "7" },
+    { "source": "8", "target": "9" },
+    { "source": "8", "target": "10" },
+    { "source": "8", "target": "11" }
+  ]
+}

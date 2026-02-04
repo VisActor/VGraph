@@ -1,0 +1,1906 @@
+{
+  "nodes": [
+    {
+      "id": "6719605890217087024-4",
+      "nodeId": "6719605890217087024",
+      "category": "4",
+      "originalData": {
+        "Id": 6719605890217087000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "6719605890217087024",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-2042203334429722374-4",
+      "nodeId": "-2042203334429722374",
+      "category": "4",
+      "originalData": {
+        "Id": -2042203334429722400,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-2042203334429722374",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-4497524992670229067-4",
+      "nodeId": "-4497524992670229067",
+      "category": "4",
+      "originalData": {
+        "Id": -4497524992670229000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-4497524992670229067",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "2700205318504600520-4",
+      "nodeId": "2700205318504600520",
+      "category": "4",
+      "originalData": {
+        "Id": 2700205318504600600,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "2700205318504600520",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "2626494475714212780-4",
+      "nodeId": "2626494475714212780",
+      "category": "4",
+      "originalData": {
+        "Id": 2626494475714213000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "2626494475714212780",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-7955770277268947738-4",
+      "nodeId": "-7955770277268947738",
+      "category": "4",
+      "originalData": {
+        "Id": -7955770277268948000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-7955770277268947738",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-2884285275714563432-4",
+      "nodeId": "-2884285275714563432",
+      "category": "4",
+      "originalData": {
+        "Id": -2884285275714563600,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-2884285275714563432",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "47571037168645262-4",
+      "nodeId": "47571037168645262",
+      "category": "4",
+      "originalData": {
+        "Id": 47571037168645260,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "47571037168645262",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-1921338543837359217-4",
+      "nodeId": "-1921338543837359217",
+      "category": "4",
+      "originalData": {
+        "Id": -1921338543837359000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-1921338543837359217",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "7982028875946797969-4",
+      "nodeId": "7982028875946797969",
+      "category": "4",
+      "originalData": {
+        "Id": 7982028875946798000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "7982028875946797969",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-261284208043748121-4",
+      "nodeId": "-261284208043748121",
+      "category": "4",
+      "originalData": {
+        "Id": -261284208043748130,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-261284208043748121",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-101643792997115169-4",
+      "nodeId": "-101643792997115169",
+      "category": "4",
+      "originalData": {
+        "Id": -101643792997115170,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-101643792997115169",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "1024785604654738390-4",
+      "nodeId": "1024785604654738390",
+      "category": "4",
+      "originalData": {
+        "Id": 1024785604654738400,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "1024785604654738390",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "2128084326524195923-4",
+      "nodeId": "2128084326524195923",
+      "category": "4",
+      "originalData": {
+        "Id": 2128084326524195800,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "2128084326524195923",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "2838113804116993548-4",
+      "nodeId": "2838113804116993548",
+      "category": "4",
+      "originalData": {
+        "Id": 2838113804116993500,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "2838113804116993548",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-336123686363057428-4",
+      "nodeId": "-336123686363057428",
+      "category": "4",
+      "originalData": {
+        "Id": -336123686363057400,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-336123686363057428",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "4512483079646200759-4",
+      "nodeId": "4512483079646200759",
+      "category": "4",
+      "originalData": {
+        "Id": 4512483079646201000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "4512483079646200759",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-675534050861162293-4",
+      "nodeId": "-675534050861162293",
+      "category": "4",
+      "originalData": {
+        "Id": -675534050861162200,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-675534050861162293",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-681260075197992490-4",
+      "nodeId": "-681260075197992490",
+      "category": "4",
+      "originalData": {
+        "Id": -681260075197992400,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-681260075197992490",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-4474637587169044558-4",
+      "nodeId": "-4474637587169044558",
+      "category": "4",
+      "originalData": {
+        "Id": -4474637587169044500,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-4474637587169044558",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "8100339283634194058-4",
+      "nodeId": "8100339283634194058",
+      "category": "4",
+      "originalData": {
+        "Id": 8100339283634194000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "8100339283634194058",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "704152096362810290-4",
+      "nodeId": "704152096362810290",
+      "category": "4",
+      "originalData": {
+        "Id": 704152096362810200,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "704152096362810290",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "3443327513768727031-4",
+      "nodeId": "3443327513768727031",
+      "category": "4",
+      "originalData": {
+        "Id": 3443327513768727000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "3443327513768727031",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "305480922454881713-4",
+      "nodeId": "305480922454881713",
+      "category": "4",
+      "originalData": {
+        "Id": 305480922454881700,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "305480922454881713",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-2284007332837532534-4",
+      "nodeId": "-2284007332837532534",
+      "category": "4",
+      "originalData": {
+        "Id": -2284007332837532400,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-2284007332837532534",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "258947688334150670-4",
+      "nodeId": "258947688334150670",
+      "category": "4",
+      "originalData": {
+        "Id": 258947688334150660,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "258947688334150670",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-1537746972608483428-4",
+      "nodeId": "-1537746972608483428",
+      "category": "4",
+      "originalData": {
+        "Id": -1537746972608483300,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-1537746972608483428",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "8405309024501248013-4",
+      "nodeId": "8405309024501248013",
+      "category": "4",
+      "originalData": {
+        "Id": 8405309024501248000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "8405309024501248013",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-3927933493979698217-4",
+      "nodeId": "-3927933493979698217",
+      "category": "4",
+      "originalData": {
+        "Id": -3927933493979698000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-3927933493979698217",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "6466835773617504259-4",
+      "nodeId": "6466835773617504259",
+      "category": "4",
+      "originalData": {
+        "Id": 6466835773617504000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "6466835773617504259",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-7424414636392194235-4",
+      "nodeId": "-7424414636392194235",
+      "category": "4",
+      "originalData": {
+        "Id": -7424414636392194000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-7424414636392194235",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "3297664746242065992-4",
+      "nodeId": "3297664746242065992",
+      "category": "4",
+      "originalData": {
+        "Id": 3297664746242066000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "3297664746242065992",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-7112878978522366601-4",
+      "nodeId": "-7112878978522366601",
+      "category": "4",
+      "originalData": {
+        "Id": -7112878978522367000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-7112878978522366601",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "4855144076100512984-4",
+      "nodeId": "4855144076100512984",
+      "category": "4",
+      "originalData": {
+        "Id": 4855144076100513000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "4855144076100512984",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "8783457668300269343-4",
+      "nodeId": "8783457668300269343",
+      "category": "4",
+      "originalData": {
+        "Id": 8783457668300270000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "8783457668300269343",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "8605342358404800938-4",
+      "nodeId": "8605342358404800938",
+      "category": "4",
+      "originalData": {
+        "Id": 8605342358404800000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "8605342358404800938",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-860943095261243657-4",
+      "nodeId": "-860943095261243657",
+      "category": "4",
+      "originalData": {
+        "Id": -860943095261243600,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-860943095261243657",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-2397506961714949314-4",
+      "nodeId": "-2397506961714949314",
+      "category": "4",
+      "originalData": {
+        "Id": -2397506961714949000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-2397506961714949314",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-6205479037166516062-4",
+      "nodeId": "-6205479037166516062",
+      "category": "4",
+      "originalData": {
+        "Id": -6205479037166516000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-6205479037166516062",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "2063535649943205104-4",
+      "nodeId": "2063535649943205104",
+      "category": "4",
+      "originalData": {
+        "Id": 2063535649943205000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "2063535649943205104",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-6054979000899681345-4",
+      "nodeId": "-6054979000899681345",
+      "category": "4",
+      "originalData": {
+        "Id": -6054979000899681000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-6054979000899681345",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "-3704333054560341552-4",
+      "nodeId": "-3704333054560341552",
+      "category": "4",
+      "originalData": {
+        "Id": -3704333054560341500,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "-3704333054560341552",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "4657519932399427679-4",
+      "nodeId": "4657519932399427679",
+      "category": "4",
+      "originalData": {
+        "Id": 4657519932399428000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "4657519932399427679",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "3242403943849228273-4",
+      "nodeId": "3242403943849228273",
+      "category": "4",
+      "originalData": {
+        "Id": 3242403943849228300,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "3242403943849228273",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "7093240896186516934-4",
+      "nodeId": "7093240896186516934",
+      "category": "4",
+      "originalData": {
+        "Id": 7093240896186516000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "7093240896186516934",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "6438181858249869913-4",
+      "nodeId": "6438181858249869913",
+      "category": "4",
+      "originalData": {
+        "Id": 6438181858249870000,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "6438181858249869913",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    },
+    {
+      "id": "1096612748607953478-4",
+      "nodeId": "1096612748607953478",
+      "category": "4",
+      "originalData": {
+        "Id": 1096612748607953500,
+        "Type": 4,
+        "Properties": null,
+        "IdStr": "1096612748607953478",
+        "TypeStr": "4",
+        "SidStype": false
+      },
+      "fillStyle": "#5678D6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "6719605890217087024-4--2042203334429722374-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-2042203334429722374-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -2042203334429722400,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-2042203334429722374",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--4497524992670229067-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-4497524992670229067-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -4497524992670229000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-4497524992670229067",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-2700205318504600520-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "2700205318504600520-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 2700205318504600600,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "2700205318504600520",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-2626494475714212780-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "2626494475714212780-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 2626494475714213000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "2626494475714212780",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--7955770277268947738-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-7955770277268947738-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -7955770277268948000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-7955770277268947738",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--2884285275714563432-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-2884285275714563432-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -2884285275714563600,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-2884285275714563432",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-47571037168645262-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "47571037168645262-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 47571037168645260,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "47571037168645262",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--1921338543837359217-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-1921338543837359217-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -1921338543837359000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-1921338543837359217",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-7982028875946797969-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "7982028875946797969-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 7982028875946798000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "7982028875946797969",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--261284208043748121-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-261284208043748121-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -261284208043748130,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-261284208043748121",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--101643792997115169-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-101643792997115169-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -101643792997115170,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-101643792997115169",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-1024785604654738390-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "1024785604654738390-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 1024785604654738400,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "1024785604654738390",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-2128084326524195923-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "2128084326524195923-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 2128084326524195800,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "2128084326524195923",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-2838113804116993548-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "2838113804116993548-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 2838113804116993500,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "2838113804116993548",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--336123686363057428-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-336123686363057428-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -336123686363057400,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-336123686363057428",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-4512483079646200759-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "4512483079646200759-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 4512483079646201000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "4512483079646200759",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--675534050861162293-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-675534050861162293-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -675534050861162200,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-675534050861162293",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--681260075197992490-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-681260075197992490-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -681260075197992400,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-681260075197992490",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--4474637587169044558-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-4474637587169044558-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -4474637587169044500,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-4474637587169044558",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-8100339283634194058-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "8100339283634194058-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 8100339283634194000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "8100339283634194058",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-704152096362810290-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "704152096362810290-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 704152096362810200,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "704152096362810290",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-3443327513768727031-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "3443327513768727031-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 3443327513768727000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "3443327513768727031",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-305480922454881713-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "305480922454881713-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 305480922454881700,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "305480922454881713",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--2284007332837532534-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-2284007332837532534-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -2284007332837532400,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-2284007332837532534",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-258947688334150670-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "258947688334150670-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 258947688334150660,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "258947688334150670",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--1537746972608483428-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-1537746972608483428-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -1537746972608483300,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-1537746972608483428",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-8405309024501248013-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "8405309024501248013-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 8405309024501248000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "8405309024501248013",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--3927933493979698217-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-3927933493979698217-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -3927933493979698000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-3927933493979698217",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-6466835773617504259-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "6466835773617504259-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 6466835773617504000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6466835773617504259",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--7424414636392194235-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-7424414636392194235-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -7424414636392194000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-7424414636392194235",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-3297664746242065992-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "3297664746242065992-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 3297664746242066000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "3297664746242065992",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--7112878978522366601-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-7112878978522366601-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -7112878978522367000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-7112878978522366601",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-4855144076100512984-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "4855144076100512984-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 4855144076100513000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "4855144076100512984",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-8783457668300269343-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "8783457668300269343-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 8783457668300270000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "8783457668300269343",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-8605342358404800938-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "8605342358404800938-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 8605342358404800000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "8605342358404800938",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--860943095261243657-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-860943095261243657-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -860943095261243600,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-860943095261243657",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--2397506961714949314-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-2397506961714949314-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -2397506961714949000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-2397506961714949314",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--6205479037166516062-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-6205479037166516062-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -6205479037166516000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-6205479037166516062",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-2063535649943205104-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "2063535649943205104-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 2063535649943205000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "2063535649943205104",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--6054979000899681345-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-6054979000899681345-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -6054979000899681000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-6054979000899681345",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4--3704333054560341552-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "-3704333054560341552-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": -3704333054560341500,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "-3704333054560341552",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-4657519932399427679-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "4657519932399427679-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 4657519932399428000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "4657519932399427679",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-3242403943849228273-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "3242403943849228273-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 3242403943849228300,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "3242403943849228273",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-7093240896186516934-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "7093240896186516934-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 7093240896186516000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "7093240896186516934",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-6438181858249869913-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "6438181858249869913-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 6438181858249870000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6438181858249869913",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    },
+    {
+      "id": "6719605890217087024-4-1096612748607953478-4-DIRECT",
+      "source": "6719605890217087024-4",
+      "target": "1096612748607953478-4",
+      "edgeType": "DIRECT",
+      "originalData": {
+        "OutV": {
+          "Id": 6719605890217087000,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "6719605890217087024",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "InV": {
+          "Id": 1096612748607953500,
+          "Type": 4,
+          "Properties": null,
+          "IdStr": "1096612748607953478",
+          "TypeStr": "4",
+          "SidStype": false
+        },
+        "Type": "DIRECT",
+        "Properties": null
+      },
+      "strokeStyle": "#C9CDD4"
+    }
+  ]
+}

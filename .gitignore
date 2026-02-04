@@ -1,0 +1,12 @@
+node_modules
+lib
+.editorconfig
+lerna-debug.log
+npm-debug.log
+.idea
+.vscode
+.DS_Store
+dist
+esm
+coverage
+xgraph.d.ts

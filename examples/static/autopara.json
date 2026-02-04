@@ -1,0 +1,386 @@
+{
+    "nodes": [
+        {
+            "ID": "7kYuBZ",
+            "type": "RGWCluster",
+            "parent": ""
+        },
+        {
+            "ID": "1M57bm",
+            "type": "RGWCluster",
+            "parent": ""
+        },
+        {
+            "ID": "LOGXYb",
+            "type": "RGWCluster",
+            "parent": ""
+        },
+        {
+            "ID": "3GEJPt",
+            "type": "RGWCluster",
+            "parent": ""
+        },
+        {
+            "ID": "PDdNEr",
+            "type": "RGWCluster",
+            "parent": ""
+        },
+        {
+            "ID": "b1SDgA",
+            "type": "RGWCluster",
+            "parent": ""
+        },
+        {
+            "ID": "DIUNxF",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "bl5CDc",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "8afOYQ",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "gw9yeR",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "cLnrQ3",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "7YRP8O",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "EEPJkJ",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "3djVex",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "xL0xxL",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "lvUAyT",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "gOeZBh",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "8BNUnh",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "gLEdmy",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "UIy1Ex",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "XQMXpW",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "ZmYr7N",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "sb57JD",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "5ypXbD",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "iPfKHE",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "EdBfKh",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "5gUc5c",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "YbWA9u",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "4sKbYl",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "ZWDJNK",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "fTcGj3",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "uZ4fEP",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "27ZhUK",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "Bq3nQ4",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "KjfMcL",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "vnbEFA",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "16pH0p",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "gB8WL2",
+            "type": "RGWNode",
+            "parent": "LOGXYb"
+        },
+        {
+            "ID": "mlSwe0",
+            "type": "RGWNode",
+            "parent": "1M57bm"
+        },
+        {
+            "ID": "6ydOKG",
+            "type": "RGWNode",
+            "parent": "1M57bm"
+        },
+        {
+            "ID": "rVOu1e",
+            "type": "RGWNode",
+            "parent": "1M57bm"
+        },
+        {
+            "ID": "S1tnxx",
+            "type": "RGWNode",
+            "parent": "1M57bm"
+        },
+        {
+            "ID": "7AP8OP",
+            "type": "RGWNode",
+            "parent": "3GEJPt"
+        },
+        {
+            "ID": "2gPscW",
+            "type": "RGWNode",
+            "parent": "3GEJPt"
+        },
+        {
+            "ID": "L39cJX",
+            "type": "RGWNode",
+            "parent": "3GEJPt"
+        },
+        {
+            "ID": "zVyv1g",
+            "type": "RGWNode",
+            "parent": "3GEJPt"
+        },
+        {
+            "ID": "WJb8XS",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "H7OXGP",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "OtrlK9",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "iEdseX",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "lb1DSy",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "0jAYrm",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "rtF2cx",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "MykQD4",
+            "type": "RGWNode",
+            "parent": "7kYuBZ"
+        },
+        {
+            "ID": "OjkvxY",
+            "type": "RGWNode",
+            "parent": "b1SDgA"
+        },
+        {
+            "ID": "2IULKG",
+            "type": "RGWNode",
+            "parent": "b1SDgA"
+        },
+        {
+            "ID": "QyxAjf",
+            "type": "RGWNode",
+            "parent": "PDdNEr"
+        },
+        {
+            "ID": "I03Hld",
+            "type": "RGWNode",
+            "parent": "PDdNEr"
+        },
+        {
+            "ID": "9hl8Dt",
+            "type": "RGWNode",
+            "parent": "b1SDgA"
+        },
+        {
+            "ID": "AeH6R6",
+            "type": "RGWNode",
+            "parent": "PDdNEr"
+        },
+        {
+            "ID": "pndCg5",
+            "type": "RGWNode",
+            "parent": "PDdNEr"
+        },
+        {
+            "ID": "fJltoJ",
+            "type": "RGWNode",
+            "parent": "b1SDgA"
+        },
+        {
+            "ID": "6hpU4W",
+            "type": "RGWNode",
+            "parent": "b1SDgA"
+        },
+        {
+            "ID": "xPDL3q",
+            "type": "RGWNode",
+            "parent": "b1SDgA"
+        }
+    ],
+    "edges": [
+        {
+            "source": "7kYuBZ",
+            "target": "LOGXYb"
+        },
+        {
+            "source": "1M57bm",
+            "target": "7kYuBZ"
+        },
+        {
+            "source": "1M57bm",
+            "target": "LOGXYb"
+        },
+        {
+            "source": "1M57bm",
+            "target": "3GEJPt"
+        },
+        {
+            "source": "1M57bm",
+            "target": "PDdNEr"
+        },
+        {
+            "source": "1M57bm",
+            "target": "b1SDgA"
+        },
+        {
+            "source": "3GEJPt",
+            "target": "7kYuBZ"
+        },
+        {
+            "source": "3GEJPt",
+            "target": "LOGXYb"
+        },
+        {
+            "source": "3GEJPt",
+            "target": "PDdNEr"
+        },
+        {
+            "source": "PDdNEr",
+            "target": "7kYuBZ"
+        },
+        {
+            "source": "PDdNEr",
+            "target": "LOGXYb"
+        },
+        {
+            "source": "b1SDgA",
+            "target": "7kYuBZ"
+        },
+        {
+            "source": "b1SDgA",
+            "target": "LOGXYb"
+        },
+        {
+            "source": "b1SDgA",
+            "target": "3GEJPt"
+        },
+        {
+            "source": "b1SDgA",
+            "target": "PDdNEr"
+        }
+    ]
+}
