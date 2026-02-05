@@ -114,17 +114,12 @@ const graph = new TreeGraph({
 
 const rand = fastrand();
 rand.setSeed(123);
+import data from "../static/diff_nodesep_compactbox_data.json";
 
-fetch(
-  "https://cdn-tos-cn.bytedance.net/obj/maat/img/emhvbmdmYWhhaS4xMjE3/file_1894eaa3dc997.json"
-)
-  .then((response) => response.json())
-  .then((data) => {
-    // 写入数据
-    // const nodes = data.nodes;
-    dfsLastChild(data);
-    graph.data(data);
-  });
+// 写入数据
+// const nodes = data.nodes;
+dfsLastChild(data);
+graph.data(data);
 
 function dfsLastChild(node: any) {
   if (node.children) {

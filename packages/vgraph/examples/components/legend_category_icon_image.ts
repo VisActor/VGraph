@@ -106,7 +106,7 @@ import { Graph, CategoryLegendDataItem, CategoryLegend } from "../../src";
       marker: {
         type: "image",
         width: 40,
-        url: "https://cdn-tos-cn.bytedance.net/obj/archi/dp/coral_fe/static//5a40afc1ee43cf833d08c55a7dd2ee4c.svg",
+        url: "https://lf-dp.bytetos.com/obj/dp-open-internet-cn/visactor-site/bytedance/client/img/visactor/navigator-logo.svg",
       },
       label: "image2",
       value: "image2",

@@ -92,17 +92,12 @@ const graph = new TreeGraph({
 // 添加交互
 graph.addBehavior(panZoom);
 graph.addBehavior(dragCanvas);
+import data from "../../static/radial_tree_data.json";
 
-fetch(
-  "https://cdn-tos-cn.bytedance.net/obj/maat/img/cWl1eWlsaW4uZWxhaW5l/file_186bfc559e342.json"
-)
-  .then((response) => response.json())
-  .then((data) => {
-    // 写入数据
-    graph.data(data);
-    // 适应窗口大小
-    graph.fitView();
-  });
+// 写入数据
+graph.data(data);
+// 适应窗口大小
+graph.fitView();
 
 // 监听 click 事件收起展开子树
 graph.on("node:click", (e: GraphEvent) => {

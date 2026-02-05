@@ -27,7 +27,7 @@ registerEdge("iconEdge", {
       top: p.y - 8,
       width: 16,
       height: 16,
-      url: "https://cdn-tos-cn.bytedance.net/obj/maat/img/cWl1eWlsaW4uZWxhaW5l/file_18f5710dba932.svg",
+      url: "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_18f5710dba932.svg",
     });
     // 先隐藏，hover 连线时出现
     icon.hide();

@@ -170,29 +170,24 @@ const graph = new TreeGraph({
 
 const rand = fastrand();
 rand.setSeed(0);
+import data from "../../static/mind_map_data.json";
 
-fetch(
-  "https://cdn-tos-cn.bytedance.net/obj/maat/img/cWl1eWlsaW4uZWxhaW5l/file_186bfc55a2354.json"
-)
-  .then((response) => response.json())
-  .then((data) => {
-    // 写入数据
-    // const nodes = data.nodes;
-    graph.data(data);
-    const nodes = graph.getNodes();
-    for (const node of nodes) {
-      node.set(
-        "width",
-        Math.min(Math.max(80, node.get("width") + (rand() - 0.5) * 600), 320)
-      );
-      node.set(
-        "height",
-        Math.min(Math.max(30, node.get("height") + (rand() - 0.5) * 400), 120)
-      );
-      // console.log(node.configs);
-    }
-    graph.data(data);
-  });
+// 写入数据
+// const nodes = data.nodes;
+graph.data(data);
+const nodes = graph.getNodes();
+for (const node of nodes) {
+  node.set(
+    "width",
+    Math.min(Math.max(80, node.get("width") + (rand() - 0.5) * 600), 320)
+  );
+  node.set(
+    "height",
+    Math.min(Math.max(30, node.get("height") + (rand() - 0.5) * 400), 120)
+  );
+  // console.log(node.configs);
+}
+graph.data(data);
 
 // 添加交互
 graph.addBehavior(panZoom);

@@ -9,7 +9,7 @@ import {
   Icon,
   NestedDAG,
 } from "../../../src";
-
+import data from "../../static/multi_collapse_demo_data.json";
 const expandIcon = "&#xe610;";
 const collapseIcon = "&#xe60f;"; // 用于收起展开节点
 
@@ -164,47 +164,6 @@ graph.on("edge:click", (e) => {
 const collapseGroupWidth = 250;
 const defaultCollapse = true;
 
-fetch(
-  "https://cdn-tos-cn.bytedance.net/obj/maat/img/emhvbmdmYWhhaS4xMjE3/file_18bd7f6e22364.json"
-)
-  .then((response) => response.json())
-  .then((data) => {
-    console.time();
-    graph.addBehavior(panZoom, { sensitivity: 5 });
-    graph.addBehavior(dragCanvas, {
-      canvasOnly: false,
-    });
-    graph.addBehavior(highlightRelations);
-    graph.data(data);
-
-    const groups = graph.getGroups();
-    if (defaultCollapse) {
-      for (const group of groups) {
-        if (!group.belong) {
-          collapseGroup(group);
-        }
-      }
-    }
-
-    nestedDag = new NestedDAG({
-      graph: graph,
-      dagOptions: {
-        rankDir: "LR",
-        nodeSep: 30,
-        edgeSep: 10,
-        rankSep: 50,
-        ranker: "networkSimplex",
-        cache: true,
-      },
-    });
-    graph.refresh();
-    graph.fitView();
-    console.timeEnd();
-    document.fonts.ready.then(() => {
-      graph.draw();
-    });
-  });
-
 (window as any).__graph = graph;
 const collapseGroup = (group: Group) => {
   const children = group.children;
@@ -219,6 +178,41 @@ const collapseGroup = (group: Group) => {
   group.set("width", collapseGroupWidth);
   group.updateGroup();
 };
+
+console.time();
+graph.addBehavior(panZoom, { sensitivity: 5 });
+graph.addBehavior(dragCanvas, {
+  canvasOnly: false,
+});
+graph.addBehavior(highlightRelations);
+graph.data(data);
+
+const groups = graph.getGroups();
+if (defaultCollapse) {
+  for (const group of groups) {
+    if (!group.belong) {
+      collapseGroup(group);
+    }
+  }
+}
+
+nestedDag = new NestedDAG({
+  graph: graph,
+  dagOptions: {
+    rankDir: "LR",
+    nodeSep: 30,
+    edgeSep: 10,
+    rankSep: 50,
+    ranker: "networkSimplex",
+    cache: true,
+  },
+});
+graph.refresh();
+graph.fitView();
+console.timeEnd();
+document.fonts.ready.then(() => {
+  graph.draw();
+});
 
 function toggleGroup(group: Group) {
   // 记录节点原本的位置，用于布局后恢复定位，固定用户操作焦点

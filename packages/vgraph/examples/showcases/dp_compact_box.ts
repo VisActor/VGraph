@@ -12,7 +12,7 @@ import {
 import rawData from "../static/multi_tree.json";
 
 const IMG_URL =
-  "https://cdn-tos-cn.bytedance.net/obj/maat/img/cWl1eWlsaW4uZWxhaW5l/file_184761c054531.svg";
+  "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_184761c054531.svg";
 
 // 注册节点，默认中心坐标为(0, 0), 则坐标范围在(-width / 2, -height / 2) 到 (width / 2, height / 2)
 registerNode("underline", {

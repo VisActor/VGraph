@@ -14,7 +14,7 @@ import {
 } from "../../src";
 
 const IMG_URL =
-  "https://cdn-tos-cn.bytedance.net/obj/maat/img/cWl1eWlsaW4uZWxhaW5l/file_184761c054531.svg";
+  "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_184761c054531.svg";
 
 function register(graph: Graph) {
   registerNode("editIndex", {

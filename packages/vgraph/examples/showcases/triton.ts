@@ -92,33 +92,33 @@ const activeColors: any = {
 // 默认状态下状态图片，这是原本 dorado 的，可能得重新抠一下
 const icons: any = {
   成功签署:
-    "https://cdn-tos-cn.bytedance.net/obj/archi/dp/dorado_fe/images/graph_success.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/graph_success.svg",
   暂缓签署:
-    "https://cdn-tos-cn.bytedance.net/obj/archi/dp/dorado_fe/images/graph_running.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/graph_running.svg",
   已拒绝:
-    "https://cdn-tos-cn.bytedance.net/obj/archi/dp/dorado_fe/images/graph_fail.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/graph_fail.svg",
   无需签署:
-    "https://cdn-tos-cn.bytedance.net/obj/archi/dp/dorado_fe/images/graph_stop.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/graph_stop.svg",
   已下线:
-    "https://cdn-tos-cn.bytedance.net/obj/archi/dp/dorado_fe/images/graph_stop.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/graph_stop.svg",
   待签署:
-    "https://cdn-tos-cn.bytedance.net/obj/archi/dp/dorado_fe/images/graph_wait.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/graph_wait.svg",
 };
 
 // 点击状态下的图片，这是原本 dorado 的，可能得重新抠一下
 const filledIcons: any = {
   成功签署:
-    "https://sf6-cdn-tos.huoshanstatic.com/obj/maat-public/img/cWl1eWlsaW4uZWxhaW5l/file_181fb72642088.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_181fb72642088.svg",
   暂缓签署:
-    "https://sf6-cdn-tos.huoshanstatic.com/obj/maat-public/img/cWl1eWlsaW4uZWxhaW5l/file_181fb72640b18.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_181fb72640b18.svg",
   已拒绝:
-    "https://sf6-cdn-tos.huoshanstatic.com/obj/maat-public/img/cWl1eWlsaW4uZWxhaW5l/file_181fb72641e64.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_181fb72641e64.svg",
   无需签署:
-    "https://sf6-cdn-tos.huoshanstatic.com/obj/maat-public/img/cWl1eWlsaW4uZWxhaW5l/file_181fb72643f56.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_181fb72643f56.svg",
   已下线:
-    "https://sf6-cdn-tos.huoshanstatic.com/obj/maat-public/img/cWl1eWlsaW4uZWxhaW5l/file_181fb72643f56.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_181fb72643f56.svg",
   待签署:
-    "https://sf6-cdn-tos.huoshanstatic.com/obj/maat-public/img/cWl1eWlsaW4uZWxhaW5l/file_181fb72642192.svg",
+    "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_181fb72642192.svg",
 };
 
 function renderTitle(layer: Layer, configs: any) {
