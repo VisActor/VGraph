@@ -361,10 +361,11 @@ export default class CanvasEvents {
     const { startArrow, endArrow, lineWidth } = shape.configs;
     let startPoint = null;
     let endPoint = null;
+    let points: any;
     switch (shape.type) {
       case "quadratic":
         // eslint-disable-next-line no-case-declarations
-        let { points } = shape.configs;
+        ({ points } = shape.configs);
         startPoint = points[0];
         endPoint = points[2];
         break;
