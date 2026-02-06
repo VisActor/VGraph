@@ -74,9 +74,7 @@ const nodeSize = 15;
   // 注意 这里graph getNodes 的顺序和data.nodes的顺序很有可能会不一致
   // 注意所有用到的nodes应该保持一致
 
-  const centerNodeIdx = nodes.findIndex(
-    (d: any) => d.id === "c05b1b4b-2aa3-42fe-9df9-7ce7c8d7c232"
-  ); // 圆心节点的索引
+  const centerNodeIdx = nodes.findIndex((d: any) => d.id === "2"); // 圆心节点的索引
   setBfsDepth(centerNodeIdx, graph);
   graph.updateData(data);
   const depths = nodes.map((d: any) => d.depth);
