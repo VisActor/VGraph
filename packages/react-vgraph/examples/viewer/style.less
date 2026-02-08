@@ -1,0 +1,94 @@
+.trigger-menu-item {
+  padding: 8px;
+  color: #4e5969;
+  background-color: #fff;
+  cursor: pointer;
+}
+.trigger-menu-item:hover {
+  background-color: #f2f3f5;
+}
+
+.vgraph-viewer-node {
+  position: absolute;
+  user-select: none;
+  pointer-events: all;
+  border-radius: 4px;
+}
+
+.border {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+  svg {
+    display: none;
+  }
+}
+
+.border:hover {
+  border: 1px solid #3074ff;
+  box-shadow: 0px 8px 8px 0px rgba(33, 37, 44, 0.04);
+
+  svg {
+    display: block;
+  }
+}
+
+.vgraph-viewer-anchor {
+  background-color: #fff;
+  border: 1px solid #3073f2;
+  border-radius: 50%;
+}
+
+.vgraph-viewer-node::after {
+  /* 增加节点热区 */
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+}
+.vgraph-viewer-node.select {
+  border: 2px solid #3073f2;
+}
+
+.vgraph-viewer-anchor::after {
+  /* 增加锚点热区 */
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+}
+
+/* .xgraph-react-viewer-anchor.xgraph-anchor-left{
+  margin-left: 6px;
+}
+.xgraph-react-viewer-anchor.xgraph-anchor-right{
+  margin-left: -6px;
+} */
+
+.vgraph-viewer-anchor.xgraph-anchor-magnet {
+  border: none;
+  background-color: #3073f2;
+  box-shadow: rgba(48, 115, 242, 0.2) 0 0 0 4px;
+}
+
+/* .xgraph-react-viewer-node svg {
+  display: none;
+}
+
+.xgraph-react-viewer-node:hover svg {
+  display: block;
+} */
+
+.drag-add-node svg {
+  display: block;
+
+  &:hover {
+    color: "#F50";
+  }
+}
