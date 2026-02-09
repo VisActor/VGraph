@@ -11,12 +11,12 @@
     "dist"
   ],
   "scripts": {
-    "demo": "webpack-dev-server --config webpack.config.js --open --hot",
+    "demo": "node scripts/demo.js",
     "compile": "tsc --noEmit",
     "eslint": "eslint --debug --fix src/",
     "build": "npm run build:cjs && npm run build:umd && npm run build:esm",
     "dev": "tsc -p tsconfig.json --module ESNext --outDir es -w",
-    "start": "webpack-dev-server --config webpack.config.js --open --hot",
+    "start": "node scripts/demo.js",
     "test": "jest --silent --config jest.config.js",
     "test-cov": "jest --coverage --config jest.config.js",
     "build:umd": "webpack --config webpack.pro.config.js --mode production",
