@@ -268,7 +268,7 @@ export class Viewer extends React.Component<ViewerProps, ViewerState> {
     });
 
     graph.on(GRAPH_EVENTS.CHANGE, throttledRefresh);
-    graph.on(GRAPH_EVENTS.STATE_END, (e) => {
+    graph.on(GRAPH_EVENTS.STATE_END, (e: GraphEvent) => {
       if (!e.target || Array.isArray(e.target) || e.target.type === "node") {
         throttledRefresh();
       } else {

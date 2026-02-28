@@ -2,6 +2,10 @@ module.exports = {
   preset: "ts-jest",
   testEnvironment: "jsdom",
   rootDir: __dirname,
+  moduleNameMapper: {
+    "^@visactor/vgraph$": "<rootDir>/../vgraph/cjs/index.js",
+    "^@visactor/vgraph/(.*)$": "<rootDir>/../vgraph/cjs/$1",
+  },
   globals: {
     "ts-jest": {
       tsconfig: "<rootDir>/tsconfig.test.json",

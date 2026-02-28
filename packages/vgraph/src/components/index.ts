@@ -2,21 +2,27 @@ export { ComponentBase } from "./base";
 export { FisheyePlugin } from "./fisheye";
 export { RawTooltip } from "./tooltip";
 export { Minimap } from "./minimap";
-export { NodeMover, NodeMoverOptions } from "./node_mover";
-export { EdgeEditor, EdgeEditorOptions } from "./edge_editor";
+export { NodeMover } from "./node_mover";
+export type { NodeMoverOptions } from "./node_mover";
+export { EdgeEditor } from "./edge_editor";
+export type { EdgeEditorOptions } from "./edge_editor";
 export { ForceDirectedGrouping } from "./force_grouping";
-export {
-  CategoryLegend,
-  ContinuousLegend,
+export { CategoryLegend, ContinuousLegend } from "./legend";
+export type {
   CategoryLegendOptions,
   ContinuousLegendOptions,
   CategoryLegendDataItem,
 } from "./legend";
-export { Router, RouterOptions } from "./router";
-export { Grid, GridData, GridOptions } from "./grid";
-export { Shortcuts, HandlerOption } from "./shortcuts";
-export { Background, BackgroundOptions } from "./background";
-export { Scroller, ScrollerOptions } from "./scroller";
+export { Router } from "./router";
+export type { RouterOptions } from "./router";
+export { Grid } from "./grid";
+export type { GridData, GridOptions } from "./grid";
+export { Shortcuts } from "./shortcuts";
+export type { HandlerOption } from "./shortcuts";
+export { Background } from "./background";
+export type { BackgroundOptions } from "./background";
+export { Scroller } from "./scroller";
+export type { ScrollerOptions } from "./scroller";
 export {
   Stack,
   CommandBase,

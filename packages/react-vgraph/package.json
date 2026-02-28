@@ -1,11 +1,20 @@
 {
   "name": "@visactor/react-vgraph",
-  "version": "2.0.11",
-  "module": "dist/esm/index.js",
-  "typings": "dist/esm/index.d.ts",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "cjs",
+    "es",
     "dist"
   ],
+  "exports": {
+    ".": {
+      "require": "./cjs/index.js",
+      "import": "./es/index.js"
+    }
+  },
   "scripts": {
     "prebuild": "npx eslint src/**/*.tsx",
     "build": "father build",
@@ -40,8 +49,8 @@
     "@types/jest": "^27.0.2",
     "@types/jsdom": "^16.2.13",
     "@types/node": "*",
-    "@types/react": "^16.7.20",
-    "@types/react-dom": "^16.0.11",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "@umijs/fabric": "^2.8.1",
     "@umijs/test": "^3.0.5",
     "babel-jest": "^27.3.1",
@@ -58,8 +67,8 @@
     "less-loader": "11.1.0",
     "pre-commit": "^1.2.2",
     "portfinder": "^1.0.32",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "style-loader": "3.3.4",
     "ts-jest": "^27.0.7",
     "ts-loader": "^9.2.6",
@@ -71,7 +80,7 @@
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
-    "@visactor/vgraph": ">=2.0.0",
+    "@visactor/vgraph": "workspace:*",
     "react": ">=16",
     "react-dom": ">=16",
     "@types/react": ">=16"

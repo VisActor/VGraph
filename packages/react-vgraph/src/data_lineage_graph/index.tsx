@@ -17,7 +17,7 @@ import {
   mergeOptions,
   uuid,
 } from "./layout";
-import { IDataOptions } from "./types";
+import { IDataOptions, IEdgeData } from "./types";
 
 const TABLE_HEIGHT = 40;
 
@@ -91,23 +91,32 @@ export default class DataLineageGraph extends React.Component<IProps, IState> {
         (window as any)._canvas = canvas;
       }
       canvas.get("container").style.marginTop = "32px";
-      canvas.on("click", (e) => {
+      canvas.on("click", (e: { target?: unknown }) => {
         const shape = e.target;
         if (shape === canvas) {
           this.clearHighlights();
         } else if (
+          shape &&
+          typeof shape === "object" &&
+          "type" in shape &&
           (shape.type === "path" || shape.type === "cubic") &&
           onClickEdge
         ) {
+          const pathShape = shape as unknown as {
+            configs?: { source: string; target: string };
+            set: (s: Record<string, unknown>) => void;
+          };
           if (this.path) {
             const { source, target } = this.path.configs;
             const styles = getEdgeStyles(source, target);
             this.path.set(styles);
           }
-          this.path = shape;
-          shape.set({ strokeStyle: "#F5B508", lineWidth: 3 });
-          this.clickedEdgeId = e.target.configs.id;
-          onClickEdge(e.target.configs);
+          this.path = pathShape;
+          pathShape.set({ strokeStyle: "#F5B508", lineWidth: 3 });
+          this.clickedEdgeId = (
+            e.target as { configs?: { id: string } }
+          ).configs?.id;
+          onClickEdge((e.target as { configs: IEdgeData }).configs);
           canvas.draw();
         }
       });

@@ -1,6 +1,6 @@
 export { CategoryLegend } from "./category";
 export { ContinuousLegend } from "./continuous";
-export {
+export type {
   CategoryLegendDataItem,
   CategoryLegendOptions,
   LegendTitleConfigs,

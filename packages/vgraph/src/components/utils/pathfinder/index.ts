@@ -1,3 +1,5 @@
-export { IAStarFinderOptions, AStarFinder } from "./astar";
-export { IFinderOptions, Heuristic, BaseFinder } from "./base";
+export { AStarFinder } from "./astar";
+export type { IAStarFinderOptions } from "./astar";
+export { BaseFinder } from "./base";
+export type { IFinderOptions, Heuristic } from "./base";
 export { BStarFinder } from "./bstar";

@@ -226,7 +226,7 @@ const data = {
             <div
               onClick={(e) => {
                 // 根据 item 做对应的事情，update,remove....
-                // 这边 update 方法要接 xgraph 的下个版本，才能有效 trigger onChange,remove 是正常的
+                // 这边 update 方法要接 vgraph 的下个版本，才能有效 trigger onChange,remove 是正常的
                 console.log(item, e);
               }}
               key={item}
@@ -292,19 +292,19 @@ const data = {
     function setAnchorClassName(node: Node, anchor: AnchorConfigs) {
       const classNames: string[] = [];
       if (anchor.position?.[0] === 0) {
-        classNames.push("xgraph-anchor-left");
+        classNames.push("vgraph-anchor-left");
       }
       if (anchor.position?.[1] === 0) {
-        classNames.push("xgraph-anchor-top");
+        classNames.push("vgraph-anchor-top");
       }
       if (anchor.position?.[0] === 1) {
-        classNames.push("xgraph-anchor-right");
+        classNames.push("vgraph-anchor-right");
       }
       if (anchor.position?.[1] === 1) {
-        classNames.push("xgraph-anchor-bottom");
+        classNames.push("vgraph-anchor-bottom");
       }
       if (anchor.magnet) {
-        classNames.push("xgraph-anchor-magnet");
+        classNames.push("vgraph-anchor-magnet");
       }
       return classNames.join(" ");
     }

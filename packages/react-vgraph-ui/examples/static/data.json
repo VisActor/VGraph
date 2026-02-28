@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "label": "TOP",
+      "class": "type-TOP",
+      "id": "0"
+    },
+    {
+      "label": "S",
+      "class": "type-S",
+      "id": "1"
+    },
+    {
+      "label": "NP",
+      "class": "type-NP",
+      "id": "2"
+    },
+    {
+      "label": "DT",
+      "class": "type-DT",
+      "id": "3"
+    },
+    {
+      "label": "This",
+      "class": "type-TK",
+      "id": "4"
+    },
+    {
+      "label": "VP",
+      "class": "type-VP",
+      "id": "5"
+    },
+    {
+      "label": "VBZ",
+      "class": "type-VBZ",
+      "id": "6"
+    },
+    {
+      "label": "is",
+      "class": "type-TK",
+      "id": "7"
+    },
+    {
+      "label": "NP",
+      "class": "type-NP",
+      "id": "8"
+    },
+    {
+      "label": "DT",
+      "class": "type-DT",
+      "id": "9"
+    },
+    {
+      "label": "an",
+      "class": "type-TK",
+      "id": "10"
+    },
+    {
+      "label": "NN",
+      "class": "type-NN",
+      "id": "11"
+    },
+    {
+      "label": "example",
+      "class": "type-TK",
+      "id": "12"
+    },
+    {
+      "label": "type.",
+      "class": "type-.",
+      "id": "13"
+    },
+    {
+      "label": "sentence",
+      "class": "type-TK",
+      "id": "14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "3",
+      "target": "4"
+    },
+    {
+      "source": "2",
+      "target": "3"
+    },
+    {
+      "source": "1",
+      "target": "2"
+    },
+    {
+      "source": "6",
+      "target": "7"
+    },
+    {
+      "source": "5",
+      "target": "6"
+    },
+    {
+      "source": "9",
+      "target": "10"
+    },
+    {
+      "source": "8",
+      "target": "9"
+    },
+    {
+      "source": "11",
+      "target": "12"
+    },
+    {
+      "source": "8",
+      "target": "11"
+    },
+    {
+      "source": "5",
+      "target": "8"
+    },
+    {
+      "source": "1",
+      "target": "5"
+    },
+    {
+      "source": "13",
+      "target": "14"
+    },
+    {
+      "source": "1",
+      "target": "13"
+    },
+    {
+      "source": "0",
+      "target": "1"
+    }
+  ]
+}

@@ -309,7 +309,7 @@ import "./style.less";
       }
       return (
         <div
-          className="xgraph-react-custom-node"
+          className="vgraph-react-custom-node"
           style={{ border, height: node.get("height") }}
         >
           {content}
@@ -328,19 +328,19 @@ import "./style.less";
     function setAnchorClassName(node: Node, anchor: AnchorConfigs) {
       const classNames: string[] = [];
       if (anchor.position?.[0] === 0) {
-        classNames.push("xgraph-anchor-left");
+        classNames.push("vgraph-anchor-left");
       }
       if (anchor.position?.[1] === 0) {
-        classNames.push("xgraph-anchor-top");
+        classNames.push("vgraph-anchor-top");
       }
       if (anchor.position?.[0] === 1) {
-        classNames.push("xgraph-anchor-right");
+        classNames.push("vgraph-anchor-right");
       }
       if (anchor.position?.[1] === 1) {
-        classNames.push("xgraph-anchor-bottom");
+        classNames.push("vgraph-anchor-bottom");
       }
       if (anchor.magnet) {
-        classNames.push("xgraph-anchor-magnet");
+        classNames.push("vgraph-anchor-magnet");
       }
       return classNames.join(" ");
     }
