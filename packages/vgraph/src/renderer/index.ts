@@ -29,7 +29,7 @@ import {
   pointToRectDist,
 } from "./utils/intersect";
 
-export {
+export type {
   BBox,
   Point,
   ArrowType,

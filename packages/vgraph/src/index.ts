@@ -9,7 +9,6 @@ export {
   Image,
   Icon,
   Polygon,
-  Shape,
   Rhombus,
   ShapeBase,
   LayerBase,
@@ -17,6 +16,12 @@ export {
   NodeLayer,
   EdgeLayer,
   GroupLayer,
+  textUtil,
+  BezierUtil,
+  IntersectUtil,
+} from "./renderer";
+export type {
+  Shape,
   BBox,
   Point,
   ArrowType,
@@ -32,9 +37,6 @@ export {
   LayerConfigs,
   CanvasConfigs,
   AnimationConfigs,
-  textUtil,
-  BezierUtil,
-  IntersectUtil,
 } from "./renderer";
 
 export { Graph } from "./graph/graph";
@@ -49,14 +51,16 @@ export {
 } from "./models/node_addons";
 export {
   registerNode,
-  RegisterNodeConfigs,
   registerEdge,
-  RegisterEdgeConfigs,
   registerAnchor,
   unRegisterAnchor,
   unRegisterEdge,
   unRegisterNode,
   getRouterCubicPath,
+} from "./models/factories";
+export type {
+  RegisterNodeConfigs,
+  RegisterEdgeConfigs,
 } from "./models/factories";
 export {
   dragCanvas,
@@ -71,7 +75,7 @@ export {
   multipleSelect,
 } from "./behaviors";
 
-export {
+export type {
   NodeConfigs,
   EdgeConfigs,
   GroupConfigs,
@@ -83,8 +87,8 @@ export {
   LoopConfigs,
   GroupTitleConfigs,
 } from "./typings/model";
-export { GraphConfigs, AnimateConfigs } from "./typings/graph";
-export {
+export type { GraphConfigs, AnimateConfigs } from "./typings/graph";
+export type {
   NodeData,
   TreeNodeData,
   EdgeData,
@@ -92,8 +96,8 @@ export {
   TreeData,
   GraphStructureData,
 } from "./typings/data";
-export { GraphEvent, LayerEvent, ShapeEvent } from "./typings/event";
-export { SnapshotData, StackOptions, Command } from "./typings/stack";
+export type { GraphEvent, LayerEvent, ShapeEvent } from "./typings/event";
+export type { SnapshotData, StackOptions, Command } from "./typings/stack";
 export { GRAPH_EVENTS } from "./consts/meta_events";
 export { LAYOUT_TYPES } from "./consts/layout_types";
 
@@ -123,26 +127,15 @@ export {
   RawTooltip,
   Minimap,
   NodeMover,
-  NodeMoverOptions,
   EdgeEditor,
-  EdgeEditorOptions,
   ForceDirectedGrouping,
   CategoryLegend,
-  CategoryLegendOptions,
   ContinuousLegend,
-  ContinuousLegendOptions,
-  CategoryLegendDataItem,
   Router,
-  RouterOptions,
   Grid,
-  GridData,
-  GridOptions,
   Shortcuts,
-  HandlerOption,
   Background,
-  BackgroundOptions,
   Scroller,
-  ScrollerOptions,
   Stack,
   CommandBase,
   AddCommand,
@@ -161,6 +154,19 @@ export {
   getDefaultShortcuts,
   execClipboardEvent,
 } from "./components";
+export type {
+  NodeMoverOptions,
+  EdgeEditorOptions,
+  CategoryLegendOptions,
+  ContinuousLegendOptions,
+  CategoryLegendDataItem,
+  RouterOptions,
+  GridData,
+  GridOptions,
+  HandlerOption,
+  BackgroundOptions,
+  ScrollerOptions,
+} from "./components";
 // ExpandNodeCommand, CollapseNodeCommand, 未完善暂不对外透出。
 
 export {
@@ -170,7 +176,6 @@ export {
   MindMap,
   Indented,
   DAGLayout,
-  DAGLayoutConfigs,
   defaultForces,
   ForceDirectedLayout,
   syncFDP,
@@ -189,7 +194,6 @@ export {
   ForceX,
   ForceY,
   NestedDAG,
-  NestedDAGConfigs,
   dealDuplicateEdge,
   getDuplicateEdgeConfigs,
   fastrand,
@@ -205,6 +209,7 @@ export {
   isMultiComponentsForData,
   PipelineLayout,
 } from "./layouts";
+export type { DAGLayoutConfigs, NestedDAGConfigs } from "./layouts";
 export {
   uuid,
   colorParser,
@@ -233,10 +238,8 @@ export const GroupUtils = {
 };
 
 // 限制流程图
-export {
-  DAGFlowEditor,
-  DAGFlowEditorOptions,
-} from "./solutions/dag_flow_editor";
+export { DAGFlowEditor } from "./solutions/dag_flow_editor";
+export type { DAGFlowEditorOptions } from "./solutions/dag_flow_editor";
 export {
   AddSourceCommand,
   AddTargetCommand,
@@ -247,7 +250,5 @@ export {
   RemovePipelineTreeCommand,
 } from "./solutions/dag_flow_editor/commands";
 
-export {
-  CommonFlowEditor,
-  CommonFlowEditorOptions,
-} from "./solutions/common_flow_editor";
+export { CommonFlowEditor } from "./solutions/common_flow_editor";
+export type { CommonFlowEditorOptions } from "./solutions/common_flow_editor";

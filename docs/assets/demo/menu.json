@@ -1,0 +1,1206 @@
+{
+  "menu": "demo",
+  "children": [
+    {
+      "path": "overview",
+      "title": {
+        "zh": "关系图示例",
+        "en": "Graph Examples"
+      }
+    },
+    {
+      "path": "solutions",
+      "title": {
+        "zh": "图分析场景解决方案",
+        "en": "Graph Analysis Solutions"
+      },
+      "children": [
+        {
+          "path": "dataLineage",
+          "title": {
+            "zh": "数据表血缘-表视图",
+            "en": "Table Lineage - Table View"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/data-lineage.gif"
+          }
+        },
+        {
+          "path": "columnLineage",
+          "title": {
+            "zh": "数据表血缘-列视图",
+            "en": "Table Lineage - Column View"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/column-lineage.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "editor",
+      "title": {
+        "zh": "图编辑场景解决方案",
+        "en": "Graph Editor Solutions"
+      },
+      "children": [
+        {
+          "path": "commonFlowEditor",
+          "title": {
+            "zh": "有向图自由编辑",
+            "en": "Free DAG Editor"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_editor.gif"
+          }
+        },
+        {
+          "path": "commonFlowEditorReact",
+          "title": {
+            "zh": "有向图自由编辑-React 节点",
+            "en": "Free DAG Editor - React Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_editor_react.gif"
+          }
+        },
+        {
+          "path": "commonFlowEditorForm",
+          "title": {
+            "zh": "有向图自由编辑-React 表单",
+            "en": "Free DAG Editor - React Form"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_editor_form.gif"
+          }
+        },
+        {
+          "path": "commonFlowEditorAddNode",
+          "title": {
+            "zh": "有向图自由编辑-快速添加节点",
+            "en": "Free DAG Editor - Quick Add Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_editor_add_node.gif"
+          }
+        },
+        {
+          "path": "commonFlowEditorGroup",
+          "title": {
+            "zh": "有向图自由编辑-分组",
+            "en": "Free DAG Editor - Group"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_group.gif"
+          }
+        },
+        {
+          "path": "commonFlowEditorLimitGroup",
+          "title": {
+            "zh": "有向图自由编辑-限制分组移动",
+            "en": "Free DAG Editor - Limit Group Move"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_editor_group_limit.gif"
+          }
+        },
+        {
+          "path": "commonFlowEditorEdges",
+          "title": {
+            "zh": "有向图自由编辑-重复连线",
+            "en": "Free DAG Editor - Duplicate Edges"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/common_flow_editor_group_edges.gif"
+          }
+        },
+        {
+          "path": "dagFlowEditor",
+          "title": {
+            "zh": "流水线编辑",
+            "en": "Pipeline Editor"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dag_flow_editor.gif"
+          }
+        },
+        {
+          "path": "dagFlowEditorReact",
+          "title": {
+            "zh": "流水线编辑-React 节点",
+            "en": "Pipeline Editor - React Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dag_flow_editor_react.gif"
+          }
+        },
+        {
+          "path": "dagFlowEditorBatch",
+          "title": {
+            "zh": "流水线编辑-批量添加节点",
+            "en": "Pipeline Editor - Batch Add Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dag_flow_editor_batch.gif"
+          }
+        },
+        {
+          "path": "dagTreeEditor",
+          "title": {
+            "zh": "树图编辑-React 节点",
+            "en": "Tree Editor - React Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/tree_editor.gif"
+          }
+        },
+        {
+          "path": "dagMindmapEditor",
+          "title": {
+            "zh": "思维导图编辑",
+            "en": "Mindmap Editor"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dagMindmapEditor.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "reactNodes",
+      "title": {
+        "zh": "React节点组件",
+        "en": "React Node Components"
+      },
+      "children": [
+        {
+          "path": "reactNode",
+          "title": {
+            "zh": "React 节点",
+            "en": "React Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/react_node.gif"
+          }
+        },
+        {
+          "path": "reactGroupTitle",
+          "title": {
+            "zh": "React 分组标题",
+            "en": "React Group Title"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/react_group_title.gif"
+          }
+        },
+        {
+          "path": "reactGraph",
+          "title": {
+            "zh": "React 展开节点",
+            "en": "React Expand Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/react_graph.gif"
+          }
+        },
+        {
+          "path": "reactTreeGraph",
+          "title": {
+            "zh": "React 展开树图节点",
+            "en": "React Tree Graph Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/react_treegraph.gif"
+          }
+        },
+        {
+          "path": "reactScroll",
+          "title": {
+            "zh": "React 节点内滚动",
+            "en": "React Node Scroll"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/react_scroll.gif"
+          }
+        },
+        {
+          "path": "useZoomRatio",
+          "title": {
+            "zh": "hooks-useZoomRatio",
+            "en": "hooks-useZoomRatio"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/useZoomRatio.gif"
+          }
+        },
+        {
+          "path": "useSelections",
+          "title": {
+            "zh": "hooks-useSelections",
+            "en": "hooks-useSelections"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/useZoomRatio.gif"
+          }
+        },
+        {
+          "path": "reactNodeExport",
+          "title": {
+            "zh": "React 节点大量导出",
+            "en": "React Node Bulk Export"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/react_node.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "dag",
+      "title": {
+        "zh": "有向图",
+        "en": "DAG"
+      },
+      "children": [
+        {
+          "path": "fundFlow",
+          "title": {
+            "zh": "基础有向图",
+            "en": "Basic DAG"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/fundflow.png"
+          }
+        },
+        {
+          "path": "dataAnalysis",
+          "title": {
+            "zh": "简易泳道图-垂直",
+            "en": "Simple Swimlane - Vertical"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/swim_lane.gif"
+          }
+        },
+        {
+          "path": "dataAnalysisH",
+          "title": {
+            "zh": "简易泳道图-水平",
+            "en": "Simple Swimlane - Horizontal"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/swim_lane_h.png"
+          }
+        },
+        {
+          "path": "rankFixed",
+          "title": {
+            "zh": "有向图灵活定制层级",
+            "en": "DAG Custom Rank"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/rankfixed_dag.png"
+          }
+        },
+        {
+          "path": "acyclicDag",
+          "title": {
+            "zh": "有向无环图收起展开",
+            "en": "Acyclic DAG Expand/Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/acyclic_dag.gif"
+          }
+        },
+        {
+          "path": "cycleDag",
+          "title": {
+            "zh": "有环有向图收起展开",
+            "en": "Cycle DAG Expand/Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/cycle_dag.gif"
+          }
+        },
+        {
+          "path": "nested",
+          "title": {
+            "zh": "嵌套布局",
+            "en": "Nested Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/nested.png"
+          }
+        },
+        {
+          "path": "nestedExpand",
+          "title": {
+            "zh": "嵌套布局-全量数据展开收起",
+            "en": "Nested Layout - Full Expand/Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/nested_expand.gif"
+          }
+        },
+        {
+          "path": "nestedAsyncExpand",
+          "title": {
+            "zh": "嵌套布局-异步展开收起",
+            "en": "Nested Layout - Async Expand/Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/nested_async_expand.gif"
+          }
+        },
+        {
+          "path": "multiNested",
+          "title": {
+            "zh": "嵌套布局-多层嵌套",
+            "en": "Nested Layout - Multi-level"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/multinested_dag.png"
+          }
+        },
+        {
+          "path": "multiNestedCollapse",
+          "title": {
+            "zh": "嵌套布局-多层嵌套-默认收起",
+            "en": "Nested Layout - Multi-level Collapsed"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/multinested_dag.png"
+          }
+        },
+        {
+          "path": "columnView",
+          "title": {
+            "zh": "表字段关系",
+            "en": "Column View"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/column_view.png"
+          }
+        }
+      ]
+    },
+    {
+      "path": "force",
+      "title": {
+        "zh": "关系图",
+        "en": "Relation Graph"
+      },
+      "children": [
+        {
+          "path": "force",
+          "title": {
+            "zh": "基础力导向图",
+            "en": "Basic Force Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/force_basic.png"
+          }
+        },
+        {
+          "path": "keptPosition",
+          "title": {
+            "zh": "展开收起保留原有结构",
+            "en": "Expand/Collapse Keep Structure"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/keptPosition.gif"
+          }
+        },
+        {
+          "path": "cluster",
+          "title": {
+            "zh": "聚簇图布局",
+            "en": "Cluster Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/force_cluster.png"
+          }
+        },
+        {
+          "path": "forceGrouping",
+          "title": {
+            "zh": "力导向节点分组布局",
+            "en": "Force Grouping Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/forceGroupingDemo.gif"
+          }
+        },
+        {
+          "path": "keptBbox",
+          "title": {
+            "zh": "限制节点在视觉窗口内",
+            "en": "Keep Nodes in Viewport"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/graphs_force_keptBbox.png"
+          }
+        },
+        {
+          "path": "labelCollide",
+          "title": {
+            "zh": "带标签的无重叠布局",
+            "en": "Label Collide Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/labelCollide.png"
+          }
+        },
+        {
+          "path": "collide",
+          "title": {
+            "zh": "基础无重叠",
+            "en": "Basic Collide"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/collide.png"
+          }
+        },
+        {
+          "path": "radialByForce",
+          "title": {
+            "zh": "环状布局",
+            "en": "Radial Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/graphs_force_radial.png"
+          }
+        },
+        {
+          "path": "ego",
+          "title": {
+            "zh": "自我中心网络环状布局",
+            "en": "Ego Radial Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/graphs_force_ego.png"
+          }
+        },
+        {
+          "path": "autoForce",
+          "title": {
+            "zh": "自动配置力导向图",
+            "en": "Auto Force"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/force_basic.png"
+          }
+        },
+        {
+          "path": "fisheye",
+          "title": {
+            "zh": "鱼眼放大镜",
+            "en": "Fisheye"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/fisheye.gif"
+          }
+        },
+        {
+          "path": "basic",
+          "title": {
+            "zh": "社交关系",
+            "en": "Social Network"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/force_demo.gif"
+          }
+        },
+        {
+          "path": "redMansions",
+          "title": {
+            "zh": "知识图谱",
+            "en": "Knowledge Graph"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/red.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "tree",
+      "title": {
+        "zh": "树状图",
+        "en": "Tree"
+      },
+      "children": [
+        {
+          "path": "compactBox",
+          "title": {
+            "zh": "紧凑树",
+            "en": "Compact Box"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/compactbox.png"
+          }
+        },
+        {
+          "path": "dendrogram",
+          "title": {
+            "zh": "平衡树",
+            "en": "Dendrogram"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dendriogram.png"
+          }
+        },
+        {
+          "path": "indented",
+          "title": {
+            "zh": "缩进树",
+            "en": "Indented Tree"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/indented.png"
+          }
+        },
+        {
+          "path": "mindMap",
+          "title": {
+            "zh": "脑图",
+            "en": "Mind Map"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/graphs_tree_mindMap.png"
+          }
+        },
+        {
+          "path": "basic",
+          "title": {
+            "zh": "径向树图",
+            "en": "Radial Tree"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/radial.gif"
+          }
+        },
+        {
+          "path": "adjustMindMap",
+          "title": {
+            "zh": "节点自适应脑图",
+            "en": "Adjustable Mind Map"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/adjust_mind_map.png"
+          }
+        },
+        {
+          "path": "expandTree",
+          "title": {
+            "zh": "逐层展开树",
+            "en": "Expand Tree"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/expand_tree.gif"
+          }
+        },
+        {
+          "path": "indentForest",
+          "title": {
+            "zh": "缩进森林",
+            "en": "Indent Forest"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/indent_forest.png"
+          }
+        },
+        {
+          "path": "cap",
+          "title": {
+            "zh": "思维导图",
+            "en": "Mindmap"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/cap.gif"
+          }
+        },
+        {
+          "path": "area",
+          "title": {
+            "zh": "行政区划",
+            "en": "Administrative Region"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/area.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "wasm",
+      "title": {
+        "zh": "WASM 布局",
+        "en": "WASM Layout"
+      },
+      "children": [
+        {
+          "path": "daglayout",
+          "title": {
+            "zh": "WASM 有向图布局",
+            "en": "WASM DAG Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/wasmlayout.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "path": "custom",
+      "title": {
+        "zh": "自定义布局",
+        "en": "Custom Layout"
+      },
+      "children": [
+        {
+          "path": "grid",
+          "title": {
+            "zh": "网状布局",
+            "en": "Grid Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/grid.jpeg"
+          }
+        },
+        {
+          "path": "zigzag",
+          "title": {
+            "zh": "回环布局",
+            "en": "Zigzag Layout"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/zigzag.jpeg"
+          }
+        },
+        {
+          "path": "concentricCircles",
+          "title": {
+            "zh": "同心圆布局",
+            "en": "Concentric Circles"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/graphs_force_concentricCircles.png"
+          }
+        }
+      ]
+    },
+    {
+      "path": "nodes",
+      "title": {
+        "zh": "节点",
+        "en": "Nodes"
+      },
+      "children": [
+        {
+          "path": "defaultNode",
+          "title": {
+            "zh": "内置节点",
+            "en": "Default Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/inset_nodes.png"
+          }
+        },
+        {
+          "path": "nodeIcon",
+          "title": {
+            "zh": "节点图标",
+            "en": "Node Icon"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/node_icons.gif"
+          }
+        },
+        {
+          "path": "colorIcon",
+          "title": {
+            "zh": "支持彩色图标",
+            "en": "Color Icon"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/color_icons.png"
+          }
+        },
+        {
+          "path": "customNode",
+          "title": {
+            "zh": "自定义节点",
+            "en": "Custom Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/custom_node1.png"
+          }
+        },
+        {
+          "path": "customTagNode",
+          "title": {
+            "zh": "带标签的节点",
+            "en": "Tag Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/tag_node.png"
+          }
+        },
+        {
+          "path": "customAddTagNode",
+          "title": {
+            "zh": "可添加标签的节点",
+            "en": "Add Tag Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/add_tag.gif"
+          }
+        },
+        {
+          "path": "customDeleteTagNode",
+          "title": {
+            "zh": "可删除标签的节点",
+            "en": "Delete Tag Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/del_tag.gif"
+          }
+        },
+        {
+          "path": "linkNode",
+          "title": {
+            "zh": "带链接的节点",
+            "en": "Link Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/link_node.gif"
+          }
+        },
+        {
+          "path": "noteNode",
+          "title": {
+            "zh": "带角标的节点",
+            "en": "Note Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/marker_node.gif"
+          }
+        },
+        {
+          "path": "progreessNode",
+          "title": {
+            "zh": "带进度条的节点",
+            "en": "Progress Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/progress_node.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "edges",
+      "title": {
+        "zh": "连线",
+        "en": "Edges"
+      },
+      "children": [
+        {
+          "path": "defaultEdge",
+          "title": {
+            "zh": "内置连线",
+            "en": "Default Edge"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/inset_edges.png"
+          }
+        },
+        {
+          "path": "customEdge1",
+          "title": {
+            "zh": "自定义连线",
+            "en": "Custom Edge 1"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/custom_edge1.gif"
+          }
+        },
+        {
+          "path": "customEdge2",
+          "title": {
+            "zh": "自定义连线",
+            "en": "Custom Edge 2"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/custom_edge2.gif"
+          }
+        },
+        {
+          "path": "customEdge3",
+          "title": {
+            "zh": "连线定位节点",
+            "en": "Edge Locate Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/custom_edge3.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "groups",
+      "title": {
+        "zh": "分组",
+        "en": "Groups"
+      },
+      "children": [
+        {
+          "path": "defaultGroup",
+          "title": {
+            "zh": "内置分组",
+            "en": "Default Group"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/default_group.gif"
+          }
+        },
+        {
+          "path": "customGroup",
+          "title": {
+            "zh": "自定义分组标题",
+            "en": "Custom Group"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/custom_group.gif"
+          }
+        },
+        {
+          "path": "linkGroupOnCollapse",
+          "title": {
+            "zh": "分组收起代理连线",
+            "en": "Link Group on Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/link_group_on_collapse.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "react",
+      "title": {
+        "zh": "React 组件",
+        "en": "React Components"
+      },
+      "children": [
+        {
+          "path": "tooltip",
+          "title": {
+            "zh": "文字气泡",
+            "en": "Tooltip"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/tooltip.gif"
+          }
+        },
+        {
+          "path": "triggerid",
+          "title": {
+            "zh": "局部图形的文字气泡",
+            "en": "Trigger ID Tooltip"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/triggertooltip.gif"
+          }
+        },
+        {
+          "path": "trigger",
+          "title": {
+            "zh": "触发器",
+            "en": "Trigger"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/triggermenu.gif"
+          }
+        },
+        {
+          "path": "contextmenu",
+          "title": {
+            "zh": "右键菜单",
+            "en": "Context Menu"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/contextmenu.gif"
+          }
+        },
+        {
+          "path": "zoomslider",
+          "title": {
+            "zh": "缩放 UI 联动",
+            "en": "Zoom Slider"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/slider.gif"
+          }
+        },
+        {
+          "path": "triggerTooltip",
+          "title": {
+            "zh": "封装 Tooltip",
+            "en": "Wrapped Tooltip"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/tooltip.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "plugins",
+      "title": {
+        "zh": "原生组件",
+        "en": "Native Components"
+      },
+      "children": [
+        {
+          "path": "rawtooltip",
+          "title": {
+            "zh": "文字气泡",
+            "en": "Raw Tooltip"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/raw_tooltip.gif"
+          }
+        },
+        {
+          "path": "rawtriggerid",
+          "title": {
+            "zh": "局部图形的文字气泡",
+            "en": "Raw Trigger ID Tooltip"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/raw_trigger.gif"
+          }
+        },
+        {
+          "path": "minimap",
+          "title": {
+            "zh": "小地图",
+            "en": "Minimap"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/minimap.gif"
+          }
+        },
+        {
+          "path": "responsiveLegend",
+          "title": {
+            "zh": "响应式图例",
+            "en": "Responsive Legend"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/responsive_legend.gif"
+          }
+        },
+        {
+          "path": "customLegend",
+          "title": {
+            "zh": "自定义图例",
+            "en": "Custom Legend"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/custom_legend.gif"
+          }
+        },
+        {
+          "path": "traffic",
+          "title": {
+            "zh": "连续图例",
+            "en": "Continuous Legend"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/traffic_demo.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "animate",
+      "title": {
+        "zh": "动画",
+        "en": "Animation"
+      },
+      "children": [
+        {
+          "path": "diffuse",
+          "title": {
+            "zh": "节点扩散",
+            "en": "Node Diffuse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/diffuse.gif"
+          }
+        },
+        {
+          "path": "loading",
+          "title": {
+            "zh": "节点加载",
+            "en": "Node Loading"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/loading.gif"
+          }
+        },
+        {
+          "path": "flash",
+          "title": {
+            "zh": "节点闪烁",
+            "en": "Node Flash"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/flash.gif"
+          }
+        },
+        {
+          "path": "flow",
+          "title": {
+            "zh": "虚线连线",
+            "en": "Dashed Edge Flow"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/flow.gif"
+          }
+        },
+        {
+          "path": "grow",
+          "title": {
+            "zh": "连线延伸",
+            "en": "Edge Grow"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/grow.gif"
+          }
+        },
+        {
+          "path": "trail",
+          "title": {
+            "zh": "连线轨迹",
+            "en": "Edge Trail"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/trail.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "behaviors",
+      "title": {
+        "zh": "内置交互",
+        "en": "Behaviors"
+      },
+      "children": [
+        {
+          "path": "pan",
+          "title": {
+            "zh": "限制移动范围",
+            "en": "Pan Limit"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/yonly.gif"
+          }
+        },
+        {
+          "path": "brushSelect",
+          "title": {
+            "zh": "框选",
+            "en": "Brush Select"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/brush_select.gif"
+          }
+        },
+        {
+          "path": "showDetails",
+          "title": {
+            "zh": "先看整体再看细节",
+            "en": "Show Details"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/show_details.gif"
+          }
+        },
+        {
+          "path": "hideDetails",
+          "title": {
+            "zh": "先看细节再看整体",
+            "en": "Hide Details"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/hide_details.gif"
+          }
+        }
+      ]
+    },
+    {
+      "path": "practiceCases",
+      "title": {
+        "zh": "实践案例",
+        "en": "Practice Cases"
+      },
+      "children": [
+        {
+          "path": "CompactBox",
+          "title": {
+            "zh": "紧凑树收起展开",
+            "en": "Compact Tree Expand/Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dp_compactbox.gif"
+          }
+        },
+        {
+          "path": "Mindmap",
+          "title": {
+            "zh": "脑图树收起展开",
+            "en": "Mindmap Expand/Collapse"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dp_mindmap.gif"
+          }
+        },
+        {
+          "path": "EdgeLabel",
+          "title": {
+            "zh": "超长连线文本标签",
+            "en": "Long Edge Label"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dp_edge_label.png"
+          }
+        },
+        {
+          "path": "AddNode",
+          "title": {
+            "zh": "添加树节点",
+            "en": "Add Tree Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dp_add_node.gif"
+          }
+        },
+        {
+          "path": "MoveNode",
+          "title": {
+            "zh": "重组树节点",
+            "en": "Move Tree Node"
+          },
+          "meta": {
+            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/dp_move_node.gif"
+          }
+        }
+      ]
+    }
+  ]
+}

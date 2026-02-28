@@ -1,5 +1,6 @@
 export { Dendrogram, CompactBox, MindMap, Indented } from "./tree";
-export { DAGLayoutConfigs, DAGLayout } from "./dag";
+export { DAGLayout } from "./dag";
+export type { DAGLayoutConfigs } from "./dag";
 export {
   defaultForces,
   ForceDirectedLayout,
@@ -35,6 +36,7 @@ export {
   isMultiComponentsForGraph,
   isMultiComponentsForData,
 } from "./utils";
-export { NestedDAG, NestedDAGConfigs } from "./nested_dag";
+export { NestedDAG } from "./nested_dag";
+export type { NestedDAGConfigs } from "./nested_dag";
 export { LayoutBase } from "./base";
 export { PipelineLayout } from "./pipeline";

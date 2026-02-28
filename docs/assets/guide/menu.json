@@ -1,0 +1,559 @@
+{
+  "menu": "guide",
+  "children": [
+    {
+      "path": "start",
+      "title": {
+        "zh": "快速开始",
+        "en": "Quick Start"
+      }
+    },
+    {
+      "path": "data-structure",
+      "title": {
+        "zh": "数据结构",
+        "en": "Data Structure"
+      }
+    },
+    {
+      "path": "keyshape",
+      "title": {
+        "zh": "关键图形",
+        "en": "Key Shape"
+      }
+    },
+    {
+      "path": "states",
+      "title": {
+        "zh": "状态管理",
+        "en": "States"
+      }
+    },
+    {
+      "path": "events",
+      "title": {
+        "zh": "事件",
+        "en": "Events"
+      }
+    },
+    {
+      "path": "analysis-solution-spec",
+      "title": {
+        "zh": "图分析解决方案",
+        "en": "Analysis Solutions"
+      },
+      "children": [
+        {
+          "path": "dataLineage",
+          "title": {
+            "zh": "数据表血缘图谱",
+            "en": "Data Lineage"
+          }
+        },
+        
+        {
+          "path": "autoForce",
+          "title": {
+            "zh": "智能布局关系图",
+            "en": "Auto Force"
+          }
+        },
+        {
+          "path": "pipelineEditor",
+          "title": {
+            "zh": "流水线-编辑模式",
+            "en": "Pipeline Editor"
+          }
+        },
+        {
+          "path": "pipelineReader",
+          "title": {
+            "zh": "流水线-阅读模式",
+            "en": "Pipeline Reader"
+          }
+        }
+      ]
+    },
+    {
+      "path": "editor-solution-spec",
+      "title": {
+        "zh": "图编辑解决方案",
+        "en": "Editor Solutions"
+      },
+      "children": [
+        {
+          "path": "commonFlowEditor",
+          "title": {
+            "zh": "有向图自由编辑",
+            "en": "Common Flow Editor"
+          }
+        },
+        {
+          "path": "dagFlowEditor",
+          "title": {
+            "zh": "有向图限制编辑",
+            "en": "DAG Flow Editor"
+          }
+        }
+      ]
+    },
+    {
+      "path": "graph-spec",
+      "title": {
+        "zh": "图",
+        "en": "Graph"
+      },
+      "children": [
+        {
+          "path": "options",
+          "title": {
+            "zh": "配置项",
+            "en": "Options"
+          }
+        },
+        {
+          "path": "api",
+          "title": {
+            "zh": "实例方法",
+            "en": "API"
+          }
+        }
+      ]
+    },
+    {
+      "path": "tree-graph-spec",
+      "title": {
+        "zh": "树图",
+        "en": "TreeGraph"
+      },
+      "children": [
+        {
+          "path": "options",
+          "title": {
+            "zh": "配置项",
+            "en": "Options"
+          }
+        },
+        {
+          "path": "api",
+          "title": {
+            "zh": "实例方法",
+            "en": "API"
+          }
+        }
+      ]
+    },
+    {
+      "path": "node-spec",
+      "title": {
+        "zh": "节点",
+        "en": "Node"
+      },
+      "children": [
+        {
+          "path": "options",
+          "title": {
+            "zh": "节点配置",
+            "en": "Options"
+          }
+        },
+        {
+          "path": "api",
+          "title": {
+            "zh": "实例方法",
+            "en": "API"
+          }
+        },
+        {
+          "path": "prebuilt",
+          "title": {
+            "zh": "内置节点",
+            "en": "Prebuilt"
+          }
+        },
+        {
+          "path": "customization",
+          "title": {
+            "zh": "自定义节点",
+            "en": "Customization"
+          }
+        }
+      ]
+    },
+    {
+      "path": "node-addon-spec",
+      "title": {
+        "zh": "节点组件",
+        "en": "Node Addons"
+      },
+      "children": [
+        {
+          "path": "tag",
+          "title": {
+            "zh": "标签",
+            "en": "Tag"
+          }
+        },
+        {
+          "path": "link",
+          "title": {
+            "zh": "链接",
+            "en": "Link"
+          }
+        },
+        {
+          "path": "progress",
+          "title": {
+            "zh": "进度条",
+            "en": "Progress"
+          }
+        },
+        {
+          "path": "note",
+          "title": {
+            "zh": "角标",
+            "en": "Note"
+          }
+        },
+        {
+          "path": "count",
+          "title": {
+            "zh": "数量统计牌",
+            "en": "Count"
+          }
+        },
+        {
+          "path": "trigger",
+          "title": {
+            "zh": "UI 触发器",
+            "en": "Trigger"
+          }
+        }
+      ]
+    },
+    {
+      "path": "react-node-spec",
+      "title": {
+        "zh": "React 节点",
+        "en": "React Node"
+      },
+      "children": [
+        {
+          "path": "react-viewer",
+          "title": {
+            "zh": "React 节点组件",
+            "en": "React Viewer"
+          }
+        },
+        {
+          "path": "react-hooks",
+          "title": {
+            "zh": "React hooks",
+            "en": "React Hooks"
+          }
+        }
+      ]
+    },
+    {
+      "path": "edge-spec",
+      "title": {
+        "zh": "连线",
+        "en": "Edge"
+      },
+      "children": [
+        {
+          "path": "options",
+          "title": {
+            "zh": "配置项",
+            "en": "Options"
+          }
+        },
+        {
+          "path": "api",
+          "title": {
+            "zh": "实例方法",
+            "en": "API"
+          }
+        },
+        {
+          "path": "prebuilt",
+          "title": {
+            "zh": "内置连线",
+            "en": "Prebuilt"
+          }
+        },
+        {
+          "path": "customization",
+          "title": {
+            "zh": "自定义连线",
+            "en": "Customization"
+          }
+        }
+      ]
+    },
+    {
+      "path": "group-spec",
+      "title": {
+        "zh": "分组",
+        "en": "Group"
+      },
+      "children": [
+        {
+          "path": "options",
+          "title": {
+            "zh": "配置项",
+            "en": "Options"
+          }
+        },
+        {
+          "path": "api",
+          "title": {
+            "zh": "实例方法",
+            "en": "API"
+          }
+        }
+      ]
+    },
+    {
+      "path": "layout-spec",
+      "title": {
+        "zh": "布局",
+        "en": "Layout"
+      },
+      "children": [
+        {
+          "path": "force",
+          "title": {
+            "zh": "力导向布局",
+            "en": "Force Layout"
+          }
+        },
+        {
+          "path": "dag",
+          "title": {
+            "zh": "有向图布局",
+            "en": "DAG Layout"
+          }
+        },
+        {
+          "path": "nestDag",
+          "title": {
+            "zh": "嵌套有向图布局",
+            "en": "Nested DAG Layout"
+          }
+        },
+        {
+          "path": "tree",
+          "title": {
+            "zh": "树图布局",
+            "en": "Tree Layout"
+          }
+        }
+      ]
+    },
+    {
+      "path": "wasm-spec",
+      "title": {
+        "zh": "Wasm 布局",
+        "en": "Wasm Layout"
+      },
+      "children": [
+        {
+          "path": "daglayout",
+          "title": {
+            "zh": "Wasm 有向图布局",
+            "en": "DAG Layout"
+          }
+        }
+      ]
+    },
+    {
+      "path": "shape-spec",
+      "title": {
+        "zh": "图形对象",
+        "en": "Shape"
+      },
+      "children": [
+        {
+          "path": "rect",
+          "title": {
+            "zh": "矩形",
+            "en": "Rect"
+          }
+        },
+        {
+          "path": "circle",
+          "title": {
+            "zh": "圆形",
+            "en": "Circle"
+          }
+        },
+        {
+          "path": "text",
+          "title": {
+            "zh": "文本",
+            "en": "Text"
+          }
+        },
+        {
+          "path": "image",
+          "title": {
+            "zh": "图片",
+            "en": "Image"
+          }
+        },
+        {
+          "path": "icon",
+          "title": {
+            "zh": "图标",
+            "en": "Icon"
+          }
+        },
+        {
+          "path": "polygon",
+          "title": {
+            "zh": "多边形",
+            "en": "Polygon"
+          }
+        },
+        {
+          "path": "path",
+          "title": {
+            "zh": "线条",
+            "en": "Path"
+          }
+        },
+        {
+          "path": "quadratic",
+          "title": {
+            "zh": "二次贝塞尔曲线",
+            "en": "Quadratic"
+          }
+        },
+        {
+          "path": "cubic",
+          "title": {
+            "zh": "三次贝塞尔曲线",
+            "en": "Cubic"
+          }
+        },
+        {
+          "path": "layer",
+          "title": {
+            "zh": "图层",
+            "en": "Layer"
+          }
+        }
+      ]
+    },
+    {
+      "path": "behaviors",
+      "title": {
+        "zh": "交互行为",
+        "en": "Behaviors"
+      }
+    },
+    {
+      "path": "plugin-spec",
+      "title": {
+        "zh": "分析组件",
+        "en": "Analysis Components"
+      },
+      "children": [
+        {
+          "path": "raw-plugins",
+          "title": {
+            "zh": "原生组件",
+            "en": "Raw Plugins"
+          }
+        },
+        {
+          "path": "react-plugins",
+          "title": {
+            "zh": "React 组件",
+            "en": "React Plugins"
+          }
+        }
+      ]
+    },
+    {
+      "path": "editor-spec",
+      "title": {
+        "zh": "编辑组件",
+        "en": "Editor Components"
+      },
+      "children": [
+        {
+          "path": "stack",
+          "title": {
+            "zh": "操作栈",
+            "en": "Stack"
+          }
+        },
+        {
+          "path": "command",
+          "title": {
+            "zh": "指令",
+            "en": "Commands"
+          }
+        },
+        {
+          "path": "nodeMover",
+          "title": {
+            "zh": "节点编辑",
+            "en": "Node Mover"
+          }
+        },
+        {
+          "path": "edgeEditor",
+          "title": {
+            "zh": "连线编辑",
+            "en": "Edge Editor"
+          }
+        },
+        {
+          "path": "router",
+          "title": {
+            "zh": "智能路由",
+            "en": "Router"
+          }
+        },
+        {
+          "path": "shortcuts",
+          "title": {
+            "zh": "快捷键",
+            "en": "Shortcuts"
+          }
+        },
+        {
+          "path": "scroller",
+          "title": {
+            "zh": "滚动条",
+            "en": "Scroller"
+          }
+        },
+        {
+          "path": "background",
+          "title": {
+            "zh": "背景",
+            "en": "Background"
+          }
+        },
+        {
+          "path": "grid",
+          "title": {
+            "zh": "网格",
+            "en": "Grid"
+          }
+        }
+      ]
+    },
+    {
+      "path": "animate",
+      "title": {
+        "zh": "动画",
+        "en": "Animations"
+      }
+    }
+  ]
+}

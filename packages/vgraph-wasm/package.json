@@ -1,0 +1,91 @@
+{
+  "name": "@visactor/vgraph-wasm",
+  "version": "1.0.0",
+  "description": "vgraph layouts wasm version",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "cjs",
+    "es",
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./cjs/index.js",
+      "import": "./es/index.js"
+    }
+  },
+  "scripts": {
+    "demo": "node scripts/demo.js",
+    "compile": "tsc --noEmit",
+    "eslint": "eslint --debug --fix src/",
+    "build": "npm run build:cjs && npm run build:umd && npm run build:esm",
+    "dev": "tsc -p tsconfig.json --module ESNext --outDir es -w",
+    "start": "node scripts/demo.js",
+    "test": "jest --silent --config jest.config.js --passWithNoTests",
+    "test-cov": "jest --coverage --config jest.config.js --passWithNoTests",
+    "build:umd": "webpack --config webpack.pro.config.js --mode production",
+    "build:cjs": "tsc -p tsconfig.json --target ES5 --module commonjs --outDir cjs",
+    "build:esm": "tsc -p tsconfig.json --module ESNext --outDir es",
+    "build:es": "npm run build:esm",
+    "clear": "rm -r dist/* || true",
+    "watch": "tsc -w -m ES2015 --outDir cjs",
+    "lint": "node nonsrc.js && eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VisActor/vgraph.git",
+    "directory": "packages/vgraph-wasm"
+  },
+  "bugs": {
+    "url": "https://github.com/VisActor/vgraph/issues"
+  },
+  "homepage": "https://visactor.io/vgraph",
+  "keywords": [
+    "graph",
+    "visualization",
+    "canvas",
+    "vgraph",
+    "wasm",
+    "VisActor"
+  ],
+  "author": {
+    "name": "VisActor",
+    "url": "https://visactor.io/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@internal/bundler": "workspace:*",
+    "@internal/eslint-config": "workspace:*",
+    "@internal/ts-config": "workspace:*",
+    "@rushstack/eslint-patch": "~1.1.4",
+    "@types/jest": "^27.0.2",
+    "@types/jsdom": "^16.2.13",
+    "@types/node": "*",
+    "@visactor/vgraph": "workspace:*",
+    "babel-jest": "^27.3.1",
+    "babel-loader": "^9.1.2",
+    "canvas": "2.8.0",
+    "eslint": "~8.18.0",
+    "glob": "^7.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.3.1",
+    "jsdom": "^18.0.1",
+    "ts-jest": "^27.0.7",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "4.9.5",
+    "webpack": "^5.63.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.0.0",
+    "@visactor/vgraph": ">=1.0.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

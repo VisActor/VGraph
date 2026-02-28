@@ -447,115 +447,115 @@
       {
         "id": "0",
         "name": "random.table.name0.8384418558261737",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["0-0"]
       },
       {
         "id": "1",
         "name": "random.table.name0.9399625638443756",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["1-0"]
       },
       {
         "id": "2",
         "name": "random.table.name0.7824053681959386",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["2-0"]
       },
       {
         "id": "3",
         "name": "random.table.name0.3999828540537451",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["3-0"]
       },
       {
         "id": "4",
         "name": "random.table.name0.9612768107192184",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["4-0"]
       },
       {
         "id": "5",
         "name": "random.table.name0.9644986868848999",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["5-0"]
       },
       {
         "id": "6",
         "name": "random.table.name0.8286433019068906",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["6-0"]
       },
       {
         "id": "7",
         "name": "random.table.name0.3265046409165593",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["7-0"]
       },
       {
         "id": "8",
         "name": "random.table.name0.18854531270514419",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["8-0"]
       },
       {
         "id": "9",
         "name": "random.table.name0.882210076804735",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["9-0"]
       },
       {
         "id": "10",
         "name": "random.table.name0.1754084031912897",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["10-0"]
       },
       {
         "id": "11",
         "name": "random.table.name0.640845289941649",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["11-0"]
       },
       {
         "id": "12",
         "name": "random.table.name0.7731998325795622",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["12-0"]
       },
       {
         "id": "13",
         "name": "random.table.name0.6808531059401735",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["13-0"]
       },
       {
         "id": "14",
         "name": "random.table.name0.8865898294820331",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["14-0"]
       },
       {
         "id": "15",
         "name": "random.table.name0.020490919016399323",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["15-0"]
       },
       {
         "id": "16",
         "name": "random.table.name0.858745841367395",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["16-0"]
       },
       {
         "id": "17",
         "name": "random.table.name0.2598924172925803",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["17-0"]
       },
       {
         "id": "18",
         "name": "random.table.name0.20367713900288198",
-        "type": "HiveTable",
+        "type": "ProjectHTask",
         "children": ["18-0"]
       }
     ]

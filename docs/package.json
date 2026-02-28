@@ -1,8 +1,35 @@
 {
   "name": "@internal/docs",
   "version": "0.0.1",
+  "description": "site for vgraph docs",
   "private": true,
   "scripts": {
-    "start": "echo \"Docs dev server is not configured yet\""
-  }
+    "serve": "vite --host",
+    "build": "vite build",
+    "start": "vite --host",
+    "convert:demos": "node ./scripts/convert-demo-from-specs.js"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "2.39.3",
+    "@visactor/vgraph": "workspace:*",
+    "@visactor/react-vgraph": "workspace:*",
+    "@visactor/react-vgraph-ui": "workspace:*",
+    "@visactor/vgraph-wasm": "workspace:*",
+    "buble": "^0.20.0",
+    "highlight.js": "^11.8.0",
+    "markdown-it": "^13.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "6.9.0"
+  },
+  "devDependencies": {
+    "@internal/eslint-config": "workspace:*",
+    "@internal/ts-config": "workspace:*",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "3.1.0",
+    "typescript": "4.9.5",
+    "vite": "3.2.6"
+  },
+  "packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b"
 }

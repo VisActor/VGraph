@@ -43,6 +43,24 @@
       "versionPolicyName": "vgraphMain"
     },
     {
+      "packageName": "@visactor/react-vgraph-ui",
+      "projectFolder": "packages/react-vgraph-ui",
+      "tags": [
+        "package"
+      ],
+      "shouldPublish": true,
+      "versionPolicyName": "vgraphMain"
+    },
+    {
+      "packageName": "@visactor/vgraph-wasm",
+      "projectFolder": "packages/vgraph-wasm",
+      "tags": [
+        "package"
+      ],
+      "shouldPublish": true,
+      "versionPolicyName": "vgraphMain"
+    },
+    {
       "packageName": "@internal/docs",
       "projectFolder": "docs",
       "tags": [

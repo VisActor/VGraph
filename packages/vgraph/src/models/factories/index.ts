@@ -13,8 +13,10 @@ registerMetaNodes();
 registerMetaEdges();
 registerMetaAnchors();
 
-export { registerNode, unRegisterNode, RegisterNodeConfigs } from "./node";
-export { registerEdge, unRegisterEdge, RegisterEdgeConfigs } from "./edge";
+export { registerNode, unRegisterNode } from "./node";
+export type { RegisterNodeConfigs } from "./node";
+export { registerEdge, unRegisterEdge } from "./edge";
+export type { RegisterEdgeConfigs } from "./edge";
 export { registerAnchor, unRegisterAnchor } from "./anchor";
 
 export { getRouterCubicPath } from "./path";

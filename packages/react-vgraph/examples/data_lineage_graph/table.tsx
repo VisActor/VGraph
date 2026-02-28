@@ -107,7 +107,7 @@ import { IDataOptions } from "../../src/data_lineage_graph/types";
           ? null
           : {
               type: "type",
-              value: ["ClickhouseTable"],
+              value: ["ProjectCTask"],
             },
       });
       setOptions(newOptions);
@@ -167,7 +167,7 @@ import { IDataOptions } from "../../src/data_lineage_graph/types";
           nodes: [
             {
               id: "695",
-              type: "HiveTable",
+              type: "ProjectHTask",
               name: "random.table0.5455542412864671",
               department: "department4",
             },
@@ -179,7 +179,7 @@ import { IDataOptions } from "../../src/data_lineage_graph/types";
             },
             {
               id: "2268",
-              type: "DoradoTask",
+              type: "ProjectDTask",
               name: "random.table0.10492836627639268",
               department: "department2",
             },
