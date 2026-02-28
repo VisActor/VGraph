@@ -121,4 +121,4 @@ Small streams converge to make great rivers and seas!
 
 This project is licensed under the [MIT License](./LICENSE).
 
-This project contains third-party components, and their respective licenses are listed in the [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) file.
+This project contains third-party components, and their respective licenses are listed in the [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md) file. The original notices can be found in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).

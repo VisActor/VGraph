@@ -1,3 +1,7 @@
+**NOTE: This file is being deprecated. All third-party license information has been migrated to [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md).**
+
+---
+
 The vgraph project incorporates components from the following third-party software.
 
 ## Graphviz

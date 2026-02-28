@@ -12,7 +12,7 @@ VGraph，不仅仅是图可视化渲染引擎，更是图分析解决方案。
 
 ## 简介
 
-VGraph 是 [VisActor](https://visactor.io) 可视化体系中的图可视化及分析引擎，基于可视化渲染引擎 [VRender](https://github.com/VisActor/VRender) 进行封装。核心能力如下：
+VGraph 是 [VisActor](https://visactor.io) 可视化体系中的图可视化及分析引擎。核心能力如下：
 
 - **元素丰富**: 内置多种节点、边等图元素，满足流程图、脑图、DAG 图等各类图分析场景的绘制需求。
 - **性能卓越**: 基于高性能渲染引擎，支持上万点边的流畅交互。同时支持基于 WASM 的高性能布局，完美解决图分析的性能问题。
@@ -102,15 +102,7 @@ $ rush docs
 - [官网](https://www.visactor.io/vgraph)
 - [图表示例](https://www.visactor.io/vgraph/example)
 - [教程](https://www.visactor.io/vgraph/guide)
-- [配置项](https://www.visactor.io/vgraph/option/)
-- [API](https://www.visactor.io/vgraph/api/vgraph)
-- [VRender](https://www.visactor.io/vrender)
-- [常见问题](https://www.visactor.io/vgraph/guide/FAQ)
 - [CodeSandbox 模板](https://codesandbox.io/s/vgraph-simple-demo-g8q738?file=/src/index.ts) for bug reports
-
-## 💖 致谢
-
-感谢 [Semi](https://semi.design/) 提供主题可视化定制方案。
 
 ## 🤝 贡献
 
@@ -122,4 +114,4 @@ $ rush docs
 
 本项目基于 [MIT 协议](./LICENSE)，请自由享受及参与开源。
 
-本项目包含第三方组件，其各自的许可证在 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) 文件中列出。
+本项目包含第三方组件，其各自的许可证在 [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md) 文件中列出。原有的声明文件可见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。

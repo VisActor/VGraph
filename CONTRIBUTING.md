@@ -32,8 +32,8 @@ rush start
 2.  将 Fork 后的存储库克隆到本地。
 3.  运行 `rush update` 安装依赖项。
 4.  创建一个新分支并进行更改。我们建议将分支命名为 `feat/your-feature-name` 或 `fix/your-fix-name`。
-5.  运行 `rush change` 添加变更集。
+5.  运行 `rush change-all` 添加变更集。
 6.  提交并将更改推送到您 Fork 的存储库。
-7.  从您 Fork 的存储库创建一个到 VGraph 存储库 `main` 分支的拉取请求。
+7.  从您 Fork 的存储库创建一个到 VGraph 存储库 `develop` 分支的拉取请求。
 
 我们会尽快审查您的拉取请求。感谢您的贡献！
