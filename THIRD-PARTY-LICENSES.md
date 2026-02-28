@@ -16,8 +16,8 @@ This document contains a list of third-party software components used in the vgr
 -   **Website**: https://graphviz.org/
 -   **Source Code**: https://gitlab.com/graphviz/graphviz
 -   **Copyright**: Copyright (c) AT&T Corp. and others.
--   **Version**: TBD (Exact version tag/commit needs to be confirmed)
--   **Source Code Accessibility**: TBD (A forked repository link on GitHub will be provided here to ensure source code availability from the distributor)
+-   **Version**: 9.0.0 (graphviz_version_date 20230911.1827)
+-   **Source Code Accessibility**: The sources used to build `dotlayout.wasm` come from the Graphviz 9.0.0 release, whose full source code is available at https://gitlab.com/graphviz/graphviz. Internally, the vendored tree is stored under `src_cpps/graphviz` in the `dp/xgraph-wasm` repository (branch `feat/wasm_layouts`). When the VisActor/vgraph GitHub repository is created, a public fork of Graphviz 9.0.0 containing any necessary patches will be linked here to ensure source code availability from the distributor.
 
 ### Eclipse Public License - v 1.0
 
