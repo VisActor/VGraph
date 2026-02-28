@@ -1,7 +1,7 @@
 # Contextmenu
-The context menu is often used to carry functions for a single entity or the overall graph product, which can improve user operation efficiency. xGraph provides a Contextmenu for the React framework. Due to the different visual styles of various products, it only responds to the container's show/hide, and the internal functions can be implemented by yourself.
+The context menu is often used to carry functions for a single entity or the overall graph product, which can improve user operation efficiency. vgraph provides a Contextmenu for the React framework. Due to the different visual styles of various products, it only responds to the container's show/hide, and the internal functions can be implemented by yourself.
 ```javascript
-import { Contextmenu } from '@dp/xgraph-react-ui';
+import { Contextmenu } from '@visactor/react-vgraph-ui';
 
 <div id="graphContainerId">
   <Contextmenu graph={graph} getContent={getContent} targets={['node', 'edge']} />

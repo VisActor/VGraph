@@ -1,6 +1,7 @@
 {
   "name": "@visactor/react-vgraph-ui",
   "version": "1.0.0",
+  "license": "MIT",
   "main": "cjs/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -86,5 +87,14 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VisActor/vgraph.git",
+    "directory": "packages/react-vgraph-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/VisActor/vgraph/issues"
+  },
+  "homepage": "https://visactor.io/vgraph"
 }

@@ -1,8 +1,8 @@
 # Tooltip
-Tooltip is a commonly used way to display auxiliary information. xGraph provides an encapsulation of Arco Design Tooltip to improve the development efficiency of products developed based on React.
+Tooltip is a commonly used way to display auxiliary information. vgraph provides an encapsulation of Arco Design Tooltip to improve the development efficiency of products developed based on React.
 
 ```javascript
-import { Tooltip } from '@dp/xgraph-react-ui';
+import { Tooltip } from '@visactor/react-vgraph-ui';
 
 <div style={{ width: 1000, height: 600 }} id="reactTooltipExample">
   <Tooltip
@@ -28,8 +28,8 @@ For more configuration items, please see [Arco Tooltip](https://arco.design/reac
 
 The following is an example of how to use [node label](/docs/2.x/node-spec_options#Label) with `triggerId`. The corresponding tooltip will be displayed when hovering over the node label.
 ```javascript
-import { Graph } from '@dp/xgraph';
-import { Tooltip } from '@dp/xgraph-react';
+import { Graph } from '@visactor/vgraph';
+import { Tooltip } from '@visactor/react-vgraph';
 
 const graph = new Graph({
   container: 'graphContainer',

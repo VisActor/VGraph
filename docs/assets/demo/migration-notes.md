@@ -1,9 +1,9 @@
 # vgraph-site(2.x demo) -> vgraph demo 迁移注意事项
 
 ## 涉及目录：
-/Users/bytedance/VisActor/vgraph-dev/vgraph-site/src/specs/graphs/2.x
-/Users/bytedance/VisActor/vgraph-dev/vgraph/docs/assets/demo
-/Users/bytedance/VisActor/vgraph-dev/visactor-site/docs/output_resource/documents/vgraph-1.0.0/demo
+vgraph-site/src/specs/graphs/2.x
+vgraph/docs/assets/demo
+visactor-site/docs/output_resource/documents/vgraph-1.0.0/demo
 
 ## 目标与原则
 
@@ -18,7 +18,7 @@ docs/assets/demo/zh/editor/dagTreeEditor.md（单文件）
     category: examples
     group: wasm
     title: WASM DAG Layout
-    cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/wasmlayout.jpeg
+    cover: https://example.com/path/to/cover.jpeg
     link: wasm/daglayout
     option:
     ---

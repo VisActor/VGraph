@@ -2,7 +2,7 @@
 Trigger 监听图中元素的 hover 或 click 事件，并且弹出下拉框。在图中往往用于点击或者鼠标移动到节点/连线，或者内部的一些 shape 上时，而弹出配置面板或菜单栏。最简单的用法如下。当点击图中任意一个节点时，会在节点右侧弹出面板。
 
 ```javascript
-import { Trigger } from '@dp/xgraph-react-ui';
+import { Trigger } from '@visactor/react-vgraph-ui';
 
 <div id="graphContainerId">
   <Trigger
@@ -32,8 +32,8 @@ import { Trigger } from '@dp/xgraph-react-ui';
 
 以下是[节点 icon](../node-spec/options#Icons) 配合 triggerId 的使用方法示例。当点击节点上对应 icon 时会弹出 trigger 面板。
 ```javascript
-import { Graph } from '@dp/xgraph';
-import { Trigger } from '@dp/xgraph-react';
+import { Graph } from '@visactor/vgraph';
+import { Trigger } from '@visactor/react-vgraph';
 
 const graph = new Graph({
   container: 'graphContainer',

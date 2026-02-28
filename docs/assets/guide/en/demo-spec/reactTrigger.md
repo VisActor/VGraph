@@ -2,7 +2,7 @@
 The Trigger listens for hover or click events on elements in the graph and pops up a dropdown box. In a graph, it is often used to pop up a configuration panel or menu bar when a node/edge, or some internal shape is clicked or hovered over. The simplest usage is as follows. When any node in the graph is clicked, a panel will pop up on the right side of the node.
 
 ```javascript
-import { Trigger } from '@dp/xgraph-react-ui';
+import { Trigger } from '@visactor/react-vgraph-ui';
 
 <div id="graphContainerId">
   <Trigger
@@ -32,8 +32,8 @@ For more configuration items, please see [Arco Trigger](https://arco.design/reac
 
 The following is an example of how to use [node icon](/docs/2.x/node-spec_options#Icons) with `triggerId`. The trigger panel will pop up when the corresponding icon on the node is clicked.
 ```javascript
-import { Graph } from '@dp/xgraph';
-import { Trigger } from '@dp/xgraph-react';
+import { Graph } from '@visactor/vgraph';
+import { Trigger } from '@visactor/react-vgraph';
 
 const graph = new Graph({
   container: 'graphContainer',

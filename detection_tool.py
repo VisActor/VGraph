@@ -4,6 +4,7 @@ import re
 import os, sys
 import subprocess
 import tempfile
+import argparse
 
 
 # 获取commit log
@@ -128,36 +129,153 @@ def detection_result():
         print('=======Detection passed, no sensitive information found=======')
 
 
-def main():
+def main(repo_folder_path=None, tmp_folder_path=None):
+
+
     cnt = 0
-    repo_folder_path = "/Users/bytedance/backup/vgraph"  # 不区分操作系统，填写项目路径即可
-    tmp_folder_path = "/" + tempfile.gettempprefix();
+
+
+    if repo_folder_path is None:
+
+
+        repo_folder_path = os.getcwd()
+
+
+    if tmp_folder_path is None:
+
+
+        tmp_folder_path = tempfile.gettempdir()
+
+
     opensource_get_commit_log(repo_folder_path, tmp_folder_path)
+
+
     keywords_list = [r"[a-zA-z0-9]{8}(-[a-zA-z0-9]{4}){3}-[a-zA-z0-9]{12}", r"npm\s{1,20}install.{1,30}",
+
+
                      r"AKLT\w{40,70}", r"AKAP\w{40,70}",
+
+
                      r"(tokenizer|transformer|token_id|tokenid|attention_head).{0,20}",
+
+
                      r"(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}", r"(LTAI)[a-z0-9]{20}",
+
+
                      r"AKTP\w{40,70}",
+
+
                      r"([^*<\s|:>]{0,7})(app_id|appid)([^]()!<>;/@&,]{0,10}[(=:]\s{0,6}[\"']{0,1}[0-9]{6,32}[\"']{0,1})",
+
+
                      r".{0,15}\.?byted.org.{0,20}", r".{0,15}\.?bytedance.net.{0,20}",
+
+
                      r".{0,20}.bytedance\.feishu\.cn.{0,50}", r".{0,20}.bytedance\.larkoffice\.com.{0,50}",
+
+
                      r"(10\.\d{1,3}\.\d{1,3}\.\d{1,3})",
+
+
                      r"([^*<\s|:>]{0,4})(testak|testsk|ak|sk|key|token|auth|pass|cookie|session|password|app_id|appid|secret_key|access_key|secretkey|accesskey|credential|secret|access)(\s{0,10}[(=:]\s{0,6}[\"']{0,1}(?=[a-zA-Z]*[0-9])(?=[0-9]*[a-zA-Z])[a-zA-Z0-9]{16,32}[\"']{0,1})"]
+
+
     aigc_keywords_group1 = ["token", "temp", "role"]
+
+
     aigc_keywords_group2 = ["layer", "token", "head"]
+
+
     ignore_list_keywords = [r"[^*<>]{0,6}token[^]()!<>;/@&,]{0,10}[=:].{0,1}null,", r".{0,5}user.{0,10}[=:].{ 0,1}null",
+
+
                             r".{0,5}pass.{0,10}[=:].{0,1}null", r"passport[=:].",
+
+
                             r"[^*<>]{0,6}key[^]()!<>;/]{0,10}[=:].{0,1}string.{0,10}",
+
+
                             r".{0,5}user.{0,10}[=:].{0,1}string", r".{0,5}pass.{0,10}[=:].{0,1}string",
+
+
                             r".{0,5}app_id[^]()!<>;/@&,]{0,10}[=:].{0,10}\+",
+
+
                             r".{0,5}appid[^]()!<>;/@&,]{0,10}[=:].{0,10}\+"]
+
+
     check_sensitive_information(keywords_list, ignore_list_keywords, repo_folder_path, tmp_folder_path, cnt,
+
+
                                 aigc_keywords_group1, aigc_keywords_group2)
+
+
     detection_result()
+
+
     opensorce_rm_commit_log(tmp_folder_path)
 
 
+
+
+
+
+
+
 if __name__ == "__main__":
-    main()
+
+
+    parser = argparse.ArgumentParser(
+
+
+        description="Detect potential sensitive information in a git repository."
+
+
+    )
+
+
+    parser.add_argument(
+
+
+        "--repo",
+
+
+        dest="repo_folder_path",
+
+
+        default=os.getcwd(),
+
+
+        help="Path to the repository to scan (default: current working directory).",
+
+
+    )
+
+
+    parser.add_argument(
+
+
+        "--tmp",
+
+
+        dest="tmp_folder_path",
+
+
+        default=tempfile.gettempdir(),
+
+
+        help="Temporary directory for intermediate files (default: system temp directory).",
+
+
+    )
+
+
+    args = parser.parse_args()
+
+
+    main(repo_folder_path=args.repo_folder_path, tmp_folder_path=args.tmp_folder_path)
+
+
+
 
     
