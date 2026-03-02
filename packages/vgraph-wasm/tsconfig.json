@@ -1,0 +1,28 @@
+{
+  "extends": "@internal/ts-config/tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": "./",
+    "outDir": "./es",
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "esModuleInterop": true,
+    "paths": {
+      "@visactor/vgraph": ["../vgraph/src/index.ts"],
+      "@visactor/vgraph/*": ["../vgraph/src/*"]
+    }
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "include": [
+    "src",
+    "examples/**/*.ts",
+    "examples/**/*.tsx"
+  ]
+}

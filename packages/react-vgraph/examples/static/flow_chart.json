@@ -1,0 +1,378 @@
+{
+  "nodes": [
+    {
+      "x": 400,
+      "y": 150,
+      "name": "已有账号？",
+      "taskType": "condition",
+      "id": "knTnTsWZnp",
+      "width": 196,
+      "height": 92,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0, 0.5],
+          "visible": true,
+          "index": 1,
+          "magnet": false
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [1, 0.5],
+          "visible": true,
+          "index": 2
+        }
+      ],
+      "disableAnchors": false,
+      "disableAnchorEvent": false
+    },
+    {
+      "x": 400,
+      "y": 40,
+      "name": "登录",
+      "taskType": "normal",
+      "id": "BmdQtVh61A",
+      "width": 100,
+      "height": 40,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 1],
+          "visible": true,
+          "index": 1
+        }
+      ],
+      "disableAnchorEvent": false,
+      "disableAnchors": false
+    },
+    {
+      "x": 250,
+      "y": 250,
+      "name": "输入账号密码",
+      "taskType": "normal",
+      "width": 100,
+      "height": 40,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 1],
+          "visible": true,
+          "index": 1
+        }
+      ],
+      "id": "U4QQrg",
+      "disableAnchorEvent": false,
+      "disableAnchors": false
+    },
+    {
+      "x": 250,
+      "y": 360,
+      "name": "账密正确？",
+      "taskType": "condition",
+      "width": 196,
+      "height": 92,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0, 0.5],
+          "visible": true,
+          "index": 1
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [1, 0.5],
+          "visible": true,
+          "index": 2
+        }
+      ],
+      "id": "4xauYE",
+      "disableAnchorEvent": false,
+      "disableAnchors": false
+    },
+    {
+      "x": 400,
+      "y": 470,
+      "name": "登录成功",
+      "taskType": "normal",
+      "width": 100,
+      "height": 40,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 1],
+          "visible": true,
+          "index": 1
+        }
+      ],
+      "id": "jyjSat",
+      "disableAnchorEvent": false,
+      "disableAnchors": false
+    },
+    {
+      "x": 540,
+      "y": 250,
+      "name": "注册账号",
+      "taskType": "normal",
+      "width": 100,
+      "height": 40,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 1],
+          "visible": true,
+          "index": 1
+        }
+      ],
+      "id": "c62plZ",
+      "disableAnchorEvent": false,
+      "disableAnchors": false
+    },
+    {
+      "x": 540,
+      "y": 350,
+      "name": "注册成功？",
+      "taskType": "condition",
+      "width": 196,
+      "height": 92,
+      "strokeStyle": null,
+      "anchors": [
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0.5, 0],
+          "visible": true,
+          "index": 0
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [0, 0.5],
+          "visible": true,
+          "index": 1
+        },
+        {
+          "show": "always",
+          "size": 4,
+          "position": [1, 0.5],
+          "visible": true,
+          "index": 2
+        }
+      ],
+      "id": "eldBQO",
+      "disableAnchorEvent": false,
+      "disableAnchors": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "BmdQtVh61A",
+      "sourceAnchor": 1,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 1,
+      "id": "whQdID",
+      "controlPoints": [[400, 84]],
+      "target": "knTnTsWZnp",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "knTnTsWZnp",
+      "sourceAnchor": 1,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 1,
+      "id": "Vy0www",
+      "controlPoints": [
+        [282, 150],
+        [250, 150],
+        [250, 210]
+      ],
+      "target": "U4QQrg",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "U4QQrg",
+      "sourceAnchor": 1,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 1,
+      "id": "KMBsC1",
+      "controlPoints": [[250, 294]],
+      "target": "4xauYE",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "4xauYE",
+      "sourceAnchor": 1,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 1,
+      "id": "kRRc6n",
+      "controlPoints": [
+        [132, 360],
+        [132, 430],
+        [400, 430]
+      ],
+      "target": "jyjSat",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "knTnTsWZnp",
+      "sourceAnchor": 2,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 2,
+      "id": "t3Hvad",
+      "controlPoints": [
+        [518, 150],
+        [540, 150],
+        [540, 210]
+      ],
+      "target": "c62plZ",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "c62plZ",
+      "sourceAnchor": 1,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 1,
+      "id": "UFTNEN",
+      "controlPoints": [
+        [540, 290],
+        [540, 284]
+      ],
+      "target": "eldBQO",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "eldBQO",
+      "sourceAnchor": 1,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 1,
+      "id": "T6Z2uh",
+      "controlPoints": [
+        [422, 350],
+        [400, 350],
+        [400, 430]
+      ],
+      "target": "jyjSat",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "eldBQO",
+      "sourceAnchor": 2,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 2,
+      "id": "PTk3CJ",
+      "controlPoints": [
+        [658, 350],
+        [658, 210],
+        [540, 210]
+      ],
+      "target": "c62plZ",
+      "targetAnchor": 0,
+      "__target": 0
+    },
+    {
+      "source": "4xauYE",
+      "sourceAnchor": 2,
+      "type": "hLine",
+      "endArrow": true,
+      "radius": 6,
+      "hitWidth": 6,
+      "__source": 2,
+      "id": "2fV9Sy",
+      "controlPoints": [
+        [368, 360],
+        [368, 210],
+        [250, 210]
+      ],
+      "target": "U4QQrg",
+      "__target": 0,
+      "targetAnchor": 0
+    }
+  ],
+  "groups": []
+}

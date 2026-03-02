@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+    /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+    @font-face {
+      font-family: 'iconfont';
+      /* Project id 3765180 */
+      src: url('//at.alicdn.com/t/c/font_3765180_hxg6zr3zrbf.woff2?t=1677481820237') format('woff2'),
+        url('//at.alicdn.com/t/c/font_3765180_hxg6zr3zrbf.woff?t=1677481820237') format('woff'),
+        url('//at.alicdn.com/t/c/font_3765180_hxg6zr3zrbf.ttf?t=1677481820237') format('truetype');
+    }
+
+    canvas {
+      font-family: "iconfont";
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .iconfont {
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <script src="../dist/vgraph.min.js"></script>
+  <script>
+    const data = {
+      nodes: [
+        { label: 'TOP', class: 'type-TOP', id: '0' },
+        { label: 'S', class: 'type-S', id: '1' },
+        { label: 'NP', class: 'type-NP', id: '2' },
+        { label: 'DT', class: 'type-DT', id: '3' },
+        { label: 'This', class: 'type-TK', id: '4' },
+        { label: 'VP', class: 'type-VP', id: '5' },
+        { label: 'VBZ', class: 'type-VBZ', id: '6' },
+        { label: 'is', class: 'type-TK', id: '7' },
+        { label: 'NP', class: 'type-NP', id: '8' },
+        { label: 'DT', class: 'type-DT', id: '9' },
+        { label: 'NN', class: 'type-NN', id: '11' },
+        { label: 'type.', class: 'type-.', id: '13' },
+        { label: 'sentence', class: 'type-TK', id: '14' },
+      ],
+      edges: [
+        { source: '3', target: '4' },
+        { source: '2', target: '3' },
+        { source: '1', target: '2' },
+        { source: '6', target: '7' },
+        { source: '5', target: '6' },
+        { source: '8', target: '9' },
+        { source: '8', target: '11' },
+        { source: '5', target: '8' },
+        { source: '1', target: '5' },
+        { source: '13', target: '14' },
+        { source: '1', target: '13' },
+        { source: '0', target: '1' },
+      ],
+      groups: [{
+        id: 'group',
+        children: ['5', '2', '3', '13']
+      }]
+    };
+
+    const div = document.createElement('div');
+    div.style.border = '1px solid #666';
+    div.style.width = '800px';
+    document.body.append(div);
+    
+    const graph = new vgraph.Graph({
+    container: div,
+    width: 800,
+    height: 600,
+    minRatio: 0.1,
+    maxRatio: 8,
+    setDefaultNode(node) {
+      return {
+        type: 'rect',
+        width: 120,
+        height: 40,
+        radius: 5,
+        fillStyle: '#fff',
+        text: node.name ?? node.id ?? 'null',
+        color: node.childNodes ? '#3073F2' : '#E1E4E8',
+        label: {
+          width: 80,
+          text: node.name ?? node.id ?? 'null',
+          textOverflow: 'ellipsis',
+        },
+        rectWidth: 20,
+        anchors: [
+          [0, 0.5],
+          [1, 0.5]
+        ],
+        icons: node.childNodes ? [{
+          show: 'always',
+          position: [1, 0.5],
+          offset: [-16, 0],
+          setStyles() {
+            return { fillStyle: '#666', icon: expandIcon, cursor: 'pointer'  };
+          },
+        }] : undefined,
+      };
+    },
+    setNodeStateStyles(state, data) {
+      const node = graph.getNodeById(data.id);
+      const label = node.getLabel();
+      if (state === 'hover') {
+        label?.set('fillStyle', '#3370FF');
+        return { strokeStyle: '#3370FF', shadowColor: 'rgba(27, 31, 35, 0.08)', shadowOffsetX: 2, shadowOffsetY: 4};
+      } else {
+        label?.set('fillStyle', '#666');
+        return {};
+      }
+    },
+    setDefaultEdge(edge) {
+      return {
+        type: 'line',
+        strokeStyle: '#ddd',
+        endArrow: {
+          type: 'arrow',
+          style: 'triangleSolid',
+          size: 10,
+          strokeStyle: '#ddd',
+        },
+      };
+    },
+    setDefaultGroup(group) {
+      return {
+        linkNode: false,
+        fillStyle: '#F3F9FF',
+        strokeStyle: '#3073F2',
+        padding: 10,
+        anchors: [
+          [0, 0.5],
+          [1, 0.5]
+        ],
+        title: {
+          text: { text: group.id, fillStyle: '#fff' },
+          background: {
+            fillStyle: "#3073F2",
+          },
+          icon: {
+            icon: '&#xe60f;',
+            fillStyle: "#fff",
+            cursor: "pointer",
+            size: 16,
+          }
+        },
+      };
+    }
+  });
+  graph.data(data);
+
+  graph.addBehavior(vgraph.panZoom);
+
+  const dag = new vgraph.DAGLayout({
+    graph,
+    options: {
+      rankDir: 'LR',
+      nodeSep: 50,
+      edgeSep: 10,
+      rankSep: 100,
+    },
+  });
+
+  graph.refresh();
+  </script>
+</body>
+
+</html>

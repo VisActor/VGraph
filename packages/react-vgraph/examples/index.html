@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <style>
+    /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+    @font-face {
+      font-family: 'iconfont';
+      /* Project id 3765180 */
+      src: url('//at.alicdn.com/t/c/font_3765180_akekn48k4es.woff2?t=1705473718196') format('woff2'),
+        url('//at.alicdn.com/t/c/font_3765180_akekn48k4es.woff?t=1705473718196') format('woff'),
+        url('//at.alicdn.com/t/c/font_3765180_akekn48k4es.ttf?t=1705473718196') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'coloriconfont';
+      /* Project id 3733599 */
+      src: url('//at.alicdn.com/t/c/font_3765180_47txtsgpk1h.woff2?t=1689238999664') format('woff2'),
+        url('//at.alicdn.com/t/c/font_3765180_47txtsgpk1h.woff?t=1689238999664') format('woff'),
+        url('//at.alicdn.com/t/c/font_3765180_47txtsgpk1h.ttf?t=1689238999664') format('truetype');
+    }
+
+    canvas {
+      font-family: 'iconfont';
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .iconfont {
+      font-family: 'iconfont' !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    div {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    canvas {
+      border: 1px solid #ccc;
+    }
+
+    .arco-form-item {
+      margin-bottom: 0 !important;
+    }
+    .arco-collapse-item-content-box {
+      padding: 16px 12px !important;
+    }
+    .arco-form-item > .arco-form-label-item {
+      padding-right: 4px !important;
+    }
+    .arco-input {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      line-height: 40px !important;
+      border-radius: 4px 4px 0 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>
+    <%= htmlWebpackPlugin.options.filename %>
+      <div id="root"></div>
+  </h2>
+</body>
+
+</html>

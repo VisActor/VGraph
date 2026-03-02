@@ -1,0 +1,43 @@
+.data-lineage-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: contain;
+
+  &-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+  }
+
+  &-inner {
+    position: relative;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.data-lineage-canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.relation-table-container {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  cursor: pointer;
+}
+
+.relation-table-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

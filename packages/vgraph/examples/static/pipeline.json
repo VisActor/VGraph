@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {
+      "x": -100,
+      "y": 45,
+      "id": "vgraphPipelineRoot",
+      "name": "root",
+      "type": "pipelineEditorNode",
+      "sources": [],
+      "targets": [
+        "qjbKEE"
+      ]
+    },
+    {
+      "x": 110,
+      "y": 40,
+      "id": "qjbKEE",
+      "name": "qjbKEE",
+      "sources": [
+        "vgraphPipelineRoot"
+      ],
+      "targets": [
+        "新增节点0",
+        "新增节点4"
+      ],
+      "actions": [
+        {"name": "日志", "url": "#"},
+        {"name": "报告"},
+        {"name": "通过"},
+        {"name": "拒绝"},
+        {"name": "详情"}
+      ]
+    },
+    {
+      "x": 290,
+      "y": 40,
+      "id": "新增节点0",
+      "error": true,
+      "name": "新增节点新增节点新增1111",
+      "sources": [
+        "qjbKEE"
+      ],
+      "targets": [
+        "新增节点1",
+        "新增节点5",
+        "新增节点6"
+      ],
+      "actions": [
+        {"name": "日志", "url": "#"},
+        {"name": "报告", "url": "#"}
+      ],
+      "duration": 6.43,
+      "note": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_187557c802542.svg"
+    },
+    {
+      "x": 470,
+      "y": 40,
+      "id": "新增节点1",
+      "name": "新增节点1新增节点1新增节点1新增节点1",
+      "sources": [
+        "新增节点0",
+        "新增节点4"
+      ],
+      "targets": [
+        "新增节点2"
+      ],
+      "duration": 11.93,
+      "description": "分支节点的执行说明文案说明文案",
+      "note": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/dev-demos/file_187557c802823.svg"
+    },
+    {
+      "x": 830,
+      "y": 40,
+      "id": "新增节点2",
+      "name": "新增节点2",
+      "warning":true,
+      "sources": [
+        "新增节点1",
+        "新增节点6",
+        "新增节点7"
+      ],
+      "targets": [
+        "新增节点3"
+      ],
+      "actions": [
+        {"name": "日志", "url": "#"},
+        {"name": "报告"},
+        {"name": "通过"},
+        {"name": "拒绝"},
+        {"name": "详情"}
+      ]
+    },
+    {
+      "x": 1010,
+      "y": 40,
+      "id": "新增节点3",
+      "name": "新增节点3",
+      "description": "分支节点的执行说明文案说明文案",
+      "sources": [
+        "新增节点2"
+      ],
+      "targets": []
+    },
+    {
+      "x": 290,
+      "y": 120,
+      "id": "新增节点4",
+      "name": "新增节点4",
+      "sources": [
+        "qjbKEE"
+      ],
+      "targets": [
+        "新增节点1",
+        "新增节点5",
+        "新增节点6"
+      ],
+      "actions": [
+        {"name": "日志", "url": "#"}
+      ]
+    },
+    {
+      "x": 470,
+      "y": 120,
+      "id": "新增节点5",
+      "name": "新增节点新增节点新1111111",
+      "sources": [
+        "新增节点0",
+        "新增节点4"
+      ],
+      "targets": [
+        "新增节点7"
+      ]
+    },
+    {
+      "x": 470,
+      "y": 200,
+      "id": "新增节点6",
+      "name": "新增节点6新增节点6新增节点6新增节点6新增节点6新增节点6新增节点6",
+      "error": false,
+      "description": "分支节点的执行说明文案说明文案",
+      "sources": [
+        "新增节点0",
+        "新增节点4"
+      ],
+      "targets": [
+        "新增节点2"
+      ],
+      "duration": 1
+    },
+    {
+      "x": 650,
+      "y": 120,
+      "id": "新增节点7",
+      "name": "新增节点7",
+      "sources": [
+        "新增节点5"
+      ],
+      "targets": [
+        "新增节点2"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "vgraphPipelineRoot",
+      "target": "qjbKEE"
+    },
+    {
+      "source": "qjbKEE",
+      "target": "新增节点0"
+    },
+    {
+      "source": "新增节点0",
+      "target": "新增节点1"
+    },
+    {
+      "source": "新增节点1",
+      "target": "新增节点2"
+    },
+    {
+      "source": "新增节点2",
+      "target": "新增节点3"
+    },
+    {
+      "source": "qjbKEE",
+      "target": "新增节点4"
+    },
+    {
+      "source": "新增节点4",
+      "target": "新增节点1"
+    },
+    {
+      "source": "新增节点0",
+      "target": "新增节点5"
+    },
+    {
+      "source": "新增节点4",
+      "target": "新增节点5"
+    },
+    {
+      "source": "新增节点0",
+      "target": "新增节点6"
+    },
+    {
+      "source": "新增节点4",
+      "target": "新增节点6"
+    },
+    {
+      "source": "新增节点6",
+      "target": "新增节点2"
+    },
+    {
+      "source": "新增节点7",
+      "target": "新增节点2"
+    },
+    {
+      "source": "新增节点5",
+      "target": "新增节点7"
+    }
+  ],
+  "groups": []
+}

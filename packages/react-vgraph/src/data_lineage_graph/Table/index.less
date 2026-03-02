@@ -1,0 +1,92 @@
+.data-lineage-table-container {
+  position: absolute;
+  left: 0;
+  box-sizing: content-box;
+  width: calc(100% - 2px);
+  height: 39px;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 39px;
+  text-overflow: ellipsis;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(27, 31, 35, 0.12);
+  border-bottom: 1px solid rgba(27, 31, 35, 0.12);
+  border-left: 1px solid rgba(27, 31, 35, 0.12);
+  cursor: pointer;
+  opacity: 1;
+
+  &:hover {
+    background-color: #f6f8fa;
+  }
+
+  &.larger {
+    height: 59px;
+    line-height: 59px;
+  }
+
+  &.smaller {
+    height: 31px;
+    line-height: 31px;
+  }
+}
+
+.data-lineage-table-container.highlight {
+  height: 38px;
+  font-weight: 500;
+  line-height: 38px;
+  background: #f3f9ff;
+  border-top: 1px solid rgba(27, 31, 35, 0.12);
+
+  &:hover {
+    background-color: #f6f8fa;
+  }
+
+  &.larger {
+    height: 58px;
+    line-height: 58px;
+  }
+
+  &.smaller {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.data-lineage-table-container.primary {
+  height: 38px;
+  font-weight: 500;
+  line-height: 38px;
+  background: #e8f4ff;
+  border: 1px solid #3073f2;
+
+  &.larger {
+    height: 58px;
+    line-height: 58px;
+  }
+
+  &.smaller {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.data-lineage-table-container.blur {
+  opacity: 0.3;
+
+  &:hover {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid rgba(27, 31, 35, 0.12);
+    opacity: 1;
+
+    &.larger {
+      height: 58px;
+      line-height: 58px;
+    }
+
+    &.smaller {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}

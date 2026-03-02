@@ -1,0 +1,562 @@
+{
+  "baseTableId": "17",
+  "nodes": [
+    {
+      "id": "0-0",
+      "type": "HiveColumn",
+      "name": "random.column.name0-0"
+    },
+    {
+      "id": "1-0",
+      "type": "HiveColumn",
+      "name": "random.column.name1-0"
+    },
+    {
+      "id": "2-0",
+      "type": "HiveColumn",
+      "name": "random.column.name2-0"
+    },
+    {
+      "id": "3-0",
+      "type": "HiveColumn",
+      "name": "random.column.name3-0"
+    },
+    {
+      "id": "4-0",
+      "type": "HiveColumn",
+      "name": "random.column.name4-0"
+    },
+    {
+      "id": "5-0",
+      "type": "HiveColumn",
+      "name": "random.column.name5-0"
+    },
+    {
+      "id": "6-0",
+      "type": "HiveColumn",
+      "name": "random.column.name6-0"
+    },
+    {
+      "id": "7-0",
+      "type": "HiveColumn",
+      "name": "random.column.name7-0"
+    },
+    {
+      "id": "8-0",
+      "type": "HiveColumn",
+      "name": "random.column.name8-0"
+    },
+    {
+      "id": "9-0",
+      "type": "HiveColumn",
+      "name": "random.column.name9-0"
+    },
+    {
+      "id": "10-0",
+      "type": "HiveColumn",
+      "name": "random.column.name10-0"
+    },
+    {
+      "id": "11-0",
+      "type": "HiveColumn",
+      "name": "random.column.name11-0"
+    },
+    {
+      "id": "12-0",
+      "type": "HiveColumn",
+      "name": "random.column.name12-0"
+    },
+    {
+      "id": "13-0",
+      "type": "HiveColumn",
+      "name": "random.column.name13-0"
+    },
+    {
+      "id": "14-0",
+      "type": "HiveColumn",
+      "name": "random.column.name14-0"
+    },
+    {
+      "id": "15-0",
+      "type": "HiveColumn",
+      "name": "random.column.name15-0"
+    },
+    {
+      "id": "16-0",
+      "type": "HiveColumn",
+      "name": "random.column.name16-0"
+    },
+    {
+      "id": "17-0",
+      "type": "HiveColumn",
+      "name": "random.column.name17-0"
+    },
+    {
+      "id": "18-0",
+      "type": "HiveColumn",
+      "name": "random.column.name18-0"
+    }
+  ],
+  "edges": [
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "0",
+        "name": "random.task0.9199702709352944"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "1",
+        "name": "random.task0.15001304469618537"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "2",
+        "name": "random.task0.42733724438941345"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "3",
+        "name": "random.task0.6916650506071307"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "4",
+        "name": "random.task0.10632762652888883"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "12-0",
+      "taskEntity": {
+        "id": "5",
+        "name": "random.task0.15240437405566665"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "15-0",
+      "taskEntity": {
+        "id": "6",
+        "name": "random.task0.3477637047119819"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "14-0",
+      "taskEntity": {
+        "id": "7",
+        "name": "random.task0.17880872812137039"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "5-0",
+      "taskEntity": {
+        "id": "8",
+        "name": "random.task0.1759846628629922"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "0-0",
+      "taskEntity": {
+        "id": "9",
+        "name": "random.task0.2717228258345368"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "18-0",
+      "taskEntity": {
+        "id": "10",
+        "name": "random.task0.32820120291988575"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "7-0",
+      "taskEntity": {
+        "id": "11",
+        "name": "random.task0.9464514124010028"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "7-0",
+      "taskEntity": {
+        "id": "12",
+        "name": "random.task0.5690875313625183"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "13",
+        "name": "random.task0.604339715710321"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "11-0",
+      "taskEntity": {
+        "id": "14",
+        "name": "random.task0.304873260242976"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "6-0",
+      "taskEntity": {
+        "id": "15",
+        "name": "random.task0.852053887491729"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "3-0",
+      "taskEntity": {
+        "id": "16",
+        "name": "random.task0.6987320365374854"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "11-0",
+      "taskEntity": {
+        "id": "17",
+        "name": "random.task0.662680000717043"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "18",
+        "name": "random.task0.13502075981121342"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "1-0",
+      "taskEntity": {
+        "id": "19",
+        "name": "random.task0.5384541763591697"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "9-0",
+      "taskEntity": {
+        "id": "20",
+        "name": "random.task0.3377995477981701"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "16-0",
+      "taskEntity": {
+        "id": "21",
+        "name": "random.task0.9189905174439184"
+      }
+    },
+    {
+      "source": "17-0",
+      "target": "11-0",
+      "taskEntity": {
+        "id": "22",
+        "name": "random.task0.785839611701532"
+      }
+    },
+    {
+      "source": "4-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "23",
+        "name": "random.task0.2498977322091187"
+      }
+    },
+    {
+      "source": "4-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "24",
+        "name": "random.task0.12446211699216558"
+      }
+    },
+    {
+      "source": "4-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "25",
+        "name": "random.task0.2872949138578289"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "26",
+        "name": "random.task0.05038051060728699"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "27",
+        "name": "random.task0.0512618163898555"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "28",
+        "name": "random.task0.5881473531081975"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "29",
+        "name": "random.task0.8154442661017696"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "30",
+        "name": "random.task0.30386674944420156"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "31",
+        "name": "random.task0.2214380082344103"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "17-0",
+      "taskEntity": {
+        "id": "32",
+        "name": "random.task0.05607682239708178"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "33",
+        "name": "random.task0.8483372851180708"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "34",
+        "name": "random.task0.07362827923233195"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "35",
+        "name": "random.task0.5615405161890346"
+      }
+    },
+    {
+      "source": "2-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "36",
+        "name": "random.task0.23568780781003018"
+      }
+    },
+    {
+      "source": "1-0",
+      "target": "8-0",
+      "taskEntity": {
+        "id": "37",
+        "name": "random.task0.055214851028277945"
+      }
+    },
+    {
+      "source": "13-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "38",
+        "name": "random.task0.5564896743790404"
+      }
+    },
+    {
+      "source": "13-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "39",
+        "name": "random.task0.9031649117260141"
+      }
+    },
+    {
+      "source": "13-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "40",
+        "name": "random.task0.4467476732642204"
+      }
+    },
+    {
+      "source": "13-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "41",
+        "name": "random.task0.5160019478992157"
+      }
+    },
+    {
+      "source": "10-0",
+      "target": "2-0",
+      "taskEntity": {
+        "id": "42",
+        "name": "random.task0.3655321206120039"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "0",
+      "name": "random.table.name0.8384418558261737",
+      "type": "ProjectHTask",
+      "children": ["0-0"]
+    },
+    {
+      "id": "1",
+      "name": "random.table.name0.9399625638443756",
+      "type": "ProjectHTask",
+      "children": ["1-0"]
+    },
+    {
+      "id": "2",
+      "name": "random.table.name0.7824053681959386",
+      "type": "ProjectHTask",
+      "children": ["2-0"]
+    },
+    {
+      "id": "3",
+      "name": "random.table.name0.3999828540537451",
+      "type": "ProjectHTask",
+      "children": ["3-0"]
+    },
+    {
+      "id": "4",
+      "name": "random.table.name0.9612768107192184",
+      "type": "ProjectHTask",
+      "children": ["4-0"]
+    },
+    {
+      "id": "5",
+      "name": "random.table.name0.9644986868848999",
+      "type": "ProjectHTask",
+      "children": ["5-0"]
+    },
+    {
+      "id": "6",
+      "name": "random.table.name0.8286433019068906",
+      "type": "ProjectHTask",
+      "children": ["6-0"]
+    },
+    {
+      "id": "7",
+      "name": "random.table.name0.3265046409165593",
+      "type": "ProjectHTask",
+      "children": ["7-0"]
+    },
+    {
+      "id": "8",
+      "name": "random.table.name0.18854531270514419",
+      "type": "ProjectHTask",
+      "children": ["8-0"]
+    },
+    {
+      "id": "9",
+      "name": "random.table.name0.882210076804735",
+      "type": "ProjectHTask",
+      "children": ["9-0"]
+    },
+    {
+      "id": "10",
+      "name": "random.table.name0.1754084031912897",
+      "type": "ProjectHTask",
+      "children": ["10-0"]
+    },
+    {
+      "id": "11",
+      "name": "random.table.name0.640845289941649",
+      "type": "ProjectHTask",
+      "children": ["11-0"]
+    },
+    {
+      "id": "12",
+      "name": "random.table.name0.7731998325795622",
+      "type": "ProjectHTask",
+      "children": ["12-0"]
+    },
+    {
+      "id": "13",
+      "name": "random.table.name0.6808531059401735",
+      "type": "ProjectHTask",
+      "children": ["13-0"]
+    },
+    {
+      "id": "14",
+      "name": "random.table.name0.8865898294820331",
+      "type": "ProjectHTask",
+      "children": ["14-0"]
+    },
+    {
+      "id": "15",
+      "name": "random.table.name0.020490919016399323",
+      "type": "ProjectHTask",
+      "children": ["15-0"]
+    },
+    {
+      "id": "16",
+      "name": "random.table.name0.858745841367395",
+      "type": "ProjectHTask",
+      "children": ["16-0"]
+    },
+    {
+      "id": "17",
+      "name": "random.table.name0.2598924172925803",
+      "type": "ProjectHTask",
+      "children": ["17-0"]
+    },
+    {
+      "id": "18",
+      "name": "random.table.name0.20367713900288198",
+      "type": "ProjectHTask",
+      "children": ["18-0"]
+    }
+  ]
+}
