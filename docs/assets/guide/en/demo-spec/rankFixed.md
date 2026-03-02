@@ -1,7 +1,7 @@
 # DAG Specify Partial Levels
 
-In the [directed graph layout]() of xgraph, you can support custom levels. First, calculate the levels of all nodes through DAGLayout, and then modify the levels of some nodes to the specified levels according to business needs, so as to achieve the purpose of specifying partial levels.
-Since the directed graph layout of xgraph can support only calculating the level without calculating the position of the nodes through the `rankOnly` option, and the custom level can skip the level calculation. Therefore, although the layout is executed twice, the total calculation amount is still the calculation consumption required for one layout.
+In the [directed graph layout]() of vgraph, you can support custom levels. First, calculate the levels of all nodes through DAGLayout, and then modify the levels of some nodes to the specified levels according to business needs, so as to achieve the purpose of specifying partial levels.
+Since the directed graph layout of vgraph can support only calculating the level without calculating the position of the nodes through the `rankOnly` option, and the custom level can skip the level calculation. Therefore, although the layout is executed twice, the total calculation amount is still the calculation consumption required for one layout.
 
 In general, it can be used as follows:
 ```javascript

@@ -3,7 +3,7 @@
 ## 安装
 
 ### 通过 npm 安装
-【需要设置默认的 npm 源为 bnpm】
+（可直接使用 npm 官方源或你常用的镜像源）
 
 ```
 npm install @visactor/vgraph --save

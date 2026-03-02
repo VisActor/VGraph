@@ -1,8 +1,8 @@
 # 文字气泡 Tooltip
-Tooltip 是常用的辅助信息展示途径。xGraph 提供基于 Arco Design Tooltip 的封装以提升基于 React 开发产品的开发效率。
+Tooltip 是常用的辅助信息展示途径。vgraph 提供基于 Arco Design Tooltip 的封装以提升基于 React 开发产品的开发效率。
 
 ```javascript
-import { Tooltip } from '@dp/xgraph-react-ui';
+import { Tooltip } from '@visactor/react-vgraph-ui';
 
 <div style={{ width: 1000, height: 600 }} id="reactTooltipExample">
   <Tooltip
@@ -28,8 +28,8 @@ import { Tooltip } from '@dp/xgraph-react-ui';
 
 以下是[节点 label](../node-spec/options#Label) 配合 triggerId 的使用方法示例。当 hover 节点 label 时会展示对应的 tooltip。
 ```javascript
-import { Graph } from '@dp/xgraph';
-import { Tooltip } from '@dp/xgraph-react';
+import { Graph } from '@visactor/vgraph';
+import { Tooltip } from '@visactor/react-vgraph';
 
 const graph = new Graph({
   container: 'graphContainer',

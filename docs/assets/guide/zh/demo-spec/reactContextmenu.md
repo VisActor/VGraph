@@ -1,7 +1,7 @@
 # 右键菜单 Contextmenu
-右键菜单常用于承载对单个实体或整体图产品的功能，能提升用户的操作效率。xGraph 提供 react 框架的 Contextmenu。出于各个产品视觉风格不一的考虑仅做容器显隐响应，内部功能可自行实现。
+右键菜单常用于承载对单个实体或整体图产品的功能，能提升用户的操作效率。vgraph 提供 react 框架的 Contextmenu。出于各个产品视觉风格不一的考虑仅做容器显隐响应，内部功能可自行实现。
 ```javascript
-import { Contextmenu } from '@dp/xgraph-react-ui';
+import { Contextmenu } from '@visactor/react-vgraph-ui';
 
 <div id="graphContainerId">
   <Contextmenu graph={graph} getContent={getContent} targets={['node', 'edge']} />
