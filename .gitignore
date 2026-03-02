@@ -102,3 +102,18 @@ vgraph.d.ts
 
 # sensitive info scan result
 sensitive_info_result.txt
+# 敏感配置文件
+.env
+.env.local
+.env.production
+config/secrets.yml
+
+# 密钥文件
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 日志文件
+*.log
+logs/
