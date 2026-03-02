@@ -6,7 +6,6 @@ VGraph, more than just a graph visualization engine, but also a solution for gra
 [Introduction](https://visactor.io/vgraph) •
 [Demo](https://visactor.io/vgraph/example) •
 [Tutorial](https://visactor.io/vgraph/guide) •
-[API](https://visactor.io/vgraph/api/vgraph)
 
 English | [简体中文](./README.zh-CN.md)
 
@@ -44,35 +43,40 @@ $ yarn add @visactor/vgraph
 
 ```
 import { Graph } from '@visactor/vgraph';
-
+// prepare data
+const data = {
+    nodes: [{
+        id: 'Hello',
+        x: 100,
+        y: 100,
+    }, {
+        id: 'World',
+        x: 300,
+        y: 100,
+    }],
+    edges: [{
+        source: 'Hello',
+        target: 'World',
+    }],
+};
 const spec = {
+  //  specify the graph container
+  container: 'graphContainer',
   width: 800,
   height: 600,
-  data: {
-    nodes: [
-      { id: '0', label: '0' },
-      { id: '1', label: '1' },
-      { id: '2', label: '2' },
-      { id: '3', label: '3' },
-      { id: '4', label: '4' },
-    ],
-    edges: [
-      { source: '0', target: '1' },
-      { source: '0', target: '2' },
-      { source: '0', target: '3' },
-      { source: '1', target: '4' },
-      { source: '2', target: '4' },
-      { source: '3', target: '4' }
-    ]
-  },
-  layout: {
-    type: 'force'
+  //  configure node style
+  setDefaultNode(nodeData) {
+      return {
+          label: nodeData.id,
+          width: 100,
+          height: 40,
+      }
   }
 };
-
-// 'chart' is the id of your dom container, such as <div id="chart"></chart>
-const vgraph = new Graph(spec, { dom: 'chart' });
-vgraph.render();
+// create graph instance
+const vgraph = new Graph(spec);
+// import data
+vgraph.data(data);
 ```
 
 ## Development
