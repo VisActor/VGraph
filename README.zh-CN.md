@@ -6,7 +6,6 @@ VGraph，不仅仅是图可视化渲染引擎，更是图分析解决方案。
 [官网](https://visactor.io/vgraph) •
 [案例](https://visactor.io/vgraph/example) •
 [教程](https://visactor.io/vgraph/guide) •
-[API](https://visactor.io/vgraph/api/vgraph)
 
 [English](./README.md) | 简体中文
 
@@ -44,35 +43,40 @@ $ yarn add @visactor/vgraph
 
 ```
 import { Graph } from '@visactor/vgraph';
-
+// 准备数据
+const data = {
+    nodes: [{
+        id: 'Hello',
+        x: 100,
+        y: 100,
+    }, {
+        id: 'World',
+        x: 300,
+        y: 100,
+    }],
+    edges: [{
+        source: 'Hello',
+        target: 'World',
+    }],
+};
 const spec = {
+  // 指定图容器
+  container: 'graphContainer',
   width: 800,
   height: 600,
-  data: {
-    nodes: [
-      { id: '0', label: '0' },
-      { id: '1', label: '1' },
-      { id: '2', label: '2' },
-      { id: '3', label: '3' },
-      { id: '4', label: '4' },
-    ],
-    edges: [
-      { source: '0', target: '1' },
-      { source: '0', target: '2' },
-      { source: '0', target: '3' },
-      { source: '1', target: '4' },
-      { source: '2', target: '4' },
-      { source: '3', target: '4' }
-    ]
-  },
-  layout: {
-    type: 'force'
+  // 配置节点样式
+  setDefaultNode(nodeData) {
+      return {
+          label: nodeData.id,
+          width: 100,
+          height: 40,
+      }
   }
 };
-
-// 'chart' 是图表 dom 容器的 id，比如 <div id="chart"></chart>
-const vgraph = new Graph(spec, { dom: 'chart' });
-vgraph.render();
+// 创建 graph 实例
+const vgraph = new Graph(spec);
+// 导入数据
+vgraph.data(data);
 ```
 
 ## 开发
