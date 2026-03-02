@@ -12,7 +12,7 @@ English | [简体中文](./README.zh-CN.md)
 
 ## Introduction
 
-VGraph is the graph visualization and analysis engine of [VisActor](https://visactor.io). It is based on the visual rendering engine [VRender](https://github.com/VisActor/VRender). The core capabilities are as follows:
+VGraph is the graph visualization and analysis engine of [VisActor](https://visactor.io). The core capabilities are as follows:
 
 - **Rich elements**: Built-in multiple nodes, edges and other graph elements to meet the drawing needs of various graph analysis scenarios such as flowcharts, mind maps, and DAGs.
 - **High performance**: Based on the high-performance rendering engine, it supports smooth interaction of tens of thousands of nodes and edges. It also supports WASM-based high-performance layout, which perfectly solves the performance problems of graph analysis.
@@ -100,16 +100,9 @@ $ rush docs
 ## 🔗 Related Links
 
 - [Homepage](https://www.visactor.io/vgraph)
+- [Graph Examples](https://www.visactor.io/vgraph/example)
 - [VGraph Tutorials](https://www.visactor.io/vgraph/guide)
-- [VGraph Options](https://www.visactor.io/vgraph/option/)
-- [VGraph API](https://www.visactor.io/vgraph/api/vgraph)
-- [VRender](https://www.visactor.io/vrender)
-- [FAQ](https://www.visactor.io/vgraph/guide/FAQ)
 - [CodeSandbox Template](https://codesandbox.io/s/vgraph-simple-demo-g8q738?file=/src/index.ts) for bug reports
-
-## 💖 Thanks
-
-Thanks to [Semi](https://semi.design/) for providing the theme visualization customization solution.
 
 ## 🤝 Contribution
 
