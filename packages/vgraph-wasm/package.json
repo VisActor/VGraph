@@ -8,7 +8,8 @@
   "files": [
     "cjs",
     "es",
-    "dist"
+    "dist",
+    "LICENSE-THIRD-PARTY.md"
   ],
   "exports": {
     ".": {

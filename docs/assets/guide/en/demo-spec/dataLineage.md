@@ -1,7 +1,7 @@
 # Data Lineage Scenario Solution
 
 ## Scenario Introduction
-The data processing flow generally starts from RDS and MQ, goes through multiple and various calculations and storage, and finally flows into indicators, reports, and data service systems. Data lineage describes the source and destination of data, as well as the transformation of data in multiple processing processes. It can help users better understand the table, so as to make full use of the data. For component usage documentation, please see [Data Lineage Documentation](/docs/2.x/analysis-solution-spec_dataLineage).
+The data processing flow generally starts from RDS and MQ, goes through multiple and various calculations and storage, and finally flows into indicators, reports, and data service systems. Data lineage describes the source and destination of data, as well as the transformation of data in multiple processing processes. It can help users better understand the table, so as to make full use of the data. For component usage documentation, please see [Data Lineage Documentation](/vgraph/guide/analysis-solution-spec/dataLineage).
 The main scenarios of data lineage are:
 
 
