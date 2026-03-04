@@ -10,25 +10,25 @@ const width = div.offsetWidth;
 const height = div.offsetHeight;
 
 const testData = {
-  name: "杭州深度求索人工智能基础技术研究有限公司",
+  name: "杭州某人工智能研究有限公司",
   root: true,
   children: [
     {
-      name: "宁波程恩企业管理咨询合伙企业（有限合伙）",
+      name: "宁波某公司",
       category: 0,
       children: [],
-      amount: 990,
-      ratio: 0.99,
+      amount: 490,
+      ratio: 0.59,
     },
     {
-      name: "梁文锋",
+      name: "张三",
       category: 0,
       children: [],
       amount: 10,
-      ratio: 0.01,
+      ratio: 0.51,
     },
     {
-      name: "北京深度求索人工智能基础技术研究有限公司",
+      name: "北京某公司",
       category: 1,
       children: [],
       amount: 1000,
