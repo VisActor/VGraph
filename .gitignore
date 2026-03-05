@@ -117,3 +117,5 @@ config/secrets.yml
 # 日志文件
 *.log
 logs/
+__pycache__/
+*.pyc

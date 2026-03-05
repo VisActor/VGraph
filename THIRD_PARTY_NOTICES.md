@@ -1,4 +1,4 @@
-**NOTE: This file is being deprecated. All third-party license information has been migrated to [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md).**
+**NOTE: This file is being deprecated. All third-party license information has been migrated to [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md). For the npm package `@visactor/vgraph-wasm`, the third-party license text is also included in `packages/vgraph-wasm/LICENSE-THIRD-PARTY.md`.**
 
 ---
 

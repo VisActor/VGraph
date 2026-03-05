@@ -29,3 +29,14 @@ source ./emsdk_env.sh
 ```
 bash scripts/dag_layouts/build_dot.sh
 ```
+
+## 构建教程
+
+详见：`docs/build-wasm.md`
+
+## Graphviz 源码与补丁说明
+
+`dotlayout.wasm` 基于 Graphviz 9.0.0 构建，并应用了一组本地补丁以适配/裁剪 wasm 场景。补丁与说明位于：
+
+- `third_party/graphviz/README.md`
+- `third_party/graphviz/patches/graphviz-9.0.0-wasm-vendor.patch`

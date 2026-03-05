@@ -26,7 +26,7 @@ import { Tooltip } from '@visactor/react-vgraph-ui';
 
 For more configuration items, please see [Arco Tooltip](https://arco.design/react/components/tooltip).
 
-The following is an example of how to use [node label](/docs/2.x/node-spec_options#Label) with `triggerId`. The corresponding tooltip will be displayed when hovering over the node label.
+The following is an example of how to use [node label](/vgraph/guide/node-spec/options#Label) with `triggerId`. The corresponding tooltip will be displayed when hovering over the node label.
 ```javascript
 import { Graph } from '@visactor/vgraph';
 import { Tooltip } from '@visactor/react-vgraph';

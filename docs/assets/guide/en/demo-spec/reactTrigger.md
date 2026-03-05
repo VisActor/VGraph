@@ -30,7 +30,7 @@ import { Trigger } from '@visactor/react-vgraph-ui';
 
 For more configuration items, please see [Arco Trigger](https://arco.design/react/components/trigger)
 
-The following is an example of how to use [node icon](/docs/2.x/node-spec_options#Icons) with `triggerId`. The trigger panel will pop up when the corresponding icon on the node is clicked.
+The following is an example of how to use [node icon](/vgraph/guide/node-spec/options#Icons) with `triggerId`. The trigger panel will pop up when the corresponding icon on the node is clicked.
 ```javascript
 import { Graph } from '@visactor/vgraph';
 import { Trigger } from '@visactor/react-vgraph';
