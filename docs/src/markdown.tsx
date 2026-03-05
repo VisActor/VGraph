@@ -251,7 +251,6 @@ const __VG_EXTERNALS__ = {
   "@visactor/vgraph": "window.VGraph",
   "@visactor/react-vgraph": "window.ReactVGraph",
   "@visactor/react-vgraph-ui": "window.ReactVGraphUI",
-  "@visactor/vgraph-wasm": "window.VGraphWasm",
   "@arco-design/web-react": "window.ArcoDesign",
   "@arco-design/web-react/icon": "window.ArcoDesignIcon"
 };

@@ -14,7 +14,7 @@ VGraph，不仅仅是图可视化渲染引擎，更是图分析解决方案。
 VGraph 是 [VisActor](https://visactor.io) 可视化体系中的图可视化及分析引擎。核心能力如下：
 
 - **元素丰富**: 内置多种节点、边等图元素，满足流程图、脑图、DAG 图等各类图分析场景的绘制需求。
-- **性能卓越**: 基于高性能渲染引擎，支持上万点边的流畅交互。同时支持基于 WASM 的高性能布局，完美解决图分析的性能问题。
+- **性能卓越**: 基于高性能渲染引擎，支持上万点边的流畅交互。
 - **交互丰富**: 内置丰富的交互，支持自定义交互，满足各类交互分析需求。
 - **布局按需**: 支持多种内置布局及自定义布局，可随意组合切换。
 
@@ -25,7 +25,6 @@ VGraph 是 [VisActor](https://visactor.io) 可视化体系中的图可视化及�
 1. `@visactor/vgraph`: VGraph 核心代码仓库
 2. `@visactor/react-vgraph`: 基于 [React](https://react.dev/) 封装的 VGraph 组件
 3. `@visactor/react-vgraph-ui`: VGraph 的部分 React UI 组件
-4. `@visactor/vgraph-wasm`: vgraph 布局的 wasm 版本
 
 ## 安装
 
@@ -117,5 +116,3 @@ $ rush docs
 ## 协议
 
 本项目基于 [MIT 协议](./LICENSE)，请自由享受及参与开源。
-
-本项目包含第三方组件，其各自的许可证在 [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md) 文件中列出。原有的声明文件可见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。

@@ -633,25 +633,6 @@
       ]
     },
     {
-      "path": "wasm",
-      "title": {
-        "zh": "WASM 布局",
-        "en": "WASM Layout"
-      },
-      "children": [
-        {
-          "path": "daglayout",
-          "title": {
-            "zh": "WASM 有向图布局",
-            "en": "WASM DAG Layout"
-          },
-          "meta": {
-            "cover": "https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/wasmlayout.jpeg"
-          }
-        }
-      ]
-    },
-    {
       "path": "custom",
       "title": {
         "zh": "自定义布局",

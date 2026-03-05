@@ -14,7 +14,7 @@ English | [简体中文](./README.zh-CN.md)
 VGraph is the graph visualization and analysis engine of [VisActor](https://visactor.io). The core capabilities are as follows:
 
 - **Rich elements**: Built-in multiple nodes, edges and other graph elements to meet the drawing needs of various graph analysis scenarios such as flowcharts, mind maps, and DAGs.
-- **High performance**: Based on the high-performance rendering engine, it supports smooth interaction of tens of thousands of nodes and edges. It also supports WASM-based high-performance layout, which perfectly solves the performance problems of graph analysis.
+- **High performance**: Based on the high-performance rendering engine, it supports smooth interaction of tens of thousands of nodes and edges.
 - **Rich interaction**: Built-in rich interaction, supports custom interaction to meet various interactive analysis needs.
 - **Layout on demand**: Supports a variety of built-in layouts and custom layouts, which can be combined and switched at will.
 
@@ -25,7 +25,6 @@ This repository includes the following packages:
 1. `@visactor/vgraph`: The core code repository of VGraph
 2. `@visactor/react-vgraph`: The VGraph component encapsulated based on [React](https://react.dev/)
 3. `@visactor/react-vgraph-ui`: Some React UI components for VGraph
-4. `@visactor/vgraph-wasm`: Wasm version of vgraph layouts
 
 ## Installation
 
@@ -117,5 +116,3 @@ Small streams converge to make great rivers and seas!
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
-
-This project contains third-party components, and their respective licenses are listed in the [THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md) file. The original notices can be found in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
