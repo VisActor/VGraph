@@ -58,7 +58,7 @@ graph.animate({
 | r | number | The radius of the loading circle, defaults to 8px |
 | lineWidth | number | The thickness of the loading circle, defaults to 2px |
 | color | string | The color of the loading circle |
-| mask | boolean \| Record<string, any> | Background mask configuration, refer to [rect configuration](/docs/1.x/shape-spec_rect) |
+| mask | boolean \| Record<string, any> | Background mask configuration, refer to [rect configuration](/vgraph/guide/shape-spec/rect) |
 
 
 **common configuration**

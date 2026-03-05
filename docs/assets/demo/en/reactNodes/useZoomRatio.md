@@ -8,7 +8,7 @@ option:
 ---
 # hooks-useZoomRatio
 
-vGraph provides a series of hooks for heavy-duty usage scenarios for React users. `useZoomRatio` is a view zoom hook, and its usage can be referred to in the `ZoomUtils` component.
+VGraph provides a set of hooks for heavy React usage scenarios. useZoomRatio is a view-zoom hook. See the ZoomUtils component in the demo for usage.
 
 ## Key Configurations
 

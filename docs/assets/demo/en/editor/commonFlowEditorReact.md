@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing - React Node
 
-Users can freely arrange the position layout and connection relationship of nodes by dragging and dropping, so as to build and edit the directed graph freely and flexibly. With React nodes, the node style can be displayed more flexibly.<br/>Interaction mode: drag and drop nodes or anchors to edit the relationship graph.
+Users can freely arrange node positions and relationships via drag-and-drop, building and editing a DAG in a flexible way. With React nodes, you can render node styles more flexibly.
+<br>Interactions: drag nodes or anchors to edit the graph. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Code Demo
 

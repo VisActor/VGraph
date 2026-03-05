@@ -8,7 +8,7 @@ option:
 ---
 # 鱼眼放大镜
 
-数据描述: miserables 数据。<br>通过鱼眼放大镜组件轻松观察局部结构。
+数据描述: miserables数据。<br> 通过鱼眼放大镜组件轻松观察局部结构。
 
 ## Code Demo
 

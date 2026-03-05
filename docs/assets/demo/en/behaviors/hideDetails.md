@@ -8,7 +8,7 @@ option:
 ---
 # Details First, Then Overview
 
-Hide details when zooming out, click a node to focus and restore detail display.
+When the default view focuses on local details (for example, the initial state focuses on the root node, or the most recent unfinished workflow), VGraph provides the <a href="/vgraph/guide/behaviors#hideDetails-隐藏细节">hide details when zoomed out</a> interaction. It helps you focus on the most important information in an overview state, and combined with click-to-focus it makes it easy to zoom out for overview and then focus back on an individual.
 
 ## Code Demo
 

@@ -8,7 +8,8 @@ option:
 ---
 # 树图编辑-React 节点
 
-树图编辑场景不继承相对节点下游关系，示例包含插入节点与子树复制粘贴能力。<br>支持 undo/redo/export。
+与流水线不同，树图编辑中不会继承相对节点的下游关系。此示例有在两节点中插入节点，以及子树复制粘贴能力。 
+<br> 交互方式：<code>hover 连线</code>展示添加节点 icon；<code> click icon</code>在 icon 方向上添加一个节点；<code> click undo</code> 撤销;<code> click redo</code> 重做; <code> click export data</code> 导出当前图中数据。
 
 ## 代码演示
 

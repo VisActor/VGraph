@@ -8,7 +8,7 @@ option:
 ---
 # Responsive Legend
 
-Show a responsive categorical legend that supports hover/click interaction and filtering.
+The responsive legend automatically shrinks when there are few legend items, and paginates when the number of items exceeds the configured max size. <br>Interaction: click the legend to hide nodes of that type.
 
 ## Code Demo
 

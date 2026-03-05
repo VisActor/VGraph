@@ -8,7 +8,7 @@ option:
 ---
 # React Group Title
 
-vGraph provides a React node component to meet the needs of displaying heavy nodes in graph scenarios, and the new version supports rendering of group titles. Please read the usage documentation carefully before use.
+To support graph scenarios with <b>heavy node rendering</b>, VGraph provides React node components and now supports rendering group titles in newer versions. <br/>Please read <a href="/vgraph/guide/react-node-spec/react-viewer" target="_blank">the documentation</a> before use.
 
 ## Key Configurations
 

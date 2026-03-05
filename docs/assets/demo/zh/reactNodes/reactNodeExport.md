@@ -7,7 +7,7 @@ link: reactNodes/reactNodeExport
 option:
 ---
 # React 节点大量导出
-当同时导出大量 React 节点时可能会出现严重的性能问题甚至直接卡死。vGraph 建议切换到 canvas 节点导出主要信息。因此当有大批量导出场景时如果节点交互不复杂应首要考虑使用 canvas 节点实现
+当同时导出大量 React 节点时可能会出现严重的性能问题甚至直接卡死。VGraph 建议切换到 canvas 节点导出主要信息。因此当有大批量导出场景时如果节点交互不复杂应首要考虑使用 canvas 节点实现
 ## 关键配置
 
 - `Graph`：dom 模式 + Viewer 展示；导出时临时切 canvas 再恢复。

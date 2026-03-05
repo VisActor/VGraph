@@ -8,7 +8,7 @@ option:
 ---
 # Auto-Configuring Force-Directed Graphs
 
-In everyday business scenarios, it is common to handle data with different data volumes and characteristics in a single graph. If the same force configuration is used for all this data, the display may have flaws. vgraph calculates and configures the default forces based on the characteristics of the input data. You can learn more in the "Auto-Configuring Force Functions" section of the documentation.
+In daily business scenarios, a single graph often needs to handle datasets with different sizes and characteristics. Using one fixed force configuration for all of them may lead to suboptimal visuals. VGraph computes a default force configuration based on the input data features. Learn more at <a href="/vgraph/guide/layout-spec/force#自动配置力函数">Auto Force Configuration Function</a>.
 
 ## Code Demo
 

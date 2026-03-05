@@ -8,8 +8,7 @@ option:
 ---
 # Mind Map
 
-Data description: The relationship between the six thinking hats and product planning.
-Interaction: `hover node`: highlight start and end paths; `click icon`: collapse/expand the tree structure.
+Data description: The relationship between Six Thinking Hats and product planning. <br>Interactions: <code>hover node</code>: highlight the path; <code>click icon</code>: collapse/expand the tree.
 
 ## Code Demo
 

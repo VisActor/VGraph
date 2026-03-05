@@ -7,7 +7,9 @@ link: edge-spec/customization
 option:
 ---
 # Custom Edge
-vGraph provides a rich variety of built-in connections, and in most cases, there is no need to customize the path. It is recommended to inherit from the built-in connections and customize the parts other than the connection itself. This demo shows how to customize an icon to appear and interact in the middle of the connection when the mouse hovers over it. You can comment out the code in the connection time to have the icon appear at the mouse position to improve the experience. For detailed documentation, please refer to Custom Edge.
+VGraph provides a rich set of built-in edges, and in most cases you do not need to customize the path. It is recommended to extend a built-in edge and only customize what you need. This demo shows how to display an icon in the middle of an edge on hover and interact with it. You can comment out the edge-positioning code to make the icon appear at the cursor for a better experience.
+<br>
+See <a href="/vgraph/guide/edge-spec/customization">Custom Edges</a> for details.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

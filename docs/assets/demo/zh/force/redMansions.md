@@ -8,7 +8,7 @@ option:
 ---
 # 知识图谱
 
-数据描述：红楼梦人物知识图谱。<br>交互操作：<code>panZoom 画布</code> 展示节点 label；<code>hover 节点</code> 展示人物的相邻节点和边的 label；<code>click 图例</code> 进行类别筛选。
+数据描述：红楼梦人物知识图谱。 <br>交互操作：<code>panZoom 画布</code>: 展示节点 label ；<code>hover 节点</code>: 展示人物的相邻节点和边的 label ，<code>click 图例</code>: 进行类别筛选。
 
 ## Code Demo
 

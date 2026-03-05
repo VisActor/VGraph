@@ -8,7 +8,8 @@ option:
 ---
 # Brush Select
 
-Brush select nodes and set their selected state, supports clearing the selection by clicking the canvas.
+The built-in brushSelect interaction in VGraph lets users select graph elements in batches, including nodes, edges, and groups.<br>
+See <a href="/vgraph/guide/behaviors">Interactions</a> for details.
 
 ## Code Demo
 

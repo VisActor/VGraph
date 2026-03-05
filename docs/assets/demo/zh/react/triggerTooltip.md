@@ -8,7 +8,7 @@ option:
 ---
 # 工具提示
 
-vgraph-react 中的 Tooltip 依赖 Arco Design。如果你的项目并未使用此 ui 库，vgraph 提供 Trigger 工具帮助你轻松封装任意 UI 组件库的 Tooltip。当 tooltip 的热区需要响应事件时，可以通过 graph.handleEvent 处理。详细请见UI 触发器
+react-vgraph 中的 Tooltip 依赖 Arco Design。如果你的项目并未使用此 ui 库，vgraph 提供 Trigger 工具帮助你轻松封装任意 UI 组件库的 Tooltip。当 tooltip 的热区需要响应事件时，可以通过 graph.handleEvent 处理。详细请见<a href="/vgraph/guide/node-addon-spec/trigger">UI 触发器</a>
 
 ## Code Demo
 

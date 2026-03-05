@@ -8,7 +8,7 @@ option:
 ---
 # Ego Network Circular Layout
 
-Data Description: ego network data. The color represents the depth of the node relative to the center node. It can be seen that this layout can keep the node depth consistent with the number of ring layers.
+Data description: Ego network data. Colors represent the depth from the center node. The layout keeps node depth aligned with ring layers.
 
 ## Code Demo
 

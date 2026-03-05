@@ -8,7 +8,7 @@ option:
 ---
 # 触发器
 
-数据描述：带有任务完成状态的流程数据。 交互操作：click icon 展示节点的 trigger。
+数据描述：带有任务完成状态的流程数据。 <br> 交互操作：<code>click icon</code>展示节点的 trigger。
 
 ## Code Demo
 

@@ -8,7 +8,8 @@ option:
 ---
 # 有向图自由编辑-快速添加节点
 
-单纯拖拉拽的方式编辑关系图的编辑效率不高。本示例展示了一种通过拖拽连线到空白处实现快速添加节点的实现方式。<br>交互方式：拖拉拽节点或锚点编辑；拖拽连线时未连接具体节点时在连线末端添加一个新的节点。快捷键：<code>ctrl + z</code> 撤销；<code>ctrl + shift + z</code> 重做；<code>ctrl + c/x/v</code> 复制/剪切/粘贴；<code>ctrl + a</code> 全选；<code>backspace</code> 删除。
+单纯拖拉拽的方式编辑关系图的编辑效率不高。本示例展示了一种通过拖拽连线到空白处实现快速添加节点的实现方式。
+<br> 交互方式：拖拉拽节点或锚点编辑；拖拽连线时未连接具体节点时在连线末端添加一个新的节点.快捷键： <code> ctrl + z </code> 撤销；<code> ctrl + shift + z </code> 重做； <code> ctrl + c/x/v </code> 复制/剪切/粘贴； <code> ctrl + a </code> 全选；<code> backspace </code> 删除。
 
 ## 代码演示
 

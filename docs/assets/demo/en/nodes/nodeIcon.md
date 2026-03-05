@@ -7,7 +7,9 @@ link: node-spec/prebuilt
 option:
 ---
 # Node Icons
-vGraph supports adding iconfont icons to nodes through configuration. Here are some configuration examples. For detailed documentation, please see the node documentation. For a list of events, please see events.
+VGraph supports adding iconfont icons onto nodes via configuration. Below are several configuration examples.
+<br>
+See <a href="/vgraph/guide/node-spec/options">Node Options</a>. For the event list, see <a href="/guide/events#graph-事件">Events</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

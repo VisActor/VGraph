@@ -8,7 +8,7 @@ option:
 ---
 # Trigger
 
-Data Description: Process data with task completion status. Interaction: click an icon to display the node's trigger.
+Data description: Workflow data with task completion status. <br>Interaction: <code>click icon</code> to show the node trigger.
 
 ## Code Demo
 

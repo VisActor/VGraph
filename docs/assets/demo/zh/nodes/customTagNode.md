@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 带标签的节点
-推荐基于内置节点进行继承，这样可以最大程度保留配置项功能和外观。vGraph 封装了标签的定义工具，直接引用即可。 详细文档可见标签工具。
+推荐基于内置节点进行继承，这样可以最大程度保留配置项功能和外观。VGraph 封装了标签的定义工具，直接引用即可。
+<br>
+详细文档可见<a href="/vgraph/guide/node-addon-spec/tag">标签工具</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

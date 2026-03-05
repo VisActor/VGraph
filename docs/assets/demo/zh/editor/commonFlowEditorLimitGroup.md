@@ -8,7 +8,8 @@ option:
 ---
 # 有向图自由编辑-限制分组移动
 
-在有向图自由编辑场景下，固定分组大多用于区分不同阶段、逻辑分区等，一些场景下需要将节点限制在不同阶段中。<br>交互方式：拖拉拽节点或锚点编辑关系图。快捷键：<code>ctrl + z</code> 撤销；<code>ctrl + shift + z</code> 重做；<code>ctrl + c/x/v</code> 复制/剪切/粘贴；<code>ctrl + a</code> 全选；<code>backspace</code> 删除。
+在有向图自由编辑场景下，固定分组大多用于区分不同阶段，逻辑分区等，一些场景下需要将节点限制在不同阶段中。
+<br> 交互方式：拖拉拽节点或锚点编辑关系图。 快捷键： <code> ctrl + z </code> 撤销；<code> ctrl + shift + z </code> 重做； <code> ctrl + c/x/v </code> 复制/剪切/粘贴； <code> ctrl + a </code> 全选；<code> backspace </code> 删除。
 
 ## 关键配置
 

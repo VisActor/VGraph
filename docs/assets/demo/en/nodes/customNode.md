@@ -7,7 +7,9 @@ link: node-spec/customization
 option:
 ---
 # Custom Node
-It is recommended to inherit from built-in nodes to retain configuration functions and appearance as much as possible. vGraph supports inheriting from built-in nodes, allowing you to implement only the parts that need to be customized. For detailed documentation, please see custom nodes.
+It is recommended to extend built-in nodes to preserve configuration capabilities and appearance as much as possible. VGraph supports inheriting built-in nodes, so you can implement only the parts you need to customize.
+<br>
+See <a href="/vgraph/guide/node-spec/customization">Custom Nodes</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

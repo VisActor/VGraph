@@ -7,7 +7,7 @@ link: reactNodes/useSelections
 option:
 ---
 # hooks-useSelections
-vGraph 为 react 用户的重度使用场景提供了一系列 hooks。useSelections 是配合状态机制使用的选中 hook，用法可参考 Sidebar。
+VGraph 为 react 用户的重度使用场景提供了一系列 hooks。useSelections 是配合状态机制使用的选中 hook，用法可参考 Sidebar。
 ## 关键配置
 
 - `DAGFlowEditor`：容器独立 id，setDefaultNode/setDefaultEdge，layout。

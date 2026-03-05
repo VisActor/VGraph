@@ -8,7 +8,7 @@ option:
 ---
 # Cyclic DAG Collapse/Expand
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Collapsing/expanding helps users understand the overall structure and highlight key parts, and it is a commonly used interaction. Cyclic data needs special care: in this dataset, S, VP, and NP (with their edges) form a cycle. When collapsing VP, it usually means collapsing VBZ and NP. <br>Interaction: <code>click node</code>: collapse/expand nodes.
 
 ## Key Configurations
 

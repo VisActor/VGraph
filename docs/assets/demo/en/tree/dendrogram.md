@@ -8,8 +8,7 @@ option:
 ---
 # Basic Dendrogram Example
 
-Data description: A simple hierarchical tree structure.
-Interaction: Click the icon on the right side of the node to expand or collapse the node.
+Data description: A simple hierarchical tree structure. <br>Interaction: click the icon on the right of a node to expand/collapse.
 
 ## Code Demo
 

@@ -8,8 +8,7 @@ option:
 ---
 # Force Layout with Non-Overlapping Labels
 
-Data Description: miserables data.<br>
-By setting the collision width and height to the actual rendered width and height of the node and text label, a non-overlapping effect is achieved in scenes where nodes have text labels.
+Data description: Miserables dataset.<br> Set the collision size to the actual rendered size of the node plus its text label to achieve a no-overlap effect for labeled nodes.
 
 ## Code Demo
 

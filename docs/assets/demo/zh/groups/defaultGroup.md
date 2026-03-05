@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 内置分组 Group
-vGraph 支持分组标题的自定义配置，内置收起/展开功能实现。此 demo 展示了分组默认标题的全量配置和展开收起交互。 详细文档可见分组文档。事件列表请见事件。
+VGraph 支持分组标题的自定义配置，内置收起/展开功能实现。此 demo 展示了分组默认标题的全量配置和展开收起交互。
+<br>
+详细文档可见<a href="/vgraph/guide/group-spec/options">分组文档</a>。事件列表请见<a href="/guide/events#graph-事件">事件</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

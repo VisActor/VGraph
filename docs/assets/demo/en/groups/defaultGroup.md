@@ -7,7 +7,9 @@ link: group-spec/options
 option:
 ---
 # Built-in Group
-vGraph supports custom configuration of group titles and has built-in collapse/expand functionality. This demo shows the full configuration of the default group title and the expand/collapse interaction. For detailed documentation, please see the group documentation. For a list of events, please see events.
+VGraph supports custom group title configurations and provides built-in collapse/expand behavior. This demo shows full configuration options for the default group title and its expand/collapse interactions.
+<br>
+See <a href="/vgraph/guide/group-spec/options">Group Options</a>. For the event list, see <a href="/guide/events#graph-事件">Events</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

@@ -8,8 +8,7 @@ option:
 ---
 # Basic Force-Directed Graph
 
-Data Description: VIS collaborator network.<br>
-Interaction: Drag nodes to observe changes in the force-directed layout.
+Data description: VIS collaborators network. <br>Interaction: dragging nodes lets you observe changes in the force layout.
 
 ## Code Demo
 

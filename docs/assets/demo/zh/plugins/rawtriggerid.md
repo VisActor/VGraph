@@ -8,7 +8,7 @@ option:
 ---
 # 局部图形的文字气泡
 
-通过 `triggerId` 精确绑定到节点内图标的文字气泡。
+此组件是原生 js 组件，推荐给非 react 框架应用使用。<br> 交互操作：<code>hover icon</code>展示节点的 tooltip。
 
 ## Code Demo
 

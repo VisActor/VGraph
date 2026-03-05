@@ -8,7 +8,7 @@ option:
 ---
 # Nested Layout - Multi-level Nesting
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Data description: Directly laying out multi-level nested data will lose the grouping/nesting structure. VGraph supports multi-level nested DAG layouts, and also supports using custom layouts inside subgraphs, making it easier to satisfy business customization needs.
 
 ## Key Configurations
 

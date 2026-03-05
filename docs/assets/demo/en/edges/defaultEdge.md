@@ -7,7 +7,9 @@ link: edge-spec/prebuilt
 option:
 ---
 # Built-in Edge
-vGraph provides well-designed built-in connections and rich events, which can be used with labels and other configurations to display various data relationships. For detailed documentation, please refer to the Connection documentation. For a list of events, please see Events.
+VGraph provides mature built-in edges and rich events. Combined with configurations such as labels, it can represent various kinds of relationships.
+<br>
+See <a href="/vgraph/guide/edge-spec/options">Edge Options</a>. For the event list, see <a href="/guide/events#graph-事件">Events</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

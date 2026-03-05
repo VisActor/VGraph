@@ -8,7 +8,8 @@ option:
 ---
 # Mind Map Editing
 
-Similar to tree diagram editing interaction, but with a different layout, supporting the addition of left and right subtrees.<br/>Supports undo/redo/export.
+Similar to tree graph interactions, but with a different layout. Users can add left/right subtrees for the root node.
+<br>Interactions: <code>hover edge</code> to show the add-node icon; <code>click undo</code> undo; <code>click redo</code> redo; <code>click export data</code> export current graph data.
 
 ## Code Demo
 

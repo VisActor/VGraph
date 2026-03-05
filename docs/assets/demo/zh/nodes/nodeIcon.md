@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 节点图标
-vGraph 支持在节点上以配置的方式添加 iconfont 图标。以下是几种配置案例 详细文档可见节点文档。事件列表请见事件。
+VGraph 支持在节点上以配置的方式添加 iconfont 图标。以下是几种配置案例
+<br>
+详细文档可见<a href="/vgraph/guide/node-spec/options">节点文档</a>。事件列表请见<a href="/guide/events#graph-事件">事件</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

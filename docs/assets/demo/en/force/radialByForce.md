@@ -8,8 +8,7 @@ option:
 ---
 # Circular Layout
 
-Data Description: The relationship graph of characters in "Dream of the Red Chamber", processed into an ego network with Jia Baoyu as the central node.
-Through the circular layout, the relationship between nodes and the central node can be easily discovered. Applying a basic force-directed layout on top of the circular layout makes it easy to observe the relationships between other nodes.
+Data description: A Dream of Red Mansions relationship graph. It is processed as an ego network centered at Jia Baoyu.<br> The radial layout makes it easy to see closeness to the center node, and applying a basic force layout on top helps explore relationships among other nodes.
 
 ## Code Demo
 

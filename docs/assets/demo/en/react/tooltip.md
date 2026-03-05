@@ -8,7 +8,7 @@ option:
 ---
 # Tooltip
 
-vGraph encapsulates Arco's Tooltip component, which can respond to node and edge interactions to provide more data information. If your business does not use the Arco component, you can use the Trigger component to encapsulate it yourself. Interaction: hover over a node to display the node's tooltip.
+VGraph wraps Arco's Tooltip component to provide more data information in response to node/edge interactions. If your UI library is not Arco, you can wrap your own tooltip with the <a href="/vgraph/guide/node-addon-spec/trigger" target="_blank">Trigger component</a>. <br>Interaction: <code>hover node</code> to show the node tooltip.
 
 ## Code Demo
 

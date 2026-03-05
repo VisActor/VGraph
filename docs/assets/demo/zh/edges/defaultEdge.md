@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 内置连线 Edge
-vGraph 提供设计成熟的内置连线和丰富的事件，配合 label 等配置可以展示多种数据关系。 详细文档可见连线文档。事件列表请见事件。
+VGraph 提供设计成熟的内置连线和丰富的事件，配合 label 等配置可以展示多种数据关系。
+<br>
+详细文档可见<a href="/vgraph/guide/edge-spec/options">连线文档</a>。事件列表请见<a href="/guide/events#graph-事件">事件</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

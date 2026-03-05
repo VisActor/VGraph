@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 自定义连线
-vGraph 提供种类丰富的内置连线，大多数情况下不需要自定义路径。推荐基于内置连线进行继承，自定义连线以外的部分。这个 demo 展示如何定制两个文本标签，并调用被继承内置节点的方法计算文本标签的角度。 详细文档可见自定义连线。
+VGraph 提供种类丰富的内置连线，大多数情况下不需要自定义路径。推荐基于内置连线进行继承，自定义连线以外的部分。这个 demo 展示如何定制两个文本标签，并调用被继承内置节点的方法计算文本标签的角度。
+<br>
+详细文档可见<a href="/vgraph/guide/edge-spec/customization">自定义连线</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

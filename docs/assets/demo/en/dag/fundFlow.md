@@ -8,7 +8,7 @@ option:
 ---
 # Basic Directed Graph
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Data description: Company fund flow data. <br>Interactions: <code>hover node</code>: show start/end paths. This demo also shows how to allow dragging only on the x axis.
 
 ## Key Configurations
 

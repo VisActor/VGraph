@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing - Limit Group Movement
 
-In free-form editing of directed graphs, fixed groups are mostly used to distinguish different stages, logical partitions, etc. In some scenarios, it is necessary to restrict nodes to different stages.<br/>Interaction mode: drag and drop nodes or anchors to edit the relationship graph. Shortcuts: `ctrl + z` undo; `ctrl + shift + z` redo; `ctrl + c/x/v` copy/cut/paste; `ctrl + a` select all; `backspace` delete.
+In free-form DAG editing scenarios, fixed groups are often used to separate stages or partitions. In some cases you may need to constrain nodes within different stages.
+<br>Interactions: drag nodes or anchors to edit the graph. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Key Configurations
 

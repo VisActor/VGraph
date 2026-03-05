@@ -7,7 +7,9 @@ link: node-spec/prebuilt
 option:
 ---
 # Built-in Nodes
-vGraph provides well-designed built-in nodes and rich events, which can be combined with configurations such as icons and anchors to implement various business nodes. For detailed documentation, please see the node documentation. For a list of events, please see events.
+VGraph provides mature built-in nodes and rich events. With configurations such as icons and anchors, you can build a wide range of business node styles.
+<br>
+See <a href="/vgraph/guide/node-spec/options">Node Options</a>. For the event list, see <a href="/guide/events#graph-事件">Events</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

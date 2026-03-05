@@ -8,7 +8,7 @@ option:
 ---
 # Indent Forest
 
-Data description: Arrange multiple indented trees horizontally and align their root nodes. The connecting lines use a custom `stepLine`. Interaction: Hover to show the expand/collapse icon at the bottom right of the node, and click to switch the node.
+Indented forests clearly show dependency/containment relationships among multiple datasets and improve information density. Unlike a traditional indented tree, an indented forest has multiple root nodes laid out sequentially. This demo provides a practical implementation approach.
 
 ## Code Demo
 

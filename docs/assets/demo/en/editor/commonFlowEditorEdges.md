@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing - Duplicate Edges
 
-In a free-form directed graph editing scenario, duplicate connections can overlap, leading to misinterpretation. This can be optimized using graph editing tools.<br/>Interaction mode: drag and drop nodes or anchors to edit the relationship graph. Shortcuts: `ctrl + z` undo; `ctrl + shift + z` redo; `ctrl + c/x/v` copy/cut/paste; `ctrl + a` select all; `backspace` delete.
+In a free-form DAG editor, duplicated edges can overlap and cause misunderstanding. You can optimize the rendering using VGraph utility methods.
+<br>Interactions: drag nodes or anchors to edit the graph. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Code Demo
 

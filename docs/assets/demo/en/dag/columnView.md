@@ -8,7 +8,7 @@ option:
 ---
 # Table Field Relationships
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Data description: Visualizing field lineage between tables can be flexibly achieved with a nested DAG layout.
 
 ## Key Configurations
 

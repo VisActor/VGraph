@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 自定义节点
-推荐基于内置节点进行继承，这样可以最大程度保留配置项功能和外观。vGraph 支持继承内置节点，可仅实现需要自定义的部分。 详细文档可见自定义节点。
+推荐基于内置节点进行继承，这样可以最大程度保留配置项功能和外观。VGraph 支持继承内置节点，可仅实现需要自定义的部分。
+<br>
+详细文档可见<a href="/vgraph/guide/node-spec/customization">自定义节点</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

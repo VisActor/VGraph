@@ -8,7 +8,7 @@ option:
 ---
 # Dashed Line Flow
 
-The dashed line flow animation can vividly show the trend of data relationships and is suitable for infinite animations in conjunction with some interactions. For example, in this case, when hovering over a node, this animation is applied to the entire related data link.
+The dashed-edge flow animation vividly shows the direction of relationships. It works well as an infinite animation combined with interactions. In this demo, when you hover a node, the animation is applied to the whole related data path.
 
 ## Code Demo
 

@@ -8,7 +8,7 @@ option:
 ---
 # React Node with Internal Scrolling
 
-vGraph provides React node components to satisfy complex node display scenarios in graphs, allowing users to easily customize nodes using React. This example provides a solution where internal node scrolling does not conflict with view scrolling.
+To support graph scenarios with <b>heavy node rendering</b>, VGraph provides React node components so you can customize nodes easily with React. This demo provides an approach to avoid conflicts between scrolling inside a node and scrolling/panning the view.
 
 ## Key Configurations
 

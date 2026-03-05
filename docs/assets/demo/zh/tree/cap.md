@@ -8,7 +8,7 @@ option:
 ---
 # 思维导图
 
-数据描述：六顶思考帽与产品规划的关系。<br>交互操作：<code>hover 节点</code>: 高亮起止路径；<code>click icon</code>: 伸缩/展开树结构。
+数据描述：六顶思考帽与产品规划的关系。 <br>交互操作：<code>hover 节点</code>: 高亮起止路径；<code>click icon</code>: 伸缩 / 展开树结构。
 
 ## Code Demo
 

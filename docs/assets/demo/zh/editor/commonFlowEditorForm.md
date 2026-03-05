@@ -8,7 +8,8 @@ option:
 ---
 # 有向图自由编辑-React 表单
 
-节点中包含表单是一种常见的有向图自由编辑场景。通过 React 节点组件（Viewer）可以轻松实现带表单的有向图自由编辑。<br>交互方式：拖拉拽节点或锚点编辑关系图。
+节点中包含表单是一种常见的有向图自由编辑场景。通过 React 节点组件(Viewer) 可以轻松实现带表单的有向图自由编辑。
+<br> 交互方式：拖拉拽节点或锚点编辑关系图。 快捷键： <code> ctrl + z </code> 撤销；<code> ctrl + shift + z </code> 重做； <code> ctrl + c/x/v </code> 复制/剪切/粘贴； <code> ctrl + a </code> 全选；<code> backspace </code> 删除。
 
 ## 代码演示
 

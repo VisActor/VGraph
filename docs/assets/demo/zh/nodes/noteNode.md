@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 带角标的节点
-角标多用于展示数据异常或者需要关注的补充信息。vGraph 封装了角标的定义工具，直接引用即可。 详细文档可见角标工具。
+角标多用于展示数据异常或者需要关注的补充信息。VGraph 封装了角标的定义工具，直接引用即可。
+<br>
+详细文档可见<a href="/vgraph/guide/node-addon-spec/note">角标工具</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

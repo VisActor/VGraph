@@ -8,7 +8,7 @@ option:
 ---
 # Administrative Divisions
 
-Data description: An example of a compact tree layout that supports node collapse/expand and subtree coloring. Interaction: Click a node to switch the subtree, and hover the mouse to highlight the associated link.
+Data description: A three-level administrative division structure (province/city/county) in China. <br>Interactions: <code>panZoom canvas</code>: navigate the view; <code>hover leaf node</code>: view the path; <code>click node</code>: collapse/expand the tree.
 
 ## Code Demo
 

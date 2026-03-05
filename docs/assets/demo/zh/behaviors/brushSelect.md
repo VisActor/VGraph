@@ -8,7 +8,8 @@ option:
 ---
 # 框选
 
-框选节点并设置选中状态，支持点击画布清空选择。
+VGraph 提供的内置交互 brushSelect 可以让用户批量选择图中对象，这个对象可以是节点、连线、分组。<br>
+交互文档可见<a href="/vgraph/guide/behaviors">交互行为</a>。
 
 ## Code Demo
 

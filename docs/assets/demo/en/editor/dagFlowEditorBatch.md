@@ -8,7 +8,8 @@ option:
 ---
 # Pipeline Editing - Batch Add Nodes
 
-This demo shows the `batchChange` capability in pipeline editing, which can be used to implement custom interactions like batch adding nodes.<br/>Supports undo/redo/export.
+Build a DAG easily by clicking icons. Compared with drag-and-drop node/edge editing, it is less flexible, but it is more efficient and produces higher-quality DAGs. batchChange can be used to implement custom interactions.
+<br>Interactions: <code>hover node</code> to show direct upstream/downstream relations and node action icons; <code>click icon</code> to add a node (and its relation) in the icon direction or delete the current node; <code>click undo</code> undo; <code>click redo</code> redo; <code>click export data</code> export current graph data.
 
 ## Code Demo
 

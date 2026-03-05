@@ -7,7 +7,8 @@ link: group-spec/options
 option:
 ---
 # Custom Group
-In most business scenarios, the style requirements for groups are not high, and interactions are enumerable. Often, only the title needs to be customized. Therefore, vGraph provides a lightweight method for customizing titles. We also hope to receive more input from businesses on custom grouping scenarios. For detailed documentation, please refer to the group title configuration.
+In most business scenarios, group styles and interactions are fairly standard. What often needs customization is the title, so VGraph provides a lightweight way to customize group titles. We also welcome more real-world custom group use cases.
+See <a href="/vgraph/guide/group-spec/options#分组标题">Group Title Options</a> for details.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

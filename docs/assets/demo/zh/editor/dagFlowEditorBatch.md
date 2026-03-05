@@ -8,7 +8,8 @@ option:
 ---
 # 流水线编辑-批量添加节点
 
-在流水线编辑中演示 batchChange 能力，可用于实现批量添加等自定义交互。<br>支持 undo/redo/export。
+通过简单的点击 icon 轻松构建一个有向图。虽然灵活度拖拽节点连线编辑有向图的方式，胜在效率高和有向图质量高。batchChange 可以用于实现自定义交互。 
+<br> 交互方式：<code>hover 节点</code>展示直接上下游关系和节点操作 icon；<code> click icon</code>在 icon 方向上添加一个节点和对应关系或删除本节点；<code> click undo</code> 撤销;<code> click redo</code> 重做; <code> click export data</code> 导出当前图中数据。
 
 ## 代码演示
 

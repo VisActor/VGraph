@@ -8,7 +8,7 @@ option:
 ---
 # Zoom UI Linking
 
-It is common for businesses to provide a slider to zoom the view and display the maximum and minimum zoom ratios, which needs to be linked with the built-in panZoom interaction. Interaction: pan and zoom on the canvas, or use the slider above.
+A zoom slider is commonly used in products to control view zoom and show min/max zoom ratios, which requires linking with the built-in panZoom interaction. <br>Interactions: pan/zoom on the canvas, or use the slider above.
 
 ## Code Demo
 

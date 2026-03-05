@@ -7,7 +7,9 @@ link: node-addon-spec/link
 option:
 ---
 # Node with Link
-It is recommended to inherit from built-in nodes to retain configuration functions and appearance as much as possible. vGraph encapsulates the rendering and interaction behavior of links, which can be directly referenced to get the experience of HTML components. For detailed documentation, please see the link tools documentation.
+It is recommended to extend built-in nodes to preserve configuration capabilities and appearance as much as possible. VGraph wraps link rendering and interactions, so you can use it directly to get an HTML-component-like experience.
+<br>
+See <a href="/vgraph/guide/node-addon-spec/link">Link Add-on</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

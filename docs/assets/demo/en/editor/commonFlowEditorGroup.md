@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing - Grouping
 
-Demonstrates node dragging, box selection, grouping, and ungrouping in a free-form editing scenario. This example uses the multi-file `livedemo-files` format to verify the `vgraph` multi-file demo execution link.
+In free-form DAG editing scenarios, groups can be used for batch operations, logical partitioning, and simplifying workflows. This demo shows the default grouping behaviors in the solution.
+<br>Interactions: drag nodes or anchors to edit the graph. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Key Configurations
 

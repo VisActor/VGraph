@@ -8,7 +8,7 @@ option:
 ---
 # 文字气泡
 
-展示原生文字气泡组件，基于节点的分组信息动态渲染内容。
+此组件是原生 js 组件，推荐给非 react 框架应用使用。<br> 交互操作：<code>hover node</code>展示节点的 tooltip。
 
 ## Code Demo
 

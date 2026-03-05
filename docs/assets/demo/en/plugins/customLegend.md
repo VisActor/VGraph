@@ -8,7 +8,7 @@ option:
 ---
 # Custom Legend
 
-Show a custom categorical legend, linked with the node states in the graph.
+Customize legend content and style, commonly used when legend items are fixed. <br>Interactions: hover the legend to highlight nodes of that type; click the legend to hide nodes of that type.
 
 ## Code Demo
 
