@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing - Quick Add Node
 
-Editing relationship graphs solely by dragging and dropping is inefficient. This example demonstrates a method for quickly adding nodes by dragging a connection line to a blank area.<br/>Interaction mode: drag and drop nodes or anchors to edit; when dragging a connection line without connecting to a specific node, a new node is added at the end of the line. Shortcuts: `ctrl + z` undo; `ctrl + shift + z` redo; `ctrl + c/x/v` copy/cut/paste; `ctrl + a` select all; `backspace` delete.
+Editing a graph purely by drag-and-drop is not very efficient. This demo shows an approach that lets you quickly add a new node by dragging an edge to empty space.
+<br>Interactions: drag nodes or anchors to edit; when dragging an edge and not connecting to a node, add a new node at the edge end. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Code Demo
 

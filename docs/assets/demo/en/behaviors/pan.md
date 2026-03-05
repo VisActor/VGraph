@@ -8,7 +8,8 @@ option:
 ---
 # Limit Panning Range
 
-Restrict panning operations within the graph area, combined with hiding details on zoom out to improve performance.
+The built-in panZoom interaction in VGraph supports native trackpad pan/zoom, one-axis movement (horizontal/vertical), and a simplified view while moving. This example shows how to constrain movement within the graph bounds.<br>
+See <a href="/vgraph/guide/behaviors">Interactions</a> for details.
 
 ## Code Demo
 

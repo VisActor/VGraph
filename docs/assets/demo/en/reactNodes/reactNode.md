@@ -8,7 +8,7 @@ option:
 ---
 # React Node
 
-vGraph provides React node components to meet the needs of displaying complex nodes in graph scenarios, allowing users to easily customize nodes using React. Please read the usage documentation carefully before use.
+To support graph scenarios with <b>heavy node rendering</b>, VGraph provides React node components so you can customize nodes easily with React. <br/>Please read <a href="/vgraph/guide/react-node-spec/react-viewer" target="_blank">the documentation</a> before use.
 
 ## Key Configurations
 

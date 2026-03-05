@@ -8,7 +8,7 @@ option:
 ---
 # hooks-useSelections
 
-vGraph provides a series of hooks for heavy usage scenarios for React users. `useSelections` is a selection hook used in conjunction with the state mechanism. Refer to the Sidebar for usage.
+VGraph provides a set of hooks for heavy React usage scenarios. useSelections is a selection hook used together with the state mechanism. See Sidebar in the demo for usage.
 
 ## Key Configurations
 

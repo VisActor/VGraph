@@ -8,7 +8,8 @@ option:
 ---
 # Tree Editing - React Node
 
-Tree diagram editing scenario does not inherit the downstream relationship of relative nodes. The example includes the ability to insert nodes and copy and paste subtrees.<br/>Supports undo/redo/export.
+Unlike the pipeline editor, the tree editor does not inherit downstream relationships from the relative node. This demo supports inserting a node between two nodes, and subtree copy/paste.
+<br>Interactions: <code>hover edge</code> to show the add-node icon; <code>click icon</code> to add a node in the icon direction; <code>click undo</code> undo; <code>click redo</code> redo; <code>click export data</code> export current graph data.
 
 ## Code Demo
 

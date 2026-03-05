@@ -7,7 +7,9 @@ link: edge-spec/customization
 option:
 ---
 # Custom Edge
-vGraph provides a rich variety of built-in connections, and in most cases, you don't need to customize the path. It is recommended to inherit from the built-in connections and customize the parts other than the connection itself. This demo shows how to customize two text labels and call the inherited built-in node's method to calculate the angle of the text labels. For detailed documentation, please refer to Custom Edge.
+VGraph provides a rich set of built-in edges, and in most cases you do not need to customize the path. It is recommended to extend a built-in edge and only customize what you need. This demo shows how to render two text labels, and how to calculate the label angle by calling methods from the inherited built-in edge.
+<br>
+See <a href="/vgraph/guide/edge-spec/customization">Custom Edges</a> for details.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

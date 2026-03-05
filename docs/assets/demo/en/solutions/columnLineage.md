@@ -8,7 +8,7 @@ option:
 ---
 # Data Table Lineage - Column View
 
-This demo shows a data table lineage column view based on vgraph and DataLineageGraph, displaying field-level dependencies within tables. The data source is a remote JSON file, using `@visactor/vgraph` and `@visactor/react-vgraph`.
+Data description: Simulated dependencies between fields in tables. Documentation: <a href="/vgraph/guide/analysis-solution-spec/dataLineage">Data Lineage</a>. <br>Interactions: <code>click node</code>: show the path from the current node to the main node; <code>hover edge</code>: show the task logic between connected nodes.
 
 ## Key Configurations
 

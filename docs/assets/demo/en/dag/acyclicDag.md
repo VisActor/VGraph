@@ -8,7 +8,7 @@ option:
 ---
 # Acyclic DAG Collapse/Expand
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Collapsing/expanding helps users understand the structure and highlight key parts, and it is a commonly used interaction. Collapse/expand is easier to implement for acyclic data. <br>Interaction: <code>click node</code>: collapse/expand nodes.
 
 ## Key Configurations
 

@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing - React Form
 
-A common scenario for free-form editing of directed graphs is to include forms in the nodes. With the React node component (Viewer), you can easily implement free-form editing of directed graphs with forms.<br/>Interaction mode: drag and drop nodes or anchors to edit the relationship graph.
+Nodes containing forms are common in free-form DAG editing scenarios. With the React node component (Viewer), you can easily implement a free-form DAG editor with forms inside nodes.
+<br>Interactions: drag nodes or anchors to edit the graph. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Code Demo
 

@@ -16,8 +16,7 @@ export default {
     alias: {
       '@visactor/vgraph': path.resolve(__dirname, '../packages/vgraph/src/index.ts'),
       '@visactor/react-vgraph': path.resolve(__dirname, '../packages/react-vgraph/src/index.ts'),
-      '@visactor/react-vgraph-ui': path.resolve(__dirname, '../packages/react-vgraph-ui/src/index.ts'),
-      '@visactor/vgraph-wasm': path.resolve(__dirname, '../packages/vgraph-wasm/src/index.ts')
+      '@visactor/react-vgraph-ui': path.resolve(__dirname, '../packages/react-vgraph-ui/src/index.ts')
     }
   },
   plugins: [react()]

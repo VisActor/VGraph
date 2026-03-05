@@ -8,7 +8,8 @@ option:
 ---
 # Pipeline Editing
 
-Easily build a directed graph with simple icon clicks, providing high interaction efficiency and better graph structure quality.<br/>Interaction mode: hover over a node to display upstream/downstream and operation icons, click icons to add/remove nodes, supports undo/redo/export.
+Build a DAG easily by clicking icons. Compared with drag-and-drop node/edge editing, it is less flexible, but it is more efficient and produces higher-quality DAGs.
+<br>Interactions: <code>hover node</code> to show direct upstream/downstream relations and node action icons; <code>click icon</code> to add a node (and its relation) in the icon direction or delete the current node; <code>click undo</code> undo; <code>click redo</code> redo; <code>click export data</code> export current graph data.
 
 ## Code Demo
 

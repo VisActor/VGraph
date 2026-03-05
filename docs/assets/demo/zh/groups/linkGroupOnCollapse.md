@@ -7,7 +7,8 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 分组收起时连接
-在大多数业务场景中对分组的样式要求不高，交互也是可枚举的。往往需要自定义的只是标题。因此 vGraph 提供轻量的标题自定义方法。也希望业务上能给到我们更多的自定义分组场景输入。 详细文档可见分组标题配置。
+在大多数业务场景中对分组的样式要求不高，交互也是可枚举的。往往需要自定义的只是标题。因此 VGraph 提供轻量的标题自定义方法。也希望业务上能给到我们更多的自定义分组场景输入。
+详细文档可见<a href="/vgraph/guide/group-spec/options#分组标题">分组标题配置</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

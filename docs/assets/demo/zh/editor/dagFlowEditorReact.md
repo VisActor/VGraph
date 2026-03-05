@@ -8,7 +8,8 @@ option:
 ---
 # 流水线编辑-React 节点
 
-通过简单点击构建有向图，React 节点提升了展示与交互灵活性。<br>支持 undo/redo/export 等常见能力。
+通过简单的点击轻松构建一个有向图，react 节点增加了节点展示和交互的更多可能性。虽然灵活度拖拽节点连线编辑有向图的方式，胜在效率高和有向图质量高。
+<br> 交互方式：<code>hover 节点</code>展示直接上下游关系和节点操作 icon；<code> click icon</code>在 icon 方向上添加一个节点和对应关系或删除本节点；<code> click undo</code> 撤销;<code> click redo</code> 重做; <code> click export data</code> 导出当前图中数据。
 
 ## 代码演示
 

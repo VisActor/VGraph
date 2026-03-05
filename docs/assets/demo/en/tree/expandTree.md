@@ -8,7 +8,7 @@ option:
 ---
 # Expand Tree by Level
 
-When dealing with a large amount of data, expanding level by level is a good way to focus information. The nodes of a vgraph tree can be configured with the `collapse` field to control the collapse/expand of the subtree. The following demo provides a better implementation.
+When the dataset is very large, expanding level by level is a good way to focus information. In VGraph tree graphs, you can control subtree collapse/expand via the collapse field. This demo provides a practical implementation approach.
 
 ## Code Demo
 

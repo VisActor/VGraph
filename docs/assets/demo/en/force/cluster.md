@@ -8,7 +8,7 @@ option:
 ---
 # Clustered Graph Layout
 
-Data description: VIS collaborator network, achieving clustering effect through inter-class repulsion and intra-class attraction.
+Data description: VIS collaborators network. Clustering is achieved via inter-cluster repulsion and intra-cluster attraction.
 
 ## Code Demo
 

@@ -8,7 +8,7 @@ option:
 ---
 # Tooltip
 
-The Tooltip in vgraph-react depends on Arco Design. If your project does not use this UI library, vgraph provides a Trigger tool to help you easily encapsulate the Tooltip of any UI component library. When the hot area of the tooltip needs to respond to events, it can be handled through `graph.handleEvent`. For details, please see UI Trigger.
+In react-vgraph, Tooltip depends on Arco Design. If your project does not use this UI library, VGraph provides the Trigger utility to help you wrap tooltips from any UI component library. When the tooltip hotspot needs to handle events, you can use graph.handleEvent. See <a href="/vgraph/guide/node-addon-spec/trigger">UI Trigger</a> for details.
 
 ## Code Demo
 

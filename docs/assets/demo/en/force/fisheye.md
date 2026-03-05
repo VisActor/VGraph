@@ -8,8 +8,7 @@ option:
 ---
 # Fisheye Magnifier
 
-Data description: miserables data.<br>
-Easily observe local structures through the fisheye magnifier component.
+Data description: Miserables dataset.<br> Use the fisheye lens component to easily inspect local structures.
 
 ## Code Demo
 

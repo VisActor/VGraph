@@ -8,7 +8,8 @@ option:
 ---
 # 思维导图编辑
 
-与树图编辑交互类似，仅布局不同，支持新增左右子树。<br>支持 undo/redo/export。
+与树图交互类似，仅布局不同。允许用户新增根节点的左右子树。
+<br> 交互方式：<code>hover 连线</code>展示添加节点 icon；<code> click undo</code> 撤销;<code> click redo</code> 重做; <code> click export data</code> 导出当前图中数据。
 
 ## 代码演示
 

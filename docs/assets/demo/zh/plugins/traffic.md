@@ -8,7 +8,7 @@ option:
 ---
 # 连续图例
 
-展示连续图例与边样式映射，并结合原生 Tooltip 与交互状态。
+数据描述: Sioux-Falls 交通网络。 <br>交互操作：<code>hover 边</code>: 展示边的相关属性信息 ；<code>click 画布</code>:重置原始状态。
 
 ## Code Demo
 

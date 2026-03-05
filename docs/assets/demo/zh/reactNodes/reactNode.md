@@ -7,7 +7,7 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # React 节点
-vGraph 为满足重节点展示的图场景提供了 React 节点组件，让用户使用 react 轻松定制节点。 使用前请详细阅读使用文档。
+VGraph 为满足<b>重节点展示</b>的图场景提供了 React 节点组件，让用户使用 react 轻松定制节点。<br/> 使用前请详细阅读<a href="/vgraph/guide/react-node-spec/react-viewer" target="_blank">使用文档</a>。
 ## 关键配置
 
 - `Graph`：图实例，layout 为 dag，setDefaultNode 配置宽高与锚点。

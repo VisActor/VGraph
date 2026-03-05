@@ -8,7 +8,7 @@ option:
 ---
 # Node Diffuse
 
-The node diffuse animation is often used to focus on one or more nodes, for example, in this case, it's used for alerting on abnormal nodes.
+The node diffusion animation is commonly used to focus on one or more nodes. In this demo it is used to alert on anomalous nodes.
 
 ## Code Demo
 

@@ -8,7 +8,7 @@ option:
 ---
 # Flexible Customization of Directed Graph Layers
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Data description: When some nodes need a fixed rank while others are ranked and laid out normally, VGraph can compute ranks only in the first layout pass. Then you can adjust ranks for specified nodes as needed and run layout based on the customized ranks, so the overall time is close to a single layout run, improving layout performance.
 
 ## Key Configurations
 

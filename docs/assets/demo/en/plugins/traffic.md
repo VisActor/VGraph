@@ -8,7 +8,7 @@ option:
 ---
 # Continuous Legend
 
-Show a continuous legend and edge style mapping, combined with native Tooltip and interaction states.
+Data description: Sioux-Falls traffic network. <br>Interactions: <code>hover edge</code>: show edge attributes; <code>click canvas</code>: reset to the initial state.
 
 ## Code Demo
 

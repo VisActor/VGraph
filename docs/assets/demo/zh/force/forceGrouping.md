@@ -8,7 +8,7 @@ option:
 ---
 # 力导向节点分组布局
 
-数据描述: 普通的力导向布局无法让不同分组避免重叠。vgraph 提供了适用于力导向布局的分组布局组件，避免分组之间的重叠。<br>交互操作：<code>双击节点</code> 展开分组节点；<code>双击 GroupShape</code> 分组聚合；<code>拖拽 GroupShape</code> 将分组节点移动至目标位置；<code>右键 GroupShape</code> 取消分组；<code>右键被取消分组的节点</code> 重新分组；<code>右键空白区域</code> 切换 GroupShape 的样式。
+数据描述: 普通的力导向布局无法让不同分组避免重叠。VGraph 研发了一种适用于力导向布局的分组布局组件，避免分组之间的重叠。 <br>交互操作: <code>双击节点</code>展开分组节点 <code>双击GroupShape</code>分组聚合 <code>拖拽GroupShape</code>将分组节点移动至目标位置。<br><code>右键GroupShape</code>取消分组。<code>右键被取消分组的节点</code>重新分组。<code>右键空白区域</code>切换GroupShape的样式。
 
 ## Code Demo
 

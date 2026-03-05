@@ -7,7 +7,7 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # React 节点内滚动
-vGraph 为满足重节点展示的图场景提供了 React 节点组件，让用户使用 react 轻松定制节点。示例提供了一种节点内滚动和视图滚动不冲突的一种实现方案。
+VGraph 为满足<b>重节点展示</b>的图场景提供了 React 节点组件，让用户使用 react 轻松定制节点。示例提供了一种节点内滚动和视图滚动不冲突的一种实现方案。
 ## 关键配置
 
 - `Graph`：单节点，setDefaultNode 配置宽高与锚点。

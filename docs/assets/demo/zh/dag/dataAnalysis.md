@@ -8,7 +8,7 @@ option:
 ---
 # 简易泳道图-垂直
 
-原始 vgraph demo 迁移到 vgraph，保持主要交互与布局行为。
+数据描述：数据分析流程数据。 <br>交互操作：<code>click 分组</code>: 展开/收起分组；<code>hover 边</code>: 展示该边连接的分析步骤； <code>hover 组</code>: 高亮当前组。
 
 ## 关键配置
 

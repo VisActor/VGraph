@@ -8,7 +8,7 @@ option:
 ---
 # 径向树图
 
-数据描述: Flare 工具库的文件架构，其中当子节点数量膨胀很快时推荐使用径向树图展示。<br>交互操作：<code>panZoom 画布</code>: 视图导航；<code>hover 节点</code>: 高亮起止路径；<code>drag 节点</code>: 拖拽节点；<code>click 节点</code>: 伸缩/展开树结构。
+数据描述: Flare 工具库的文件架构，其中当子节点数量膨胀很快时推荐使用径向树图展示。 <br>交互操作：<code>panZoom 画布</code>: 视图导航；<code>hover 节点</code>: 高亮起止路径；<code>drag 节点</code>: 拖拽节点；<code>click 节点</code>: 伸缩 / 展开树结构。
 
 ## Code Demo
 

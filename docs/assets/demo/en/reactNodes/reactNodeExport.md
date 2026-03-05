@@ -8,7 +8,7 @@ option:
 ---
 # React Node Bulk Export
 
-Exporting a large number of React nodes at the same time may cause serious performance problems or even freeze. vGraph recommends switching to canvas nodes to export the main information. Therefore, when there are large-scale export scenarios, if the node interaction is not complex, the use of canvas nodes should be considered first.
+Exporting a large number of React nodes at once may cause severe performance issues or even freeze the page. VGraph recommends switching to canvas nodes to export the key information. For large-scale export scenarios, if node interactions are not complex, prefer implementing nodes with canvas rendering.
 
 ## Key Configurations
 

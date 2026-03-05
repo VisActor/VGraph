@@ -14,7 +14,6 @@
     "@visactor/vgraph": "workspace:*",
     "@visactor/react-vgraph": "workspace:*",
     "@visactor/react-vgraph-ui": "workspace:*",
-    "@visactor/vgraph-wasm": "workspace:*",
     "buble": "^0.20.0",
     "highlight.js": "^11.8.0",
     "markdown-it": "^13.0.0",

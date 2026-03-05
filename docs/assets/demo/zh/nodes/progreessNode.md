@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 带进度条的节点
-进度条顾名思义多用于可视化展示进行中事件的进度，完成度等。vGraph 封装了进度条的定义工具，支持普通进度条和环形进度条。 详细文档可见进度条工具。
+进度条顾名思义多用于可视化展示进行中事件的进度，完成度等。VGraph 封装了进度条的定义工具，支持普通进度条和环形进度条。
+<br>
+详细文档可见<a href="/vgraph/guide/node-addon-spec/progress">进度条工具</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

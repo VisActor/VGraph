@@ -4,7 +4,6 @@ import { createRoot } from 'react-dom/client';
 import * as VGraph from '@visactor/vgraph';
 import * as ReactVGraph from '@visactor/react-vgraph';
 import * as ReactVGraphUI from '@visactor/react-vgraph-ui';
-import * as VGraphWasm from '@visactor/vgraph-wasm';
 import * as ArcoDesign from '@arco-design/web-react';
 import * as ArcoDesignIcon from '@arco-design/web-react/icon';
 import '@arco-design/web-react/dist/css/arco.css';
@@ -13,14 +12,12 @@ import { App } from './app';
 (window as any).VGraph = VGraph;
 (window as any).ReactVGraph = ReactVGraph;
 (window as any).ReactVGraphUI = ReactVGraphUI;
-(window as any).VGraphWasm = VGraphWasm;
 (window as any).ArcoDesign = ArcoDesign;
 (window as any).ArcoDesignIcon = ArcoDesignIcon;
 
 Object.assign(window as any, VGraph);
 Object.assign(window as any, ReactVGraph);
 Object.assign(window as any, ReactVGraphUI);
-Object.assign(window as any, VGraphWasm);
 
 Object.assign(window as any, ArcoDesign);
 Object.assign(window as any, ArcoDesignIcon);

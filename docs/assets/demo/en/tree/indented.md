@@ -8,8 +8,7 @@ option:
 ---
 # Basic Indented Tree Example
 
-Data description: A simple hierarchical tree structure.
-Interaction: Click the icon on the right side of a node to expand or collapse it.
+Data description: A simple hierarchical tree structure. <br>Interaction: click the icon on the right of a node to expand/collapse.
 
 ## Code Demo
 

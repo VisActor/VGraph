@@ -7,7 +7,9 @@ link: node-addon-spec/note
 option:
 ---
 # Node with Note Marker
-Note markers are often used to display data exceptions or supplementary information that requires attention. vGraph encapsulates note marker definition tools that can be directly referenced. For detailed documentation, please see the note marker tools documentation.
+Badges are often used to display anomalies or extra information that needs attention. VGraph provides utilities for defining badges, which you can use directly.
+<br>
+See <a href="/vgraph/guide/node-addon-spec/note">Badge Add-on</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

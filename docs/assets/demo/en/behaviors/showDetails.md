@@ -8,7 +8,8 @@ option:
 ---
 # Overview First, Then Details
 
-Keep only the main graphics during panning and zooming to ensure performance, showing details and supporting relationship highlighting when necessary.
+For large datasets, a smooth analysis workflow is to view the overview first and then drill into details. You can combine trackpad-friendly pan/zoom with an overview mode that only shows key information, render full node details only when zoomed in, and add interactions like click/hover to highlight adjacent nodes for a fluent analysis experience.
+See <a href="/vgraph/guide/behaviors">Interactions</a> for details.
 
 ## Code Demo
 

@@ -8,7 +8,7 @@ option:
 ---
 # 数据表血缘-列视图
 
-演示基于 vgraph 与 DataLineageGraph 的数据表血缘列视图，展示表中字段级依赖。数据来源为远程 JSON，使用 `@visactor/vgraph` 与 `@visactor/react-vgraph`。
+数据描述：模拟表中字段之间依赖关系的数据。。使用文档可见<a href="/vgraph/guide/analysis-solution-spec/dataLineage">数据表血缘图谱</a>。<br>交互操作：<code>click 节点</code>: 显示当前节点到主节点路径；<code>hover 连线</code>: 展示连线之间的任务逻辑。
 
 ## 关键配置
 

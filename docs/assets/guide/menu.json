@@ -352,22 +352,6 @@
       ]
     },
     {
-      "path": "wasm-spec",
-      "title": {
-        "zh": "Wasm 布局",
-        "en": "Wasm Layout"
-      },
-      "children": [
-        {
-          "path": "daglayout",
-          "title": {
-            "zh": "Wasm 有向图布局",
-            "en": "DAG Layout"
-          }
-        }
-      ]
-    },
-    {
       "path": "shape-spec",
       "title": {
         "zh": "图形对象",

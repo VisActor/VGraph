@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 内置节点
-vGraph 提供设计成熟的内置节点和丰富的事件，配合 icon，anchor 等配置可以实现多样的业务节点。 详细文档可见节点文档。事件列表请见事件。
+VGraph 提供设计成熟的内置节点和丰富的事件，配合 icon，anchor 等配置可以实现多样的业务节点。
+<br>
+详细文档可见<a href="/vgraph/guide/node-spec/options">节点文档</a>。事件列表请见<a href="/guide/events#graph-事件">事件</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

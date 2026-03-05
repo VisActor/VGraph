@@ -8,8 +8,7 @@ option:
 ---
 # Preserve Original Structure on Expand/Collapse
 
-Data Description: VIS collaborator network.<br>
-Interaction: Double-click a node to expand/collapse it. The original structure is preserved as much as possible during expansion and collapse.
+Data description: VIS collaborators network. <br>Interaction: double-click nodes to expand/collapse. <br>Keep the original structure as much as possible during expand/collapse.
 
 ## Code Demo
 

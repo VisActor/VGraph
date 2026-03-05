@@ -8,7 +8,7 @@ option:
 ---
 # Text Tooltip for a Specific Graphic
 
-A text tooltip precisely bound to an icon within a node via `triggerId`.
+This is a vanilla JS component, recommended for non-React applications. <br>Interaction: <code>hover icon</code> to show the node tooltip.
 
 ## Code Demo
 

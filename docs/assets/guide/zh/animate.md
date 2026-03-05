@@ -58,7 +58,7 @@ graph.animate({
 | r | number | 加载圆环的半径，默认为 8px |
 | lineWidth | number | 加载圆环的厚度, 默认为 2px |
 | color | string | 加载圆环的颜色 |
-| mask | boolean \| Record<string, any> | 背景蒙版配置，可参考 [rect 配置](/docs/1.x/shape-spec_rect) |
+| mask | boolean \| Record<string, any> | 背景蒙版配置，可参考 [rect 配置](/vgraph/guide/shape-spec/rect) |
 
 
 **common 配置项**

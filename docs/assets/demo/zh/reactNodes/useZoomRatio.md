@@ -7,7 +7,7 @@ link: reactNodes/useZoomRatio
 option:
 ---
 # hooks-useZoomRatio
-vGraph 为 react 用户的重度使用场景提供了一系列 hooks。useZoomRatio 是视图缩放 hook，用法可参考 ZoomUtils 组件。
+VGraph 为 react 用户的重度使用场景提供了一系列 hooks。useZoomRatio 是视图缩放 hook，用法可参考 ZoomUtils 组件。
 ## 关键配置
 
 - `Graph`：dag 布局，setDefaultNode 配置锚点。

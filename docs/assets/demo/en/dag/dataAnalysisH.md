@@ -8,7 +8,7 @@ option:
 ---
 # Simple Swimlane - Horizontal
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Data description: Data analysis workflow data. <br>Interactions: <code>click group</code>: expand/collapse group; <code>hover edge</code>: show the analysis step connected by the edge; <code>hover group</code>: highlight the current group.
 
 ## Key Configurations
 

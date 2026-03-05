@@ -8,7 +8,7 @@ option:
 ---
 # 触发 ID
 
-在鼠标 hover 到指定图形上出 Tooltip 是一个常见的业务需求，vGraph 支持通过简单配置实现此交互。 交互操作：hover icon展示节点的 tooltip。
+在鼠标 hover 到指定图形上出 Tooltip 是一个常见的业务需求，VGraph 支持通过简单配置实现此交互。<br> 交互操作：<code>hover icon</code>展示节点的 tooltip。
 
 ## Code Demo
 

@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 支持彩色图标
-vGraph 支持绘制彩色的 iconfont 图标，引用方式与普通 iconfont 相同。 详细文档可见节点文档。事件列表请见事件。
+VGraph 支持绘制彩色的 iconfont 图标，引用方式与普通 iconfont 相同。
+<br>
+详细文档可见<a href="/vgraph/guide/node-spec/options">节点文档</a>。事件列表请见<a href="/guide/events#graph-事件">事件</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

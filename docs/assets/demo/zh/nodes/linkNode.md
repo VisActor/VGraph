@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 带链接的节点
-推荐基于内置节点进行继承，这样可以最大程度保留配置项功能和外观。vGraph 封装了链接的渲染和交互行为，直接引用即可获得 html 组件的体验。 详细文档可见链接工具。
+推荐基于内置节点进行继承，这样可以最大程度保留配置项功能和外观。VGraph 封装了链接的渲染和交互行为，直接引用即可获得 html 组件的体验。
+<br>
+详细文档可见<a href="/vgraph/guide/node-addon-spec/link">链接工具</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

@@ -8,7 +8,7 @@ option:
 ---
 # Trigger ID
 
-It is a common business requirement to display a Tooltip when the mouse hovers over a specified graphic. vGraph supports this interaction through simple configuration. Interaction: hover over the icon to display the node's tooltip.
+Showing a tooltip when hovering a specific shape is a common requirement. VGraph supports this interaction through simple configuration. <br>Interaction: <code>hover icon</code> to show the node tooltip.
 
 ## Code Demo
 

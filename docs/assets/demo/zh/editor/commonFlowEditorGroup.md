@@ -8,7 +8,8 @@ option:
 ---
 # 有向图自由编辑-分组
 
-演示在自由编辑场景下进行节点拖拽、框选、分组与取消分组。该示例使用多文件 `livedemo-files` 格式，用于验证 `vgraph` 多文件 demo 运行链路。
+在有向图自由编辑场景下，分组用于批量操作，概念分区，简化逻辑等。本示例展示了解决方案默认的分组行为。
+<br> 交互方式：拖拉拽节点或锚点编辑关系图。 快捷键： <code> ctrl + z </code> 撤销；<code> ctrl + shift + z </code> 重做； <code> ctrl + c/x/v </code> 复制/剪切/粘贴； <code> ctrl + a </code> 全选；<code> backspace </code> 删除。
 
 ## 关键配置
 

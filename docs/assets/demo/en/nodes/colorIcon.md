@@ -7,7 +7,9 @@ link: node-spec/prebuilt
 option:
 ---
 # Support for Color Icons
-vGraph supports drawing colored iconfont icons, and the reference method is the same as for ordinary iconfonts. For detailed documentation, please refer to the node documentation. For a list of events, please see events.
+VGraph supports rendering colorful iconfont icons, and the import method is the same as standard iconfont usage.
+<br>
+See <a href="/vgraph/guide/node-spec/options">Node Options</a>. For the event list, see <a href="/guide/events#graph-事件">Events</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

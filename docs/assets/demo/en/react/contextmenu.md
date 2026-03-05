@@ -8,7 +8,7 @@ option:
 ---
 # Context Menu
 
-Data Description: Process data with task completion status. Interaction: Right-click a node to display the node's context menu.
+Data description: Workflow data with task completion status. <br>Interaction: right-click a node to show the node context menu.
 
 ## Code Demo
 

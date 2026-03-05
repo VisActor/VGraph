@@ -8,7 +8,7 @@ option:
 ---
 # Minimap
 
-Show the native minimap component, supporting delegate rendering and style mapping.
+The minimap helps users see the overall data distribution while analyzing a local area, quickly move the viewport, and relocate the view by clicking the minimap when the main view is lost.
 
 ## Code Demo
 

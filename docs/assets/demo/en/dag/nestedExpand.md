@@ -8,7 +8,7 @@ option:
 ---
 # Nested Layout - Full Data Expand/Collapse
 
-Migrating the original vgraph demo to vgraph, maintaining the main interaction and layout behavior.
+Data description: Grouped data can easily cause group overlap and poor readability if you do not relayout each group. VGraph supports nested layouts to achieve better layout results. In complex graphs, collapsing groups by default can greatly improve viewing efficiency, and users can expand the inner structure when they reach parts they care about. <br>Interactions: <code>click node icon</code>: expand group node to view inner structure; <code>click group icon</code>: collapse inner structure of the group.
 
 ## Key Configurations
 

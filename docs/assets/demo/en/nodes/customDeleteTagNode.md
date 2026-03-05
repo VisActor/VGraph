@@ -7,7 +7,9 @@ link: node-addon-spec/tag
 option:
 ---
 # Node with Deletable Tags
-It is recommended to inherit from built-in nodes to retain configuration functions and appearance as much as possible. vGraph encapsulates tag definition tools that can be directly referenced. For detailed documentation, please see the tag tools documentation.
+It is recommended to extend built-in nodes to preserve configuration capabilities and appearance as much as possible. VGraph provides utilities for defining tags, which you can use directly.
+<br>
+See <a href="/vgraph/guide/node-addon-spec/tag">Tag Add-on</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

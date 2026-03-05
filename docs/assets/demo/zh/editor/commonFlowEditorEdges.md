@@ -8,7 +8,8 @@ option:
 ---
 # 有向图自由编辑-重复连线
 
-在有向图自由编辑场景下，重复的连线会重叠在一起导致理解偏差，可以通过图编辑工具方法优化展示。<br>交互方式：拖拉拽节点或锚点编辑关系图。快捷键：<code>ctrl + z</code> 撤销；<code>ctrl + shift + z</code> 重做；<code>ctrl + c/x/v</code> 复制/剪切/粘贴；<code>ctrl + a</code> 全选；<code>backspace</code> 删除。
+在有向图自由编辑场景下，重复的连线会重叠在一起导致理解偏差, 可以通过 VGraph 的工具方法来优化展示。
+<br> 交互方式：拖拉拽节点或锚点编辑关系图。 快捷键： <code> ctrl + z </code> 撤销；<code> ctrl + shift + z </code> 重做； <code> ctrl + c/x/v </code> 复制/剪切/粘贴； <code> ctrl + a </code> 全选；<code> backspace </code> 删除。
 
 ## 代码演示
 

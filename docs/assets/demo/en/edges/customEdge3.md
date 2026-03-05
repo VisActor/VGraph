@@ -7,7 +7,9 @@ link: edge-spec/customization
 option:
 ---
 # Edge-based Node Location
-vGraph provides a rich variety of built-in connections, and in most cases, you don't need to customize the path. It is recommended to inherit from the built-in connections and customize the parts other than the connection itself. This demo shows how to add two icons at the end of the built-in connection to locate the node at the other end. This can effectively improve user reading efficiency when the graph range exceeds one screen. For detailed documentation, please refer to Custom Edge.
+VGraph provides a rich set of built-in edges, and in most cases you do not need to customize the path. It is recommended to extend a built-in edge and only customize what you need. This demo shows how to add two icons at the end of a built-in edge for locating the node on the other end. It can significantly improve reading efficiency when the graph spans more than one screen.
+<br>
+See <a href="/vgraph/guide/edge-spec/customization">Custom Edges</a> for details.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

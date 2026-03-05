@@ -7,7 +7,7 @@ link: reactNodes/reactGroupTitle
 option:
 ---
 # React 分组标题
-vGraph 为满足重节点展示的图场景提供了 React 节点组件，并在新版本支持了分组标题渲染。 使用前请详细阅读使用文档。
+VGraph 为满足<b>重节点展示</b>的图场景提供了 React 节点组件，并在新版本支持了分组标题渲染。<br/> 使用前请详细阅读<a href="/vgraph/guide/react-node-spec/react-viewer" target="_blank">使用文档</a>。
 ## 关键配置
 
 - `Graph`：layout 为 nestedDag，setDefaultGroup 配置分组样式，data 含 groups。

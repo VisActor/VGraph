@@ -7,7 +7,9 @@ link: node-addon-spec/progress
 option:
 ---
 # Node with Progress Bar
-Progress bars, as the name suggests, are often used to visualize the progress and completion of ongoing events. vGraph encapsulates progress bar definition tools, supporting both regular and circular progress bars. For detailed documentation, please see the progress bar tools documentation.
+Progress bars are commonly used to visualize the progress or completion of ongoing tasks. VGraph provides utilities for defining progress bars, including linear and circular progress.
+<br>
+See <a href="/vgraph/guide/node-addon-spec/progress">Progress Add-on</a>.
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

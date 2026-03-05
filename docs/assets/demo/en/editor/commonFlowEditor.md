@@ -8,7 +8,8 @@ option:
 ---
 # Directed Graph Free Editing
 
-Users can freely arrange the position layout and connection relationship of nodes through drag and drop, so as to build and edit the directed graph freely and flexibly.<br/>Interaction mode: drag and drop nodes or anchors to edit the relationship graph. Shortcuts: `ctrl + z` undo; `ctrl + shift + z` redo; `ctrl + c/x/v` copy/cut/paste; `ctrl + a` select all; `backspace` delete.
+Users can freely arrange node positions and relationships via drag-and-drop, building and editing a DAG in a flexible way.
+<br>Interactions: drag nodes or anchors to edit the graph. Shortcuts: <code>ctrl + z</code> undo; <code>ctrl + shift + z</code> redo; <code>ctrl + c/x/v</code> copy/cut/paste; <code>ctrl + a</code> select all; <code>backspace</code> delete.
 
 ## Code Demo
 

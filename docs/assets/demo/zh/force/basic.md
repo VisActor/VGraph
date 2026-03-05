@@ -8,7 +8,7 @@ option:
 ---
 # 社交关系
 
-数据描述：《悲惨世界》人物社交关系。<br>交互操作：<code>hover节点</code>: 展示人物名称；<code>click节点</code>: 展示人物相邻节点；<code>drag节点</code>: 调整布局结构；<code>shift + click节点</code>: 寻找人物之间的潜在社交关系；<code>alt + click节点</code>: 展示人物联系密切的好友；<code>click 图例</code>隐藏对应分组节点；<code>click画布</code>: 重置原始状态。
+数据描述：《悲惨世界》人物社交关系。 <br> 交互操作：<code>hover节点</code>: 展示人物名称；<code>click节点</code>: 展示人物相邻节点；<code>drag节点</code>: 调整布局结构；<code>shift + click节点</code>: 寻找人物之间的潜在社交关系；<code>alt + click节点</code>: 展示人物联系密切的好友；<code>click 图例</code>隐藏对应分组节点；<code>click画布</code>: 重置原始状态。
 
 ## Code Demo
 

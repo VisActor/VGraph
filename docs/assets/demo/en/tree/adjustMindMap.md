@@ -8,7 +8,7 @@ option:
 ---
 # Node Adaptive Mind Map
 
-A basic function of a classic mind map is to fix the maximum width and height of a node, and then adapt the node to the length of the node text. The width and height of a node in vgraph are required items. This example provides a better implementation.
+A basic feature of classic mind maps is to fix the maximum width/height of nodes and then adapt to text length. In VGraph, node width and height are required. This demo provides a practical implementation approach.
 
 ## Code Demo
 

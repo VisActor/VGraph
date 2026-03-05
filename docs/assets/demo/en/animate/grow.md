@@ -8,7 +8,7 @@ option:
 ---
 # Line Extension
 
-The line extension animation is suitable for showing the direct association of nodes. It can be a single animation or an infinite animation. For example, in this case, when hovering over a node, a single animation is applied to all lines starting from this node in conjunction with the state mechanism.
+The edge grow animation is suitable for showing a node's direct relationships. It can run once or loop. In this demo, when you hover a node, it uses the state mechanism to play a one-time animation on all edges that start from this node.
 
 ## Code Demo
 

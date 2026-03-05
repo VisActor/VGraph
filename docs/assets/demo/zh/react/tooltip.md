@@ -8,7 +8,7 @@ option:
 ---
 # 工具提示
 
-vGraph 封装了 Arco 的 Tooltip 组件，能响应节点和连线的交互提供更多的数据信息。如果业务使用的不是 Arco 组件，可以使用 Trigger 组件自行封装。 交互操作：hover node展示节点的 tooltip。
+VGraph 封装了 Arco 的 Tooltip 组件，能响应节点和连线的交互提供更多的数据信息。如果业务使用的不是 Arco 组件，可以使用 <a href="/vgraph/guide/node-addon-spec/trigger" target="_blank">Trigger 组件</a>自行封装。<br> 交互操作：<code>hover node</code>展示节点的 tooltip。
 
 ## Code Demo
 

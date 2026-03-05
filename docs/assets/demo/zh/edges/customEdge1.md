@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 自定义连线
-vGraph 提供种类丰富的内置连线，大多数情况下不需要自定义路径。推荐基于内置连线进行继承，自定义连线以外的部分。此 demo 展示了如何定制在鼠标 hover 到连线时连线中间出现 icon 并进行交互。可以注释连线时间中的代码变为 icon 出现在鼠标处提升体验。 详细文档可见自定义连线。
+VGraph 提供种类丰富的内置连线，大多数情况下不需要自定义路径。推荐基于内置连线进行继承，自定义连线以外的部分。此 demo 展示了如何定制在鼠标 hover 到连线时连线中间出现 icon 并进行交互。可以注释连线时间中的代码变为 icon 出现在鼠标处提升体验。
+<br>
+详细文档可见<a href="/vgraph/guide/edge-spec/customization">自定义连线</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react

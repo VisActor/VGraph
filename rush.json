@@ -52,15 +52,6 @@
       "versionPolicyName": "vgraphMain"
     },
     {
-      "packageName": "@visactor/vgraph-wasm",
-      "projectFolder": "packages/vgraph-wasm",
-      "tags": [
-        "package"
-      ],
-      "shouldPublish": true,
-      "versionPolicyName": "vgraphMain"
-    },
-    {
       "packageName": "@internal/docs",
       "projectFolder": "docs",
       "tags": [

@@ -8,11 +8,7 @@ option:
 ---
 # Knowledge Graph
 
-Data Description: Knowledge graph of characters in "Dream of the Red Chamber".<br>
-Interaction:
-<code>panZoom canvas</code> to show node labels;
-<code>hover node</code> to show adjacent nodes and edge labels;
-<code>click legend</code> for category filtering.
+Data description: A Dream of Red Mansions character knowledge graph. <br>Interactions: <code>panZoom canvas</code>: show node labels; <code>hover node</code>: show adjacent nodes and edge labels; <code>click legend</code>: filter by category.
 
 ## Code Demo
 

@@ -8,7 +8,7 @@ option:
 ---
 # Text Tooltip
 
-Show the native text tooltip component, dynamically rendering content based on the node's group information.
+This is a vanilla JS component, recommended for non-React applications. <br>Interaction: <code>hover node</code> to show the node tooltip.
 
 ## Code Demo
 

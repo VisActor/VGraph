@@ -8,14 +8,7 @@ option:
 ---
 # Force-Directed Node Grouping Layout
 
-Data Description: A regular force-directed layout cannot prevent different groups from overlapping. vgraph provides a grouping layout component suitable for force-directed layouts to avoid overlapping between groups.<br>
-Interaction:
-<code>double-click a node</code> to expand the group node;
-<code>double-click a GroupShape</code> to aggregate the group;
-<code>drag a GroupShape</code> to move the group node to the target position;
-<code>right-click a GroupShape</code> to ungroup;
-<code>right-click an ungrouped node</code> to regroup;
-<code>right-click a blank area</code> to switch the style of the GroupShape.
+Data description: A standard force layout cannot prevent overlaps between different groups. VGraph provides a grouping layout component for force layouts to avoid overlaps between groups. <br>Interactions: <code>double-click node</code> expand group node; <code>double-click GroupShape</code> aggregate group; <code>drag GroupShape</code> move the grouped nodes to a target position. <br><code>right-click GroupShape</code> ungroup; <code>right-click an ungrouped node</code> regroup; <code>right-click blank area</code> switch the GroupShape style.
 
 ## Code Demo
 

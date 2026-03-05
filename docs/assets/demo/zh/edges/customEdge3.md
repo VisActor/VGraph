@@ -7,7 +7,9 @@ cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCo
 option:
 ---
 # 连线定位节点
-vGraph 提供种类丰富的内置连线，大多数情况下不需要自定义路径。推荐基于内置连线进行继承，自定义连线以外的部分。这个 demo 展示了如何在内置连线的末端添加两个 icon 用于定位到另一端节点，在图范围超过一屏范围的情况下能有效提高用户阅读效率。 详细文档可见自定义连线。
+VGraph 提供种类丰富的内置连线，大多数情况下不需要自定义路径。推荐基于内置连线进行继承，自定义连线以外的部分。这个 demo 展示了如何在内置连线的末端添加两个 icon 用于定位到另一端节点，在图范围超过一屏范围的情况下能有效提高用户阅读效率。
+<br>
+详细文档可见<a href="/vgraph/guide/edge-spec/customization">自定义连线</a>。
 ## Code Demo
 
 ```livedemo-files template=vgraph-react
