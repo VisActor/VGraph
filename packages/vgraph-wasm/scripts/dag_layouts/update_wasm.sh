@@ -1,14 +1,25 @@
+set -euo pipefail
+
 filePtth="$( cd "$( dirname "$0"  )" && pwd  )"
 cd $filePtth
-export DAG_HOME="$filePtth/../../src_pkgs/dag_layouts/" ## 注意替换为自己的路径
-if  [ ! -d "$DAG_HOME" ];then
-  echo "DAG_HOME PATH 文件夹不存在"
+PKG_DIR=$filePtth/../..
+OUT_DIR=$filePtth/output
+
+if [ ! -f "$OUT_DIR/dotlayout.wasm" ]; then
+  echo "Missing: $OUT_DIR/dotlayout.wasm"
+  exit 1
 fi
-VGRAPH_WASM_DIR=$DAG_HOME/dist/wasm/
-cp $filePtth/output/dotlayout.wasm $VGRAPH_WASM_DIR
-cp $filePtth/output/encoded_dot_wasm.ts $VGRAPH_WASM_DIR
-VGRAPH_EXSAMPLE_WASM_DIR=$DAG_HOME/examples/static/
-cp $filePtth/output/dotlayout.wasm $VGRAPH_EXSAMPLE_WASM_DIR
-cp $filePtth/output/encoded_dot_wasm.ts $VGRAPH_EXSAMPLE_WASM_DIR
-echo "ls -ltr  \${VGRAPH_WASM_DIR}:"
-ls -ltr  ${VGRAPH_WASM_DIR}
+
+if [ ! -f "$OUT_DIR/encoded_dot_wasm.ts" ]; then
+  echo "Missing: $OUT_DIR/encoded_dot_wasm.ts"
+  exit 1
+fi
+
+cp $OUT_DIR/dotlayout.wasm $PKG_DIR/examples/static/dotlayout.wasm
+cp $OUT_DIR/encoded_dot_wasm.ts $PKG_DIR/examples/static/encoded_dot_wasm.ts
+cp $OUT_DIR/encoded_dot_wasm.ts $PKG_DIR/src/dag/load_wasm/encoded_dot_wasm.ts
+
+echo "Updated:"
+ls -ltr $PKG_DIR/examples/static/dotlayout.wasm
+ls -ltr $PKG_DIR/examples/static/encoded_dot_wasm.ts
+ls -ltr $PKG_DIR/src/dag/load_wasm/encoded_dot_wasm.ts
