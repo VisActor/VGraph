@@ -7,22 +7,26 @@ on:
 jobs:
   update-changelog-after-publish-a-release:
     name: GitHub Actions Test
+    if: ${{ false }}
     runs-on: macOS-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
 
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - run: |
           git config user.name ${{ github.actor }}
           git config user.email ${{ github.actor }}@users.noreply.github.com
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
@@ -35,8 +39,8 @@ jobs:
       - name: Create branch
         run: |
           git status
-          git fetch origin develop:develop
-          git checkout develop
+          git fetch origin main:main
+          git checkout main
           git status
           git checkout -b docs/generate-changelog-${{  github.event.release.tag_name }}
 
@@ -62,11 +66,18 @@ jobs:
           git push origin docs/generate-changelog-${{  github.event.release.tag_name }}
 
       - name: Create Pull Request
-        uses: dustinirving/create-pr@v1.0.2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          title: '[Auto changelog] changlog of ${{  github.event.release.tag_name }}'
-          base: develop
-          head: 'docs/generate-changelog-${{  github.event.release.tag_name }}'
-          labels: changelog
-          body: 'update changelog of ${{  github.event.release.tag_name }}'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: docs/generate-changelog-${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          if gh pr list --base main --head "$BRANCH" --state open --json number --limit 1 | grep -q '"number"'; then
+            echo "PR from $BRANCH to main already exists, skip creating."
+            exit 0
+          fi
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "[Auto changelog] changelog of ${{ github.event.release.tag_name }}" \
+            --body "update changelog of ${{ github.event.release.tag_name }}" \
+            --label changelog

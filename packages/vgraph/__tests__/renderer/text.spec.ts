@@ -2,7 +2,9 @@ import { Text } from "../../src/renderer/shapes/text";
 const OS_PLATFORM = process.platform;
 
 function expectValueBySystem(value: any, macValue: any, winValue: any) {
-  if (OS_PLATFORM === "linux") {
+  if (typeof value === "number") {
+    expect(value).toBeCloseTo(OS_PLATFORM === "linux" ? winValue : macValue, 3);
+  } else if (OS_PLATFORM === "linux") {
     expect(value).toBe(winValue);
   } else {
     expect(value).toBe(macValue);
@@ -21,7 +23,7 @@ describe("src/shapes/text.ts", () => {
     const { left, top, width, height } = text.getBBox();
     expect(left).toBe(0);
     expect(top).toBe(0);
-    expectValueBySystem(width, 186, 206);
+    expectValueBySystem(width, 178.81640625, 206);
     expect(height).toBe(18);
     expect(text.isOverflow()).toBe(false);
   });
@@ -40,7 +42,7 @@ describe("src/shapes/text.ts", () => {
     const { left, top, width, height } = text.getBBox();
     expect(left).toBe(0);
     expect(top).toBe(0);
-    expectValueBySystem(width, 98, 97);
+    expectValueBySystem(width, 94.078125, 97);
     expectValueBySystem(height, 36, 36);
     expectValueBySystem(text.getDrawText().length, 2, 2);
     expectValueBySystem(text.isOverflow(), false, true);
@@ -60,7 +62,7 @@ describe("src/shapes/text.ts", () => {
     const { left, top, width, height } = text.getBBox();
     expect(left).toBe(0);
     expect(top).toBe(0);
-    expectValueBySystem(width, 98, 93);
+    expectValueBySystem(width, 94.078125, 93);
     expect(height).toBe(18);
 
     expect(text.getDrawText().length).toBe(1);
@@ -82,7 +84,7 @@ describe("src/shapes/text.ts", () => {
     const { left, top, width, height } = text.getBBox();
     expect(left).toBe(0);
     expect(top).toBe(0);
-    expectValueBySystem(width, 93, 98);
+    expectValueBySystem(width, 97.40625, 98);
     expect(height).toBe(18);
     const drawText = text.getDrawText();
     expect(drawText.length).toBe(1);
@@ -105,7 +107,7 @@ describe("src/shapes/text.ts", () => {
     const { left, top, width, height } = text.getBBox();
     expect(left).toBe(-0.5);
     expect(top).toBe(-0.5);
-    expectValueBySystem(width, 99, 94);
+    expectValueBySystem(width, 95.078125, 94);
     expect(height).toBe(19);
     expect(text.isOverflow()).toBe(true);
   });

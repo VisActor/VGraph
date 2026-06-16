@@ -1,0 +1,29 @@
+name: Check of pull request
+
+on:
+  pull_request:
+    branches: ['main', 'develop', 'dev/**']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: './common/config/rush/pnpm-lock.yaml'
+
+      - uses: xile611/pr-type-check@main
+        with:
+          pull_request_body: |
+            ${{ github.event.pull_request.body }}
+          pull_request_head: ${{ github.event.pull_request.head.ref }}

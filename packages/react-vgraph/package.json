@@ -1,6 +1,19 @@
 {
   "name": "@visactor/react-vgraph",
   "version": "1.0.0",
+  "description": "The react version of VGraph",
+  "keywords": [
+    "react",
+    "graph",
+    "visualization",
+    "canvas",
+    "vgraph",
+    "VisActor"
+  ],
+  "author": {
+    "name": "VisActor",
+    "url": "https://visactor.io/"
+  },
   "license": "MIT",
   "main": "cjs/index.js",
   "module": "es/index.js",
@@ -81,7 +94,7 @@
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
-    "@visactor/vgraph": "workspace:*",
+    "@visactor/vgraph": "^1.0.0",
     "react": ">=16",
     "react-dom": ">=16",
     "@types/react": ">=16"
@@ -97,5 +110,9 @@
   "bugs": {
     "url": "https://github.com/VisActor/vgraph/issues"
   },
-  "homepage": "https://visactor.io/vgraph"
+  "homepage": "https://visactor.io/vgraph",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

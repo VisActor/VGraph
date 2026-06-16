@@ -3,9 +3,9 @@ const OS_PLATFORM = process.platform;
 
 function expectValueBySystem(value: any, macValue: any, winValue: any) {
   if (OS_PLATFORM === "linux") {
-    expect(value).toBe(winValue);
+    expect(value).toBeCloseTo(winValue, 3);
   } else {
-    expect(value).toBe(macValue);
+    expect(value).toBeCloseTo(macValue, 3);
   }
 }
 
@@ -103,7 +103,7 @@ describe("src/node_addons/count_badge", () => {
     expect(text.get("text")).toBe("22");
     expect(text.get("fillStyle")).toBe("#ccc");
     expect(text.get("textAlign")).toBe("left");
-    expectValueBySystem(text.get("x"), -80, -82);
+    expectValueBySystem(text.get("x"), -79.34765625, -82);
     expect(text.get("y")).toBe(0);
 
     CountBadgeUtils.remove(node, layer);

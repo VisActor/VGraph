@@ -22,9 +22,9 @@ function expectValueBySystem(
   winValue: number
 ) {
   if (OS_PLATFORM === "linux") {
-    expect(value).toBe(winValue);
+    expect(value).toBeCloseTo(winValue, 3);
   } else {
-    expect(value).toBe(macValue);
+    expect(value).toBeCloseTo(macValue, 3);
   }
 }
 
@@ -41,26 +41,26 @@ describe("src/utils/text.ts", () => {
     // jest 跑在 jsdom 环境下，canvas 是模拟出来的，实际效果每个文字宽度不同
     let charLen = getCharLen("1", font);
 
-    expectValueBySystem(charLen, 7, 8);
+    expectValueBySystem(charLen, 6.673828125, 8);
 
     charLen = getCharLen("2", font);
-    expectValueBySystem(charLen, 7, 8);
+    expectValueBySystem(charLen, 6.673828125, 8);
     text.set("fontSize", 14);
     font = getFontByConfigs(text.configs);
     charLen = getCharLen("a", font);
-    expectValueBySystem(charLen, 8, 9);
+    expectValueBySystem(charLen, 7.7861328125, 9);
     charLen = getCharLen("是", font);
     expectValueBySystem(charLen, 14, 17);
   });
 
   it("measureText should work", () => {
     let textLen = measureText("123123", text.configs);
-    expectValueBySystem(textLen, 48, 54);
+    expectValueBySystem(textLen, 46.716796875, 54);
     textLen = measureText("阿萨德", text.configs);
     expectValueBySystem(textLen, 42, 51);
     text.set("fontSize", 16);
     textLen = measureText("123123", text.configs);
-    expectValueBySystem(textLen, 54, 60);
+    expectValueBySystem(textLen, 53.390625, 60);
     textLen = measureText("阿萨德", text.configs);
     expectValueBySystem(textLen, 48, 51);
   });

@@ -37,3 +37,20 @@ rush start
 7.  从您 Fork 的存储库创建一个到 VGraph 存储库 `develop` 分支的拉取请求。
 
 我们会尽快审查您的拉取请求。感谢您的贡献！
+
+## 变更集和 Release
+
+VGraph 使用 Rush changefile 记录版本变更和 release note 输入。每次提交可发布改动时，请在提交前生成一个 changefile。
+
+```bash
+# patch / minor / major 三选一
+rush change-all --type patch --message "fix: describe your change"
+```
+
+生成后的 `*.json` 文件会放在 `common/changes/@visactor/vgraph/` 下，并在 release workflow 中被自动读取。
+
+- `type` 目前固定使用 `patch`、`minor`、`major`
+- `comment` 会直接进入 changelog 生成链路，建议写成可发布的完整句子
+- 不要在该目录保留占位模板文件，release 会消费所有 `*.json`
+
+如需查看当前仓库使用的示例，可参考 `common/changes/@visactor/vgraph/2026-06-16-release-workflow-bootstrap.json`。

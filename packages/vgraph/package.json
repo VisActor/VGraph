@@ -66,7 +66,7 @@
     "@types/node": "*",
     "babel-jest": "^27.3.1",
     "babel-loader": "^9.1.2",
-    "canvas": "2.8.0",
+    "canvas": "3.2.3",
     "eslint": "~8.18.0",
     "glob": "^7.2.0",
     "html-webpack-plugin": "^5.5.0",

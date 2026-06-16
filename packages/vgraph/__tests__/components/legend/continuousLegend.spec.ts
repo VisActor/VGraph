@@ -124,12 +124,13 @@ describe("src/legend", () => {
       height: 12,
     });
     expect(railShape.get("fillStyle")).toBe("l(0) 0:#fff5f0 1:#67000d");
-    expect(maxLabel.getBBox()).toEqual({
+    const maxLabelBBox = maxLabel.getBBox();
+    expect(maxLabelBBox).toMatchObject({
       left: 48,
       top: -7.5,
-      width: 30,
       height: 15,
     });
+    expect(maxLabelBBox.width).toBeCloseTo(27.8076171875, 3);
     // slide 交互
     const { filterValue, valueDiffer, canvas } = legend;
     const leftRect = nodeLayer.children[4];
