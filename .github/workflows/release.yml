@@ -467,15 +467,15 @@ jobs:
           }
 
           if (published.length > 0) {
-            console.error(
+            console.log(
               `Detected partially published packages for ${packageVersion}. Published: ${published.join(', ')}. Missing: ${missing.join(
                 ', '
-              )}.`
+              )}. Continue publish to let rush skip existing packages and publish missing ones.`
             );
-            process.exit(1);
+          } else {
+            console.log(`No publishable package exists on npm for ${packageVersion}, continue publish.`);
           }
 
-          console.log(`No publishable package exists on npm for ${packageVersion}, continue publish.`);
           fs.appendFileSync(process.env.GITHUB_OUTPUT, 'skip_publish=false\n');
           NODE
 
@@ -528,15 +528,15 @@ jobs:
           }
 
           if (published.length > 0) {
-            console.error(
+            console.log(
               `Detected partially published packages for ${packageVersion}. Published: ${published.join(', ')}. Missing: ${missing.join(
                 ', '
-              )}.`
+              )}. Continue publish to let rush skip existing packages and publish missing ones.`
             );
-            process.exit(1);
+          } else {
+            console.log(`No publishable package exists on npm for ${packageVersion}, continue publish.`);
           }
 
-          console.log(`No publishable package exists on npm for ${packageVersion}, continue publish.`);
           fs.appendFileSync(process.env.GITHUB_OUTPUT, 'skip_publish=false\n');
           NODE
 
