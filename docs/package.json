@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@arco-design/web-react": "2.39.3",
-    "@visactor/vgraph": "workspace:*",
-    "@visactor/react-vgraph": "workspace:*",
-    "@visactor/react-vgraph-ui": "workspace:*",
+    "@visactor/vgraph": "workspace:0.1.0-alpha.0",
+    "@visactor/react-vgraph": "workspace:0.1.0-alpha.0",
+    "@visactor/react-vgraph-ui": "workspace:0.1.0-alpha.0",
     "buble": "^0.20.0",
     "highlight.js": "^11.8.0",
     "markdown-it": "^13.0.0",
