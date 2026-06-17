@@ -1,4 +1,5 @@
 import { Text } from "../../src/renderer/shapes/text";
+import { measureText } from "../../src/renderer/utils/text";
 const OS_PLATFORM = process.platform;
 
 function expectValueBySystem(value: any, macValue: any, winValue: any) {
@@ -8,6 +9,46 @@ function expectValueBySystem(value: any, macValue: any, winValue: any) {
     expect(value).toBe(winValue);
   } else {
     expect(value).toBe(macValue);
+  }
+}
+
+function expectWrappedTextWithinWidth(
+  sourceText: string,
+  wrappedText: string,
+  width: number
+) {
+  const measureConfigs = { text: "", x: 0, y: 0, width };
+  expect(sourceText.startsWith(wrappedText)).toBe(true);
+  expect(measureText(wrappedText, measureConfigs)).toBeLessThanOrEqual(width);
+
+  if (wrappedText.length < sourceText.length) {
+    expect(
+      measureText(sourceText.slice(0, wrappedText.length + 1), measureConfigs)
+    ).toBeGreaterThan(width);
+  }
+}
+
+function expectEllipsizedTextWithinWidth(
+  sourceText: string,
+  ellipsizedText: string,
+  width: number
+) {
+  const measureConfigs = { text: "", x: 0, y: 0, width };
+  expect(ellipsizedText.endsWith("...")).toBe(true);
+
+  const visibleText = ellipsizedText.slice(0, -3);
+  expect(sourceText.startsWith(visibleText)).toBe(true);
+  expect(measureText(ellipsizedText, measureConfigs)).toBeLessThanOrEqual(
+    width
+  );
+
+  if (visibleText.length < sourceText.length) {
+    expect(
+      measureText(
+        `${sourceText.slice(0, visibleText.length + 1)}...`,
+        measureConfigs
+      )
+    ).toBeGreaterThan(width);
   }
 }
 
@@ -161,29 +202,29 @@ describe("src/shapes/text.ts", () => {
     });
 
     expect(text.getDrawText()).toEqual(["a", "b", "c", "d", "e"]);
-    expect(text.getBBox().top).toBe(-45);
-    expect(text.getBBox().height).toBe(90);
+    const bbox = text.getBBox();
+    expect(bbox.height).toBe(text.getDrawText().length * text.getLineHeight());
+    expect(bbox.top).toBe(-bbox.height / 2);
   });
 
   it("bugfix: 文本阶段长度计算", () => {
+    const sourceText = "支付用户渗透率支付用户渗透率";
+    const width = 122;
     const text = new Text({
-      text: "支付用户渗透率支付用户渗透率",
+      text: sourceText,
       x: 0,
       y: 0,
-      width: 122,
+      width,
     });
-    if (OS_PLATFORM === "linux") {
-      expect(text.getDrawText()).toEqual(["支付用户渗透率支"]);
-    } else {
-      expect(text.getDrawText()).toEqual(["支付用户渗透率支付用"]);
-    }
+
+    const drawText = text.getDrawText();
+    expect(drawText).toHaveLength(1);
+    expectWrappedTextWithinWidth(sourceText, drawText[0], width);
 
     text.set("textOverflow", "ellipsis");
-    if (OS_PLATFORM === "linux") {
-      expect(text.getDrawText()).toEqual(["支付用户渗透率..."]);
-    } else {
-      expect(text.getDrawText()).toEqual(["支付用户渗透率支付..."]);
-    }
+    const ellipsizedText = text.getDrawText();
+    expect(ellipsizedText).toHaveLength(1);
+    expectEllipsizedTextWithinWidth(sourceText, ellipsizedText[0], width);
   });
 
   it("bugfix: 连续换行情况", () => {

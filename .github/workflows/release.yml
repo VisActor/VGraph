@@ -421,6 +421,9 @@ jobs:
 
       - name: Publish to npm (release)
         if: startsWith(github.ref_name, 'release/') && steps.npm_version_release.outputs.skip_publish != 'true'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: node common/scripts/install-run-rush.js publish --publish --include-all --tag latest
 
       - name: Check npm versions (hotfix)
@@ -479,6 +482,9 @@ jobs:
 
       - name: Publish to npm (hotfix)
         if: startsWith(github.ref_name, 'hotfix/') && steps.npm_version_hotfix.outputs.skip_publish != 'true'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: node common/scripts/install-run-rush.js publish --publish --include-all --tag hotfix
 
       - name: Check npm versions (pre-release)
@@ -537,6 +543,9 @@ jobs:
 
       - name: Publish to npm (pre-release)
         if: startsWith(github.ref_name, 'pre-release/') && steps.npm_version_prerelease.outputs.skip_publish != 'true'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: node common/scripts/install-run-rush.js publish --publish --include-all --tag ${{ steps.semver_prerelease.outputs.pre_release_type }}
 
       - name: Update shrinkwrap
