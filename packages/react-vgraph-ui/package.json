@@ -1,6 +1,6 @@
 {
   "name": "@visactor/react-vgraph-ui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React UI components for VGraph",
   "keywords": [
     "react",
@@ -93,7 +93,7 @@
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
-    "@visactor/vgraph": "^1.0.0",
+    "@visactor/vgraph": "^0.1.0",
     "@arco-design/web-react": "^2.39.3",
     "react": ">=16",
     "react-dom": ">=16",

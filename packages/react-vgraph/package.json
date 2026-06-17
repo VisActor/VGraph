@@ -1,6 +1,6 @@
 {
   "name": "@visactor/react-vgraph",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "The react version of VGraph",
   "keywords": [
     "react",
@@ -94,7 +94,7 @@
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
-    "@visactor/vgraph": "^1.0.0",
+    "@visactor/vgraph": "^0.1.0",
     "react": ">=16",
     "react-dom": ">=16",
     "@types/react": ">=16"
