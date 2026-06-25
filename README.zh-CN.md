@@ -100,6 +100,8 @@ $ rush start
 $ rush docs
 ```
 
+维护者可阅读 [发布说明](./docs/release.md) 了解 npm 发布流程。
+
 ## 🔗 相关链接
 
 - [官网](https://www.visactor.io/vgraph)
@@ -116,3 +118,5 @@ $ rush docs
 ## 协议
 
 本项目基于 [MIT 协议](./LICENSE)，请自由享受及参与开源。
+
+第三方运行时依赖和 peer 依赖的许可证见 [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md)。

@@ -20,6 +20,22 @@ describe("src/shapes/icon.ts", () => {
     expect(icon.get("iconText")).not.toBe(iconText);
   });
 
+  it("should not execute icon text while decoding entities", () => {
+    const icon = new Icon({
+      x: 0,
+      y: 0,
+      icon: "&#xe836;",
+    });
+    const hackedKey = "__vgraphIconEvalHacked";
+    const unsafeIcon = `");globalThis.${hackedKey}=true;//`;
+
+    icon.set("icon", unsafeIcon);
+
+    expect((globalThis as any)[hackedKey]).toBe(undefined);
+    expect(icon.get("iconText")).toBe(unsafeIcon);
+    delete (globalThis as any)[hackedKey];
+  });
+
   it("getBBox should work", () => {
     const icon = new Icon({
       x: 50,

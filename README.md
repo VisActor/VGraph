@@ -100,6 +100,8 @@ $ rush start
 $ rush docs
 ```
 
+Maintainers can read the [release guide](./docs/release.md) for npm publishing.
+
 ## 🔗 Related Links
 
 - [Homepage](https://www.visactor.io/vgraph)
@@ -116,3 +118,5 @@ Small streams converge to make great rivers and seas!
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+Third-party runtime and peer dependency licenses are listed in [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md).

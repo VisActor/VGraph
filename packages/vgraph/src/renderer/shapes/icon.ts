@@ -24,16 +24,29 @@ export class Icon extends ShapeBase {
   }
 
   getIconText(text: string) {
-    let iconText = text;
-    try {
-      // tslint:disable-next-line: no-eval
-      iconText = eval(
-        '("' + text.replace("&#x", "\\u").replace(";", "") + '")'
-      );
-    } catch (e) {
-      console.warn(e);
+    const match = /^&#(x[0-9a-fA-F]+|\d+);$/.exec(text);
+    if (!match) {
+      return text;
     }
-    return iconText;
+
+    const codePoint =
+      match[1][0].toLowerCase() === "x"
+        ? parseInt(match[1].slice(1), 16)
+        : parseInt(match[1], 10);
+
+    if (!isFinite(codePoint) || codePoint < 0 || codePoint > 0x10ffff) {
+      return text;
+    }
+
+    if (codePoint <= 0xffff) {
+      return String.fromCharCode(codePoint);
+    }
+
+    const offset = codePoint - 0x10000;
+    return String.fromCharCode(
+      0xd800 + (offset >> 10),
+      0xdc00 + (offset & 0x3ff)
+    );
   }
 
   setConfig(key: string, value: any): void {

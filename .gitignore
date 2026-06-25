@@ -83,6 +83,8 @@ common/deploy/
 common/temp/
 common/autoinstallers/*/.npmrc
 **/.rush/temp/
+**/rush-logs/
+**/node_modules/.cache/
 
 # Heft temporary files
 .heft

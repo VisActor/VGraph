@@ -13,9 +13,6 @@ import {
 import { IndentForestLayout } from "./indent_forest_layout";
 import rawData from "../static/multi_tree.json";
 
-const IMG_URL =
-  "https://lf3-static.bytednsdoc.com/obj/eden-cn/luphsleh7upspfbpx/%E5%B1%95%E5%BC%80.svg";
-
 // 注册节点，默认中心坐标为(0, 0), 则坐标范围在(-width / 2, -height / 2) 到 (width / 2, height / 2)
 registerNode("underline", {
   extends: "rect",
