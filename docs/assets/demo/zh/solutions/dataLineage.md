@@ -1,0 +1,170 @@
+---
+category: examples
+group: solutions
+title: 数据表血缘-表视图
+cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/data-lineage.gif
+ link: demo-spec/dataLineage
+option:
+---
+# 数据表血缘-表视图
+
+数据描述：模拟表之间依赖关系的数据。使用文档可见<a href="/vgraph/guide/analysis-solution-spec/dataLineage">数据表血缘图谱</a>。<br>交互操作：<code>click 节点</code>: 显示当前节点到主节点路径；<code>hover 连线</code>: 展示连线之间的任务逻辑。
+
+## 关键配置
+
+- `GraphStructure`：有向图结构，nodes/edges。
+- `DataLineageGraph`：表视图血缘组件，支持 baseTableId、filter、getGroupData、getTableContent、getGroupTitle、getTaskTooltipContent 等配置。
+
+## 代码演示
+
+```livedemo-files template=vgraph-react
+>>> app.tsx
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import { Popover, Button } from '@arco-design/web-react';
+import { GraphStructure } from '@visactor/vgraph';
+import { DataLineageGraph } from '@visactor/react-vgraph';
+import { insertStyles } from '@visactor/vgraph';
+
+insertStyles(
+  `.relation-table-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    padding: 8px;
+    line-height: 20px;
+  }
+  .relation-table-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }`,
+  'vgraph-demo-dataLineage'
+);
+
+const container = document.getElementById(CONTAINER_ID);
+const width = container.offsetWidth;
+const height = container.offsetHeight;
+
+function App() {
+  const [data, setData] = useState(null);
+  const [baseTableId, setBaseTableId] = useState('');
+  const [options, setOptions] = useState({
+    baseTableId: '',
+    filter: null,
+    getGroupData: null,
+    getGroupWidth(depth, count) {
+      return 250;
+    },
+    onClickTable() {},
+    getTableContent(data) {
+      return (
+        <Popover title={null} content={data.name} triggerProps={{ mouseEnterDelay: 400 }}>
+          <div style={{ padding: '8px', lineHeight: '20px' }} className="relation-table-container">
+            <div className="relation-table-name">{data.name}</div>
+          </div>
+        </Popover>
+      );
+    },
+    getGroupTitle(groupData) {
+      const depth = groupData.depth;
+      if (depth === 0) return '主节点';
+      let countStr = '总计';
+      let count = groupData.children.length;
+      return (
+        <div style={{ height: 64 }}>
+          <span>{Math.abs(depth)}层{depth > 0 ? '下游' : '上游'}</span>
+          <span style={{ float: 'right', color: 'rgba(20, 20, 20, 0.65)', fontWeight: 'normal' }}>
+            {countStr} <b style={{ color: 'rgba(20, 20, 20, 0.9)' }}>{count}</b> 个
+          </span>
+        </div>
+      );
+    },
+    getTaskTooltipContent(data) {
+      return data.edges.map(function(task) {
+        return <div key={task.id} className="data-lineage-tooltip-list">{task.name}</div>;
+      });
+    }
+  });
+
+  useEffect(function() {
+    const url = 'https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-demo/DataLineage.json';
+    fetch(url)
+      .then(function(res) { return res.json(); })
+      .then(function(raw) {
+        setBaseTableId(raw.baseTableId);
+        const graphData = new GraphStructure({
+          directed: true,
+          nodes: raw.nodes,
+          edges: raw.edges
+        });
+        setData(graphData);
+        setOptions(function(prev) {
+          return Object.assign({}, prev, { baseTableId: raw.baseTableId });
+        });
+      });
+  }, []);
+
+  useEffect(function() {
+    if (!baseTableId) return;
+    setOptions(function(prev) {
+      return Object.assign({}, prev, { baseTableId: baseTableId });
+    });
+  }, [baseTableId]);
+
+  function toggleFilter() {
+    setOptions(function(prev) {
+      return Object.assign({}, prev, {
+        filter: prev.filter ? null : { type: 'type', value: ['ProjectCTask'] }
+      });
+    });
+  }
+
+  function toggleGroup() {
+    setOptions(function(prev) {
+      return Object.assign({}, prev, {
+        getGroupData: prev.getGroupData ? null : function(tableData) { return tableData.department; }
+      });
+    });
+  }
+
+  function searchItem() {
+    setOptions(function(prev) {
+      return Object.assign({}, prev, {
+        search: function(nodeData) {
+          return nodeData.get('name') === 'random.table0.39944191490440284';
+        }
+      });
+    });
+  }
+
+  if (!data) return <div>加载中...</div>;
+
+  return (
+    <div>
+      <div>
+        <Button onClick={toggleFilter} style={{ marginRight: 12 }}>
+          {options.filter ? '清除筛选' : '筛选'}
+        </Button>
+        <Button onClick={toggleGroup} style={{ marginRight: 12 }}>
+          {options.getGroupData ? '取消分组' : '分组'}
+        </Button>
+        <Button onClick={searchItem}>搜索</Button>
+      </div>
+      <div style={{ width: width, height: height - 40, marginTop: 8 }}>
+        <DataLineageGraph
+          data={data}
+          options={Object.assign({}, options, { baseTableId: baseTableId || options.baseTableId })}
+          size={[width, height - 20]}
+          minDepth={-2}
+          maxDepth={2}
+          details={[]}
+        />
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById(CONTAINER_ID));
+```

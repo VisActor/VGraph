@@ -1,0 +1,916 @@
+{
+    "nodes": [
+        {
+            "id": "18",
+            "labels": [
+                "IP"
+            ],
+            "properties": {
+                "address": "78.95.15.119_20190802",
+                "case_id": "0",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "address": "String",
+                "case_id": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "3",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2019-08-01 19:07:56 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "6704363210851910661"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "19",
+            "labels": [
+                "Mobile"
+            ],
+            "properties": {
+                "case_id": "0",
+                "ttl": "1693474435000",
+                "value": "f80fd4bbe09415b5a069f63340ec1b2cf22d0bbf809dde5d38b309c738f27c88"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "ttl": "String",
+                "value": "String"
+            }
+        },
+        {
+            "id": "7",
+            "labels": [
+                "Did"
+            ],
+            "properties": {
+                "case_id": "0",
+                "did": "6704355234679391749",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "did": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "16",
+            "labels": [
+                "Did"
+            ],
+            "properties": {
+                "case_id": "0",
+                "did": "6978171309475235334",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "did": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "11",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2022-01-27 09:34:54 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "6714000200182252545"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "6",
+            "labels": [
+                "Did"
+            ],
+            "properties": {
+                "case_id": "0",
+                "did": "7054692977013212677",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "did": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "2",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2023-02-06 05:54:51 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "7196917164728435714"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "8",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "Follow my account 👇🏻",
+                "bio_link": "riazuddin",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2017-12-21 11:49:04 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "308220229107634176"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "5",
+            "labels": [
+                "Did"
+            ],
+            "properties": {
+                "case_id": "0",
+                "did": "7197449322325313029",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "did": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "13",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2021-12-27 06:28:00 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "6968409599663080453"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "4",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2023-02-24 14:47:01 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "7203733879533732865"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "0",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "Zzzzzz",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2023-02-25 00:41:36 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "7203887091104482305"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "1",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2023-02-24 19:11:08 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "7203801826680407041"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "10",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2018-12-29 17:56:49 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "6640045299144884229"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "15",
+            "labels": [
+                "Did"
+            ],
+            "properties": {
+                "case_id": "0",
+                "did": "7202366213334271494",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "did": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "12",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "your attitude is my foot",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2021-06-19 09:51:23 +0000 UTC",
+                "register_zone": "SA",
+                "reported": "11",
+                "ttl": "1693474435000",
+                "uid": "6863458160667214853"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "9",
+            "labels": [
+                "FromUser"
+            ],
+            "properties": {
+                "bio_desc": "pakistan mardan love you tiktok\nyour Attitude is my foot 👣🦶\n         🥰🥰🥰💓?",
+                "bio_link": "",
+                "case_id": "0",
+                "ins_id": "",
+                "is_ban": "false",
+                "register_at": "2019-07-10 03:21:04 +0000 UTC",
+                "register_zone": "PK",
+                "reported": "0",
+                "ttl": "1693474435000",
+                "uid": "6711992608816579590"
+            },
+            "propertyTypes": {
+                "bio_desc": "String",
+                "bio_link": "String",
+                "case_id": "String",
+                "ins_id": "String",
+                "is_ban": "String",
+                "register_at": "String",
+                "register_zone": "String",
+                "reported": "String",
+                "ttl": "String",
+                "uid": "String"
+            }
+        },
+        {
+            "id": "14",
+            "labels": [
+                "Did"
+            ],
+            "properties": {
+                "case_id": "0",
+                "did": "7131976266081797637",
+                "ttl": "1693474435000"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "did": "String",
+                "ttl": "String"
+            }
+        },
+        {
+            "id": "17",
+            "labels": [
+                "NaturePeopleID"
+            ],
+            "properties": {
+                "case_id": "0",
+                "ttl": "1693474435000",
+                "value": "6704363210851910661"
+            },
+            "propertyTypes": {
+                "case_id": "String",
+                "ttl": "String",
+                "value": "String"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "25",
+            "startNodeId": "3",
+            "endNodeId": "18",
+            "type": "registry_ip",
+            "properties": {
+                "time": "2022-05-05 14:31:34 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "26",
+            "startNodeId": "3",
+            "endNodeId": "19",
+            "type": "user_mobile",
+            "properties": {
+                "time": "2022-05-05 10:06:01 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "21",
+            "startNodeId": "3",
+            "endNodeId": "7",
+            "type": "login_did",
+            "properties": {
+                "time": "2022-08-15 11:04:26 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "3",
+            "startNodeId": "3",
+            "endNodeId": "7",
+            "type": "registry_did",
+            "properties": {
+                "time": "2022-09-22 01:42:26 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "16",
+            "startNodeId": "11",
+            "endNodeId": "16",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-01-16 11:19:03 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "10",
+            "startNodeId": "3",
+            "endNodeId": "16",
+            "type": "login_did",
+            "properties": {
+                "time": "2022-08-16 01:06:21 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "23",
+            "startNodeId": "2",
+            "endNodeId": "6",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-07 15:38:06 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "20",
+            "startNodeId": "8",
+            "endNodeId": "6",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-06 15:41:20 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "8",
+            "startNodeId": "3",
+            "endNodeId": "6",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-07 15:38:43 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "2",
+            "startNodeId": "2",
+            "endNodeId": "6",
+            "type": "registry_did",
+            "properties": {
+                "time": "2023-02-06 05:54:51 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "22",
+            "startNodeId": "13",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-24 17:20:55 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "18",
+            "startNodeId": "4",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 03:13:49 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "15",
+            "startNodeId": "0",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-26 01:04:05 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "14",
+            "startNodeId": "2",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 03:12:57 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "13",
+            "startNodeId": "1",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 14:09:41 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "12",
+            "startNodeId": "10",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 14:18:51 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "7",
+            "startNodeId": "3",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-23 18:24:40 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "4",
+            "startNodeId": "4",
+            "endNodeId": "5",
+            "type": "registry_did",
+            "properties": {
+                "time": "2023-02-24 14:47:01 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "1",
+            "startNodeId": "1",
+            "endNodeId": "5",
+            "type": "registry_did",
+            "properties": {
+                "time": "2023-02-24 19:11:08 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "0",
+            "startNodeId": "0",
+            "endNodeId": "5",
+            "type": "registry_did",
+            "properties": {
+                "time": "2023-02-25 00:41:36 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "19",
+            "startNodeId": "12",
+            "endNodeId": "15",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 17:00:28 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "11",
+            "startNodeId": "9",
+            "endNodeId": "15",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 17:01:07 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "6",
+            "startNodeId": "3",
+            "endNodeId": "15",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 17:01:41 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "17",
+            "startNodeId": "10",
+            "endNodeId": "14",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-06-12 23:26:08 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "9",
+            "startNodeId": "8",
+            "endNodeId": "14",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-06-12 23:56:32 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "5",
+            "startNodeId": "3",
+            "endNodeId": "14",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-06-13 00:06:46 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "26",
+            "startNodeId": "3",
+            "endNodeId": "19",
+            "type": "user_mobile",
+            "properties": {
+                "time": "2022-05-05 10:06:01 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "25",
+            "startNodeId": "3",
+            "endNodeId": "18",
+            "type": "registry_ip",
+            "properties": {
+                "time": "2022-05-05 14:31:34 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "24",
+            "startNodeId": "3",
+            "endNodeId": "17",
+            "type": "user_belong_npid",
+            "properties": {
+                "time": "2023-03-15 03:59:54 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "21",
+            "startNodeId": "3",
+            "endNodeId": "7",
+            "type": "login_did",
+            "properties": {
+                "time": "2022-08-15 11:04:26 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "10",
+            "startNodeId": "3",
+            "endNodeId": "16",
+            "type": "login_did",
+            "properties": {
+                "time": "2022-08-16 01:06:21 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "8",
+            "startNodeId": "3",
+            "endNodeId": "6",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-07 15:38:43 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "7",
+            "startNodeId": "3",
+            "endNodeId": "5",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-02-23 18:24:40 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "6",
+            "startNodeId": "3",
+            "endNodeId": "15",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-03-01 17:01:41 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "5",
+            "startNodeId": "3",
+            "endNodeId": "14",
+            "type": "login_did",
+            "properties": {
+                "time": "2023-06-13 00:06:46 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        },
+        {
+            "id": "3",
+            "startNodeId": "3",
+            "endNodeId": "7",
+            "type": "registry_did",
+            "properties": {
+                "time": "2022-09-22 01:42:26 +0000 UTC"
+            },
+            "propertyTypes": {
+                "time": "String"
+            }
+        }
+    ],
+    "base_resp": {
+        "StatusMessage": "success",
+        "StatusCode": 0
+    }
+}

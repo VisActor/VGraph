@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "declaration": false
+  },
+  "include": ["./src", "./typings", "./examples"]
+}

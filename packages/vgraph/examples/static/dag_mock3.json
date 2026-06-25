@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    { "label": "a", "class": "type-TOP", "id": "a" },
+    { "label": "b", "class": "type-S", "id": "b" },
+    { "label": "c", "class": "type-NP", "id": "c" },
+    { "label": "d", "class": "type-DT", "id": "d" },
+    { "label": "e", "class": "type-TK", "id": "e" }
+  ],
+  "edges": [
+    { "source": "d", "target": "a" },
+    { "source": "c", "target": "a" },
+    { "source": "b", "target": "a" },
+    { "source": "e", "target": "a" }
+  ]
+}

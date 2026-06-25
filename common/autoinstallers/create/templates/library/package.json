@@ -1,0 +1,29 @@
+{
+  "name": "@{{scope}}/{{projectName}}",
+  "version": "0.1.0",
+  "description": "{{description}}",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "cjs",
+    "es",
+    "dist"
+  ],
+  "scripts": {
+    "compile": "tsc --noEmit",
+    "eslint": "eslint --debug --fix src/",
+    "build": "bundle --clean",
+    "dev": "bundle --clean -f es -w",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@internal/bundler": "workspace:*",
+    "@internal/eslint-config": "workspace:*",
+    "@internal/ts-config": "workspace:*",
+    "@rushstack/eslint-patch": "~1.1.4",
+    "eslint": "~8.18.0",
+    "typescript": "4.9.5"
+  }
+}

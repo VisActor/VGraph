@@ -1,0 +1,34 @@
+.vgraph-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  &-viewport {
+    transform-origin: 0 0;
+    pointer-events: none;
+  }
+
+  &-node {
+    position: absolute;
+    box-sizing: border-box;
+    user-select: none;
+    pointer-events: all;
+  }
+
+  &-anchor {
+    position: absolute;
+    box-sizing: border-box;
+    cursor: crosshair;
+    user-select: none;
+    pointer-events: all;
+  }
+
+  &-group-title {
+    position: absolute;
+    user-select: none;
+    pointer-events: all;
+    box-sizing: border-box;
+  }
+}

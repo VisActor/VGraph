@@ -1,0 +1,151 @@
+---
+category: examples
+group: groups
+title: 分组收起时连接
+cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/link_group_on_collapse.gif
+ link: group-spec/options
+option:
+---
+# 分组收起时连接
+在大多数业务场景中对分组的样式要求不高，交互也是可枚举的。往往需要自定义的只是标题。因此 VGraph 提供轻量的标题自定义方法。也希望业务上能给到我们更多的自定义分组场景输入。
+详细文档可见<a href="/vgraph/guide/group-spec/options#分组标题">分组标题配置</a>。
+## Code Demo
+
+```livedemo-files template=vgraph-react
+>>> app.tsx
+import { Graph, Text, Icon, insertStyles } from '@visactor/vgraph';
+
+var iconfontStyles = `
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/c/font_3765180_9y80j4em5b7.woff2?t=1685600318362') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3765180_9y80j4em5b7.woff?t=1685600318362') format('woff'),
+       url('//at.alicdn.com/t/c/font_3765180_9y80j4em5b7.ttf?t=1685600318362') format('truetype');
+}
+canvas,
+.iconfont {
+  font-family: 'iconfont' !important;
+}
+`;
+insertStyles(iconfontStyles, 'vgraph-demo-iconfont');
+
+var data = {
+  nodes: [
+    { label: 'a', class: 'type-TOP', id: 'a', x: 100, y: 100 },
+    { label: 'b', class: 'type-S', id: 'b', x: 200, y: 100 },
+    { label: 'c', class: 'type-NP', id: 'c', x: 330, y: 200 },
+    { label: 'd', class: 'type-DT', id: 'd', x: 430, y: 300 },
+    { label: 'e', class: 'type-TK', id: 'e', x: 430, y: 400 }
+  ],
+  edges: [
+    { source: 'd', target: 'e' },
+    { source: 'c', target: 'd' },
+    { source: 'b', target: 'a' },
+    { source: 'e', target: 'b' },
+    { source: 'a', target: 'e' }
+  ],
+  groups: [
+    {
+      id: 'group1',
+      children: ['d', 'e']
+    },
+    {
+      id: 'group2',
+      children: ['group1', 'c']
+    },
+    {
+      id: 'group3',
+      children: ['a', 'b']
+    }
+  ]
+};
+
+var container = document.getElementById(CONTAINER_ID);
+var width = container.offsetWidth;
+var height = container.offsetHeight;
+var expandIcon = '&#xe610;';
+var collapseIcon = '&#xe60f;';
+
+var graph = new Graph({
+  container: CONTAINER_ID,
+  width: width,
+  height: height,
+  minRatio: 0.2,
+  maxRatio: 8,
+  setDefaultNode: function(nodeData) {
+    return {
+      label: nodeData.id,
+      type: 'rect',
+      width: 80,
+      height: 30,
+      radius: 4,
+      anchors: [
+        [0, 0.5],
+        [0.5, 0],
+        [0.5, 1],
+        [1, 0.5]
+      ]
+    };
+  },
+  setDefaultEdge: function(edge) {
+    return {
+      type: 'line',
+      endArrow: {
+        type: 'arrow',
+        style: 'triangleSolid',
+        size: 10
+      }
+    };
+  },
+  setDefaultGroup: function(group) {
+    return {
+      linkNode: true,
+      linkGroupOnCollapse: true,
+      fillStyle: '#fff',
+      strokeStyle: '#DDE2E9',
+      padding: 20,
+      radius: 4,
+      titleSize: 32,
+      anchors: [
+        [0, 0.5],
+        [1, 0.5]
+      ],
+      renderGroupTitle: function(group, layer, width) {
+        var icon = new Icon({
+          x: 28,
+          y: 16,
+          fillStyle: '#595959',
+          icon: group.get('collapsed') ? expandIcon : collapseIcon,
+          cursor: 'pointer'
+        });
+        layer.add(icon);
+
+        icon.on('click', function() {
+          toggleGroup(group);
+        });
+
+        var text = new Text({
+          x: 40,
+          y: 16,
+          text: group.get('id'),
+          width: width - 40 - 16,
+          textOverflow: 'ellipsis'
+        });
+        layer.add(text);
+      }
+    };
+  }
+});
+
+graph.data(data);
+graph.fitView();
+
+function toggleGroup(group) {
+  if (group.get('collapsed')) {
+    group.expand();
+  } else {
+    group.collapse();
+  }
+  graph.refresh();
+}
+```

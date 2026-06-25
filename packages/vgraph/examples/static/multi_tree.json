@@ -1,0 +1,337 @@
+{
+    "items": [
+        {
+            "id": "1161",
+            "nodeLabel": "内容生态",
+            "children": [
+                {
+                    "id": "1182",
+                    "nodeLabel": "推荐体验",
+                    "children": [
+                        {
+                            "group_id": 10045,
+                            "nodeLabel": "兴趣圈层聚类数",
+                            "asset_count": 24
+                        },
+                        {
+                            "group_id": 10039,
+                            "nodeLabel": "多模态聚类数",
+                            "asset_count": 12
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1164",
+            "nodeLabel": "增长",
+            "children": [
+                {
+                    "id": "1181",
+                    "nodeLabel": "拉新/拉活",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "1167",
+            "nodeLabel": "社交与投稿",
+            "children": [
+                {
+                    "id": "1173",
+                    "nodeLabel": "关系",
+                    "children": [
+                        {
+                            "group_id": 10041,
+                            "nodeLabel": "取消关注人数",
+                            "asset_count": 7
+                        },
+                        {
+                            "group_id": 10046,
+                            "nodeLabel": "关系数",
+                            "asset_count": 7
+                        },
+                        {
+                            "group_id": 10055,
+                            "nodeLabel": "互关人数",
+                            "asset_count": 6
+                        },
+                        {
+                            "group_id": 10048,
+                            "nodeLabel": "关注人数",
+                            "asset_count": 5
+                        },
+                        {
+                            "group_id": 10040,
+                            "nodeLabel": "回关人数",
+                            "asset_count": 4
+                        },
+                        {
+                            "group_id": 10054,
+                            "nodeLabel": "互关用户占比",
+                            "asset_count": 2
+                        },
+                        {
+                            "group_id": 10005,
+                            "nodeLabel": "被关注人数",
+                            "asset_count": 21
+                        },
+                        {
+                            "group_id": 10043,
+                            "nodeLabel": "单关人数",
+                            "asset_count": 8
+                        }
+                    ]
+                },
+                {
+                    "id": "1176",
+                    "nodeLabel": "即时通信",
+                    "children": [
+                        {
+                            "group_id": 10001,
+                            "nodeLabel": "通话房间数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10042,
+                            "nodeLabel": "发送消息次数",
+                            "asset_count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "1180",
+                    "nodeLabel": "投稿",
+                    "children": [
+                        {
+                            "group_id": 10027,
+                            "nodeLabel": "投稿设备数",
+                            "asset_count": 65
+                        },
+                        {
+                            "group_id": 10020,
+                            "nodeLabel": "播放时长",
+                            "asset_count": 63
+                        },
+                        {
+                            "group_id": 10033,
+                            "nodeLabel": "投稿占比",
+                            "asset_count": 11
+                        },
+                        {
+                            "group_id": 10038,
+                            "nodeLabel": "开拍来源转化率",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10037,
+                            "nodeLabel": "开拍次数",
+                            "asset_count": 14
+                        },
+                        {
+                            "group_id": 10050,
+                            "nodeLabel": "人均播放次数",
+                            "asset_count": 7
+                        },
+                        {
+                            "group_id": 10004,
+                            "nodeLabel": "被播放人数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10021,
+                            "nodeLabel": "播放完成率",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10032,
+                            "nodeLabel": "投稿天数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10036,
+                            "nodeLabel": "开拍率",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10057,
+                            "nodeLabel": "下载视频数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10030,
+                            "nodeLabel": "投稿数占比",
+                            "asset_count": 37
+                        },
+                        {
+                            "group_id": 10015,
+                            "nodeLabel": "播放视频数",
+                            "asset_count": 12
+                        },
+                        {
+                            "group_id": 10019,
+                            "nodeLabel": "播放时长占比",
+                            "asset_count": 5
+                        },
+                        {
+                            "group_id": 10029,
+                            "nodeLabel": "投稿渗透",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10017,
+                            "nodeLabel": "播放次数",
+                            "asset_count": 155
+                        },
+                        {
+                            "group_id": 10014,
+                            "nodeLabel": "播放设备数",
+                            "asset_count": 6
+                        },
+                        {
+                            "group_id": 10034,
+                            "nodeLabel": "投稿人数",
+                            "asset_count": 2
+                        },
+                        {
+                            "group_id": 10025,
+                            "nodeLabel": "播放人数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10031,
+                            "nodeLabel": "投稿数",
+                            "asset_count": 171
+                        },
+                        {
+                            "group_id": 10023,
+                            "nodeLabel": "播放完成人数",
+                            "asset_count": 2
+                        },
+                        {
+                            "group_id": 10024,
+                            "nodeLabel": "播放人数占比",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10022,
+                            "nodeLabel": "播放完成次数",
+                            "asset_count": 42
+                        },
+                        {
+                            "group_id": 10026,
+                            "nodeLabel": "投稿设备数占比",
+                            "asset_count": 39
+                        },
+                        {
+                            "group_id": 10035,
+                            "nodeLabel": "开拍设备数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10028,
+                            "nodeLabel": "投稿率",
+                            "asset_count": 52
+                        },
+                        {
+                            "group_id": 10016,
+                            "nodeLabel": "播放次数占比",
+                            "asset_count": 51
+                        },
+                        {
+                            "group_id": 10058,
+                            "nodeLabel": "下载次数",
+                            "asset_count": 22
+                        },
+                        {
+                            "group_id": 10018,
+                            "nodeLabel": "播放暂停次数",
+                            "asset_count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "1190",
+                    "nodeLabel": "社交",
+                    "children": [
+                        {
+                            "group_id": 10013,
+                            "nodeLabel": "收藏次数",
+                            "asset_count": 13
+                        },
+                        {
+                            "group_id": 10053,
+                            "nodeLabel": "互动次数",
+                            "asset_count": 6
+                        },
+                        {
+                            "group_id": 10010,
+                            "nodeLabel": "点击次数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10012,
+                            "nodeLabel": "收藏视频数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10051,
+                            "nodeLabel": "人均单关活跃次数",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10044,
+                            "nodeLabel": "分享次数",
+                            "asset_count": 38
+                        },
+                        {
+                            "group_id": 10009,
+                            "nodeLabel": "点赞次数",
+                            "asset_count": 37
+                        },
+                        {
+                            "group_id": 10056,
+                            "nodeLabel": "不喜欢次数",
+                            "asset_count": 12
+                        },
+                        {
+                            "group_id": 10003,
+                            "nodeLabel": "评论次数",
+                            "asset_count": 31
+                        },
+                        {
+                            "group_id": 10002,
+                            "nodeLabel": "跳过次数",
+                            "asset_count": 15
+                        },
+                        {
+                            "group_id": 10006,
+                            "nodeLabel": "艾特次数",
+                            "asset_count": 3
+                        },
+                        {
+                            "group_id": 10011,
+                            "nodeLabel": "活跃动作次数",
+                            "asset_count": 3
+                        },
+                        {
+                            "group_id": 10049,
+                            "nodeLabel": "人均活跃次数",
+                            "asset_count": 2
+                        },
+                        {
+                            "group_id": 10047,
+                            "nodeLabel": "关注用户占比",
+                            "asset_count": 1
+                        },
+                        {
+                            "group_id": 10052,
+                            "nodeLabel": "互动渗透率",
+                            "asset_count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

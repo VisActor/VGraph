@@ -1,0 +1,115 @@
+---
+category: examples
+group: animate
+title: 连线轨迹
+cover: https://lf9-dp-fe-cms-tos.byteorg.com/obj/bit-cloud/VGraph/site-exampleCovers/trail.gif
+link: animate/trail
+option:
+---
+# 连线轨迹
+
+连线轨迹动画适合展示数据的关系走向，可以做单次动画也可以做无限动画，可用于流水线的运行展示等。
+
+## 代码演示
+
+```livedemo-files template=vgraph-react
+>>> app.tsx
+import { Graph, panZoom, dragCanvas, Edge } from '@visactor/vgraph';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function initGraph() {
+  const container = document.getElementById(CONTAINER_ID);
+  const darkContainer = document.createElement('div');
+  container.appendChild(darkContainer);
+  darkContainer.style.width = '100%';
+  darkContainer.style.height = '100%';
+  darkContainer.style.background = 'rgb(18,18,11)';
+  const graph = new Graph({
+    container: darkContainer,
+    width: container.offsetWidth,
+    height: container.offsetHeight,
+    minRatio: 0.3,
+    maxRatio: 8,
+    setDefaultNode: function(nodeData) {
+      return {
+        type: 'circle',
+        width: 50,
+        height: 50,
+        fillStyle: 'rgb(18, 19, 20)',
+        strokeStyle: '#666',
+        label: {
+          text: nodeData.id,
+          fillStyle: '#fff',
+          textAlign: 'center',
+          textBaseline: 'middle'
+        },
+        anchors: [
+          [0, 0.5],
+          [1, 0.5]
+        ]
+      };
+    },
+    setDefaultEdge: function() {
+      return {
+        strokeStyle: 'rgb(46,47,40)'
+      };
+    }
+  });
+
+  graph.addBehavior(panZoom);
+  graph.addBehavior(dragCanvas);
+  graph.data({
+    nodes: [
+      {
+        id: 'node1',
+        x: 100,
+        y: 100
+      },
+      {
+        id: 'node2',
+        x: 300,
+        y: 200
+      },
+      {
+        id: 'node3',
+        x: 100,
+        y: 300
+      }
+    ],
+    edges: [
+      {
+        source: 'node1',
+        target: 'node2',
+        type: 'hLine'
+      },
+      {
+        source: 'node3',
+        target: 'node2',
+        type: 'hCubic'
+      }
+    ]
+  });
+
+  graph.getEdges().forEach(function(edge) {
+    graph.animate({
+      target: edge,
+      type: 'trail',
+      common: {
+        duration: 2000
+      }
+    });
+  });
+
+  return graph;
+}
+
+function App() {
+  React.useEffect(function() {
+    initGraph();
+  }, []);
+  return null;
+}
+
+ReactDOM.render(<App />, document.getElementById(CONTAINER_ID));
+```

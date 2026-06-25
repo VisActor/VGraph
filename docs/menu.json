@@ -1,0 +1,14 @@
+[
+  {
+    "menu": "demo",
+    "type": "markdown"
+  },
+  {
+    "menu": "guide",
+    "type": "markdown"
+  },
+  {
+    "menu": "changelog",
+    "type": "markdown"
+  }
+]

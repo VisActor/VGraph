@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    { "id": "start", "label": { "text": "start" } },
+    { "id": "show_slogan_page", "label": { "text": "show_slogan_page" } },
+    { "id": "solgan_login_notify", "label": { "text": "solgan_login_notify" } },
+    { "id": "solgan_login_submit", "label": { "text": "solgan_login_submit" } },
+    { "id": "slogan_login_success1", "label": { "text": "slogan_login_success1" } },
+    { "id": "slogan_login_interest_selection", "label": { "text": "slogan_login_interest_selection" } },
+    {
+      "id": "slogan_login_interest_selectionxx",
+      "label": { "text": "slogan_login_interest_selectionxx" }
+    },
+    {
+      "id": "slogan_login_exit_welcomescreen2",
+      "label": { "text": "slogan_login_exit_welcomescreen2" }
+    },
+    { "id": "slogan_login_welcomescreen2_end", "label": { "text": "slogan_login_welcomescreen2_end" } },
+    { "id": "slogan_login_exit_end", "label": { "text": "slogan_login_exit_end" } },
+    { "id": "slogan_login_show_interest_end", "label": { "text": "slogan_login_show_interest_end" } },
+    { "id": "slogan_login_exit_welcome", "label": { "text": "slogan_login_exit_welcome" } },
+    { "id": "slogan_login_exit_welcome_end", "label": { "text": "slogan_login_exit_welcome_end" } },
+    { "id": "slogan_login_success_end", "label": { "text": "slogan_login_success_end" } },
+    { "id": "slogan_login_exit", "label": { "text": "slogan_login_exit" } },
+    { "id": "slogan_login_exit_lose", "label": { "text": "slogan_login_exit_lose" } },
+    { "id": "login1_exit_app", "label": { "text": "login1_exit_app" } },
+    { "id": "login1_exit_app_lose", "label": { "text": "login1_exit_app_lose" } },
+    { "id": "login1_login_success", "label": { "text": "login1_login_success" } },
+    { "id": "login1_video_play_end", "label": { "text": "login1_video_play_end" } },
+    { "id": "login1_interest_selection", "label": { "text": "login1_interest_selection" } },
+    {
+      "id": "login1_exit_interest_selectionxx",
+      "label": { "text": "login1_exit_interest_selectionxx" }
+    },
+    { "id": "login1_exit_welcomescreen2", "label": { "text": "login1_exit_welcomescreen2" } },
+    { "id": "login1_exit_welcomescreen2_end", "label": { "text": "login1_exit_welcomescreen2_end" } },
+    { "id": "login1_exit_welcomescreen", "label": { "text": "login1_exit_welcomescreen" } },
+    { "id": "login1_exit_video_play_end", "label": { "text": "login1_exit_video_play_end" } },
+    { "id": "slogan_exit_app", "label": { "text": "slogan_exit_app" } },
+    { "id": "slogan_exit_app_lose", "label": { "text": "slogan_exit_app_lose" } },
+    { "id": "slogan_login_success", "label": { "text": "slogan_login_success" } },
+    { "id": "login_interest_selection", "label": { "text": "login_interest_selection" } },
+    { "id": "login_exit_interest_selectionxx", "label": { "text": "login_exit_interest_selectionxx" } },
+    { "id": "login_exit_welcomescreen2", "label": { "text": "login_exit_welcomescreen2" } },
+    { "id": "login_exit_welcomescreen2_end", "label": { "text": "login_exit_welcomescreen2_end" } },
+    { "id": "login_exit_welcomescreen", "label": { "text": "login_exit_welcomescreen" } },
+    { "id": "login_exit_video_play_end", "label": { "text": "login_exit_video_play_end" } },
+    { "id": "show_interest_selection", "label": { "text": "show_interest_selection" } },
+    { "id": "interest_show_consent_box", "label": { "text": "interest_show_consent_box" } },
+    { "id": "interest_confirm_consent_box", "label": { "text": "interest_confirm_consent_box" } },
+    {
+      "id": "interest_exit_interest_selection",
+      "label": { "text": "interest_exit_interest_selection" }
+    },
+    { "id": "interest_exit_welcomescreen", "label": { "text": "interest_exit_welcomescreen" } },
+    { "id": "interest_exit_welcomescreen_end", "label": { "text": "interest_exit_welcomescreen_end" } },
+    { "id": "show_consent_box", "label": { "text": "show_consent_box" } },
+    { "id": "confirm_consent_box", "label": { "text": "confirm_consent_box" } },
+    { "id": "exit_welcomescreen", "label": { "text": "exit_welcomescreen" } },
+    { "id": "exit_welcomescreen_end", "label": { "text": "exit_welcomescreen_end" } },
+    { "id": "exit_app", "label": { "text": "exit_app" } },
+    { "id": "exit_app_lose", "label": { "text": "exit_app_lose" } },
+    { "id": "login_notify", "label": { "text": "login_notify" } },
+    { "id": "login_submit", "label": { "text": "login_submit" } },
+    { "id": "login_success", "label": { "text": "login_success" } },
+    { "id": "login_success_end", "label": { "text": "login_success_end" } },
+    { "id": "video_play_end", "label": { "text": "video_play_end" } },
+    { "id": "finish", "label": { "text": "finish" } }
+  ],
+  "edges": [
+    {
+      "source": "start",
+      "target": "show_slogan_page"
+    },
+    {
+      "source": "show_slogan_page",
+      "target": "solgan_login_notify"
+    },
+    {
+      "source": "solgan_login_notify",
+      "target": "solgan_login_submit"
+    },
+    {
+      "source": "solgan_login_submit",
+      "target": "slogan_login_success1"
+    },
+    {
+      "source": "slogan_login_success1",
+      "target": "slogan_login_interest_selection"
+    },
+    {
+      "source": "slogan_login_interest_selection",
+      "target": "slogan_login_interest_selectionxx"
+    },
+    {
+      "source": "slogan_login_interest_selectionxx",
+      "target": "slogan_login_exit_welcomescreen2"
+    },
+    {
+      "source": "slogan_login_exit_welcomescreen2",
+      "target": "slogan_login_welcomescreen2_end"
+    },
+    {
+      "source": "slogan_login_welcomescreen2_end",
+      "target": "finish"
+    },
+    {
+      "source": "slogan_login_interest_selectionxx",
+      "target": "slogan_login_exit_end"
+    },
+    {
+      "source": "slogan_login_exit_end",
+      "target": "finish"
+    },
+    {
+      "source": "slogan_login_interest_selection",
+      "target": "slogan_login_show_interest_end"
+    },
+    {
+      "source": "slogan_login_show_interest_end",
+      "target": "finish"
+    },
+    {
+      "source": "slogan_login_success1",
+      "target": "slogan_login_exit_welcome"
+    },
+    {
+      "source": "slogan_login_exit_welcome",
+      "target": "slogan_login_exit_welcome_end"
+    },
+    {
+      "source": "slogan_login_exit_welcome_end",
+      "target": "finish"
+    },
+    {
+      "source": "slogan_login_success1",
+      "target": "slogan_login_success_end"
+    },
+    {
+      "source": "slogan_login_success_end",
+      "target": "finish"
+    },
+    {
+      "source": "solgan_login_submit",
+      "target": "slogan_login_exit"
+    },
+    {
+      "source": "slogan_login_exit",
+      "target": "slogan_login_exit_lose"
+    },
+    {
+      "source": "solgan_login_notify",
+      "target": "login1_exit_app"
+    },
+    {
+      "source": "login1_exit_app",
+      "target": "login1_exit_app_lose"
+    },
+    {
+      "source": "solgan_login_notify",
+      "target": "login1_login_success"
+    },
+    {
+      "source": "login1_login_success",
+      "target": "login1_video_play_end"
+    },
+    {
+      "source": "login1_video_play_end",
+      "target": "finish"
+    },
+    {
+      "source": "login1_login_success",
+      "target": "login1_interest_selection"
+    },
+    {
+      "source": "login1_interest_selection",
+      "target": "login1_exit_interest_selectionxx"
+    },
+    {
+      "source": "login1_exit_interest_selectionxx",
+      "target": "login1_exit_welcomescreen2"
+    },
+    {
+      "source": "login1_exit_welcomescreen2",
+      "target": "login1_exit_welcomescreen2_end"
+    },
+    {
+      "source": "login1_exit_welcomescreen2_end",
+      "target": "finish"
+    },
+    {
+      "source": "login1_login_success",
+      "target": "login1_exit_welcomescreen"
+    },
+    {
+      "source": "login1_exit_welcomescreen",
+      "target": "login1_exit_video_play_end"
+    },
+    {
+      "source": "login1_exit_video_play_end",
+      "target": "finish"
+    },
+    {
+      "source": "show_slogan_page",
+      "target": "slogan_exit_app"
+    },
+    {
+      "source": "slogan_exit_app",
+      "target": "slogan_exit_app_lose"
+    },
+    {
+      "source": "show_slogan_page",
+      "target": "slogan_login_success"
+    },
+    {
+      "source": "slogan_login_success",
+      "target": "login_interest_selection"
+    },
+    {
+      "source": "login_interest_selection",
+      "target": "login_exit_interest_selectionxx"
+    },
+    {
+      "source": "login_exit_interest_selectionxx",
+      "target": "login_exit_welcomescreen2"
+    },
+    {
+      "source": "login_exit_welcomescreen2",
+      "target": "login_exit_welcomescreen2_end"
+    },
+    {
+      "source": "login_exit_welcomescreen2_end",
+      "target": "finish"
+    },
+    {
+      "source": "slogan_login_success",
+      "target": "login_exit_welcomescreen"
+    },
+    {
+      "source": "login_exit_welcomescreen",
+      "target": "login_exit_video_play_end"
+    },
+    {
+      "source": "login_exit_video_play_end",
+      "target": "finish"
+    },
+    {
+      "source": "show_slogan_page",
+      "target": "show_interest_selection"
+    },
+    {
+      "source": "show_interest_selection",
+      "target": "interest_show_consent_box"
+    },
+    {
+      "source": "interest_show_consent_box",
+      "target": "interest_confirm_consent_box"
+    },
+    {
+      "source": "interest_confirm_consent_box",
+      "target": "interest_exit_interest_selection"
+    },
+    {
+      "source": "interest_exit_interest_selection",
+      "target": "interest_exit_welcomescreen"
+    },
+    {
+      "source": "interest_exit_welcomescreen",
+      "target": "interest_exit_welcomescreen_end"
+    },
+    {
+      "source": "interest_exit_welcomescreen_end",
+      "target": "finish"
+    },
+    {
+      "source": "show_slogan_page",
+      "target": "show_consent_box"
+    },
+    {
+      "source": "show_consent_box",
+      "target": "confirm_consent_box"
+    },
+    {
+      "source": "confirm_consent_box",
+      "target": "exit_welcomescreen"
+    },
+    {
+      "source": "exit_welcomescreen",
+      "target": "exit_welcomescreen_end"
+    },
+    {
+      "source": "exit_welcomescreen_end",
+      "target": "finish"
+    },
+    {
+      "source": "start",
+      "target": "exit_app"
+    },
+    {
+      "source": "exit_app",
+      "target": "exit_app_lose"
+    },
+    {
+      "source": "start",
+      "target": "login_notify"
+    },
+    {
+      "source": "login_notify",
+      "target": "login_submit"
+    },
+    {
+      "source": "login_submit",
+      "target": "login_success"
+    },
+    {
+      "source": "login_success",
+      "target": "login_success_end"
+    },
+    {
+      "source": "login_success_end",
+      "target": "finish"
+    },
+    {
+      "source": "start",
+      "target": "video_play_end"
+    },
+    {
+      "source": "video_play_end",
+      "target": "finish"
+    }
+  ],
+  "groups": [
+    {
+      "id": "solgan_login_submit_group",
+      "label": "login_submit",
+      "children": [
+        "slogan_login_success1",
+        "slogan_login_interest_selection",
+        "slogan_login_interest_selectionxx",
+        "slogan_login_exit_welcomescreen2",
+        "slogan_login_welcomescreen2_end",
+        "slogan_login_exit_end",
+        "slogan_login_show_interest_end",
+        "slogan_login_exit_welcome",
+        "slogan_login_exit_welcome_end",
+        "slogan_login_success_end",
+        "slogan_login_exit",
+        "slogan_login_exit_lose"
+      ],
+      "isGroup": true
+    },
+    {
+      "id": "login1_login_success_group",
+      "label": "login_success",
+      "children": [
+        "login1_video_play_end",
+        "login1_interest_selection",
+        "login1_exit_interest_selectionxx",
+        "login1_exit_welcomescreen2",
+        "login1_exit_welcomescreen2_end",
+        "login1_exit_welcomescreen",
+        "login1_exit_video_play_end"
+      ],
+      "isGroup": true
+    },
+    {
+      "id": "login_interest_selection_group",
+      "label": "show_interest_selection",
+      "children": ["login_exit_interest_selectionxx", "login_exit_welcomescreen2", "login_exit_welcomescreen2_end"],
+      "isGroup": true
+    },
+    {
+      "id": "interest_show_consent_box_group",
+      "label": "show_consent_box",
+      "children": [
+        "interest_confirm_consent_box",
+        "interest_exit_interest_selection",
+        "interest_exit_welcomescreen",
+        "interest_exit_welcomescreen_end"
+      ],
+      "isGroup": true
+    }
+  ]
+}

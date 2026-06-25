@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    { "label": "a", "class": "type-TOP", "id": "a", "x": 100, "y": 100 },
+    { "label": "b", "class": "type-S", "id": "b", "x": 200, "y": 100 },
+    { "label": "c", "class": "type-NP", "id": "c", "x": 330, "y": 200 },
+    { "label": "d", "class": "type-DT", "id": "d", "x": 430, "y": 300 },
+    { "label": "e", "class": "type-TK", "id": "e", "x": 430, "y": 400 }
+  ],
+  "edges": [
+    { "source": "d", "target": "e" },
+    { "source": "c", "target": "d" },
+    { "source": "b", "target": "a" },
+    { "source": "e", "target": "b" },
+    { "source": "a", "target": "e" }
+  ],
+  "groups": [
+    {
+      "id": "group1",
+      "children": ["d", "e"]
+    },
+    {
+      "id": "group2",
+      "children": ["group1", "c"]
+    },
+    {
+      "id": "group3",
+      "children": ["a", "b"]
+    }
+  ]
+}

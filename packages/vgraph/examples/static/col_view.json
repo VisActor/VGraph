@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    { "id": "star_name" },
+    { "id": "req_id" },
+    { "id": "device_id" },
+    { "id": "entertainment_type" },
+    { "id": "time" },
+    { "id": "ad_id" },
+    { "id": "entertainment_name" },
+    { "id": "date" },
+    { "id": "ot" },
+    { "id": "device_id1" },
+    { "id": "star_name1" },
+    { "id": "req_id1" },
+    { "id": "ot1" },
+    { "id": "ad_id_rank" },
+    { "id": "ad_id1" },
+    { "id": "req_id2" },
+    { "id": "device_id2" },
+    { "id": "star_name2" },
+    { "id": "ot2" },
+    { "id": "ad_id2" },
+    { "id": "device_id11" }
+  ],
+  "edges": [
+    { "source": "star_name", "target": "star_name1" },
+    { "source": "star_name", "target": "ad_id_rank" },
+    { "source": "req_id", "target": "req_id1" },
+    { "source": "req_id", "target": "ad_id_rank" },
+    { "source": "device_id", "target": "device_id1" },
+    { "source": "device_id1", "target": "device_id11" },
+    { "source": "device_id", "target": "ad_id_rank" },
+    { "source": "ad_id", "target": "ad_id1" },
+    { "source": "ot", "target": "ot1" },
+    { "source": "ot", "target": "ad_id_rank" },
+    { "source": "req_id1", "target": "req_id2" },
+    { "source": "device_id1", "target": "device_id2" },
+    { "source": "star_name1", "target": "star_name2" },
+    { "source": "ot1", "target": "ot2" },
+    { "source": "ad_id1", "target": "ad_id2" }
+  ],
+  "groups": [
+    {
+      "id": "hourly_15s_hashbase",
+      "depth": 0,
+      "children": [
+        "star_name",
+        "req_id",
+        "device_id",
+        "entertainment_type",
+        "time",
+        "ad_id",
+        "entertainment_name",
+        "date",
+        "ot"
+      ]
+    },
+    {
+      "id": "hourly_15s_first",
+      "depth": 1,
+      "children": ["device_id1", "star_name1", "req_id1", "ot1", "ad_id_rank", "ad_id1"]
+    },
+    {
+      "id": "hourly_15s_finalcamp",
+      "depth": 2,
+      "children": ["star_name2", "device_id2", "req_id2", "ot2", "ad_id2"]
+    },
+    {
+      "id": "hourly_15s_final",
+      "depth": 2,
+      "children": ["device_id11"]
+    }
+  ]
+}

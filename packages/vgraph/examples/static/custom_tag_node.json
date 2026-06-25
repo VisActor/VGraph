@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "type": "tagRect",
+      "x": 100,
+      "y": 100,
+      "width": 140,
+      "height": 56,
+      "theme": "rect",
+      "label": "默认的标签样式"
+    },
+    {
+      "id": "node2",
+      "type": "closableTagRect",
+      "x": 300,
+      "y": 100,
+      "width": 140,
+      "height": 56,
+      "theme": "rect",
+      "label": "可关闭的自定义样式标签"
+    },
+    {
+      "id": "node3",
+      "type": "iconTagRect",
+      "x": 500,
+      "y": 100,
+      "width": 140,
+      "height": 56,
+      "theme": "rect",
+      "label": "带图标的标签",
+      "icon": "&#xe672;"
+    },
+    {
+      "id": "node4",
+      "type": "tagRect",
+      "x": 100,
+      "y": 200,
+      "width": 140,
+      "height": 56,
+      "theme": "capsule",
+      "label": "默认样式的胶囊标签"
+    },
+    {
+      "id": "node5",
+      "type": "closableTagRect",
+      "x": 300,
+      "y": 200,
+      "width": 140,
+      "height": 56,
+      "theme": "capsule",
+      "label": "可关闭的胶囊标签"
+    },
+    {
+      "id": "node6",
+      "type": "iconTagRect",
+      "x": 500,
+      "y": 200,
+      "width": 140,
+      "height": 56,
+      "theme": "capsule",
+      "label": "带图标的胶囊标签",
+      "icon": "&#xe672;"
+    },
+    {
+      "id": "node7",
+      "type": "multiTagAdd",
+      "x": 150,
+      "y": 300,
+      "width": 240,
+      "height": 56,
+      "label": "可添加的多个标签排列",
+      "close": false,
+      "tags": [{ "text": "文本标签1" }]
+    },
+    {
+      "id": "node8",
+      "type": "multiTagDelete",
+      "x": 450,
+      "y": 300,
+      "width": 240,
+      "height": 56,
+      "close": true,
+      "label": "可删除的多个标签排列",
+      "tags": ["标签 1", "标签2", "标签3", "标签4", "标签5"]
+    }
+  ],
+  "edges": []
+}
