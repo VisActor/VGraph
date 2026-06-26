@@ -1,0 +1,171 @@
+name: Changelog API dry run
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version used in the changelog payload'
+        required: true
+        default: '0.1.0'
+      prev_version:
+        description: 'Previous version used in the changelog payload'
+        required: false
+        default: ''
+      change_summary:
+        description: 'Fallback change summary when no Rush changefiles exist'
+        required: true
+        default: 'Validate VGraph changelog generation.'
+
+jobs:
+  changelog-api-dry-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate changelog via API
+        env:
+          CHANGELOG_API_URL: ${{ secrets.VGRAPH_CHANGELOG_API_URL }}
+          CHANGELOG_API_TOKEN: ${{ secrets.VGRAPH_CHANGELOG_API_TOKEN }}
+          RELEASE_VERSION: ${{ inputs.version }}
+          PREV_VERSION: ${{ inputs.prev_version }}
+          CHANGE_SUMMARY: ${{ inputs.change_summary }}
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const version = process.env.RELEASE_VERSION;
+          const prevVersion = process.env.PREV_VERSION || undefined;
+          const changeSummary = process.env.CHANGE_SUMMARY || 'Validate VGraph changelog generation.';
+          const baseUrl = process.env.CHANGELOG_API_URL;
+          const token = process.env.CHANGELOG_API_TOKEN;
+
+          if (!version) {
+            console.error('Missing RELEASE_VERSION.');
+            process.exit(1);
+          }
+
+          if (!baseUrl || !token) {
+            console.error('CHANGELOG_API_URL or CHANGELOG_API_TOKEN is not configured.');
+            process.exit(1);
+          }
+
+          const baseDir = path.join(process.cwd(), 'common', 'changes', '@visactor', 'vgraph');
+          const changefiles = [];
+
+          try {
+            const files = fs.readdirSync(baseDir).filter(name => name.endsWith('.json'));
+            for (const file of files) {
+              const fullPath = path.join(baseDir, file);
+              changefiles.push(JSON.parse(fs.readFileSync(fullPath, 'utf8')));
+            }
+          } catch (e) {
+            console.log('No Rush changefiles found, using input change summary.');
+          }
+
+          if (changefiles.length === 0) {
+            changefiles.push({
+              packageName: '@visactor/vgraph',
+              changes: [
+                {
+                  packageName: '@visactor/vgraph',
+                  type: 'none',
+                  comment: changeSummary,
+                },
+              ],
+            });
+          }
+
+          const payload = {
+            version,
+            prevVersion,
+            date: new Date().toISOString().slice(0, 10),
+            changefiles,
+            langs: ['en', 'zh'],
+            template: 'default',
+          };
+
+          fs.mkdirSync('.changelog-api-dry-run', { recursive: true });
+          fs.writeFileSync(
+            '.changelog-api-dry-run/payload.json',
+            JSON.stringify({ ...payload, changefileCount: changefiles.length }, null, 2) + '\n',
+            'utf8'
+          );
+
+          function validateBlock(block, lang) {
+            if (!block || /TODO/i.test(block)) {
+              throw new Error(`Invalid ${lang} changelog block: empty or contains TODO`);
+            }
+          }
+
+          const url = new URL('/api/changelog/vgraph/generate', baseUrl);
+          const body = JSON.stringify(payload);
+          const isHttps = url.protocol === 'https:';
+          const httpModule = isHttps ? require('https') : require('http');
+
+          const options = {
+            method: 'POST',
+            hostname: url.hostname,
+            port: url.port || (isHttps ? 443 : 80),
+            path: url.pathname + url.search,
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`,
+              'Content-Length': Buffer.byteLength(body),
+            },
+          };
+
+          const req = httpModule.request(options, res => {
+            let data = '';
+            res.on('data', chunk => (data += chunk));
+            res.on('end', () => {
+              fs.writeFileSync('.changelog-api-dry-run/response.json', data || '{}', 'utf8');
+
+              if (!res.statusCode || res.statusCode < 200 || res.statusCode >= 300) {
+                console.error(`Changelog API returned non-2xx status: ${res.statusCode}`);
+                console.error(data);
+                process.exit(1);
+              }
+
+              try {
+                const parsed = JSON.parse(data || '{}');
+                const en = parsed.blocks && parsed.blocks.en;
+                const zh = parsed.blocks && parsed.blocks.zh;
+
+                validateBlock(String(en || ''), 'en');
+                validateBlock(String(zh || ''), 'zh');
+
+                fs.writeFileSync('.changelog-api-dry-run/en.md', String(en).trimEnd() + '\n', 'utf8');
+                fs.writeFileSync('.changelog-api-dry-run/zh.md', String(zh).trimEnd() + '\n', 'utf8');
+                console.log('Changelog API dry run succeeded. traceId:', parsed.traceId || '(none)');
+              } catch (e) {
+                console.error(`Failed to parse or validate API response: ${e.message || e}`);
+                process.exit(1);
+              }
+            });
+          });
+
+          req.on('error', err => {
+            console.error(`Changelog API request failed: ${err.message || err}`);
+            process.exit(1);
+          });
+
+          req.setTimeout(30000, () => {
+            req.destroy(new Error('Changelog API request timed out.'));
+          });
+
+          req.write(body);
+          req.end();
+          NODE
+
+      - name: Upload dry-run output
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: changelog-api-dry-run
+          path: .changelog-api-dry-run
+          if-no-files-found: ignore
