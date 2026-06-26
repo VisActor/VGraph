@@ -188,9 +188,46 @@ jobs:
           const baseUrl = process.env.CHANGELOG_API_URL;
           const token = process.env.CHANGELOG_API_TOKEN;
 
+          function collectChanges() {
+            const changes = [];
+            for (const changefile of changefiles) {
+              const items = Array.isArray(changefile.changes) ? changefile.changes : [];
+              for (const item of items) {
+                if (item && item.comment) {
+                  changes.push({
+                    packageName: item.packageName || changefile.packageName || 'VGraph',
+                    comment: String(item.comment).trim(),
+                    type: item.type || 'none',
+                  });
+                }
+              }
+            }
+            return changes;
+          }
+
+          function formatFallbackBlock(lang) {
+            const changes = collectChanges();
+            const heading = `# v${version}`;
+            const section = lang === 'zh' ? '## 更新内容' : '## Updates';
+            const emptyMessage =
+              lang === 'zh'
+                ? '- 发布 VGraph packages。'
+                : '- Release VGraph packages.';
+            const lines = changes.length > 0
+              ? changes.map(change => `- ${change.comment}`)
+              : [emptyMessage];
+            return `${heading}\n\n${section}\n\n${lines.join('\n')}\n`;
+          }
+
+          function writeFallbackChangelog(reason) {
+            console.warn(`Use fallback changelog generation: ${reason}`);
+            fs.mkdirSync('.changelog', { recursive: true });
+            fs.writeFileSync('.changelog/en.md', formatFallbackBlock('en'), 'utf8');
+            fs.writeFileSync('.changelog/zh.md', formatFallbackBlock('zh'), 'utf8');
+          }
+
           function failChangelog(message) {
-            console.error(message);
-            process.exit(1);
+            writeFallbackChangelog(message);
           }
 
           function validateBlock(block, lang) {
@@ -201,6 +238,7 @@ jobs:
 
           if (!baseUrl || !token) {
             failChangelog('CHANGELOG_API_URL or CHANGELOG_API_TOKEN not configured.');
+            process.exit(0);
           }
 
           const url = new URL('/api/changelog/vgraph/generate', baseUrl);
@@ -249,6 +287,11 @@ jobs:
 
           req.on('error', err => {
             failChangelog(`Changelog API request failed: ${err.message || err}`);
+            process.exit(0);
+          });
+
+          req.setTimeout(15000, () => {
+            req.destroy(new Error('Changelog API request timed out.'));
           });
 
           req.write(body);
