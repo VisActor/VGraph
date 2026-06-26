@@ -18,7 +18,7 @@ on:
 
 jobs:
   changelog-api-dry-run:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     permissions:
       contents: read
 
@@ -149,8 +149,33 @@ jobs:
             });
           });
 
+          function formatRequestError(err) {
+            if (!err) {
+              return '(empty error)';
+            }
+            const lines = [`${err.name || 'Error'}: ${err.message || String(err)}`];
+            if (err.code) {
+              lines.push(`code: ${err.code}`);
+            }
+            if (err.address || err.port) {
+              lines.push(`target: ${err.address || '(unknown address)'}:${err.port || '(unknown port)'}`);
+            }
+            if (Array.isArray(err.errors)) {
+              for (const inner of err.errors) {
+                lines.push(`cause: ${inner.name || 'Error'}: ${inner.message || String(inner)}`);
+                if (inner.code) {
+                  lines.push(`cause code: ${inner.code}`);
+                }
+                if (inner.address || inner.port) {
+                  lines.push(`cause target: ${inner.address || '(unknown address)'}:${inner.port || '(unknown port)'}`);
+                }
+              }
+            }
+            return lines.join('\n');
+          }
+
           req.on('error', err => {
-            console.error(`Changelog API request failed: ${err.message || err}`);
+            console.error(`Changelog API request failed:\n${formatRequestError(err)}`);
             process.exit(1);
           });
 
