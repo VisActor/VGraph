@@ -1,0 +1,17 @@
+{
+  "name": "@visactor/vgraph",
+  "entries": [
+    {
+      "version": "0.2.0",
+      "tag": "@visactor/vgraph_v0.2.0",
+      "date": "Fri, 26 Jun 2026 03:01:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Align release automation, changelog generation, and package publishing metadata with the current VTable and VChart workflows."
+          }
+        ]
+      }
+    }
+  ]
+}

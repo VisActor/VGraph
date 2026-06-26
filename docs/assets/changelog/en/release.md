@@ -1,3 +1,9 @@
+# v0.1.0
+
+## Updates
+
+- Align release automation, changelog generation, and package publishing metadata with the current VTable and VChart workflows.
+
 # Release Log
 
 VGraph release notes are published here after each stable release.
