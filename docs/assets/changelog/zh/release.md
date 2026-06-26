@@ -1,3 +1,9 @@
+# v0.1.0
+
+## 更新内容
+
+- Align release automation, changelog generation, and package publishing metadata with the current VTable and VChart workflows.
+
 # 发版记录
 
 VGraph 的稳定版本发布说明会在这里持续追加。

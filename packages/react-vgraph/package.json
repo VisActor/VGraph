@@ -1,6 +1,6 @@
 {
   "name": "@visactor/react-vgraph",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "The react version of VGraph",
   "keywords": [
     "react",
@@ -56,7 +56,7 @@
     "@babel/preset-typescript": "^7.26.0",
     "@internal/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "~1.1.4",
-    "@visactor/vgraph": "workspace:0.1.0-alpha.0",
+    "@visactor/vgraph": "workspace:0.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "12",
     "@types/dom-to-image": "^2.6.7",
@@ -94,7 +94,7 @@
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
-    "@visactor/vgraph": "^0.1.0-alpha.0",
+    "@visactor/vgraph": "^0.1.0",
     "react": ">=16",
     "react-dom": ">=16"
   },
