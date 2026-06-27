@@ -14,6 +14,12 @@ export function dijkstraSP(
       cost: Infinity,
     };
   }
+  if (startNodeId === endNodeId) {
+    return {
+      path: [startNodeId],
+      cost: 0,
+    };
+  }
   // 记录起始节点到其他全部节点到距离
   const dist: { [key: string]: number } = {};
   // 记录添加路径的父节点

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@visactor/vgraph",
+      "comment": "Add edge-case tests for graph algorithms and graph data utilities.",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@visactor/vgraph"
+}

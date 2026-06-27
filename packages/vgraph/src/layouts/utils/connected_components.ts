@@ -99,6 +99,9 @@ export function isMultiComponentsForData(data: {
   const adjList = {};
   const { nodes, edges } = data;
   let numLeaf = 0;
+  if (nodes.length === 0) {
+    return { numLeaf, isMultiComponents: false };
+  }
   edges.forEach((edge) => {
     adjList[edge.source] = adjList[edge.source] || [];
     adjList[edge.target] = adjList[edge.target] || [];
