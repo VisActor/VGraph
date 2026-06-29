@@ -2,7 +2,7 @@
 
 ## Updates
 
-- Align release automation, changelog generation, and package publishing metadata with the current VTable and VChart workflows.
+- Release VGraph.
 
 # Release Log
 

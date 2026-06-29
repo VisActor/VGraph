@@ -2,7 +2,7 @@
 
 ## 更新内容
 
-- Align release automation, changelog generation, and package publishing metadata with the current VTable and VChart workflows.
+- 发布 VGraph。
 
 # 发版记录
 
