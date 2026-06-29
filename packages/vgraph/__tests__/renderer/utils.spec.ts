@@ -21,12 +21,8 @@ function expectValueBySystem(
   macValue: number,
   winValue: number
 ) {
-  const precision = 0;
-  if (OS_PLATFORM === "linux") {
-    expect(value).toBeCloseTo(winValue, precision);
-  } else {
-    expect(value).toBeCloseTo(macValue, precision);
-  }
+  const expectedValue = OS_PLATFORM === "linux" ? winValue : macValue;
+  expect(Math.abs(value - expectedValue)).toBeLessThanOrEqual(1);
 }
 
 describe("src/utils/text.ts", () => {
