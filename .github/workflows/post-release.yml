@@ -10,6 +10,10 @@ on:
         required: true
         type: string
 
+concurrency:
+  group: post-release-${{ github.event.client_payload.version || github.event.inputs.version || github.run_id }}
+  cancel-in-progress: false
+
 jobs:
   post_release:
     runs-on: ubuntu-latest
@@ -50,12 +54,12 @@ jobs:
         run: |
           set -euo pipefail
           git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git"
-          git remote -v
 
-      - name: Fetch tags
+      - name: Fetch main and tags
         if: steps.meta.outputs.skip != 'true'
         run: |
           set -euo pipefail
+          git fetch origin main:refs/remotes/origin/main --depth=1
           git fetch --tags --force
 
       - name: Check existing tag and release
@@ -67,17 +71,26 @@ jobs:
         run: |
           set -euo pipefail
           TAG="v${VERSION}"
-
-          if git rev-parse "refs/tags/${TAG}" >/dev/null 2>&1; then
-            echo "Tag ${TAG} already exists, skip post-release."
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
+          MAIN_SHA="$(git rev-parse origin/main)"
 
           if gh release view "${TAG}" >/dev/null 2>&1; then
             echo "Release ${TAG} already exists, skip post-release."
             echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "tag_exists=true" >> "$GITHUB_OUTPUT"
             exit 0
+          fi
+
+          if git rev-parse "refs/tags/${TAG}" >/dev/null 2>&1; then
+            TAG_SHA="$(git rev-list -n 1 "refs/tags/${TAG}")"
+            if [ "${TAG_SHA}" != "${MAIN_SHA}" ]; then
+              echo "Error: existing tag ${TAG} points to ${TAG_SHA}, expected origin/main ${MAIN_SHA}."
+              exit 1
+            fi
+
+            echo "Tag ${TAG} already exists at origin/main, continue creating the missing GitHub Release."
+            echo "tag_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag_exists=false" >> "$GITHUB_OUTPUT"
           fi
 
           echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -199,13 +212,15 @@ jobs:
         run: |
           set -euo pipefail
           TAG="v${VERSION}"
-
-          git fetch origin main:refs/remotes/origin/main --depth=1
           MAIN_SHA="$(git rev-parse origin/main)"
 
-          echo "Creating tag ${TAG} at ${MAIN_SHA}"
-          git tag "${TAG}" "${MAIN_SHA}"
-          git push origin "${TAG}"
+          if [ "${{ steps.exist.outputs.tag_exists }}" != "true" ]; then
+            echo "Creating tag ${TAG} at ${MAIN_SHA}"
+            git tag "${TAG}" "${MAIN_SHA}"
+            git push origin "${TAG}"
+          else
+            echo "Using existing tag ${TAG} at ${MAIN_SHA}"
+          fi
 
           echo "Creating GitHub Release ${TAG}"
-          gh release create "${TAG}"             --target "main"             --title "${TAG}"             --notes-file "release-body.md"
+          gh release create "${TAG}" --verify-tag --title "${TAG}" --notes-file "release-body.md"
