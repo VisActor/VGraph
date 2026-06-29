@@ -9,7 +9,7 @@
   "projectFolderMaxDepth": 2,
   "allowMostlyStandardPackageNames": false,
   "repository": {
-    "url": "https://github.com/VisActor/vgraph",
+    "url": "https://github.com/VisActor/VGraph",
     "defaultBranch": "main",
     "defaultRemote": "origin"
   },

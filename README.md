@@ -90,7 +90,7 @@ Then clone locally:
 
 ```
 # clone
-$ git clone git@github.com:VisActor/vgraph.git
+$ git clone git@github.com:VisActor/VGraph.git
 $ cd vgraph
 # install dependencies
 $ rush update

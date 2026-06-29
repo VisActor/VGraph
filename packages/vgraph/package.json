@@ -31,11 +31,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VisActor/vgraph.git",
+    "url": "https://github.com/VisActor/VGraph.git",
     "directory": "packages/vgraph"
   },
   "bugs": {
-    "url": "https://github.com/VisActor/vgraph/issues"
+    "url": "https://github.com/VisActor/VGraph/issues"
   },
   "homepage": "https://visactor.io/vgraph",
   "keywords": [

@@ -1,6 +1,6 @@
 # Custom Node Types
 
-We recommend using built-in nodes to get good-looking default node styles and excellent runtime performance. When the built-in nodes do not meet your needs, you can choose to customize them. There are two ways to customize nodes: one is to extend the existing built-in nodes, and the other is to completely customize them. **vGraph currently provides a d2c service that can directly generate custom node code from Figma design drafts. You can experience it in [Intelligent Code Generation](d2c_node).**
+We recommend using built-in nodes to get good-looking default node styles and excellent runtime performance. When the built-in nodes do not meet your needs, you can choose to customize them. There are two ways to customize nodes: one is to extend the existing built-in nodes, and the other is to completely customize them. **vGraph currently provides a d2c service that can directly generate custom node code from design drafts. You can experience it in [Intelligent Code Generation](d2c_node).**
 
 > The positioning basis for built-in nodes in vGraph is `{ x, y }` in the configuration, which is the center position of the built-in node. Therefore, the horizontal coordinate range of a node is `[ x - width/ 2, x + width / 2 ]`; the vertical coordinate range is `[ y - height / 2, y + height / 2 ]`.
 
