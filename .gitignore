@@ -72,6 +72,7 @@ jspm_packages/
 
 # OS X temporary files
 .DS_Store
+.tmp/
 
 # IntelliJ IDEA project files; if you want to commit IntelliJ settings, this recipe may be helpful:
 # https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
