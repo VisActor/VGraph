@@ -635,8 +635,16 @@ describe("src/algorithms/horizontal_coord_assignment.ts", () => {
         DL: { a: 100 },
         DR: { a: 200 },
       };
-      balance(graph, xMaps, options);
-      expect(a.get("x")).toBe(100);
+      const errorSpy = jest.spyOn(console, "error").mockImplementation();
+      try {
+        balance(graph, xMaps, options);
+        expect(errorSpy).toHaveBeenCalledWith(
+          expect.stringContaining("node b coord assignment failed")
+        );
+        expect(a.get("x")).toBe(100);
+      } finally {
+        errorSpy.mockRestore();
+      }
     });
 
     it("aligns a single node to the average of different median values", () => {
@@ -646,8 +654,16 @@ describe("src/algorithms/horizontal_coord_assignment.ts", () => {
         DL: { a: 125 },
         DR: { a: 200 },
       };
-      balance(graph, xMaps, options);
-      expect(a.get("x")).toBe(100);
+      const errorSpy = jest.spyOn(console, "error").mockImplementation();
+      try {
+        balance(graph, xMaps, options);
+        expect(errorSpy).toHaveBeenCalledWith(
+          expect.stringContaining("node b coord assignment failed")
+        );
+        expect(a.get("x")).toBe(100);
+      } finally {
+        errorSpy.mockRestore();
+      }
     });
 
     it("balance multiple nodes", () => {

@@ -216,7 +216,15 @@ describe("/src/commands/copy", () => {
         },
       ],
     });
-    stack.execute("select", { selections: [graph.getGroups()[0]] });
+    const errorSpy = jest.spyOn(console, "error").mockImplementation();
+    try {
+      stack.execute("select", { selections: [graph.getGroups()[0]] });
+      expect(errorSpy).toHaveBeenCalledWith(
+        expect.stringContaining("Snapshot contains invalid")
+      );
+    } finally {
+      errorSpy.mockRestore();
+    }
     const e = getEvent();
     stack.execute("copy", { event: e });
     stack.execute("paste", { event: e });
@@ -280,7 +288,15 @@ describe("/src/commands/copy", () => {
       ],
     });
 
-    stack.execute("select", { selections: [graph.getGroupById("group2")] });
+    const errorSpy = jest.spyOn(console, "error").mockImplementation();
+    try {
+      stack.execute("select", { selections: [graph.getGroupById("group2")] });
+      expect(errorSpy).toHaveBeenCalledWith(
+        expect.stringContaining("Snapshot contains invalid")
+      );
+    } finally {
+      errorSpy.mockRestore();
+    }
     const e = getEvent();
     stack.execute("copy", { event: e });
     let configs = JSON.parse(e.clipboardData.getData());

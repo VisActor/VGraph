@@ -1060,23 +1060,31 @@ describe("/src/factories/edge.ts", () => {
     ]);
 
     layer.clear();
-    line = lineMethods.init(layer, {
-      startPoint: [100, 100],
-      endPoint: [200, 200],
-      styles: {
-        radius: 4,
-        curvePosition: 0,
-        curveOffset: -20,
-      },
-    });
-    expect(line.get("path")).toEqual([
-      ["M", 100, 100],
-      ["H", 146],
-      ["Q", 150, 100, 150, 104, length],
-      ["V", 196],
-      ["Q", 150, 200, 154, 200, length],
-      ["H", 200],
-    ]);
+    const warnSpy = jest.spyOn(console, "warn").mockImplementation();
+    try {
+      line = lineMethods.init(layer, {
+        startPoint: [100, 100],
+        endPoint: [200, 200],
+        styles: {
+          radius: 4,
+          curvePosition: 0,
+          curveOffset: -20,
+        },
+      });
+      expect(line.get("path")).toEqual([
+        ["M", 100, 100],
+        ["H", 146],
+        ["Q", 150, 100, 150, 104, length],
+        ["V", 196],
+        ["Q", 150, 200, 154, 200, length],
+        ["H", 200],
+      ]);
+      expect(warnSpy).toHaveBeenCalledWith(
+        "Invalid curve position, will fallback to default configs"
+      );
+    } finally {
+      warnSpy.mockRestore();
+    }
   });
 
   it("feat: vLine should work with curveOffset", () => {
@@ -1102,24 +1110,32 @@ describe("/src/factories/edge.ts", () => {
     ]);
 
     layer.clear();
-    line = lineMethods.init(layer, {
-      startPoint: [100, 100],
-      endPoint: [200, 200],
-      styles: {
-        radius: 4,
-        curvePosition: 0,
-        curveOffset: 120,
-      },
-    });
+    const warnSpy = jest.spyOn(console, "warn").mockImplementation();
+    try {
+      line = lineMethods.init(layer, {
+        startPoint: [100, 100],
+        endPoint: [200, 200],
+        styles: {
+          radius: 4,
+          curvePosition: 0,
+          curveOffset: 120,
+        },
+      });
 
-    expect(line.get("path")).toEqual([
-      ["M", 100, 100],
-      ["V", 146],
-      ["Q", 100, 150, 104, 150, length],
-      ["H", 196],
-      ["Q", 200, 150, 200, 154, length],
-      ["V", 200],
-    ]);
+      expect(line.get("path")).toEqual([
+        ["M", 100, 100],
+        ["V", 146],
+        ["Q", 100, 150, 104, 150, length],
+        ["H", 196],
+        ["Q", 200, 150, 200, 154, length],
+        ["V", 200],
+      ]);
+      expect(warnSpy).toHaveBeenCalledWith(
+        "Invalid curve position, will fallback to default configs"
+      );
+    } finally {
+      warnSpy.mockRestore();
+    }
   });
 
   it("bugfix: autoRotate edge should update background", () => {

@@ -766,7 +766,15 @@ describe("src/entities/group", () => {
     expect(graph.getEdgeById("e-b").get("source")).toBe("group1");
     expect(graph.getEdgeById("e-b").get("target")).toBe("b");
     expect(graph.getEdgeById("e-b").isVisible()).toBe(true);
-    graph.destroy();
+    const warnSpy = jest.spyOn(console, "warn").mockImplementation();
+    try {
+      graph.destroy();
+      expect(warnSpy).toHaveBeenCalledWith(
+        expect.stringContaining("has been destroyed")
+      );
+    } finally {
+      warnSpy.mockRestore();
+    }
   });
 
   it("bugfix: collapsed group should be correctly refreshed", () => {
