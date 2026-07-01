@@ -17,7 +17,28 @@ A polished standalone demo should contain:
 
 ## Minimal HTML shell
 
+For a real standalone HTML file, use an executable module script. Prefer a local
+package/dev-server import when working inside this repository; use an ESM CDN
+only when the user explicitly wants a portable single HTML file and accepts
+network access. Do not paste TypeScript-only syntax such as generic query
+selectors or `interface` declarations into a plain browser `<script>`.
+
 ```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VGraph Demo</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
 <div class="tabs">
   <button class="tab active" data-tab="demo-panel">Demo</button>
   <button class="tab" data-tab="code-panel">Code</button>
@@ -34,6 +55,20 @@ A polished standalone demo should contain:
   </div>
   <pre><code id="code-block"></code></pre>
 </section>
+
+<script type="module">
+  import {
+    Graph,
+    TreeGraph,
+    panZoom,
+    dragCanvas
+  } from "https://esm.sh/@visactor/vgraph";
+
+  // Put the demo logic here. If developing inside the monorepo, replace the
+  // CDN import with the package/dev-server import used by the local example.
+</script>
+</body>
+</html>
 ```
 
 ```css
@@ -78,10 +113,10 @@ A polished standalone demo should contain:
 }
 ```
 
-```ts
-const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>(".tab"));
-const panels = Array.from(document.querySelectorAll<HTMLElement>(".panel"));
-const container = document.getElementById("container") as HTMLDivElement;
+```js
+const tabs = Array.from(document.querySelectorAll(".tab"));
+const panels = Array.from(document.querySelectorAll(".panel"));
+const container = document.getElementById("container");
 const { width, height } = container.getBoundingClientRect();
 
 for (const tab of tabs) {
@@ -170,7 +205,7 @@ graph.addBehavior(panZoom, { sensitivity: 4 });
 graph.addBehavior(dragCanvas);
 
 graph.on("node:click", ev => {
-  const id = ev?.datum?.id ?? ev?.target?.id;
+  const id = ev?.target?.get?.("id");
   if (!id || !nodeMap.get(id)?.children?.length) return;
 
   if (collapsedIds.has(id)) collapsedIds.delete(id);
