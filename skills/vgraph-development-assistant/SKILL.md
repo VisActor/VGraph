@@ -32,7 +32,8 @@ Read only the files needed for the task. If you load one reference, read it comp
 
 | User intent or keywords | Read these files |
 | --- | --- |
-| Getting started, create graph, basic demo | `references/knowledge/00-overview.md`, then `references/examples/basic-graph.md` |
+| Getting started, create graph, basic demo, simple snippet | `references/knowledge/00-overview.md`, then `references/examples/basic-graph.md` |
+| Standalone demo page, runnable HTML demo, previewable structure diagram, knowledge map showcase, code tab | `references/examples/demo-html-page.md`, plus the relevant graph/layout/behavior references below |
 | Graph vs TreeGraph vs GraphStructure | `references/knowledge/01-graph-treegraph.md`, then `references/type/graph-options.md` |
 | Data, nodes, edges, groups, TreeData, GraphData | `references/knowledge/02-data-model.md` |
 | Node, edge, group style, state, custom shape, anchors | `references/knowledge/03-node-edge-group.md`, then `references/type/model-options.md` |
@@ -66,6 +67,18 @@ Before writing code, choose the surface:
 - For native/entity events, use event strings such as `graph.on("node:click", handler)`. Use `GRAPH_EVENTS` for lifecycle events such as `LAYOUT_END`, `UPDATE_END`, `TRANSFORMED`, `BATCH_STATE_END`, and `CHANGE`.
 - For batch mutations, prefer `disableAutoDraw()` / `enableAutoDraw(previous)` and `disableAutoLayout()` / `enableAutoLayout(previous)` over repeatedly triggering layout/draw.
 - In React, create/destroy graph instances in `useEffect`; never create a graph during render.
+
+## Demo Artifact Defaults
+
+When the user asks for a standalone, previewable, or showcase-style VGraph demo page, such as an HTML demo, runnable visualization, structure diagram, knowledge map, or code-tab page, create a runnable standalone HTML demo instead of only pasting code in chat, unless the user explicitly asks for a snippet/config only. Read `references/examples/demo-html-page.md` for the page shell and readability patterns.
+
+For simple examples, API usage, configuration help, or debugging answers, prefer a focused TypeScript snippet unless a runnable page would materially improve verification.
+
+A standard demo page should include a `Demo` tab for the live VGraph canvas and a `Code` tab for the core runnable TypeScript/JavaScript. The Code tab should be a fixed-size panel with internal scrolling (`overflow: auto`) so long examples do not expand the whole page or hide the live demo. Include a copy-code action when practical.
+
+For large trees, knowledge maps, organization charts, or any graph that can overwhelm the viewport, add readability controls by default. Use `panZoom` and `dragCanvas`, start from a conservative overview when it helps users understand the top-level structure, and provide controls such as "expand all", "collapse details", search, filter, group focus, or fit-to-view. Implement tree collapse by keeping source data immutable, deriving visible `children` from a collapsed-ID set, and refreshing the graph with `graph.data(visibleTree)`. For non-tree Graph/DAG demos, do not force tree-collapse patterns onto edge-list data; prefer viewport, filtering, grouping, highlighting, or progressive disclosure controls.
+
+After creating a standalone HTML demo, verify that it renders without console errors. If the environment supports browser preview, start or reuse a local static/dev server and provide the accessible URL; if browser preview is unavailable, say what validation was skipped and why.
 
 ## VGraph-Specific Anti-Patterns
 

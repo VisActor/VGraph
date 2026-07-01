@@ -3,16 +3,19 @@
 Use this pattern when the user asks for React-rendered nodes.
 
 ```tsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Graph, panZoom, dragCanvas } from "@visactor/vgraph";
 import { Viewer } from "@visactor/react-vgraph";
 
 export function VGraphPanel() {
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const [graph, setGraph] = useState<Graph | null>(null);
 
   useEffect(() => {
+    if (!containerRef.current) return;
+
     const g = new Graph({
-      container: "vgraph-canvas",
+      container: containerRef.current,
       width: 900,
       height: 560,
       renderMode: "dom",
@@ -38,13 +41,12 @@ export function VGraphPanel() {
 
     return () => {
       g.destroy();
-      setGraph(null);
     };
   }, []);
 
   return (
     <div>
-      <div id="vgraph-canvas" style={{ width: 900, height: 560 }} />
+      <div ref={containerRef} style={{ width: 900, height: 560 }} />
       {graph && (
         <Viewer
           graph={graph}
@@ -59,5 +61,9 @@ export function VGraphPanel() {
   );
 }
 ```
+
+Use a DOM ref instead of a hard-coded container id in reusable React components;
+hard-coded ids collide when the component is mounted more than once or in
+strict-mode development workflows.
 
 Avoid React Viewer for very large graphs unless the user explicitly needs DOM nodes.
