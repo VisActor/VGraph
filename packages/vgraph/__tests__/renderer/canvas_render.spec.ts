@@ -137,11 +137,23 @@ describe("src/painters/canvas", () => {
       img,
     });
     canvas.add(image);
-    canvas.instantDraw();
-    const rgba = imageData(42, 10);
-    expect(rgba[0]).toBe(0);
-    expect(rgba[1]).toBe(0);
-    expect(rgba[2]).toBe(0);
+    const warnSpy = jest.spyOn(console, "warn").mockImplementation();
+    try {
+      canvas.instantDraw();
+      expect(warnSpy).toHaveBeenCalledWith(
+        expect.objectContaining({
+          message: expect.stringContaining(
+            "Image given has not completed loading"
+          ),
+        })
+      );
+      const rgba = imageData(42, 10);
+      expect(rgba[0]).toBe(0);
+      expect(rgba[1]).toBe(0);
+      expect(rgba[2]).toBe(0);
+    } finally {
+      warnSpy.mockRestore();
+    }
 
     canvas.clear();
   });

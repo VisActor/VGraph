@@ -238,7 +238,15 @@ describe("/src/commands/move_node", () => {
       expect(gridComponent.isWalkable(col + 5, row)).toBe(false);
       expect(gridComponent.isWalkable(col + 6, row)).toBe(true);
     });
-    stack.execute("select", { selections: graph.getNodes() });
+    const errorSpy = jest.spyOn(console, "error").mockImplementation();
+    try {
+      stack.execute("select", { selections: graph.getNodes() });
+      expect(errorSpy).toHaveBeenCalledWith(
+        expect.stringContaining("Snapshot contains invalid node id")
+      );
+    } finally {
+      errorSpy.mockRestore();
+    }
 
     stack.execute("moveNode", {
       batch: true,

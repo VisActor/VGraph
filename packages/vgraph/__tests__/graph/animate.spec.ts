@@ -251,7 +251,6 @@ describe("src/aniamtes", () => {
 
   it("bugfix: common onFinish should work correctly", (done) => {
     const onFinish = () => {
-      console.log(111);
       done();
     };
     const id = graph.animate({
