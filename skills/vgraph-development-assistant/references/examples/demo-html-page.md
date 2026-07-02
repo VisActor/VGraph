@@ -15,6 +15,10 @@ A polished standalone demo should contain:
 - For large tree or hierarchy demos, an initial collapsed view and controls such as `Expand all` and `Collapse details`.
 - For large non-tree Graph/DAG demos, readability controls such as fit-to-view, search/highlight, filtering, grouping, or progressive disclosure. Do not force tree-collapse patterns onto edge-list data.
 
+Keep generic HTML/CSS minimal. Spend tokens on VGraph data shape, layout,
+behaviors, interaction controls, and runtime verification rather than decorative
+page chrome.
+
 ## Minimal HTML shell
 
 For a real standalone HTML file, use an executable module script. Prefer a local
@@ -130,7 +134,13 @@ for (const tab of tabs) {
 
 ## Tree collapse pattern
 
-Use `TreeGraph` for nested `children` data. Keep the original full tree immutable, derive a visible tree from collapsed IDs, and call `graph.data(visibleTree)` after each toggle.
+Use `TreeGraph` for nested `children` data. Prefer the native collapse API:
+`graph.collapse(node)`, `graph.expand(node)`, or `graph.toggleCollapse(node)`.
+Do not implement ordinary expand/collapse by deriving a new visible tree and
+calling `graph.data(...)` on every click; that turns a visibility interaction
+into a data update, re-layout, redraw, and possible animation replay. Use the
+visible-tree pattern only when the user needs true data filtering,
+virtualization, or server-side paging.
 
 ```ts
 import { TreeGraph, panZoom, dragCanvas } from "@visactor/vgraph";
@@ -143,7 +153,6 @@ interface TreeNode {
   children?: TreeNode[];
 }
 
-const collapsedIds = new Set<string>();
 const nodeMap = new Map<string, TreeNode>();
 
 function walkTree(node: TreeNode, visitor: (node: TreeNode) => void) {
@@ -153,33 +162,14 @@ function walkTree(node: TreeNode, visitor: (node: TreeNode) => void) {
 
 walkTree(sourceTree, node => {
   nodeMap.set(node.id, node);
-  if (node.children?.length && node.level === "module") {
-    collapsedIds.add(node.id);
-  }
+  node.collapsed = Boolean(node.children?.length && node.level === "module");
 });
-
-function cloneVisibleNode(node: TreeNode): TreeNode {
-  const children = node.children ?? [];
-  const collapsed = children.length > 0 && collapsedIds.has(node.id);
-  const next: TreeNode = {
-    ...node,
-    collapsed,
-    name: children.length ? `${collapsed ? "▸" : "▾"} ${node.name}` : node.name
-  };
-
-  if (children.length && !collapsed) {
-    next.children = children.map(cloneVisibleNode);
-  } else {
-    delete next.children;
-  }
-
-  return next;
-}
 
 const graph = new TreeGraph({
   container: "container",
   width,
   height,
+  animate: false,
   layout: {
     type: "compactBox",
     options: { direction: "LR" }
@@ -197,10 +187,6 @@ const graph = new TreeGraph({
   })
 });
 
-function renderTree() {
-  graph.data(cloneVisibleNode(sourceTree));
-}
-
 graph.addBehavior(panZoom, { sensitivity: 4 });
 graph.addBehavior(dragCanvas);
 
@@ -208,14 +194,15 @@ graph.on("node:click", ev => {
   const id = ev?.target?.get?.("id");
   if (!id || !nodeMap.get(id)?.children?.length) return;
 
-  if (collapsedIds.has(id)) collapsedIds.delete(id);
-  else collapsedIds.add(id);
-
-  renderTree();
+  graph.toggleCollapse(ev.target);
 });
 
-renderTree();
+graph.data(sourceTree);
 ```
+
+Set `animate: false` for static knowledge-map demos when repeated expand/collapse
+should feel instant and not replay layout transitions. Keep animation on only
+when the transition itself is part of the requested experience.
 
 ## Verification
 
