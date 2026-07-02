@@ -33,10 +33,12 @@ Batch pattern:
 const autoDraw = graph.disableAutoDraw();
 const autoLayout = graph.disableAutoLayout();
 
-graph.updateData(nextData);
-
-graph.enableAutoLayout(autoLayout);
-graph.enableAutoDraw(autoDraw);
+try {
+  graph.updateData(nextData);
+} finally {
+  graph.enableAutoLayout(autoLayout);
+  graph.enableAutoDraw(autoDraw);
+}
 ```
 
 If layout still does not appear to run:

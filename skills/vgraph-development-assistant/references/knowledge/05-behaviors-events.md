@@ -25,8 +25,17 @@ Some behaviors accept options:
 
 ```ts
 graph.addBehavior(panZoom, { sensitivity: 5 });
-graph.addBehavior(dragCanvas, { eventType: "right" });
+graph.addBehavior(dragCanvas, {
+  shouldTrigger(event) {
+    return !event.target || event.target.type === "canvas";
+  }
+});
 ```
+
+`dragCanvas` does not expose an `eventType: "right"` option. Its built-in
+trigger rejects right-button drags (`nativeEvent.buttons === 2`). Use
+`shouldTrigger`, `canvasOnly`, `xOnly`, `yOnly`, `limit`, or behavior mode
+switching instead of inventing event-type configuration.
 
 Remove by behavior config or type string:
 
