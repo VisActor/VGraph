@@ -70,7 +70,7 @@ Before writing code, choose the surface:
 
 ## Demo Artifact Defaults
 
-When the user asks for a standalone, previewable, or showcase-style VGraph demo page, such as an HTML demo, runnable visualization, structure diagram, knowledge map, or code-tab page, create a runnable standalone HTML demo instead of only pasting code in chat, unless the user explicitly asks for a snippet/config only. Read `references/examples/demo-html-page.md` for the page shell and readability patterns.
+When the user asks for a standalone, previewable, or showcase-style VGraph demo page, such as an HTML demo, runnable visualization, structure diagram, knowledge map, or code-tab page, treat a runnable artifact as the deliverable. Create or update an actual HTML/demo file instead of only pasting code in chat, unless the user explicitly asks for a snippet/config only. Read `references/examples/demo-html-page.md` for the page shell, readability patterns, and delivery gate.
 
 For simple examples, API usage, configuration help, or debugging answers, prefer a focused TypeScript snippet unless a runnable page would materially improve verification.
 
@@ -81,6 +81,8 @@ For large trees, knowledge maps, organization charts, or any graph that can over
 For knowledge-system or structure-map demos, preserve semantic shape before visual polish. Decide whether the requested content is a strict hierarchy, a DAG, or a general network. For school-stage or curriculum maps, keep the main levels explicit (for example stage -> subject -> topic -> skill) and avoid turning cross-links into primary parent-child edges. If the user asks for expand/collapse on a hierarchy, use `TreeGraph` native `collapse`, `expand`, or `toggleCollapse` first; do not rebuild a visible tree and call `graph.data(...)` on each click unless the user specifically needs data filtering or virtualization.
 
 After creating a standalone HTML demo, verify that it renders without console errors. If the environment supports browser preview, start or reuse a local static/dev server and provide the accessible URL; if browser preview is unavailable, say what validation was skipped and why.
+
+Do not produce the final answer for a standalone/demo-page request until these are true: a file was created or updated, the user has a consumable path/link, the answer explains how to open or verify it, and the chat response summarizes rather than dumping the full source. If any item is missing, continue implementation or state the concrete blocker instead of presenting the task as complete.
 
 ## VGraph-Specific Anti-Patterns
 
