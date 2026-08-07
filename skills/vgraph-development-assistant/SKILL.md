@@ -26,6 +26,21 @@ Ask at most one concise question only when missing information would materially 
 
 If a reasonable default exists, proceed with that default and name it.
 
+## Task Classification And Delivery Contract
+
+Before answering, classify the request:
+
+- Snippet/API task: the user asks how to configure an option, use an API, write an event handler, debug a symptom, or see a minimal code example such as "how to configure layout", "TreeGraph minimal example", or "how to write node:click". These may be answered with focused snippets.
+- Artifact task: the user asks to create, generate, build, show, or preview a graph artifact, such as a relation graph, structure graph, knowledge graph, runnable example, demo, HTML page, showcase, or previewable visualization. Artifact tasks must produce a runnable file deliverable, not only chat code.
+
+For artifact tasks:
+
+1. Create or update the runnable file first, then summarize it.
+2. Use a standalone HTML demo as the default deliverable unless the existing project provides a more appropriate demo surface.
+3. Unless the user explicitly says "only provide a snippet", "do not create a file", or "no page", do not downgrade an artifact task to a snippet/API answer.
+4. Do not paste the complete demo source as the main final answer. Keep full source in the generated file; chat may include only short excerpts (under 50 lines) when they clarify a key API.
+5. If no runnable file was created for an artifact task, the task is incomplete. Continue working or state the concrete blocker instead of presenting the answer as finished.
+
 ## Mandatory Routing
 
 Read only the files needed for the task. If you load one reference, read it completely. Do NOT load unrelated reference files just because they are nearby; keep answers grounded in the chosen route.
@@ -70,7 +85,7 @@ Before writing code, choose the surface:
 
 ## Demo Artifact Defaults
 
-When the user asks for a standalone, previewable, or showcase-style VGraph demo page, such as an HTML demo, runnable visualization, structure diagram, knowledge map, or code-tab page, treat a runnable artifact as the deliverable. Create or update an actual HTML/demo file instead of only pasting code in chat, unless the user explicitly asks for a snippet/config only. Read `references/examples/demo-html-page.md` for the page shell, readability patterns, and delivery gate.
+When the user asks for a standalone, previewable, or showcase-style VGraph demo page, such as an HTML demo, runnable visualization, structure diagram, knowledge map, relation graph, or code-tab page, classify it as an artifact task. You must create or update an actual HTML/demo file instead of only pasting code in chat, unless the user explicitly asks for a snippet/config only. Read `references/examples/demo-html-page.md` for the page shell, readability patterns, and delivery gate.
 
 For simple examples, API usage, configuration help, or debugging answers, prefer a focused TypeScript snippet unless a runnable page would materially improve verification.
 
@@ -82,7 +97,19 @@ For knowledge-system or structure-map demos, preserve semantic shape before visu
 
 After creating a standalone HTML demo, verify that it renders without console errors. If the environment supports browser preview, start or reuse a local static/dev server and provide the accessible URL; if browser preview is unavailable, say what validation was skipped and why.
 
-Do not produce the final answer for a standalone/demo-page request until these are true: a file was created or updated, the user has a consumable path/link, the answer explains how to open or verify it, and the chat response summarizes rather than dumping the full source. If any item is missing, continue implementation or state the concrete blocker instead of presenting the task as complete.
+## Final Answer Guard
+
+Before the final answer for an artifact task, all checks must pass:
+
+- The request was classified as an artifact task.
+- A runnable file was created or updated.
+- A standalone demo request includes a live `Demo` tab and a `Code` tab unless the user asked for a different shell.
+- The graph rendering was verified, or the exact validation gap is stated.
+- The response leads with the deliverable path, preview URL, or other user-consumable handoff.
+- The response explains how to open or validate the demo.
+- The response summarizes the implementation and does not paste the full source into chat.
+
+If any check fails, do not produce the final answer. Continue implementation or state the concrete blocker.
 
 ## VGraph-Specific Anti-Patterns
 

@@ -2,13 +2,17 @@
 
 Use this pattern when the user asks for a standalone, previewable, or showcase-style VGraph demo, such as an HTML demo, runnable visualization, structure diagram, knowledge map, or code-tab page. This is an artifact task: the deliverable is a runnable file, not only chat code.
 
-For simple API usage, configuration help, or debugging answers, prefer a focused TypeScript snippet unless a runnable page materially improves verification. If the request says "create", "generate", "build", "show", "make a demo", "previewable", "HTML", "page", "knowledge map", "structure diagram", or "runnable visualization", classify it as an artifact task unless the user explicitly asks for a snippet/config only.
+For simple API usage, configuration help, or debugging answers, prefer a focused TypeScript snippet unless a runnable page materially improves verification. If the request says "create", "generate", "build", "show", "make a demo", "previewable", "HTML", "page", "knowledge map", "structure diagram", "relation graph", or "runnable visualization", classify it as an artifact task unless the user explicitly asks for a snippet/config only.
+
+For artifact tasks, create the file first and explain second. The final chat response should hand off the artifact path or preview URL, summarize what it does, and report validation status. Do not paste the complete demo source into chat as the main deliverable; source code belongs in the file. Chat snippets are allowed only when short (under 50 lines) and explanatory.
 
 ## Delivery gate
 
 Before the final answer for an artifact task, verify all items:
 
 - A standalone HTML/demo file was created or updated.
+- Standalone demo requests include a live `Demo` tab and a `Code` tab unless the user requested a different shell.
+- The graph renders, or the exact validation gap is stated.
 - The response gives the user a consumable path, link, or preview URL.
 - The response explains how to open or validate the demo.
 - The response summarizes the implementation and does not paste the full source into chat.
