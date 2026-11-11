@@ -48,6 +48,27 @@ jobs:
       - name: Update npm
         run: npm install -g npm@11.6.2
 
+      - name: Verify npm publishing access
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          node <<'NODE'
+          const { execFileSync } = require('child_process');
+          const username = execFileSync('npm', ['whoami', '--registry=https://registry.npmjs.org/'], {
+            encoding: 'utf8'
+          }).trim();
+          console.log(`npm publishing account: ${username}`);
+          const permissions = JSON.parse(execFileSync('npm', [
+            'access', 'list', 'packages', username, '--json', '--registry=https://registry.npmjs.org/'
+          ], { encoding: 'utf8' }));
+          for (const name of ['@visactor/vgraph', '@visactor/react-vgraph', '@visactor/react-vgraph-ui']) {
+            console.log(`${name}: ${permissions[name] || 'no access'}`);
+            if (permissions[name] !== 'read-write') {
+              throw new Error(`The npm publishing account needs read-write access to ${name}.`);
+            }
+          }
+          NODE
+
       - name: Install pnpm
         run: npm install -g pnpm@10.7.0
 
