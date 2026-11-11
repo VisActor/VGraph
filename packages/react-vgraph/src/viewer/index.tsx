@@ -90,6 +90,11 @@ export interface ViewerProps {
    * 当批量节点大小发生变化的回调，与 `adjustNodeSize` 配合使用。
    */
   onNodeDefaultSizeChanged?: (nodes: Node[]) => void;
+  /**
+   * Customize the render order of visible nodes and group titles.
+   * 自定义可见节点与分组标题的渲染顺序，默认先分组标题、后节点。
+   */
+  setRenderOrder?: (items: (Node | Group)[]) => (Node | Group)[];
 }
 
 type ReactAnchorConfigs = {
@@ -530,142 +535,151 @@ export class Viewer extends React.Component<ViewerProps, ViewerState> {
     this.refresh(true);
   }
 
-  render() {
+  renderNode(node: Node) {
     const {
       graph,
       hideDetails,
       setNodeClassName,
       setAnchorClassName,
       adjustNodeSize,
-      setGroupTitle,
     } = this.props;
-    const { showNodes, showGroups, matrix, showDetails, showAnchors } =
-      this.state;
-    const container = graph.get("container");
+    const { showDetails, showAnchors } = this.state;
+    const { width, height, x, y, id } = node.configs;
+    let styles = {
+      width,
+      height,
+      left: x - width / 2,
+      top: y - height / 2,
+      cursor: node.configs.moving ? "grabbing" : "default",
+    };
+    let content = null;
+    if (showDetails) {
+      content = this.props.setNode(node);
+    } else {
+      if (hideDetails?.getNodeStyles) {
+        styles = {
+          ...hideDetails.getNodeStyles(node),
+          ...styles,
+        };
+      }
+    }
+    let classNames: any = [];
+    if (setNodeClassName) {
+      classNames = setNodeClassName(node);
+      if (!Array.isArray(classNames)) {
+        classNames = [classNames];
+      }
+    }
+
+    classNames.unshift("vgraph-viewer-node");
+    const layer = node.layer;
+    const showNodeAnchors = showAnchors[id];
+    let anchorContents: any = [];
+    if (showNodeAnchors) {
+      anchorContents = showNodeAnchors.map(
+        (anchorConfigs: ReactAnchorConfigs) => {
+          const size = anchorConfigs.configs.size ?? 8;
+          const offsets = anchorConfigs.configs.offsets || [0, 0];
+          const styles = {
+            width: size,
+            height: size,
+            left: anchorConfigs.position[0] - size / 2 + width / 2 + offsets[0],
+            top: anchorConfigs.position[1] - size / 2 + height / 2 + offsets[1],
+          };
+          let anchorContent = null;
+          anchorContent = this.props.setAnchor?.(node, anchorConfigs.configs);
+          if (!anchorContent) {
+            return null;
+          }
+          let classNames: any = [];
+          if (setAnchorClassName) {
+            classNames = setAnchorClassName(node, anchorConfigs.configs);
+            if (!Array.isArray(classNames)) {
+              classNames = [classNames];
+            }
+          }
+          classNames.unshift("vgraph-viewer-anchor");
+          return (
+            <div
+              anchorindex={anchorConfigs.index}
+              key={"anchor" + node.get("id") + "_" + anchorConfigs.index}
+              {...proxyNodeEvents("anchor", graph, node)}
+              className={classNames.join(" ")}
+              style={styles}
+            >
+              {anchorContent}
+            </div>
+          );
+        }
+      );
+    }
+    return (
+      <div
+        key={id}
+        {...proxyNodeEvents("node", graph, node)}
+        className={classNames.join(" ")}
+        style={{
+          ...styles,
+          pointerEvents: layer.capture ? "all" : "none",
+        }}
+      >
+        <div
+          className="vgraph-viewer-container"
+          style={this.props.responsiveNode ? { display: "inline-block" } : {}}
+          data-id={node.get("id")}
+          ref={(ref: any) => {
+            if (adjustNodeSize && this.nodes.current[id] !== false) {
+              this.nodes.current[id] = ref;
+            }
+          }}
+        >
+          {content}
+        </div>
+        {anchorContents}
+      </div>
+    );
+  }
+
+  renderGroup(group: Group) {
+    const { graph, setGroupTitle } = this.props;
+    const bbox = group.get("__titleBBox");
+    const lineWidth = group.get("strokeStyle")
+      ? group.get("lineWidth") / 2 || 0.5
+      : 0;
+    return (
+      <div
+        key={group.get("id")}
+        {...proxyGroupTitleEvents(graph, group)}
+        style={{
+          left: bbox.left,
+          top: bbox.top,
+          width: bbox.width + lineWidth,
+          height: bbox.height + lineWidth,
+          pointerEvents: group.layer.capture ? "all" : "none",
+        }}
+        className="vgraph-viewer-group-title"
+      >
+        {setGroupTitle!(group)}
+      </div>
+    );
+  }
+
+  render() {
+    const { graph, setRenderOrder } = this.props;
     if (!graph) {
       return null;
     }
-    const nodes = showNodes.map((node: Node) => {
-      const { width, height, x, y, id } = node.configs;
-      let styles = {
-        width,
-        height,
-        left: x - width / 2,
-        top: y - height / 2,
-        cursor: node.configs.moving ? "grabbing" : "default",
-      };
-      let content = null;
-      if (showDetails) {
-        content = this.props.setNode(node);
-      } else {
-        if (hideDetails?.getNodeStyles) {
-          styles = {
-            ...hideDetails.getNodeStyles(node),
-            ...styles,
-          };
-        }
-      }
-      let classNames: any = [];
-      if (setNodeClassName) {
-        classNames = setNodeClassName(node);
-        if (!Array.isArray(classNames)) {
-          classNames = [classNames];
-        }
-      }
-
-      classNames.unshift("vgraph-viewer-node");
-      const layer = node.layer;
-      const showNodeAnchors = showAnchors[id];
-      let anchorContents: any = [];
-      if (showNodeAnchors) {
-        anchorContents = showNodeAnchors.map(
-          (anchorConfigs: ReactAnchorConfigs) => {
-            const size = anchorConfigs.configs.size ?? 8;
-            const offsets = anchorConfigs.configs.offsets || [0, 0];
-            const styles = {
-              width: size,
-              height: size,
-              left:
-                anchorConfigs.position[0] - size / 2 + width / 2 + offsets[0],
-              top:
-                anchorConfigs.position[1] - size / 2 + height / 2 + offsets[1],
-            };
-            let anchorContent = null;
-            anchorContent = this.props.setAnchor?.(node, anchorConfigs.configs);
-            if (!anchorContent) {
-              return null;
-            }
-            let classNames: any = [];
-            if (setAnchorClassName) {
-              classNames = setAnchorClassName(node, anchorConfigs.configs);
-              if (!Array.isArray(classNames)) {
-                classNames = [classNames];
-              }
-            }
-            classNames.unshift("vgraph-viewer-anchor");
-            return (
-              <div
-                anchorindex={anchorConfigs.index}
-                key={"anchor" + node.get("id") + "_" + anchorConfigs.index}
-                {...proxyNodeEvents("anchor", graph, node)}
-                className={classNames.join(" ")}
-                style={styles}
-              >
-                {anchorContent}
-              </div>
-            );
-          }
-        );
-      }
-      return (
-        <div
-          key={id}
-          {...proxyNodeEvents("node", graph, node)}
-          className={classNames.join(" ")}
-          style={{
-            ...styles,
-            pointerEvents: layer.capture ? "all" : "none",
-          }}
-        >
-          <div
-            className="vgraph-viewer-container"
-            style={this.props.responsiveNode ? { display: "inline-block" } : {}}
-            data-id={node.get("id")}
-            ref={(ref: any) => {
-              if (adjustNodeSize && this.nodes.current[id] !== false) {
-                this.nodes.current[id] = ref;
-              }
-            }}
-          >
-            {content}
-          </div>
-          {anchorContents}
-        </div>
-      );
-    });
-
-    const groups = showGroups.map((group: Group) => {
-      const bbox = group.get("__titleBBox");
-      const lineWidth = group.get("strokeStyle")
-        ? group.get("lineWidth") / 2 || 0.5
-        : 0;
-      return (
-        <div
-          key={group.get("id")}
-          {...proxyGroupTitleEvents(graph, group)}
-          style={{
-            left: bbox.left,
-            top: bbox.top,
-            width: bbox.width + lineWidth,
-            height: bbox.height + lineWidth,
-            pointerEvents: group.layer.capture ? "all" : "none",
-          }}
-          className="vgraph-viewer-group-title"
-        >
-          {setGroupTitle!(group)}
-        </div>
-      );
-    });
+    const { showNodes, showGroups, matrix } = this.state;
+    const container = graph.get("container");
+    let renderItems: (Node | Group)[] = [...showGroups, ...showNodes];
+    if (setRenderOrder) {
+      renderItems = setRenderOrder(renderItems);
+    }
+    const items = renderItems.map((item) =>
+      item.type === "node"
+        ? this.renderNode(item as Node)
+        : this.renderGroup(item as Group)
+    );
     const styles = {
       width: this.state.width,
       height: this.state.height,
@@ -677,8 +691,7 @@ export class Viewer extends React.Component<ViewerProps, ViewerState> {
           className="vgraph-viewer-viewport"
           style={{ transform: `matrix(${matrix.join(",")})`, ...styles }}
         >
-          {groups}
-          {nodes}
+          {items}
         </div>
       </div>,
       container

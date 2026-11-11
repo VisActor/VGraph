@@ -73,7 +73,6 @@ describe("src/graph/tree_graph", () => {
     modifyData.children.pop();
     modifyData.children[1].id = "test";
     modifyData.children[1].children[0].test = "test";
-    console.log(JSON.stringify(modifyData));
     graph.updateData(modifyData);
     expect(graph.root).not.toBe(undefined);
     expect(Object.keys(graph.entityMap.node).length).toBe(25);

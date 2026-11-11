@@ -22,9 +22,17 @@ describe("/src/commands/add", () => {
   });
 
   it("add should work for node", () => {
-    stack.execute("add", {
-      configs: { id: "111" },
-    });
+    const errorSpy = jest.spyOn(console, "error").mockImplementation();
+    try {
+      stack.execute("add", {
+        configs: { id: "111" },
+      });
+      expect(errorSpy).toHaveBeenCalledWith(
+        "Duplicate node id 111, add failed."
+      );
+    } finally {
+      errorSpy.mockRestore();
+    }
     expect(graph.getNodes().length).toBe(1);
     expect(graph.getNodes()[0].hasState("select"));
     expect(stack.stack.length).toBe(0);

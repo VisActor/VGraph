@@ -1,6 +1,6 @@
 ---
 name: vgraph-development-assistant
-description: "Expert assistant for @visactor/vgraph, @visactor/react-vgraph, and @visactor/react-vgraph-ui. Use when the user asks to create, configure, debug, optimize, or review VGraph Graph/TreeGraph visualizations, graph data, GraphStructure, layouts (dag, force, compactBox, dendrogram, mindMap, indented, pipeline, nestedDag), behaviors (panZoom, dragCanvas, dragNode, brushSelect, highlightRelations), events (node:click, GRAPH_EVENTS), React Viewer integration, CommonFlowEditor/DAGFlowEditor, examples, blank-canvas bugs, layout bugs, performance issues, or migration/open-source docs for VGraph code."
+description: "Expert assistant for @visactor/vgraph, @visactor/react-vgraph, and @visactor/react-vgraph-ui. Use when the user asks to create, configure, debug, optimize, or review VGraph Graph/TreeGraph visualizations, graph data, GraphStructure, layouts (dag, force, compactBox, dendrogram, mindMap, indented, pipeline, nestedDag), behaviors (panZoom, dragCanvas, dragNode, brushSelect, highlightRelations), events (node:click, GRAPH_EVENTS), React Viewer integration, CommonFlowEditor/DAGFlowEditor, VGraph examples, API docs, demos, blank-canvas bugs, layout bugs, performance issues, or VGraph-specific migration guidance."
 ---
 
 # VGraph Development Assistant
@@ -26,21 +26,37 @@ Ask at most one concise question only when missing information would materially 
 
 If a reasonable default exists, proceed with that default and name it.
 
+## Task Classification And Delivery Contract
+
+Before answering, classify the request:
+
+- Snippet/API task: the user asks how to configure an option, use an API, write an event handler, debug a symptom, or see a minimal code example such as "how to configure layout", "TreeGraph minimal example", or "how to write node:click". These may be answered with focused snippets.
+- Artifact task: the user asks to create, generate, build, show, or preview a graph artifact, such as a relation graph, structure graph, knowledge graph, runnable example, demo, HTML page, showcase, or previewable visualization. Artifact tasks must produce a runnable file deliverable, not only chat code.
+
+For artifact tasks:
+
+1. Create or update the runnable file first, then summarize it.
+2. Use a standalone HTML demo as the default deliverable unless the existing project provides a more appropriate demo surface.
+3. Unless the user explicitly says "only provide a snippet", "do not create a file", or "no page", do not downgrade an artifact task to a snippet/API answer.
+4. Do not paste the complete demo source as the main final answer. Keep full source in the generated file; chat may include only short excerpts (under 50 lines) when they clarify a key API.
+5. If no runnable file was created for an artifact task, the task is incomplete. Continue working or state the concrete blocker instead of presenting the answer as finished.
+
 ## Mandatory Routing
 
-Read only the files needed for the task. If you load one reference, read it completely.
+Read only the files needed for the task. If you load one reference, read it completely. Do NOT load unrelated reference files just because they are nearby; keep answers grounded in the chosen route.
 
-| User intent or keywords | Read these files |
-| --- | --- |
-| Getting started, create graph, basic demo | `references/knowledge/00-overview.md`, then `references/examples/basic-graph.md` |
-| Graph vs TreeGraph vs GraphStructure | `references/knowledge/01-graph-treegraph.md`, then `references/type/graph-options.md` |
-| Data, nodes, edges, groups, TreeData, GraphData | `references/knowledge/02-data-model.md` |
-| Node, edge, group style, state, custom shape, anchors | `references/knowledge/03-node-edge-group.md`, then `references/type/model-options.md` |
-| Layout, dag, force, tree, compactBox, mindMap, nestedDag, pipeline | `references/knowledge/04-layouts.md`, then `references/examples/tree-graph.md` for tree tasks |
-| Behavior, interaction, drag, panZoom, brush select, events | `references/knowledge/05-behaviors-events.md`, then `references/type/event-types.md`, then `references/examples/events-behaviors.md` for code |
-| React node, Viewer, hooks, tooltip, context menu | `references/knowledge/06-react-integration.md`, then `references/examples/react-viewer.md` |
-| Editor, stack, node mover, edge editor, minimap, grid | `references/knowledge/07-components-editor.md` |
-| Blank canvas, not rendering, performance, memory, export, update bugs | `references/knowledge/08-performance-debugging.md` |
+| User intent or keywords | Read | Do NOT load by default |
+| --- | --- | --- |
+| Getting started, create graph, basic demo, simple snippet | `references/knowledge/00-overview.md`, then `references/examples/basic-graph.md` | React/editor/performance references |
+| Standalone demo page, runnable HTML demo, previewable structure diagram, knowledge map showcase, code tab | `references/examples/demo-html-page.md`, plus the relevant graph/layout/behavior references below | All examples not used by the selected graph family |
+| Graph vs TreeGraph vs GraphStructure | `references/knowledge/01-graph-treegraph.md`, then `references/type/graph-options.md` | React/editor examples |
+| Data, nodes, edges, groups, TreeData, GraphData | `references/knowledge/02-data-model.md` | Layout examples unless layout is part of the question |
+| Node, edge, group style, state, custom shape, anchors | `references/knowledge/03-node-edge-group.md`, then `references/type/model-options.md` | Demo page reference |
+| Layout, dag, force, tree, compactBox, mindMap, nestedDag, pipeline | `references/knowledge/04-layouts.md`, then `references/examples/tree-graph.md` for tree tasks | React/editor references |
+| Behavior, interaction, drag, panZoom, brush select, events | `references/knowledge/05-behaviors-events.md`, then `references/type/event-types.md`, then `references/examples/events-behaviors.md` for code | Layout/debug references unless needed |
+| React node, Viewer, hooks, tooltip, context menu | `references/knowledge/06-react-integration.md`, then `references/examples/react-viewer.md` | Standalone HTML demo reference |
+| Editor, stack, node mover, edge editor, minimap, grid | `references/knowledge/07-components-editor.md` | React Viewer example unless DOM nodes are requested |
+| Blank canvas, not rendering, performance, memory, export, update bugs | `references/knowledge/08-performance-debugging.md` | Demo/examples unless reproducing |
 
 Do not load all references by default. For simple code-generation requests, one knowledge file plus one example file is usually enough.
 
@@ -67,6 +83,34 @@ Before writing code, choose the surface:
 - For batch mutations, prefer `disableAutoDraw()` / `enableAutoDraw(previous)` and `disableAutoLayout()` / `enableAutoLayout(previous)` over repeatedly triggering layout/draw.
 - In React, create/destroy graph instances in `useEffect`; never create a graph during render.
 
+## Demo Artifact Defaults
+
+When the user asks for a standalone, previewable, or showcase-style VGraph demo page, such as an HTML demo, runnable visualization, structure diagram, knowledge map, relation graph, or code-tab page, classify it as an artifact task. You must create or update an actual HTML/demo file instead of only pasting code in chat, unless the user explicitly asks for a snippet/config only. Read `references/examples/demo-html-page.md` for the page shell, readability patterns, and delivery gate.
+
+For simple examples, API usage, configuration help, or debugging answers, prefer a focused TypeScript snippet unless a runnable page would materially improve verification.
+
+A standard demo page should include a `Demo` tab for the live VGraph canvas and a `Code` tab for the core runnable TypeScript/JavaScript. The Code tab should be a fixed-size panel with internal scrolling (`overflow: auto`) so long examples do not expand the whole page or hide the live demo. Include a copy-code action when practical.
+
+For large trees, knowledge maps, organization charts, or any graph that can overwhelm the viewport, add readability controls by default. Use `panZoom` and `dragCanvas`, start from a conservative overview when it helps users understand the top-level structure, and provide controls such as "expand all", "collapse details", search, filter, group focus, or fit-to-view. For `TreeGraph` hierarchy expand/collapse, use native `collapse`, `expand`, or `toggleCollapse` first so the interaction stays a visibility/layout operation instead of a full data replacement. For non-tree Graph/DAG demos, do not force tree-collapse patterns onto edge-list data; prefer viewport, filtering, grouping, highlighting, or progressive disclosure controls.
+
+For knowledge-system or structure-map demos, preserve semantic shape before visual polish. Decide whether the requested content is a strict hierarchy, a DAG, or a general network. For school-stage or curriculum maps, keep the main levels explicit (for example stage -> subject -> topic -> skill) and avoid turning cross-links into primary parent-child edges. If the user asks for expand/collapse on a hierarchy, use `TreeGraph` native `collapse`, `expand`, or `toggleCollapse` first; do not rebuild a visible tree and call `graph.data(...)` on each click unless the user specifically needs data filtering or virtualization.
+
+After creating a standalone HTML demo, verify that it renders without console errors. If the environment supports browser preview, start or reuse a local static/dev server and provide the accessible URL; if browser preview is unavailable, say what validation was skipped and why.
+
+## Final Answer Guard
+
+Before the final answer for an artifact task, all checks must pass:
+
+- The request was classified as an artifact task.
+- A runnable file was created or updated.
+- A standalone demo request includes a live `Demo` tab and a `Code` tab unless the user asked for a different shell.
+- The graph rendering was verified, or the exact validation gap is stated.
+- The response leads with the deliverable path, preview URL, or other user-consumable handoff.
+- The response explains how to open or validate the demo.
+- The response summarizes the implementation and does not paste the full source into chat.
+
+If any check fails, do not produce the final answer. Continue implementation or state the concrete blocker.
+
 ## VGraph-Specific Anti-Patterns
 
 - Do not use `TreeGraph` with edge lists; tree edges are derived from `children`.
@@ -80,4 +124,4 @@ Before writing code, choose the surface:
 
 ## Verification Habit
 
-For generated snippets, make sure the imports exist in the repo exports and the chosen data shape matches the chosen graph class. For debugging, report the smallest falsifiable check first: container size, graph size, data IDs, edge endpoints, layout choice, behavior conflicts, then React lifecycle.
+For generated snippets, make sure the imports exist in `packages/vgraph/src/index.ts` or the relevant package export, and verify non-obvious config fields against source typings or implementation before suggesting them. For debugging, report the smallest falsifiable check first: container size, graph size, data IDs, edge endpoints, layout choice, behavior conflicts, then React lifecycle.

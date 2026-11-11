@@ -2,6 +2,18 @@
   "name": "@visactor/vgraph",
   "entries": [
     {
+      "version": "0.1.1",
+      "tag": "@visactor/vgraph_v0.1.1",
+      "date": "Wed, 11 Nov 2026 09:30:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add edge-case tests for graph algorithms and graph data utilities."
+          }
+        ]
+      }
+    },
+    {
       "version": "0.2.0",
       "tag": "@visactor/vgraph_v0.2.0",
       "date": "Fri, 26 Jun 2026 03:01:27 GMT",

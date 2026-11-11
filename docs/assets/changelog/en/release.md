@@ -1,8 +1,15 @@
+# v0.1.1
+
+## Updates
+
+- Restore the optional Viewer setRenderOrder callback for mixed node and group title rendering, with regression tests and a comparison example.
+- Add edge-case tests for graph algorithms and graph data utilities.
+
 # v0.1.0
 
 ## Updates
 
-- Align release automation, changelog generation, and package publishing metadata with the current VTable and VChart workflows.
+- Release VGraph.
 
 # Release Log
 

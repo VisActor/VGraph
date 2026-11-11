@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@visactor/react-vgraph",
+      "comment": "Restore the optional Viewer setRenderOrder callback for mixed node and group title rendering, with regression tests and a comparison example.",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@visactor/react-vgraph"
+}

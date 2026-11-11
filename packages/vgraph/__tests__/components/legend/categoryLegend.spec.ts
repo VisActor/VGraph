@@ -710,4 +710,170 @@ describe("src/legend", () => {
     expect(nodeLayer.children[0].get("clickInteraction")).toBe(true);
     expect(nodeLayer.children[1].get("clickInteraction")).toBe(undefined);
   });
+
+  it("should paginate legend items and update lifecycle options", () => {
+    const graph = new Graph({
+      container: graphDiv,
+      width: 800,
+      height: 600,
+      minRatio: 0.2,
+      maxRatio: 8,
+    });
+    const legendData: CategoryLegendDataItem[] = Array.from({ length: 8 }).map(
+      (_, index) => ({
+        marker: {
+          type: "rect",
+          width: 10,
+          height: 10,
+        },
+        label: `group-${index}`,
+        value: index,
+      })
+    );
+    const legend = new Legend(graph, {
+      legendData,
+      container: legendDiv,
+      encodeAttr: "group",
+      target: "node",
+      width: 120,
+      height: 90,
+      padding: 10,
+      hover: {
+        enable: true,
+        filter: true,
+      },
+    });
+
+    expect(legend.paginationConfigs.count).toBeGreaterThan(1);
+    expect(legend.paginationConfigs.curPage).toBe(0);
+    expect(legend.legendItems[0].visible).toBe(true);
+    expect(legend.legendItems[legend.legendItems.length - 1].visible).toBe(
+      false
+    );
+
+    const paginationLayer = legend.canvas.children[0].children[2];
+    const leftArrow = paginationLayer.children[1].children[0];
+    const pageNumber = paginationLayer.children[1].children[1];
+    const rightArrow = paginationLayer.children[1].children[2];
+
+    rightArrow.emit("click", {});
+    expect(legend.paginationConfigs.curPage).toBe(1);
+    expect(pageNumber.get("text")).toBe(`2/${legend.paginationConfigs.count}`);
+    expect(leftArrow.get("strokeStyle")).toBe("#505968");
+
+    leftArrow.emit("click", {});
+    expect(legend.paginationConfigs.curPage).toBe(0);
+    expect(pageNumber.get("text")).toBe(`1/${legend.paginationConfigs.count}`);
+    expect(leftArrow.get("strokeStyle")).toBe("#CACDD3");
+
+    const updateSpy = jest.spyOn(legend, "update").mockImplementation(() => {});
+    const refreshSpy = jest
+      .spyOn(legend, "refresh")
+      .mockImplementation(() => {});
+    legend.updateOption("hover", {
+      enable: false,
+      graphActiveState: "selected",
+    });
+    expect(legend.options.hover).toEqual(
+      expect.objectContaining({
+        enable: false,
+        filter: true,
+        graphActiveState: "selected",
+      })
+    );
+    expect(updateSpy).toHaveBeenCalled();
+    expect(refreshSpy).toHaveBeenCalled();
+
+    legend.disable();
+    expect(legend._enable).toBe(false);
+    updateSpy.mockRestore();
+    refreshSpy.mockRestore();
+    const destroySpy = jest
+      .spyOn(legend.canvas, "destroy")
+      .mockImplementation(() => undefined);
+    jest.spyOn(legend, "clear").mockImplementation(() => undefined);
+    legend.beforeDestroy();
+    expect(destroySpy).toHaveBeenCalled();
+  });
+
+  it("should filter graph states and restore legend item styles", () => {
+    const graph = new Graph({
+      container: graphDiv,
+      width: 800,
+      height: 600,
+      minRatio: 0.2,
+      maxRatio: 8,
+    });
+    graph.data({
+      nodes: [
+        { id: "a", group: "g1" },
+        { id: "b", group: "g2" },
+      ],
+      edges: [],
+    });
+    const legend = new Legend(graph, {
+      encodeAttr: "group",
+      target: "node",
+      width: 160,
+      height: 100,
+      sort: (a: any, b: any) => a.value.localeCompare(b.value),
+      hover: {
+        enable: true,
+        filter: false,
+        graphActiveState: "active",
+        graphBlurState: "blur",
+      },
+      click: {
+        enable: true,
+        multiple: true,
+        filter: true,
+      },
+      setLegendStateStyles() {
+        return {
+          fillStyle: "#f00",
+          strokeStyle: "#0f0",
+          textStyles: {
+            fillStyle: "#00f",
+          },
+        };
+      },
+    });
+    const firstItem = legend.legendItems[0];
+    const secondItem = legend.legendItems[1];
+    const firstNode = graph.getNodeById("a");
+    const secondNode = graph.getNodeById("b");
+    const setEmitSpy = jest.spyOn(graph, "set");
+    const emitSpy = jest.spyOn(graph, "emitEvent");
+
+    legend.filterGraph([firstItem], "hover");
+
+    expect(firstNode.hasState("active")).toBe(true);
+    expect(firstNode.hasState("blur")).toBe(false);
+    expect(secondNode.hasState("active")).toBe(false);
+    expect(secondNode.hasState("blur")).toBe(true);
+    expect(setEmitSpy).toHaveBeenCalledWith("emitGraphEvents", false);
+    expect(setEmitSpy).toHaveBeenCalledWith("emitGraphEvents", true);
+    expect(emitSpy).toHaveBeenCalledWith("batchstate:end", { state: "active" });
+
+    legend.setLegendItemState("hover", firstItem, "active");
+    expect(firstItem.children[0].get("fillStyle")).toBe("#f00");
+    expect(firstItem.children[1].get("fillStyle")).toBe("#00f");
+    legend.clearLegendItemState(firstItem);
+    expect(firstItem.children[0].cacheStyle).toBeUndefined();
+    expect(firstItem.children[1].cacheStyle).toBeUndefined();
+
+    legend.onClick(firstItem);
+    legend.onClick(secondItem);
+    expect(legend.clickActiveItem).toHaveLength(2);
+    legend.onClick(firstItem);
+    expect(legend.clickActiveItem).toEqual([secondItem]);
+
+    firstNode.hide();
+    legend.clearGraph("click");
+    expect(firstNode.visible).toBe(true);
+
+    legend.clear();
+    expect(firstNode.hasState("active")).toBe(false);
+    expect(secondNode.hasState("blur")).toBe(false);
+  });
 });

@@ -110,4 +110,38 @@ describe("fisheye should work", () => {
 
     fisheye.destroy();
   });
+
+  it("canvas coordinate fisheye should update on transform and option changes", () => {
+    const fisheye = new FisheyePlugin(graph, {
+      coordinateSystem: "canvas",
+      showLabel: "none",
+      isSetState: true,
+      isScaling: true,
+      inEyeR: 80,
+      r: 160,
+    });
+
+    graph.scale(2);
+    graph.emit("transformed", { type: "scale", ratio: 2 });
+
+    expect(fisheye.shape!.get("r")).toBe(40);
+    graph.getNodes().forEach((node) => {
+      expect(node.configs.fisheye).toBeDefined();
+      expect(node.hasState("inEye") || node.hasState("outEye")).toBe(true);
+    });
+
+    fisheye.updateOption("distortion", 5);
+    expect(fisheye.fisheye.getDistortion()).toBe(5);
+    fisheye.updateOption("r", 120);
+    expect(fisheye.fisheye.getRadius()).toBe(120);
+    fisheye.updateOption("inEyeR", 60);
+    expect(fisheye.fisheye.getInEyeRadius()).toBe(60);
+
+    fisheye.stop();
+    fisheye.onMove(300, 300);
+    expect(fisheye.isEnable).toBe(false);
+
+    fisheye.destroy();
+    graph.resetMatrix();
+  });
 });

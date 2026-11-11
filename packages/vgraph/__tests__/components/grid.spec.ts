@@ -467,19 +467,27 @@ describe("components/grid", function () {
     expect(gridComponent.isWalkable(col + 5, row)).toBe(false);
     expect(gridComponent.isWalkable(col + 6, row)).toBe(true);
     const group = graph.getGroupById("group1");
-    group.collapse();
-    group.set("fixWidth", 100);
-    group.set("fixHeight", 30);
-    group.refreshBox();
-    const bbox = group.getBBox();
-    [col, row] = gridComponent.getIndexByCoord(bbox.left, bbox.top);
-    expect(gridComponent.isWalkable(col, row)).toBe(false);
-    [col, row] = gridComponent.getIndexByCoord(
-      bbox.left + bbox.width - 1,
-      bbox.top + bbox.height - 1
-    );
-    expect(gridComponent.isWalkable(col, row)).toBe(false);
-    expect(gridComponent.isWalkable(col + 1, row + 1)).toBe(true);
+    const errorSpy = jest.spyOn(console, "error").mockImplementation();
+    try {
+      group.collapse();
+      group.set("fixWidth", 100);
+      group.set("fixHeight", 30);
+      group.refreshBox();
+      expect(errorSpy).toHaveBeenCalledWith(
+        expect.stringContaining("GridData numeric underflow")
+      );
+      const bbox = group.getBBox();
+      [col, row] = gridComponent.getIndexByCoord(bbox.left, bbox.top);
+      expect(gridComponent.isWalkable(col, row)).toBe(false);
+      [col, row] = gridComponent.getIndexByCoord(
+        bbox.left + bbox.width - 1,
+        bbox.top + bbox.height - 1
+      );
+      expect(gridComponent.isWalkable(col, row)).toBe(false);
+      expect(gridComponent.isWalkable(col + 1, row + 1)).toBe(true);
+    } finally {
+      errorSpy.mockRestore();
+    }
   });
 
   it("feat: not ignore group title should work", () => {

@@ -46,7 +46,19 @@ jobs:
           cache-dependency-path: './common/config/rush/pnpm-lock.yaml'
 
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11.6.2
+
+      - name: Verify npm authentication
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          node <<'NODE'
+          const { execFileSync } = require('child_process');
+          const username = execFileSync('npm', ['whoami', '--registry=https://registry.npmjs.org/'], {
+            encoding: 'utf8'
+          }).trim();
+          console.log(`npm publishing account: ${username}`);
+          NODE
 
       - name: Install pnpm
         run: npm install -g pnpm@10.7.0
@@ -137,16 +149,21 @@ jobs:
           const path = require('path');
           const { execSync } = require('child_process');
 
-          const baseDir = path.join(process.cwd(), 'common', 'changes', '@visactor', 'vgraph');
+          const baseDir = path.join(process.cwd(), 'common', 'changes');
           let changefiles = [];
 
           try {
-            const files = fs.readdirSync(baseDir).filter(name => name.endsWith('.json'));
-            for (const file of files) {
-              const fullPath = path.join(baseDir, file);
-              const json = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-              changefiles.push(json);
+            function collectChangefiles(directory) {
+              for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+                const fullPath = path.join(directory, entry.name);
+                if (entry.isDirectory()) {
+                  collectChangefiles(fullPath);
+                } else if (entry.name.endsWith('.json')) {
+                  changefiles.push(JSON.parse(fs.readFileSync(fullPath, 'utf8')));
+                }
+              }
             }
+            collectChangefiles(baseDir);
             console.log('Collected changefiles:', changefiles.length);
           } catch (e) {
             console.log('No changefiles found or unable to read, fallback to empty list.', e.message || e);
@@ -408,6 +425,9 @@ jobs:
           echo "Build packages: ${package_names[*]}"
           node common/scripts/install-run-rush.js build "${build_args[@]}"
 
+      - name: Test packages
+        run: node common/scripts/install-run-rush.js test --only tag:package
+
       - name: Check npm versions (release)
         if: startsWith(github.ref_name, 'release/')
         id: npm_version_release
@@ -624,8 +644,11 @@ jobs:
             rm -rf .changelog
             find docs/assets/changelog -name '*.bak' -delete 2>/dev/null || true
             git add .
-            git commit -m "build: release version ${{ steps.package_version_release.outputs.current_version }} [skip ci]" -n
-            git push --no-verify origin ${{ github.ref_name }}
+            git commit -m "$(cat <<'EOF'
+          build: release version ${{ steps.package_version_release.outputs.current_version }} [skip ci]
+          EOF
+          )"
+            git push origin ${{ github.ref_name }}
           fi
 
       - name: Commit & Push changes (hotfix)
@@ -636,8 +659,11 @@ jobs:
             echo 'No changes to commit for hotfix branch.'
           else
             git add .
-            git commit -m "build: hotfix version ${{ steps.package_version_hotfix.outputs.current_version }} [skip ci]" -n
-            git push --no-verify origin ${{ github.ref_name }}
+            git commit -m "$(cat <<'EOF'
+          build: hotfix version ${{ steps.package_version_hotfix.outputs.current_version }} [skip ci]
+          EOF
+          )"
+            git push origin ${{ github.ref_name }}
           fi
 
       - name: Commit & Push changes (pre-release)
@@ -648,8 +674,11 @@ jobs:
             echo 'No changes to commit for pre-release branch.'
           else
             git add .
-            git commit -m "build: prerelease version ${{ steps.package_version_prerelease.outputs.current_version }} [skip ci]" -n
-            git push --no-verify origin ${{ github.ref_name }}
+            git commit -m "$(cat <<'EOF'
+          build: prerelease version ${{ steps.package_version_prerelease.outputs.current_version }} [skip ci]
+          EOF
+          )"
+            git push origin ${{ github.ref_name }}
           fi
 
       - name: Create Pull Request to main (release)

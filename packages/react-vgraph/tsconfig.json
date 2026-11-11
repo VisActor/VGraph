@@ -101,5 +101,5 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
     // "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["./src", "./typings", "./examples", "test/table_lineage.spec.tsx"]
+  "include": ["./src", "./typings", "./examples", "test/**/*.spec.tsx"]
 }

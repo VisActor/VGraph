@@ -252,6 +252,79 @@ describe("ForceDirectedGrouping", () => {
       expect(!forceGrouping.options.shapeDraggable);
     });
   });
+
+  it("should emit group shape drag lifecycle events and unsubscribe callbacks", () => {
+    jest.useFakeTimers();
+
+    const graphDiv = document.createElement("div");
+    document.body.append(graphDiv);
+    const graph = new Graph({
+      container: graphDiv,
+      width: 800,
+      height: 600,
+      setDefaultNode() {
+        return {
+          width: 15,
+          height: 15,
+        };
+      },
+    });
+    graph.data({
+      nodes: [
+        { id: "a", x: 100, y: 100, groupType: "same" },
+        { id: "b", x: 140, y: 100, groupType: "same" },
+      ],
+      edges: [],
+    });
+
+    const forceGrouping = new ForceDirectedGrouping({
+      graph,
+      options: {
+        getGroupValue: (d) => d.groupType,
+      },
+    });
+    forceGrouping.updateShapes();
+    const shape = forceGrouping.getAllGroupShapes().same as Shape;
+    const dragStart = jest.fn();
+    const drag = jest.fn();
+    const drop = jest.fn();
+    const click = jest.fn();
+
+    forceGrouping.on("groupshape:dragstart", dragStart);
+    forceGrouping.on("groupshape:drag", drag);
+    forceGrouping.on("groupshape:drop", drop);
+    forceGrouping.on("groupshape:click", click);
+
+    shape.emit("groupshape:click", { target: shape });
+    expect(click).toHaveBeenCalledTimes(1);
+    forceGrouping.off("groupshape:click");
+    shape.emit("groupshape:click", { target: shape });
+    expect(click).toHaveBeenCalledTimes(1);
+
+    shape.emit("mousedown", { clientX: 10, clientY: 10, target: shape });
+    jest.advanceTimersByTime(200);
+    expect(dragStart).toHaveBeenCalledWith(
+      expect.objectContaining({ clientX: 10, clientY: 10, target: shape })
+    );
+
+    graph.emit("mousemove", { clientX: 40, clientY: 30 });
+    expect(drag).toHaveBeenCalledWith(
+      expect.objectContaining({ clientX: 40, clientY: 30, target: shape })
+    );
+
+    document.body.dispatchEvent(
+      new MouseEvent("mouseup", { clientX: 50, clientY: 35 })
+    );
+    expect(drop).toHaveBeenCalledWith(
+      expect.objectContaining({ clientX: 50, clientY: 35, target: shape })
+    );
+    expect(shape.configs.lastPositions).toBeUndefined();
+    expect(shape.configs.originPositions).toBeUndefined();
+
+    jest.useRealTimers();
+    graph.destroy();
+  });
+
   describe("updateData should work", () => {
     const graphDiv = document.createElement("div");
     document.body.append(graphDiv);

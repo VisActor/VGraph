@@ -518,14 +518,19 @@ describe("src/solutions/common_flow_editor", () => {
     });
     expect(node1.configs.x).toBe(0);
     expect(node1.configs.y).toBe(0);
-    graph.emit("mousemove", {
-      target: node1,
-      clientX: 13,
-      clientY: 13,
-    });
-    expect(node1.configs.x).toBe(0);
-    expect(node1.configs.y).toBe(0);
-    editor.components.nodeMover?.onMouseUp({} as any);
+    const warnSpy = jest.spyOn(console, "warn").mockImplementation();
+    try {
+      graph.emit("mousemove", {
+        target: node1,
+        clientX: 13,
+        clientY: 13,
+      });
+      expect(node1.configs.x).toBe(0);
+      expect(node1.configs.y).toBe(0);
+      editor.components.nodeMover?.onMouseUp({} as any);
+    } finally {
+      warnSpy.mockRestore();
+    }
     // not move
     expect(node1.configs.x).toBe(0);
     expect(node1.configs.y).toBe(0);
@@ -541,22 +546,27 @@ describe("src/solutions/common_flow_editor", () => {
       clientY: 0,
       nativeEvent: { button: 1 },
     });
-    graph.emit("mousemove", {
-      target: node1,
+    const laxWarnSpy = jest.spyOn(console, "warn").mockImplementation();
+    try {
+      graph.emit("mousemove", {
+        target: node1,
 
-      clientX: 6,
-      clientY: 6,
-    });
-    expect(node1.configs.x).toBe(10);
-    expect(node1.configs.y).toBe(10);
-    graph.emit("mousemove", {
-      target: node1,
-      clientX: 13,
-      clientY: 13,
-    });
-    expect(node1.configs.x).toBe(10);
-    expect(node1.configs.y).toBe(10);
-    editor.components.nodeMover?.onMouseUp({} as any);
+        clientX: 6,
+        clientY: 6,
+      });
+      expect(node1.configs.x).toBe(10);
+      expect(node1.configs.y).toBe(10);
+      graph.emit("mousemove", {
+        target: node1,
+        clientX: 13,
+        clientY: 13,
+      });
+      expect(node1.configs.x).toBe(10);
+      expect(node1.configs.y).toBe(10);
+      editor.components.nodeMover?.onMouseUp({} as any);
+    } finally {
+      laxWarnSpy.mockRestore();
+    }
     expect(node1.configs.x).toBe(10);
     expect(node1.configs.y).toBe(10);
     editor.undo();
