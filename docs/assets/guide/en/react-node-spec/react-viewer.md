@@ -45,12 +45,34 @@ export default () => {
 | setAnchor | (node: Node, anchor: AnchorConfigs) => ReactNode | The React anchor component. |
 | setAnchorClassName | (node: Node) => string \| string[] | Adds a `className` to the anchor container. |
 | setGroupTitle | (group: Group) => ReactNode | \[NEW] The React group title component. Please configure `titleSize` on the group to use it. |
+| setRenderOrder | (items: (Node \| Group)[]) => (Node \| Group)[] | Customize the DOM order of visible nodes and group titles. Defaults to group titles followed by nodes. Receives a new mixed array and returns the desired order. |
 | localRendering | boolean | Whether to enable local rendering. When enabled, nodes only support stateless components. When disabled, they support stateful components. Default is enabled. |
 | hideDetails | object | When the zoom ratio is very small, there may be many nodes on the screen, and the content of these nodes is basically unreadable. You can configure this option to display summary information and improve fluency. |
 | hideDetails.ratio | number | Hides node details when the zoom ratio is less than `ratio`. |
 | hideDetails.getNodeStyles | (node: Node) => Record<string, any> | The CSS style to be added to the container when the node is hidden. This can be used to display node categories, etc., to help users quickly locate nodes when they are very small. |
 | responsiveNode | boolean | Whether to enable responsive React nodes. If enabled, it will respond to changes in the width and height of React nodes and trigger the redrawing of connection positions. |
 | onResizeNode | (node: Node, bbox: BBox) => void | The callback function for when the width and height of a node change. |
+
+### Custom Node and Group Title Order
+
+```tsx
+<Viewer
+  graph={graph}
+  setNode={setNode}
+  setGroupTitle={setGroupTitle}
+  setRenderOrder={(items) => items.reverse()}
+/>
+```
+
+This reverses the default group-title-then-node order. The callback receives a
+new array of visible elements, so in-place sorting does not mutate the Viewer's
+node or group state arrays. It may run on every render, including an initial
+empty array. Return the desired order without updating React state inside the
+callback. Later elements usually cover earlier ones in the same stacking context;
+explicit CSS stacking rules can change the final overlap.
+
+The local `render_order.html` example compares both orders and verifies callback
+execution and DOM order.
 
 ### Viewer ref Methods
 | Method | Type | Description |

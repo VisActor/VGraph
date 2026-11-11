@@ -122,3 +122,6 @@ config/secrets.yml
 logs/
 __pycache__/
 *.pyc
+
+# Local Run button configuration
+.trae/environments/
