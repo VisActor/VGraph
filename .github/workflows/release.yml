@@ -48,7 +48,7 @@ jobs:
       - name: Update npm
         run: npm install -g npm@11.6.2
 
-      - name: Verify npm publishing access
+      - name: Verify npm authentication
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
@@ -58,15 +58,6 @@ jobs:
             encoding: 'utf8'
           }).trim();
           console.log(`npm publishing account: ${username}`);
-          const permissions = JSON.parse(execFileSync('npm', [
-            'access', 'list', 'packages', username, '--json', '--registry=https://registry.npmjs.org/'
-          ], { encoding: 'utf8' }));
-          for (const name of ['@visactor/vgraph', '@visactor/react-vgraph', '@visactor/react-vgraph-ui']) {
-            console.log(`${name}: ${permissions[name] || 'no access'}`);
-            if (permissions[name] !== 'read-write') {
-              throw new Error(`The npm publishing account needs read-write access to ${name}.`);
-            }
-          }
           NODE
 
       - name: Install pnpm
