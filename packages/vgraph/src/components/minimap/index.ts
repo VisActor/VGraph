@@ -403,38 +403,45 @@ export class Minimap extends ComponentBase {
   }
 
   setViewport(left: number, top: number, width: number, height: number) {
-    const viewport = this.viewport;
-    const viewportStyles = {
-      left,
-      top,
-      width,
-      height,
-    };
-    let show = true;
-    if (
+    const canvasWidth = this.canvas.get("width");
+    const canvasHeight = this.canvas.get("height");
+    const visibleLeft = Math.max(0, left);
+    const visibleTop = Math.max(0, top);
+    const visibleWidth = Math.max(
+      0,
+      Math.min(width - (visibleLeft - left), canvasWidth - visibleLeft)
+    );
+    const visibleHeight = Math.max(
+      0,
+      Math.min(height - (visibleTop - top), canvasHeight - visibleTop)
+    );
+    const hideOverflow =
       this.options.hideWindowWhenOverflow !== false &&
       left <= 0 &&
       top <= 0 &&
-      width > this.canvas.get("width") &&
-      height > this.canvas.get("height")
-    ) {
-      show = false;
-    }
-    applyCss(viewport, {
-      left: left + "px",
-      top: top + "px",
-      width: width + "px",
-      height: height + "px",
-      display: show ? "block" : "none",
+      width > canvasWidth &&
+      height > canvasHeight;
+
+    // Keep the projected viewport for navigation, and draw its visible bounds.
+    this.viewportStyles = { left, top, width, height };
+    applyCss(this.viewport, {
+      left: visibleLeft + "px",
+      top: visibleTop + "px",
+      width: visibleWidth + "px",
+      height: visibleHeight + "px",
+      display:
+        !hideOverflow && visibleWidth && visibleHeight ? "block" : "none",
     });
-    this.viewportStyles = viewportStyles;
   }
 
   clickToCenter({ clientX, clientY }: { clientX: number; clientY: number }) {
     const graph = this.graph;
-    const bbox = this.viewport.getBoundingClientRect();
-    const dx = bbox.x + bbox.width / 2 - clientX;
-    const dy = bbox.y + bbox.height / 2 - clientY;
+    const bounds = this.canvas.get("container").getBoundingClientRect();
+    const { left, top, width, height } = this.viewportStyles;
+    const scaleX = bounds.width / this.canvas.get("width") || 1;
+    const scaleY = bounds.height / this.canvas.get("height") || 1;
+    const dx = bounds.x + (left + width / 2) * scaleX - clientX;
+    const dy = bounds.y + (top + height / 2) * scaleY - clientY;
     const zoomRatio = graph.getZoomRatio();
     const ratio = this.ratio;
     graph.translate((dx / ratio) * zoomRatio, (dy / ratio) * zoomRatio);
@@ -455,9 +462,7 @@ export class Minimap extends ComponentBase {
     if (!refresh) {
       return;
     }
-    const viewportStyles = this.viewportStyles;
-    let { left, top } = viewportStyles;
-    const { width, height } = viewportStyles;
+    const { left, top, width, height } = this.viewportStyles;
     let dx = this.lastPositions.x - e.clientX;
     let dy = this.lastPositions.y - e.clientY;
 
@@ -480,14 +485,7 @@ export class Minimap extends ComponentBase {
       }
     }
 
-    left -= dx;
-    top -= dy;
-    applyCss(this.viewport, {
-      left: left + "px",
-      top: top + "px",
-    });
-    viewportStyles.left = left;
-    viewportStyles.top = top;
+    this.setViewport(left - dx, top - dy, width, height);
     this.lastPositions = { x: e.clientX, y: e.clientY };
     const ratio = this.ratio;
     const zoomRatio = this.graph.getZoomRatio();
