@@ -2,6 +2,18 @@
   "name": "@visactor/vgraph",
   "entries": [
     {
+      "version": "0.1.2",
+      "tag": "@visactor/vgraph_v0.1.2",
+      "date": "Mon, 23 Nov 2026 06:39:01 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Keep the minimap viewport outline visible at the map boundaries while preserving click and drag navigation."
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.1",
       "tag": "@visactor/vgraph_v0.1.1",
       "date": "Wed, 11 Nov 2026 09:30:51 GMT",

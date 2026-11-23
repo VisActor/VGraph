@@ -1,6 +1,13 @@
 # Change Log - @visactor/vgraph
 
-This log was last generated on Wed, 11 Nov 2026 09:30:51 GMT and should not be manually modified.
+This log was last generated on Mon, 23 Nov 2026 06:39:01 GMT and should not be manually modified.
+
+## 0.1.2
+Mon, 23 Nov 2026 06:39:01 GMT
+
+### Patches
+
+- Keep the minimap viewport outline visible at the map boundaries while preserving click and drag navigation.
 
 ## 0.1.1
 Wed, 11 Nov 2026 09:30:51 GMT
