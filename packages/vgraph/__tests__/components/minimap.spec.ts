@@ -88,8 +88,8 @@ describe("src/minimap", () => {
     expect(viewport.style.display).toBe("block");
     expect(viewport.style.left).toBe("94.66666666666667px");
     expect(viewport.style.top).toBe("44.666666666666664px");
-    expect(viewport.style.width).toBe("133.33333333333331px");
-    expect(viewport.style.height).toBe("100px");
+    expect(parseFloat(viewport.style.width)).toBeCloseTo(101.3333, 4);
+    expect(parseFloat(viewport.style.height)).toBeCloseTo(51.3333, 4);
 
     expect(canvas.children[0].children[2].children.length).toBe(1);
     const shape = canvas.children[0].children[2].children[0];
@@ -105,6 +105,59 @@ describe("src/minimap", () => {
     expect(viewport.style.height).toBe("50px");
 
     minimap.destroy();
+  });
+
+  it("draws the visible intersection of an overflowing viewport", () => {
+    const minimap = new Minimap(graph, { width: 200, height: 100 });
+    try {
+      minimap.setViewport(-5, -10, 160, 120);
+      expect(minimap.viewportStyles).toEqual({
+        left: -5,
+        top: -10,
+        width: 160,
+        height: 120,
+      });
+      expect(minimap.viewport.style.left).toBe("0px");
+      expect(minimap.viewport.style.top).toBe("0px");
+      expect(minimap.viewport.style.width).toBe("155px");
+      expect(minimap.viewport.style.height).toBe("96px");
+      expect(minimap.viewport.style.display).toBe("block");
+
+      minimap.setViewport(156, 72, 80, 50);
+      expect(minimap.viewport.style.width).toBe("40px");
+      expect(minimap.viewport.style.height).toBe("24px");
+
+      minimap.setViewport(200, 12, 20, 20);
+      expect(minimap.viewport.style.display).toBe("none");
+    } finally {
+      minimap.destroy();
+    }
+  });
+
+  it("centers clicks using the full projected viewport", () => {
+    const minimap = new Minimap(graph, { width: 200, height: 100 });
+    const translate = jest
+      .spyOn(graph, "translate")
+      .mockImplementation(() => {});
+    const canvasContainer = minimap.canvas.get("container") as HTMLElement;
+    const clientBounds = jest
+      .spyOn(canvasContainer, "getBoundingClientRect")
+      .mockReturnValue({
+        x: 30,
+        y: 40,
+        width: 196,
+        height: 96,
+      } as DOMRect);
+    try {
+      minimap.setViewport(-20, 15, 80, 40);
+      minimap.clickToCenter({ clientX: 40, clientY: 55 });
+      const scale = graph.getZoomRatio() / minimap.ratio;
+      expect(translate).toHaveBeenCalledWith(10 * scale, 20 * scale);
+    } finally {
+      clientBounds.mockRestore();
+      translate.mockRestore();
+      minimap.destroy();
+    }
   });
 
   it("showEdges & setEdgeStyles should work", (done) => {
