@@ -1,3 +1,15 @@
+# v0.1.2
+
+2026-11-23
+
+**🐛 问题修复**
+
+- **@visactor/vgraph**: Keep the minimap viewport outline visible at the map boundaries while preserving click and drag navigation.
+
+**Full Changelog**: https://github.com/VisActor/VGraph/compare/v0.1.1...v0.1.2
+
+[更多详情请查看 v0.1.2](https://github.com/VisActor/VGraph/releases/tag/v0.1.2)
+
 # v0.1.1
 
 ## 更新内容
